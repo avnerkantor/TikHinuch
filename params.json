@@ -1,0 +1,6 @@
+{
+  "name": "Tikhinuch",
+  "tagline": "",
+  "body": "**Tik Hinuch** (Education Files in Hebrew) is a visual data explorer of educational datasets. It's goal is to help educators, parents, policy makers and researchers to learn from the most important educational resources. The project focuses currently on the OECD PISA datasets.\r\n\r\nWe used R language to analyze the datsets together with [shiny](shiny.rstudio.com/), [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) and [ggplot2](http://ggplot2.org/) packages. We built a Shiny server in Google Compute Cloud. For the CMS we used [Django](https://github.com/avnerkantor/tikhinuchBlog) and it's hosted in [Heroku](http://heroku.com/) and combines the Shiny application as iframe.\r\n\r\n![architecture](www/architecture.png)",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
