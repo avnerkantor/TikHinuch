@@ -1,10 +1,10 @@
 ###UI
-observeEvent(input$calibrationCheck, {
-  updateCheckboxGroupInput(session, inputId="Gender", selected = "")
-})
+# observeEvent(input$generalBtn, {
+#   updateCheckboxGroupInput(session, inputId="Gender", selected = "General")
+# })
 
-# observeEvent(input$calibrationCheck, {
-#   updateCheckboxGroupInput(session, inputId="Escs", selected = "")
+# observeEvent(input$generalBtn, {
+#  updateCheckboxGroupInput(session, inputId="Escs", selected = NULL)
 # })
 
 observe({
@@ -29,7 +29,8 @@ observe({
     filter(!is.na(input$Subject))
   
   plotData1<-pisaData2%>%filter(Subject==input$Subject, Performers==0)%>%select(-Subject, -Performers)
-  
+  #print(input$Gender)#if(input$Gender=="General"){
+  #TODO
   if(is.null(input$Gender)){
     if(is.null(input$Escs)){
       plotData2<-plotData1 %>%
@@ -69,13 +70,11 @@ observe({
       labs(title="", y="" ,x= "") +
       theme_bw() +
       #geom_label() +
-      theme(plot.margin=unit(c(0,15,0,0), "pt"),
+      theme(plot.margin=unit(c(0,15,5,10), "pt"),
             panel.border = element_blank(),
             axis.ticks = element_blank(),
             panel.grid.major.x=element_blank(),
             panel.grid.major.y = element_line(colour="#e0e0e0", size=0.3),
-            #axis.text.y = element_text(margin = margin(t = 20, b = 15)),
-            #axis.title.y=element_text(vjust = 1),
             legend.position="none",
             axis.line.x = element_line(color="#c7c7c7", size = 0.3),
             axis.line.y = element_line(color="#c7c7c7", size = 0.3)
@@ -85,30 +84,38 @@ observe({
         #minor_breaks=SubjectExpertiseLevels[2],
         breaks=SubjectExpertiseLevels[2],
         labels=SubjectExpertiseLevels[1],
-        limits=c(300,740))
+        #limits = c(200,700),
+        limits=c(as.numeric(unlist(ExpertiseLevelsLimits[input$Subject])))
+        )
     
     if("2012" %in% plotData3$Year) {
       if("2009" %in% plotData3$Year) {
        #https://plot.ly/r/axes/
         gp<-gg+geom_line(size=1)
+        #https://plot.ly/r/reference
         #https://github.com/plotly/plotly.js/blob/master/src/components/modebar/buttons.js
-        ggplotly(gp, tooltip = c("text"))%>%config(p = ., staticPlot = FALSE, displayModeBar = FALSE, workspace = FALSE, editable = FALSE, sendData = FALSE, displaylogo = FALSE)
+        ggplotly(gp, tooltip = c("text"))%>%
+          config(p = ., displayModeBar = FALSE)%>%
+          layout(hovermode="x")
 
       } else{
         gp<-gg+geom_point(size=2)
-        ggplotly(gp, tooltip = c("text"))%>%config(p = ., staticPlot = FALSE, displayModeBar = FALSE, workspace = FALSE, editable = FALSE, sendData = FALSE, displaylogo = FALSE)
+        ggplotly(gp, tooltip = c("text"))%>%
+          config(p = ., displayModeBar = FALSE)%>%
+          layout(hovermode="x")
       }
     } 
     else 
     {
-      gg+annotate("text", label = "לא נבחנה",
+      gg+annotate("text", label = "לא השתתפה",
                   x = 2012, y = 500, size = 6, 
-                  colour = "#c7c7c7")%>%config(p = ., staticPlot = FALSE, displayModeBar = FALSE, workspace = FALSE, editable = FALSE, sendData = FALSE, displaylogo = FALSE)
+                  colour = "#c7c7c7")%>%config(p = ., displayModeBar = FALSE)
     }
   }
   
   if(!input$Country1==""){
     output$Country1Plot<-renderPlotly({
+      d <- event_data("plotly_hover")
       scoresPlotFunction(input$Country1)
     })
     output$Country2Plot<-renderPlotly({
@@ -120,6 +127,9 @@ observe({
     output$Country4Plot<-renderPlotly({
       scoresPlotFunction(input$Country4)
     })
+    # output$ScoresPlot<-renderPlotly({
+    #   scoresPlotFunction(input$countries)
+    # })
   }
 })
 

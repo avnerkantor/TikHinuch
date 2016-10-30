@@ -34,7 +34,7 @@ observe({
     x<-Countries%>%filter(Hebrew==country)%>%select(CNT)
     plotHighData3 <- plotHighData2%>%filter(Country==x[1,1])
     
-    gh<-ggplot(plotHighData3, aes(x=Year, y=Average, colour=GenderESCS, text=round(Average))) +
+    gh<-ggplot(plotHighData3, aes(x=Year, y=Average, colour=GenderESCS, text=round(Average, digits = 1))) +
       scale_colour_manual(values =groupColours) +
       guides(colour=FALSE) +
       labs(title="", y="%" ,x= "") +
@@ -45,25 +45,32 @@ observe({
             legend.position="none",
             panel.grid.major.x=element_blank(),
             panel.grid.major.y = element_line(colour="#e0e0e0", size=0.3),
+            #TODO hust does not work https://github.com/hadley/ggplot2/issues/1435
+            #plot.title = element_text(hjust=0),
+            #axis.title.y = element_text(angle=90, vjust=1),
             axis.line.x = element_line(color="#c7c7c7", size = 0.3),
             axis.line.y = element_line(color="#c7c7c7", size = 0.3)
             ) + 
       scale_x_continuous(breaks=c(2006, 2009, 2012)) +
-      scale_y_continuous(limits=c(0, 100), breaks=c(0, 20, 40, 60, 80, 100),
+      scale_y_continuous(limits=c(0, 105), breaks=c(0, 20, 40, 60, 80, 100),
                          expand = c(0,0))
     
     if("2012" %in% plotHighData3$Year) {
       if("2009" %in% plotHighData3$Year) {
         gd<-gh+geom_line(size=1)
-        ggplotly(gd, tooltip = c("text"))%>%config(p = ., staticPlot = FALSE, displayModeBar = FALSE, workspace = FALSE, editable = FALSE, sendData = FALSE, displaylogo = FALSE)
+        ggplotly(gd, tooltip = list("text", color="green"))%>%
+          config(p = ., displayModeBar = FALSE)%>%
+          layout(hovermode="x")
       } else{
         gd<-gh+geom_point(size=2)
-        ggplotly(gd, tooltip = c("text"))%>%config(p = ., staticPlot = FALSE, displayModeBar = FALSE, workspace = FALSE, editable = FALSE, sendData = FALSE, displaylogo = FALSE)
-      }
-    } else {
-      gh+annotate("text", label = "לא נבחנה",
+        ggplotly(gd, tooltip = c("text"))%>%
+          config(p = ., displayModeBar = FALSE)%>%
+          layout(hovermode="x")
+    }
+      }else {
+      gh+annotate("text", label = "לא השתתפה",
                   x = 2012, y = 500, size = 6, 
-                  colour = "#c7c7c7")%>%config(p = ., staticPlot = FALSE, displayModeBar = FALSE, workspace = FALSE, editable = FALSE, sendData = FALSE, displaylogo = FALSE)
+                  colour = "#c7c7c7")%>%config(p = ., displayModeBar = FALSE)
     }
   }
   
@@ -123,7 +130,7 @@ observe({
     x<-Countries%>%filter(Hebrew==country)%>%select(CNT)
     plotLowData3 <- plotLowData2%>%filter(Country==x[1,1])
     
-    gh<-ggplot(plotLowData3, aes(x=Year, y=Average, colour=GenderESCS, text=round(Average))) +
+    gh<-ggplot(plotLowData3, aes(x=Year, y=Average, colour=GenderESCS, text=round(Average, digits = 1))) +
       scale_colour_manual(values = groupColours) +
       guides(colour=FALSE) +
       labs(title="", y="%" ,x= "") +
@@ -138,24 +145,25 @@ observe({
             axis.line.y = element_line(color="#c7c7c7", size = 0.3)
             ) + 
       scale_x_continuous(breaks=c(2006, 2009, 2012)) +
-      scale_y_continuous(limits=c(0, 100), breaks=c(0, 20, 40, 60, 80, 100),
+      scale_y_continuous(limits=c(0, 105), breaks=c(0, 20, 40, 60, 80, 100),
                          expand = c(0,0))
     
     if("2012" %in% plotLowData3$Year) {
       if("2009" %in% plotLowData3$Year) {
         gd<-gh+geom_line(size=1)
-        ggplotly(gd, tooltip = c("text"))%>%config(p = ., staticPlot = FALSE, displayModeBar = TRUE, workspace = FALSE, editable = FALSE, sendData = FALSE, displaylogo = FALSE,
-                                                   modeBarButtonsToRemove = list("resetScale2d", "hoverCompareCartesian", "autoScale2d", "hoverClosestCartesian"))
+        ggplotly(gd, tooltip = c("text"))%>%
+          config(p = ., displayModeBar = FALSE)%>%
+          layout(hovermode="x")
       } else{
         gd<-gh+geom_point(size=2)
-        ggplotly(gd, tooltip = c("text"))%>%config(p = ., staticPlot = FALSE, displayModeBar = TRUE, workspace = FALSE, editable = FALSE, sendData = FALSE, displaylogo = FALSE,
-                                                   modeBarButtonsToRemove = list("resetScale2d", "hoverCompareCartesian", "autoScale2d", "hoverClosestCartesian"))
+        ggplotly(gd, tooltip = c("text"))%>%
+          config(p = ., displayModeBar = FALSE)%>%
+          layout(hovermode="x")
       }
     } else {
-      gh+annotate("text", label = "לא נבחנה",
+      gh+annotate("text", label = "לא השתתפה",
                   x = 2012, y = 500, size = 6, 
-                  colour = "#c7c7c7")%>%config(p = ., staticPlot = FALSE, displayModeBar = TRUE, workspace = FALSE, editable = FALSE, sendData = FALSE, displaylogo = FALSE,
-                                               modeBarButtonsToRemove = list("resetScale2d", "hoverCompareCartesian", "autoScale2d", "hoverClosestCartesian"))
+                  colour = "#c7c7c7")%>%config(p = ., displayModeBar = TRUE)
     }
   }
 

@@ -1,9 +1,3 @@
-####loading data####
-#pisadb<-src_bigquery("r-shiny-1141", "pisa")
-# pisa2012<- tbl(pisadb, "pisa2012")
-# pisa2009<- tbl(pisadb, "pisa2009")
-# pisa2006<- tbl(pisadb, "pisa2006")
-
 ######UI #####
 observe({
   updateSelectInput(session, inputId="SurveyYear", label="", 
@@ -55,11 +49,15 @@ observe({
   
   SurveySelectedID <- as.vector(unlist(select(filter(pisaDictionary, Year == input$SurveyYear, HebSubject == input$SurveySubject, HebCategory==input$SurveyCategory, HebSubCategory==input$SurveySubCategory), ID))) 
   
+  output$SurveySelectedIDOutput <- renderText({
+  paste("שם משתנה:", SurveySelectedID[1])
+    })
+  
   surveyPlotFunction<-function(country) {
     Country<-as.vector(unlist(Countries%>%filter(Hebrew==country)%>%select(CNT)))
 
     if(input$SurveyYear==2012)
-      surveyData<-student2012
+      surveyData<-pisa2012
     
     surveyData1<-surveyData%>%select_("CNT", SurveySelectedID, "ST04Q01", "ESCS")%>%filter(CNT==Country)
     
@@ -68,7 +66,7 @@ observe({
         #General
         surveyTable<-surveyData1%>%
           count_(SurveySelectedID)
-        # surveyTable<-collect(surveyTable)
+         #surveyTable<-collect(surveyTable)
         surveyTable<-surveyTable%>% mutate(freq = round(100 * n/sum(n), 1), groupColour="General")%>%
           rename_(answer=SurveySelectedID)
       } else {
@@ -78,7 +76,7 @@ observe({
           group_by_("ESCS", SurveySelectedID)%>%
           tally  %>%
           group_by(ESCS)
-        # surveyTable<-collect(surveyTable)
+         #surveyTable<-collect(surveyTable)
         surveyTable<-surveyTable%>%   mutate(freq = round(100 * n/sum(n), 0))%>%
           rename_(answer=SurveySelectedID, group="ESCS") %>%
           mutate(groupColour=str_c("General", group))
@@ -92,7 +90,7 @@ observe({
             group_by_("ST04Q01", SurveySelectedID)%>%
             tally  %>%
             group_by(ST04Q01)
-          # surveyTable<-collect(surveyTable)
+           #surveyTable<-collect(surveyTable)
           surveyTable<-surveyTable%>%   mutate(freq = round(100 * n/sum(n), 0))%>%
             rename_(answer=SurveySelectedID, groupColour="ST04Q01") 
           
@@ -103,7 +101,7 @@ observe({
             group_by_("ESCS", SurveySelectedID)%>%
             tally  %>%
             group_by(ESCS)
-          # surveyTable<-collect(surveyTable)
+           #surveyTable<-collect(surveyTable)
           surveyTable<-surveyTable%>%  mutate(freq = round(100 * n/sum(n), 0), group1=input$Gender)%>%
             rename_(answer=SurveySelectedID, group="ESCS")%>%
             mutate(groupColour=str_c(group1, group))
@@ -115,16 +113,16 @@ observe({
           group_by_("ST04Q01", SurveySelectedID)%>%
           tally  %>%
           group_by(ST04Q01)
-        # surveyTable<-collect(surveyTable)
+         #surveyTable<-collect(surveyTable)
         surveyTable<-surveyTable%>%   mutate(freq = round(100 * n/sum(n), 0))%>%
           rename_(answer=SurveySelectedID, groupColour="ST04Q01")
       } 
     }
     #print(surveyTable)
     ####ggplot####
-    gh<-ggplot(data=surveyTable, aes(x=answer, y=freq, text=paste0(round(freq), "%"))) +
+    gh<-ggplot(data=surveyTable, aes(x=answer, y=freq, text=paste0(round(freq, digits = 1), "%"))) +
       
-      geom_bar(aes(colour=groupColour, fill=groupColour), position = position_dodge(width = 0.2),stat="identity", width = 0.8) +
+      geom_bar(aes(colour=groupColour, fill=groupColour), stat="identity") +
       coord_flip() +
       scale_colour_manual(values =groupColours) +
       scale_fill_manual(values = groupColours) +
@@ -146,7 +144,9 @@ observe({
         #axis.line.y = element_line(color="#c7c7c7", size = 0.3)
         ) 
     
-    ggplotly(gh, tooltip = c("text"))%>%config(p = ., staticPlot = FALSE, displayModeBar = FALSE, workspace = FALSE, editable = FALSE, sendData = FALSE, displaylogo = FALSE)
+    ggplotly(gh, tooltip = c("text"))%>%
+      config(p = ., displayModeBar = FALSE)%>%
+      layout(hovermode="y")
     
   }
   

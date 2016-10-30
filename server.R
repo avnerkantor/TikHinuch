@@ -15,6 +15,9 @@ shinyServer(function(input, output, session) {
   names(countriesList)<-Countries$Hebrew
   ExpertiseLevels<-read.csv("data/ExpertiseLevels.csv", header = TRUE, sep=",")
   LevelExplenation<-read.csv("data/LevelExplenation.csv", header = TRUE, sep=",")
+  LevelExplenation<-read.csv("data/LevelExplenation.csv", header = TRUE, sep=",")
+  ExpertiseLevelsLimits<-read.csv("data/expertiseLevelsLimits.csv", header = TRUE, sep=",")
+  
   
   groupColours<- c(
     General="#b276b2", 
@@ -34,9 +37,17 @@ shinyServer(function(input, output, session) {
   source('pisa.scores.R', local=TRUE)
   source('pisa.expertise.R', local=TRUE)
   source('pisa.survey.R', local=TRUE)
-  #source('pisa.analyze.R', local=TRUE)
+  source('pisa.analyze.R', local=TRUE)
 
-  load(url("https://storage.googleapis.com/opisa/student2012b.rda"))
+  #load(url("https://storage.googleapis.com/opisa/student2012b.rda"))
+  #pisa2012<-read.csv(url("https://storage.googleapis.com/opisa/pisa2012.csv"))
+  load("../pisa2012.rda")
+  
+  ####loading data####
+  #pisadb<-src_bigquery("r-shiny-1141", "pisa")
+  #pisa2012<- tbl(pisadb, "pisa2012")
+  #pisa2009<- tbl(pisadb, "pisa2009")
+  #pisa2006<- tbl(pisadb, "pisa2006")
 })
 
 

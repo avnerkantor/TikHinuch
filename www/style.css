@@ -1,21 +1,60 @@
+/*http://stackoverflow.com/questions/23438319/using-import-for-google-fonts-is-not-working-on-internet-explorer*/
+/*
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    font-style: normal;
+    font-weight: 400;
+    src: url(css/type/opensanshebrew-regular-webfont.eot);
+    src: url(css/type/opensanshebrew-regular-webfont.eot?#iefix) format('embedded-opentype'),
+    url(css/type/opensanshebrew-regular-webfont.woff) format('woff'),
+    url(css/type/opensanshebrew-regular-webfont.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    font-style: normal;
+    font-weight: 700;
+    src: url(font/opensanshebrew-bold-webfont.eot);
+    src: url(font/opensanshebrew-bold-webfont.eot?#iefix) format('embedded-opentype'),
+    url(font/opensanshebrew-bold-webfont.woff) format('woff'),
+    url(font/opensanshebrew-bold-webfont.ttf) format('truetype');
+}
+*/
 @import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@import url(http://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
 
 html,
 body {
-    /*background-color:  "white" ;*/
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
-    direction: rtl;
-    min-width: 100%;
-    /*margin-right: 5px;*/
-    /*margin-right: 5px;*/
-    /*margin-left: 5px;*/
-    font-family: 'OpenSansHebrewRegular', sans-serif;
+  height:100%;
+  width:100%;
+    font-family: 'Open Sans Hebrew';
+    font-style:normal;
+    font-weight: 400;
     background-image: url("img/bg.jpg");
+    direction: rtl;
     position: relative;
-    margin: 0;
     z-index: 1;
+}
+
+
+#scores {
+    padding-top: 490px;
+}
+
+#expertise {
+    padding-top: 270px;
+}
+
+#survey {
+    padding-top: 290px;
+}
+
+#analyze {
+    padding-top: 385px;
+}
+
+#about {
+    padding-top: 100px;
 }
 
 /*navbar*/
@@ -40,11 +79,10 @@ nav {
 }
 
 #header-image {
-
     background-image: url("img/PISA_TopBG.jpg");
     background-position: right;
     width: 100%;
-    height: 180px;
+    height: 150px;
     right: 10px;
     /*width: 90%;
     position: absolute;
@@ -56,7 +94,6 @@ nav {
     color: #fff;
     font-size: 36pt;
     margin-top: -64px;
-
 }
 
 #underHeaderText {
@@ -73,8 +110,13 @@ nav {
 }
 
 .subjectButtons {
-    width: 80px;
+    width: 85px;
     float: right;
+    margin-right:20px;
+}
+
+small{
+  display:inline-block;
 }
 
 .btn-circle {
@@ -115,10 +157,9 @@ nav {
 /*dashboard buttons*/
 input[type="checkbox"] {
     display: none;
-    /*visibility: hidden;*/
 }
 
-#generalBtn, #maleBtn, #femaleBtn, #lowBtn, #mediumBtn, #highBtn {
+.btnMeasurments {
     color: #777777;
     background-color: #E0E0E0;
     border-color: #777777;
@@ -127,54 +168,101 @@ input[type="checkbox"] {
     line-height: 0.7;
 }
 
-#generalBtn.active,
-#generalBtn:hover {
-    background-color: #b276b2;
+.btn.btnMeasurments.active,
+.btn.btnMeasurments:hover {
     color: #FFFFFF;
     border-width: 2px;
     border-color: #777777;
+}
+
+#generalBtn.active,
+#generalBtn:hover {
+    background-color: #b276b2;
 }
 
 #maleBtn.active,
 #maleBtn:hover {
     background-color: #5da5da;
-    color: #FFFFFF;
-    border-width: 2px;
-    border-color: #777777;
 }
 
 #femaleBtn.active,
 #femaleBtn:hover {
     background-color: #f17cb0;
-    color: #FFFFFF;
-    border-width: 2px;
-    border-color: #777777;
 }
 
-#lowBtn.active,
-#lowBtn:hover {
+#lowBtn.general.active,
+#lowBtn.general:hover {
     background-color: #bc99c7;
-    color: #FFFFFF;
-    border-width: 2px;
-    border-color: #777777;
 }
 
-#mediumBtn.active,
-#mediumBtn:hover {
+#mediumBtn.general.active,
+#mediumBtn.general:hover {
     background-color: #b276b2;
-    color: #FFFFFF;
-    border-width: 2px;
-    border-color: #777777;
 }
 
-#highBtn.active,
-#highBtn:hover {
+#highBtn.general.active,
+#highBtn.general:hover {
     background-color: #7b3a96;
-    color: #FFFFFF;
-    border-width: 2px;
-    border-color: #777777;
 }
 
+#lowBtn.female.active,
+#lowBtn.female:hover {
+    background-color: #f6aac9;
+}
+
+#mediumBtn.female.active,
+#mediumBtn.female:hover {
+    background-color: #f17cb0;
+}
+
+#highBtn.female.active,
+#highBtn.female:hover {
+    background-color: #e5126f;
+}
+
+#lowBtn.male.active,
+#lowBtn.male:hover {
+    background-color: #88bde6;
+}
+
+#mediumBtn.male.active,
+#mediumBtn.male:hover {
+    background-color: #5da5da;
+}
+
+#highBtn.male.active,
+#highBtn.male:hover {
+    background-color: #265dab;
+}
+
+#lowBtn.male.female, #lowBtn.male.female:hover {
+    color: #777777;
+    background-color: #E0E0E0;
+    border-color: #777777;
+    border-width: 1px;
+    font-size: 12pt;
+    line-height: 0.7;
+}
+
+#mediumBtn.male.female, #mediumBtn.male.female:hover {
+    color: #777777;
+    background-color: #E0E0E0;
+    border-color: #777777;
+    border-width: 1px;
+    font-size: 12pt;
+    line-height: 0.7;
+}
+
+#highBtn.male.female, #highBtn.male.female:hover {
+    color: #777777;
+    background-color: #E0E0E0;
+    border-color: #777777;
+    border-width: 1px;
+    font-size: 12pt;
+    line-height: 0.7;
+}
+
+/*TODO if has only general class*/
 #measurmentsDashboard {
     margin-left: 15px;
 }
@@ -186,13 +274,14 @@ input[type="checkbox"] {
     border-color: #c7c7c7;
     border-radius: 0;
     height: 52px;
-    margin-top: 16px;
+    margin-top: 10px;
     margin-left: -15px;
-    margin-right: 15px;
 }
 
+#worldOrIsrael{
+  position:absolute;
+}
 /*countries*/
-
 .btn-countries {
     background-color: #E0E0E0;
     border-color: #c7c7c7;
@@ -201,7 +290,9 @@ input[type="checkbox"] {
     font-size: 16pt;
     color: #777777;
     float: right;
-    /*width: 30%;*/
+    margin-left:15px;
+    width: 35%;
+    
 }
 
 .btn-countries:active,
@@ -220,73 +311,80 @@ input[type="checkbox"] {
     line-height: 1.333333333;
     font-size: 18pt;
     color: #777777;
-    /*width: 100%;*/
 }
 
-
-.affix {
-    top: 50px;
-    width: 100%;
-    background-image: url("img/bg.jpg");
-    z-index: 2;
+.plotly {
+    height: 200px;
 }
 
-.affix ~ .container-fluid {
-    position: relative;
-    padding-top: 200px;
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
 }
 
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
 
-#scores {
-    padding-top: 0;
-    /*height:500px;*/
 }
 
-#expertise {
-    padding-top: 0;
-    /*    height:500px;*/
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
 }
 
-#survey {
-    padding-top: 0;
-    /*  height:500px;*/
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
 }
 
-#about {
-    padding-top: 0;
-    /* height:500px; */
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
 }
 
-/*#surveyDashboard {*/
-    /*display: none;*/
-/*}*/
-
-/*.affix ~ .container-fluid {*/
-/*position: relative;*/
-/*top: 550px;*/
-/*}*/
-
-/*#expertise{*/
-/*padding-top:50px;height:500px;*/
-/*}*/
 
 #levelNumber {
     width: 60px;
 }
-.hovertext{
+
+.hovertext {
     direction: ltr !important;
 }
+
 .hovertext text {
     font-size: 15px !important;
 }
+
 .legendtext {
     font-size: 30px !important;
 }
-.js-plotly-plot .plotly .modebar{
+
+.js-plotly-plot .plotly .modebar {
     z-index: 0;
 }
-/*
-#blogFrame{
-  width: 100%; 
-  height: 100vh;
-}*/
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 0px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+#TrumpLogo {
+    width: 80px;
+    position: absolute;
+    left: 10px;
+    padding-top: 2px;
+}
+#IC_logo{
+   width: 185px;
+    position: absolute;
+    left: 100px;
+    padding-top: 6px;
+}

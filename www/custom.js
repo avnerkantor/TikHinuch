@@ -1,123 +1,112 @@
-//Buttons
-$(document).on('click', '#generalBtn', function (e) {
-    $("#maleBtn, #femaleBtn, #lowBtn, #mediumBtn, #highBtn").removeClass('active');
-});
-
-//$(document).on('click', '', function() {
-        //  alert('you clicked either button 1 or button 2');
-   //$("#lowBtn, #mediumBtn, #highBtn").removeClass('active');
-//}
-//);
-
-
+//Buttons Logic
 
 $(document).ready(function () {
     $("#generalBtn").addClass('active');
+    $("#lowBtn, #mediumBtn, #highBtn").addClass('general');
 });
 
-// $(document).ready(function() {
-//     $("#femaleBtn").click(function() {
-//         $("#lowBtn").css("background-color","#f6aac9");
-//     });
-// });
+$(document).on('click', '#generalBtn', function (e) {
+  //, #lowBtn, #mediumBtn, #highBtn"
+    $("#maleBtn, #femaleBtn").removeClass('active');
+    $("#lowBtn, #mediumBtn, #highBtn").addClass('general').removeClass('male').removeClass('female');
+});
+//, #lowBtn, #mediumBtn, #highBtn
+$(document).on('click', '#maleBtn, #femaleBtn', function (e) {
+   $("#generalBtn").removeClass('active');
+});
 
+$(document).on('click', '#maleBtn', function (e) {
+    $("#lowBtn, #mediumBtn, #highBtn").toggleClass('male');
+});
 
-// })
-// #mediumBtn.active,
-// #mediumBtn:hover{
-//     background-color: #b276b2;
-// }
-//
-// #highBtn.active,
-// #highBtn:hover{
-//     background-color: #7b3a96;
-// }
+$(document).on('click', '#femaleBtn', function (e) {
+    $("#lowBtn, #mediumBtn, #highBtn").toggleClass('female');
+});
 
-// });
-
-
-//http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_scrollspy_activate&stacked=h
-$(document).ready(function () {
-    //removeSection = function(e){
-    //   $(e).parents("#myScrollspy > div").remove();
-    //  $('#myScrollspy').each(function(){
-    //     $(this).scrollspy('refresh');
-    // });
-    //};
+//Sections Logic
+$(function () {
     $("#surveyDashboard").hide();
     $("#subjectsDashboard").show();
-
+    //$("#headerBar").hide();
     $("#page-top").scrollspy({target: "#mainNav"});
     $("#mainNav").on("activate.bs.scrollspy", function () {
         var x = $(".nav li.active > a").attr('href');
-        //$("#demo").empty().html("You are currently viewing: " + x);
         switch (x) {
+          case "#scores":
+                $("#surveyDashboard").hide();
+                $("#subjectsDashboard").show();
+                $("#headerBar").show();
+                break;
+            case "#expertise":
+                $("#surveyDashboard").hide();
+                $("#subjectsDashboard").show();
+                $("#headerBar").hide();
+                break;
             case "#survey":
                 $("#surveyDashboard").show();
                 $("#subjectsDashboard").hide();
+                $("#headerBar").hide();
                 break;
-            case "#analyze":
+              case "#analyze":
                 $("#surveyDashboard").show();
                 $("#subjectsDashboard").show();
+                $("#headerBar").hide();
                 break;
             case "#about":
+               $("#headerBar").hide();
                 $("#surveyDashboard").show();
-                $("#subjectsDashboard").show();
+                 $("#subjectsDashboard").show();
                 break;
-            case "#scores":
-                $("#surveyDashboard").hide();
+            case "#mainNav":
+               $("#surveyDashboard").hide();
                 $("#subjectsDashboard").show();
+                $("#headerBar").show();
                 break;
             default:
                 $("#surveyDashboard").hide();
-                $("#subjectsDashboard").show();
+              $("#subjectsDashboard").show();
+                 $("#headerBar").show();
                 break;
         }
-        //
-        //  if(x!="#survey") {
-        // $("#surveyDashboard").hide()
-        //  $("#subjectsDashboard").show()
-        //
-        // } else {
-        // //if (x!="#survey") {
-        //   $("#surveyDashboard").show()
-        //   $("#subjectsDashboard").hide()
-        // }
-    })
-
+    });
 });
 
+//Set countries width the same width as plots width
+$(document).ready(function () {
+  $("#Country1, #Country2, #Country3, #Country4, #SurveyYear, #SurveySubject, #SurveyCategory, #SurveySubCategory, #modelId, #analyzeVariables" ).css('width', ($("#Country1Plot").width()+'px'));
+});
 
-//$('#survey').on('activate.bs.scrollspy', function () {
-//  
-//})
-
-//affixed.bs.affix
-//activate.bs.scrollspy
-//$('#dashboard').affix({
-// offset: $('#mainNav').position()
-//offset: {
-//top: $('#dashboard').height()
-//top:60
-//}
+//jQuery to collapse the navbar on scroll
+//$(window).scroll(function() {
+//    if ($(".navbar").offset().top > 50) {
+//        $(".navbar-fixed-top").addClass("top-nav-collapse");
+//    } else {
+//        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+//    }
 //});
 
-//$(document).ready(function(){
-/* affix the navbar after scroll below header */
-//  $("#dashboard").affix({offset: {top: $("header").outerHeight(true)} });
-//});
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+    // Store hash
+    var hash = this.hash;
+    
+    var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+    // Prevent default anchor click behavior
+    event.preventDefault();
+   // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+});
 
+  // $(document).ready(function() {
+    //    $('#pisaScoresTable').dataTable( {
+      //      "language": {
+        //        "url": "dataTables.hebrew.lang"
+          //  }
+//        } );
+//    } );
 
-// $(function() {
-//     $('#mydashboard').height($("#mydashboard").height());
-//
-//     $('#mydashboard').affix({
-//         offset: {
-//             top: $('#mydashboard').height()
-//         }});
-// });
-//
-// $('#survey').on('activate.bs.scrollspy', function () {
-//     // $("span").css( "display", "inline" ).fadeOut( "slow" );
-//     alert("asd");
-// });
