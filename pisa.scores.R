@@ -138,9 +138,9 @@ observeEvent(input$Subject,{
   minLevel<-min(LevelExplenation%>%filter(Subject==input$Subject)%>%select(Level))
   maxLevel<-max(LevelExplenation%>%filter(Subject==input$Subject)%>%select(Level))
   
-  updateNumericInput(session, "levelNumber", "", min=minLevel, max=maxLevel, value=3, step=1)
+  updateNumericInput(session, "LevelNumber", "", min=minLevel, max=maxLevel, value=3, step=1)
   
   output$ExplenationTable <- renderTable({
-    LevelExplenation%>%filter(Subject==input$Subject, Level==input$levelNumber)%>%select(Explenation)
+    LevelExplenation%>%filter(Subject==input$Subject, Level==input$LevelNumber)%>%select(Explenation)
   }, include.rownames=FALSE, include.colnames=FALSE)
 })

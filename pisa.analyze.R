@@ -5,7 +5,7 @@ observe({
                        options=list(placeholder="בחר/י"))
 })
 observe({
-  updateSelectInput(session, inputId="modelId", label="", choices = c(
+  updateSelectInput(session, inputId="ModelId", label="", choices = c(
     "רגרסיה לינארית"="lm",
     "רגרסיה מקומית"="loess"
   ),
@@ -40,9 +40,9 @@ observe({
              Science={analyzeSubject<-"PV1SCIE"},
              Reading={analyzeSubject<-"PV1READ"}
     )
-    surveyData<-pisa2012
+    surveyData<-pisa2012bq
     if(input$SurveyYear==2012)
-      surveyData<-pisa2012
+      surveyData<-pisa2012bq
     
     #analyzeData1<-pisa2012%>%select_("CNT", "WEALTH", "ST04Q01", "ESCS", "PV1MATH")%>%filter(CNT=="ISR")
     #SurveySelectedID<-"WEALTH"
@@ -50,7 +50,7 @@ observe({
     
     
     analyzeData1<-surveyData%>%select_("CNT", SurveySelectedID, "ST04Q01", "ESCS", analyzeSubject)%>%filter(CNT==Country)
-    #analyzeData1<-collect(analyzeData1)
+    analyzeData1<-collect(analyzeData1)
     
     #analyzeData1$WEALTH<- as.numeric(as.character(analyzeData1$WEALTH))
     

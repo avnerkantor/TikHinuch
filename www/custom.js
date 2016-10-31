@@ -23,14 +23,30 @@ $(document).on('click', '#femaleBtn', function (e) {
     $("#lowBtn, #mediumBtn, #highBtn").toggleClass('female');
 });
 
-//Sections Logic
-$(function () {
-    $("#surveyDashboard").hide();
-    $("#subjectsDashboard").show();
-    //$("#headerBar").hide();
-    $("#page-top").scrollspy({target: "#mainNav"});
-    $("#mainNav").on("activate.bs.scrollspy", function () {
-        var x = $(".nav li.active > a").attr('href');
+//Set countries width the same width as plots width
+$(window).on('resize', function(){
+  $("#Country1, #Country2, #Country3, #Country4, #SurveyYear, #SurveySubject, #SurveyCategory, #SurveySubCategory, #modelId, #analyzeVariables" ).css('width', ($("#Country1Plot").width()+'px'));
+}).resize();
+
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(document).ready(function () {
+  $('a.page-scroll').bind('click', function(event) {
+    // Store hash
+    var hash = this.hash;
+    
+    var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+    // Prevent default anchor click behavior
+    event.preventDefault();
+   // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+});
+
+$(document).on('activate.bs.scrollspy', function(e) {
+   var x = $(".nav li.active > a").attr('href');
         switch (x) {
           case "#scores":
                 $("#surveyDashboard").hide();
@@ -65,41 +81,20 @@ $(function () {
             default:
                 $("#surveyDashboard").hide();
               $("#subjectsDashboard").show();
-                 $("#headerBar").show();
+                 //$("#headerBar").show();
                 break;
         }
-    });
-});
-
-//Set countries width the same width as plots width
-$(document).ready(function () {
-  $("#Country1, #Country2, #Country3, #Country4, #SurveyYear, #SurveySubject, #SurveyCategory, #SurveySubCategory, #modelId, #analyzeVariables" ).css('width', ($("#Country1Plot").width()+'px'));
-});
-
-//jQuery to collapse the navbar on scroll
-//$(window).scroll(function() {
-//    if ($(".navbar").offset().top > 50) {
-//        $(".navbar-fixed-top").addClass("top-nav-collapse");
-//    } else {
-//        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-//    }
-//});
-
-//jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-    // Store hash
-    var hash = this.hash;
-    
-    var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-    // Prevent default anchor click behavior
-    event.preventDefault();
-   // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
+        
+  var $hash, $node;
+  $hash = $("a[href^='#']", e.target).attr("href").replace(/^#/, '');
+  $node = $('#' + $hash);
+  if ($node.length) {
+    $node.attr('id', '');
+  }
+  document.location.hash = $hash;
+  if ($node.length) {
+    return $node.attr('id', $hash);
+  }
 });
 
   // $(document).ready(function() {
@@ -110,3 +105,12 @@ $(function() {
 //        } );
 //    } );
 
+
+
+// This recieves messages from the server.
+Shiny.addCustomMessageHandler('updateSelections',
+  function(data) {
+    window.history.pushState('','', data);
+    //alert("url: ", data);                 
+});
+                   
