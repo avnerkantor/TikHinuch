@@ -45,42 +45,30 @@
 
 <link href="style.css" rel="stylesheet">
 <script src="custom.js"></script>
+<script src="google-analytics.js"></script>
 <link rel="short/cut icon" href="img/bag-512.png">
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-87112563-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar">
-<!--Navbar and Dashboard-->
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-           <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a  class="navbar-brand" href="http://www.trump.org.il/"><img id="TrumpLogo" src="img/Trump-logo.png"></a>
-            <a  class="navbar-brand" href="http://infosoc.haifa.ac.il/index.php/he/"><img id="IC_logo" src="img/IC_logo.png" ></a>
-            
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                                  <!-- Hidden li included to remove active class from about link when scrolled up past about section 
+  <div class="container-fluid">
+         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a  class="navbar-brand" href="http://www.trump.org.il/"><img id="TrumpLogo" src="img/Trump-logo.png"></a>
+        <a  class="navbar-brand" href="http://infosoc.haifa.ac.il/index.php/he/"><img id="IC_logo" src="img/IC_logo.png" ></a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+                                  <!-- Hidden li included to remove active class from about link when scrolled up past about section--> 
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="page-scroll" href="http://opisa.org">English</a>
                     </li>-->
                     <li>
@@ -107,25 +95,24 @@
             </ul>
         </div>
     </div>
-
 </nav>
 <header>
   <div id="myHeader">
-        <div class="header-image"></div>
-        <div class="text-image">מה מספר מבחן פיז"ה על החינוך</div>
-        <div class="underHeaderText">
-            המחקר הבין-לאומי בוחן רמת אורינות של תלמידי כיתה י' במספר מקצועות.            <!--<br>-->
-            ניתוח הנתונים מראה את התקדמות מערכת החינוך בישראל ובעולם.
-        </div>
-        </div>
+    <div class="header-image"></div>
+    <div class="text-image">מה מספר מבחן פיז"ה על החינוך</div>
+    <div class="underHeaderText">
+        המחקר הבין-לאומי בוחן רמת אורינות של תלמידי כיתה י' במספר מקצועות.            <!--<br>-->
+        ניתוח הנתונים מראה את התקדמות מערכת החינוך בישראל ובעולם.
+    </div>
+</div>
 </header>
 <!--Dashboard-->
 <div id="dashboard--wrap">
-<div id="dashboard" class="container-fluid">
-   <br/>
-<div id="Subject"
-    class="row text-center form-group shiny-input-radiogroup shiny-input-container shiny-input-container-inline">
-    <div class="shiny-options-group">
+    <div id="dashboard" class="container-fluid">
+     <br/>
+     <div id="Subject"
+     class="row text-center form-group shiny-input-radiogroup shiny-input-container shiny-input-container-inline">
+     <div class="shiny-options-group">
         <form class="form-horizontal" method="post" action="">
             <div data-toggle="buttons">
                 <div class="subjectButtons">
@@ -213,7 +200,7 @@
             </div>
         </div>
     </div>
-   
+    
 </div>
 <div id="measurmentsDashboard" class="row">
   <div class="hidden-xs hidden-sm col-md-3"></div>
@@ -224,21 +211,21 @@
           רקע חברתי-תרבותי-כלכלי
           <span class="glyphicon glyphicon-question-sign"></span>
       </a></small>
-<div id="Escs"
-class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-container-inline">
-<div class="shiny-options-group btn-group" data-toggle="buttons">
-    <label class="btn btnMeasurments" id="highBtn">
-        <input type="checkbox" name="Escs" value="High"/>
-        <span>גבוה</span>
-    </label>
-    <label class="btn btnMeasurments" id="mediumBtn">
-        <input type="checkbox" name="Escs" value="Medium"/>
-        <span>בינוני</span>
-    </label>
-    <label class="btn btnMeasurments" id="lowBtn">
-        <input type="checkbox" name="Escs" value="Low"/>
-        <span>נמוך</span>
-    </label>
+      <div id="Escs"
+      class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-container-inline">
+      <div class="shiny-options-group btn-group" data-toggle="buttons">
+        <label class="btn btnMeasurments" id="highBtn">
+            <input type="checkbox" name="Escs" value="High"/>
+            <span>גבוה</span>
+        </label>
+        <label class="btn btnMeasurments" id="mediumBtn">
+            <input type="checkbox" name="Escs" value="Medium"/>
+            <span>בינוני</span>
+        </label>
+        <label class="btn btnMeasurments" id="lowBtn">
+            <input type="checkbox" name="Escs" value="Low"/>
+            <span>נמוך</span>
+        </label>
                                 <!--<label class="btn btnMeasurments" id="">
                                     <input type="checkbox" name="Escs" value=""/>
                                     <span>הכל</span>
@@ -287,8 +274,8 @@ class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-co
                     </div>
                 </div>
             </div>
-<div id="countriesDashboard" class="row text-center">
-                <div class="hidden-xs col-sm-3">
+            <div id="countriesDashboard" class="row text-center">
+                <div class="col-xs-3">
                     <div class="form-group shiny-input-container">
                         <label class="control-label" for="Country4"></label>
                         <div>
@@ -299,7 +286,7 @@ class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-co
                         </div>
                     </div>
                 </div>
-                <div class="hidden-xs col-sm-3">
+                <div class="col-xs-3">
                     <div class="form-group shiny-input-container">
                         <label class="control-label" for="Country3"></label>
                         <div>
@@ -311,7 +298,7 @@ class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-co
                     </div>
 
                 </div>
-                <div class="hidden-xs col-sm-3">
+                <div class="col-xs-3">
                     <div class="form-group shiny-input-container">
                         <label class="control-label" for="Country2"></label>
                         <div>
@@ -322,7 +309,7 @@ class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-co
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3">
+                <div class="col-xs-3">
                     <div class="form-group shiny-input-container">
                         <label class="control-label" for="Country1"></label>
                         <div>
@@ -334,109 +321,109 @@ class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-co
                     </div>
                 </div>
             </div>
-</div>
+        </div>
 </div>
 <!--Scores-->
 <section>
-            <div id="scores" class="container-fluid">
-                <div class="row" style="direction: ltr">
-                    <div class="hidden-xs col-sm-3 ">
-                        <div id="Country4Plot" class="plotly html-widget html-widget-output"></div>
-                    </div>
-                    <div class="hidden-xs col-sm-3 ">
-                        <div id="Country3Plot" class="plotly html-widget html-widget-output"></div>
-                    </div>
-                    <div class="hidden-xs col-sm-3 ">
-                        <div id="Country2Plot" class="plotly html-widget html-widget-output"></div>
-                    </div>
-                    <div class="col-sm-3 ">
-                        <div id="Country1Plot" class="plotly html-widget html-widget-output"></div>
-                    </div>
+<div id="scores" class="container-fluid">
+            <div class="row" style="direction: ltr">
+                <div class="col-xs-3 ">
+                    <div id="Country4Plot" class="plotly html-widget html-widget-output"></div>
                 </div>
-                <div class="row">
-                    <br>
-                    <div class="col-xs-12 text-center">
-                      סולם הציונים מחולק לרמות בקיאות המייצגות שינוי איכותי ברמת האוריינות. כל רמה מאפיינת רמה ידע ומיומנויות שונות כדלקמן:
-                  </div>
-                  
-                  <div id="ExplenationTable" class="shiny-html-output col-xs-10"></div>
-                  <div id="LevelNumberDiv" class="form-group shiny-input-container col-xs-2">
-                    <spin>רמת בקיאות</spin>
-                    <input id="LevelNumber" type="number" class="form-control" value="3" min="1" max="6" step="1"/>
+                <div class="col-xs-3 ">
+                    <div id="Country3Plot" class="plotly html-widget html-widget-output"></div>
                 </div>
-
+                <div class="col-xs-3 ">
+                    <div id="Country2Plot" class="plotly html-widget html-widget-output"></div>
+                </div>
+                <div class="col-xs-3 ">
+                    <div id="Country1Plot" class="plotly html-widget html-widget-output"></div>
+                </div>
             </div>
+            <div class="row">
+                <br>
+                <div class="col-xs-12 text-center">
+                  סולם הציונים מחולק לרמות בקיאות המייצגות שינוי איכותי ברמת האוריינות. כל רמה מאפיינת רמה ידע ומיומנויות שונות כדלקמן:
+              </div>
+              
+              <div id="ExplenationTable" class="shiny-html-output col-xs-10"></div>
+              <div id="LevelNumberDiv" class="form-group shiny-input-container col-xs-2">
+                <span>רמת בקיאות</span>
+                <input id="LevelNumber" type="number" class="form-control" value="3" min="1" max="6" step="1"/>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 <!--Expertise-->
 <section>
-        <div id="expertise" class="container-fluid">
+    <div id="expertise" class="container-fluid">
+        <div class="row text-center" style="height: 30px; margin-top: 30px">
+            <div class="col-xs-5" style="border-bottom: 1px solid #c7c7c7; left: 10px;"></div>
+            <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 16px">
+                <span>מצטיינים</span></div>
+                <div class="col-xs-5 " style="border-bottom: 1px solid #c7c7c7; right: 10px; "></div>
+            </div>
+            <div class="row" style="direction: ltr">
+                <div class="col-xs-3 ">
+                    <div id="Country4HighPlot" class="plotly html-widget html-widget-output"></div>
+                </div>
+                <div class="col-xs-3 ">
+                    <div id="Country3HighPlot" class="plotly html-widget html-widget-output"></div>
+                </div>
+                <div class="col-xs-3 ">
+                    <div id="Country2HighPlot" class="plotly html-widget html-widget-output"></div>
+                </div>
+                <div class="col-xs-3">
+                    <div id="Country1HighPlot" class="plotly html-widget html-widget-output"></div>
+                </div>
+            </div>
             <div class="row text-center" style="height: 30px; margin-top: 30px">
                 <div class="col-xs-5" style="border-bottom: 1px solid #c7c7c7; left: 10px;"></div>
                 <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 16px">
-                    <span>מצטיינים</span></div>
+                    <span>מתקשים</span></div>
                     <div class="col-xs-5 " style="border-bottom: 1px solid #c7c7c7; right: 10px; "></div>
                 </div>
                 <div class="row" style="direction: ltr">
-                    <div class="hidden-xs col-sm-3 ">
-                        <div id="Country4HighPlot" class="plotly html-widget html-widget-output"></div>
+                    <div class="col-xs-3">
+                        <div id="Country4LowPlot" class="plotly html-widget html-widget-output"></div>
                     </div>
-                    <div class="hidden-xs col-sm-3 ">
-                        <div id="Country3HighPlot" class="plotly html-widget html-widget-output"></div>
+                    <div class="col-xs-3">
+                        <div id="Country3LowPlot" class="plotly html-widget html-widget-output"></div>
                     </div>
-                    <div class="hidden-xs col-sm-3 ">
-                        <div id="Country2HighPlot" class="plotly html-widget html-widget-output"></div>
+                    <div class="col-xs-3">
+                        <div id="Country2LowPlot" class="plotly html-widget html-widget-output"></div>
                     </div>
-                    <div class="col-sm-3">
-                        <div id="Country1HighPlot" class="plotly html-widget html-widget-output"></div>
-                    </div>
-                </div>
-                <div class="row text-center" style="height: 30px; margin-top: 30px">
-                    <div class="col-xs-5" style="border-bottom: 1px solid #c7c7c7; left: 10px;"></div>
-                    <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 16px">
-                        <span>מתקשים</span></div>
-                        <div class="col-xs-5 " style="border-bottom: 1px solid #c7c7c7; right: 10px; "></div>
-                    </div>
-                    <div class="row" style="direction: ltr">
-                        <div class="hidden-xs col-sm-3">
-                            <div id="Country4LowPlot" class="plotly html-widget html-widget-output"></div>
-                        </div>
-                        <div class="hidden-xs col-sm-3">
-                            <div id="Country3LowPlot" class="plotly html-widget html-widget-output"></div>
-                        </div>
-                        <div class="hidden-xs col-sm-3">
-                            <div id="Country2LowPlot" class="plotly html-widget html-widget-output"></div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div id="Country1LowPlot" class="plotly html-widget html-widget-output"></div>
-                        </div>
+                    <div class="col-xs-3">
+                        <div id="Country1LowPlot" class="plotly html-widget html-widget-output"></div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 <!--Survey-->
 <section>
-                <div id="survey" class="container-fluid">
-                    <div class="row col-sm-12 col-md-12" style="height: 30px; "></div>
-                    <div class="row" style="direction: ltr">
-                        <div class="hidden-xs col-sm-3">
-                            <div id="Country4SurveyPlot" class="plotly html-widget html-widget-output"></div>
-                        </div>
-                        <div class="hidden-xs col-sm-3">
-                            <div id="Country3SurveyPlot" class="plotly html-widget html-widget-output"></div>
-                        </div>
-                        <div class="hidden-xs col-sm-3">
-                            <div id="Country2SurveyPlot" class="plotly html-widget html-widget-output"></div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div id="Country1SurveyPlot" class="plotly html-widget html-widget-output"></div>
-                        </div>
+<div id="survey" class="container-fluid">
+                <div class="row col-xs-12" style="height: 30px; "></div>
+                <div class="row" style="direction: ltr">
+                    <div class="col-xs-3">
+                        <div id="Country4SurveyPlot" class="plotly html-widget html-widget-output"></div>
                     </div>
-                    <br/>
-                    <p>הנתונים באקלים מבוססים על דיווח עצמי של תלמידים ועשויים להיות מושפעים מהטיות שונות כגון רצייה חברתית ונוהגים
-                        תרבותיים.</p>
-                        <!--<p id="SurveySelectedIDOutput" class="shiny-text-output"></p>-->
+                    <div class="col-xs-3">
+                        <div id="Country3SurveyPlot" class="plotly html-widget html-widget-output"></div>
                     </div>
-                </section>
+                    <div class="col-xs-3">
+                        <div id="Country2SurveyPlot" class="plotly html-widget html-widget-output"></div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div id="Country1SurveyPlot" class="plotly html-widget html-widget-output"></div>
+                    </div>
+                </div>
+                <br/>
+                <p>הנתונים באקלים מבוססים על דיווח עצמי של תלמידים ועשויים להיות מושפעים מהטיות שונות כגון רצייה חברתית ונוהגים
+                    תרבותיים.</p>
+                    <!--<p id="SurveySelectedIDOutput" class="shiny-text-output"></p>-->
+</div>
+</section>
 <!--Analyze-->
 <section>
   <!--<div id="analyze" class="container-fluid">
@@ -445,15 +432,15 @@ class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-co
                           <div id="Country1AnalyzePlot" class="plotly html-widget html-widget-output">
                           </div>
                       </div>
-                      <div class="hidden-xs col-sm-3">
+                      <div class="col-xs-3">
                         <div id="Country2AnalyzePlot" class="plotly html-widget html-widget-output">
                         </div>
                     </div>
-                    <div class="hidden-xs col-sm-3">
+                    <div class="col-xs-3">
                         <div id="Country3AnalyzePlot" class="plotly html-widget html-widget-output">
                         </div>
                     </div>
-                    <div class="hidden-xs col-sm-3">
+                    <div class="col-xs-3">
                         <div id="Country4AnalyzePlot" class="plotly html-widget html-widget-output">
                         </div>
                     </div>
@@ -494,35 +481,35 @@ class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-co
     <div id="about" class="container-fluid">
       <h1>אודות</h1>
       <p>פיז"ה פתוח הוא מיזם משותף ל<a href="http://www.trump.org.il/">קרן טראמפ</a> ו<a href="http://infosoc.haifa.ac.il/index.php/he/">למרכז לחקר האינטרנט באוניברסיטת חיפה</a>.
-</p>
-<p>
-מטרת המיזם היא הנגשה של נתוני מבחן פיז"ה לציבור ולחוקרים. 
-</p>
-<p>
-מבחן פיז"ה בוחן את כישוריהם של תלמידים בני 15 לקראת חיים בוגרים ועצמאיים. המבחן מתמקד במקצועות מתמטיקה, מדעים וקריאה. המבחן מתקיים משנת 2000 במחזורים של 3 שנים ומנוהל על ידי ה-OECD. הוא כולל למעלה מ-80 מדינות וכחצי מיליון תלמידים בכל מחזור. בישראל נבחנים כ-5000 תלמידים. 
-</p>
-<p>
-פיז"ה פתוח מציג את הנתונים לאורך השנים ומאפשר לפלח בין מגזרים, להשוות בין מדינות ולנתח השפעות של גורמים שונים.  
-</p>
-<p>
-זוהי מערכת ראשונה מסוגה בעולם ואנו תקווה שהיא תקדם את השיח והמחקר של מערכת החינוך הישראלית ושל חינוך מבוסס ראיות.
-</p>
-<p>
-צוות הפרויקט:
-<ul>
-      <li>מנהל: פרופ' <a href="http://rafaeli.net/">שיזף רפאלי</a></li>
-<li>מנהלת מחקר, תכנון ופרויקטים אקדמיים: ד"ר עו"ד עדי ליבסקר</li>
-<li>מחקר, אפיון ופיתוח: <a href="http://avnerkantor.com">אבנר קנטור</a></li>
-<li>הדמיית נתונים: <a href="http://infoserviz.co.il/">בלה גוטיה, חברת InfoserViz</a></li>
-</ul>
-<p>
-ליצירת קשר: avnerkantor@gmail.com
-</p>
+      </p>
+      <p>
+        מטרת המיזם היא הנגשה של נתוני מבחן פיז"ה לציבור ולחוקרים. 
+    </p>
+    <p>
+        מבחן פיז"ה בוחן את כישוריהם של תלמידים בני 15 לקראת חיים בוגרים ועצמאיים. המבחן מתמקד במקצועות מתמטיקה, מדעים וקריאה. המבחן מתקיים משנת 2000 במחזורים של 3 שנים ומנוהל על ידי ה-OECD. הוא כולל למעלה מ-80 מדינות וכחצי מיליון תלמידים בכל מחזור. בישראל נבחנים כ-5000 תלמידים. 
+    </p>
+    <p>
+        פיז"ה פתוח מציג את הנתונים לאורך השנים ומאפשר לפלח בין מגזרים, להשוות בין מדינות ולנתח השפעות של גורמים שונים.  
+    </p>
+    <p>
+        זוהי מערכת ראשונה מסוגה בעולם ואנו תקווה שהיא תקדם את השיח והמחקר של מערכת החינוך הישראלית ושל חינוך מבוסס ראיות.
+    </p>
+    <p>
+        צוות הפרויקט:
+        <ul>
+          <li>מנהל: פרופ' <a href="http://rafaeli.net/">שיזף רפאלי</a></li>
+          <li>מנהלת מחקר, תכנון ופרויקטים אקדמיים: ד"ר עו"ד עדי ליבסקר</li>
+          <li>מחקר, אפיון ופיתוח: <a href="http://avnerkantor.com">אבנר קנטור</a></li>
+          <li>הדמיית נתונים: <a href="http://infoserviz.co.il/">בלה גוטיה, חברת InfoserViz</a></li>
+      </ul>
+      <p>
+        ליצירת קשר: avnerkantor@gmail.com
+    </p>
 
     <div>
       
     </div>
-    </div>
+</div>
     <!--
     <iframe width="800" height="1200" frameborder="0" scrolling="no" src="http://blog.tikhinuch.org"></iframe>
 

@@ -71,20 +71,12 @@ $(document).ready(function () {
    $("#surveyDashboard").hide();
 });
 
-
-
-
-
 $(document).on('activate.bs.scrollspy', function(e) {
    var x = $(".nav li.active > a").attr('href');
         switch (x) {
-          case "#scores":
-                $("#surveyDashboard").hide();
-                $("#Subject").show();
-                break;
             case "#expertise":
-                $("#surveyDashboard").hide();
-                $("#Subject").show();
+               $("#surveyDashboard").show();
+                $("#Subject").hide();
                 break;
             case "#survey":
                 $("#surveyDashboard").show();
@@ -94,17 +86,10 @@ $(document).on('activate.bs.scrollspy', function(e) {
                // $("#surveyDashboard").show();
               //  $("#Subject").show();
               //  break;
-            case "#about":
-                $("#surveyDashboard").show();
-                 $("#Subject").hide();
-                break;
-           // case "#mainNav":
-             //  $("#surveyDashboard").hide();
-               // $("#Subject").show();
-                //break;
+               // break;
             default:
                 $("#surveyDashboard").hide();
-              $("#Subject").show();
+                $("#Subject").show();
                 break;
         }
         
@@ -142,30 +127,3 @@ $(document).ready(function(){
         placement : 'top'
     });
 });
-
-
-//$('#survey').on('click', 'li > a', function() {
- //$("#surveyDashboard").show();
-   //             $("#Subject").hide();
-//});
-
-(function($) {
-    $.fn.textfill = function(maxFontSize) {
-        maxFontSize = parseInt(maxFontSize, 10);
-        return this.each(function(){
-            var ourText = $("span", this),
-                parent = ourText.parent(),
-                maxHeight = parent.height(),
-                maxWidth = parent.width(),
-                fontSize = parseInt(ourText.css("fontSize"), 10),
-                multiplier = maxWidth/ourText.width(),
-                newSize = (fontSize*(multiplier-0.1));
-            ourText.css(
-                "fontSize", 
-                (maxFontSize > 0 && newSize > maxFontSize) ? 
-                    maxFontSize : 
-                    newSize
-            );
-        });
-    };
-})(jQuery);
