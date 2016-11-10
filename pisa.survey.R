@@ -50,7 +50,7 @@ observe({
   SurveySelectedID <- as.vector(unlist(select(filter(pisaDictionary, Year == input$SurveyYear, HebSubject == input$SurveySubject, HebCategory==input$SurveyCategory, HebSubCategory==input$SurveySubCategory), ID))) 
   
   output$SurveySelectedIDOutput <- renderText({
-  paste("שם משתנה:", SurveySelectedID[1])
+  paste(SurveySelectedID[1])
     })
   
   surveyPlotFunction<-function(country) {
@@ -139,7 +139,7 @@ observe({
         strip.text.x = element_blank(),
         panel.grid.minor = element_blank(),
         axis.text.y = element_text(size=8, angle=0),
-        panel.margin.x=unit(2, "lines")
+        panel.spacing.x=unit(2, "lines")
         #axis.line.x = element_line(color="#c7c7c7", size = 0.3),
         #axis.line.y = element_line(color="#c7c7c7", size = 0.3)
         ) 

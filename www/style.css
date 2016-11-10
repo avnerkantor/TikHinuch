@@ -41,25 +41,39 @@ html {
     overflow-x: hidden !important;
 }
 
+#dashboard  {
+   z-index:999; 
+   background-image: url("img/bg.jpg");
+   width:100%;
+}
+
+.affix {
+  top: 50px;
+  width:100%;
+}
+
+
+
+#myHeader{
+  min-height:230px;
+}
+
 #scores {
-    padding-top: 490px;
+  
+  width:100%;
 }
 
 #expertise {
-    padding-top: 270px;
+  
 }
 
 #survey {
-    padding-top: 290px;
+ 
 }
 
 #analyze {
-    padding-top: 385px;
 }
 
-#about {
-    padding-top: 100px;
-}
 
 /*navbar*/
 nav {
@@ -80,13 +94,14 @@ nav {
 .header {
     margin-right: -31px;
     margin-left: 0px;
+    
 }
 
-#header-image {
+.header-image {
     background-image: url("img/PISA_TopBG.jpg");
     background-position: right;
     width: 100%;
-    height: 120px;
+    height: 187px;
     right: 10px;
     /*width: 90%;
     position: absolute;
@@ -94,13 +109,13 @@ nav {
     */
 }
 
-#text-image {
+.text-image {
     color: #fff;
     font-size: 36pt;
     margin-top: -64px;
 }
 
-#underHeaderText {
+.underHeaderText {
     right: 10px;
     font-size: 18pt;
 }
@@ -266,14 +281,13 @@ input[type="checkbox"] {
     line-height: 0.7;
 }
 
-/*TODO if has only general class*/
+/*TODO if has only general class
 #measurmentsDashboard {
-    margin-left: 15px;
+   
 }
 
 #theWell {
     background-color: white;
-    /*line-height: 0.9;*/
     border-width: 1px;
     border-color: #c7c7c7;
     border-radius: 0;
@@ -281,10 +295,8 @@ input[type="checkbox"] {
     margin-top: 10px;
     margin-left: -15px;
 }
+*/
 
-#worldOrIsrael{
-  position:absolute;
-}
 /*countries*/
 .btn-countries {
     background-color: #E0E0E0;
@@ -293,10 +305,6 @@ input[type="checkbox"] {
     border-radius: 0;
     font-size: 16pt;
     color: #777777;
-    float: right;
-    margin-left:15px;
-    width: 35%;
-    
 }
 
 .btn-countries:active,
@@ -319,36 +327,14 @@ input[type="checkbox"] {
 
 .plotly {
     height: 200px;
-}
-
-/* Large desktops and laptops */
-@media (min-width: 1200px) {
-
-}
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-
-}
-
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
-
+    cursor:pointer;
 }
 
 
-#levelNumber {
-    width: 60px;
+
+
+#LevelNumberDiv {
+    width: 100px;
 }
 
 .hovertext {
@@ -380,15 +366,15 @@ input[type="checkbox"] {
     }
 }
 
+a, a:hover {
+  color: #333;
+}
+
 #TrumpLogo {
+    margin-top: -12px;
     width: 80px;
-    position: absolute;
-    left: 10px;
-    padding-top: 2px;
 }
 #IC_logo{
-   width: 185px;
-    position: absolute;
-    left: 100px;
-    padding-top: 6px;
+    margin-top: -6px;
+     width: 130px;
 }

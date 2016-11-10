@@ -23,6 +23,28 @@ $(document).on('click', '#femaleBtn', function (e) {
     $("#lowBtn, #mediumBtn, #highBtn").toggleClass('female');
 });
 
+
+$(document).on('change', function() {
+   //alert($('input[name="Subject"]:checked').val()); 
+  $('input[name="Subject"]:not(:checked)').parent().removeClass("active");
+  $('input[name="Subject"]:checked').parent().addClass("active");
+  
+  $('input[name="worldOrIsrael"]:not(:checked)').parent().removeClass("active");
+  $('input[name="worldOrIsrael"]:checked').parent().addClass("active");
+  
+  //TODO: gender and escs
+});
+
+
+$(function() {
+    $('#dashboard').affix({
+        offset: { 
+          top: $('#dashboard').offset().top-50,
+          bottom: $('#dashboard--wrap').height($("#dashboard").height())
+        }
+    });
+});
+
 //Set countries width the same width as plots width
 $(window).on('resize', function(){
   $("#Country1, #Country2, #Country3, #Country4, #SurveyYear, #SurveySubject, #SurveyCategory, #SurveySubCategory, #modelId, #analyzeVariables" ).css('width', ($("#Country1Plot").width()+'px'));
@@ -36,7 +58,7 @@ $(document).ready(function () {
     
     var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: $($anchor.attr('href')).offset().top - 325
         }, 1500, 'easeInOutExpo');
     // Prevent default anchor click behavior
     event.preventDefault();
@@ -45,43 +67,44 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+   $("#surveyDashboard").hide();
+});
+
+
+
+
+
 $(document).on('activate.bs.scrollspy', function(e) {
    var x = $(".nav li.active > a").attr('href');
         switch (x) {
           case "#scores":
                 $("#surveyDashboard").hide();
-                $("#subjectsDashboard").show();
-                $("#headerBar").show();
+                $("#Subject").show();
                 break;
             case "#expertise":
                 $("#surveyDashboard").hide();
-                $("#subjectsDashboard").show();
-                $("#headerBar").hide();
+                $("#Subject").show();
                 break;
             case "#survey":
                 $("#surveyDashboard").show();
-                $("#subjectsDashboard").hide();
-                $("#headerBar").hide();
+                $("#Subject").hide();
                 break;
-              case "#analyze":
-                $("#surveyDashboard").show();
-                $("#subjectsDashboard").show();
-                $("#headerBar").hide();
-                break;
+             // case "#analyze":
+               // $("#surveyDashboard").show();
+              //  $("#Subject").show();
+              //  break;
             case "#about":
-               $("#headerBar").hide();
                 $("#surveyDashboard").show();
-                 $("#subjectsDashboard").show();
+                 $("#Subject").hide();
                 break;
-            case "#mainNav":
-               $("#surveyDashboard").hide();
-                $("#subjectsDashboard").show();
-                $("#headerBar").show();
-                break;
+           // case "#mainNav":
+             //  $("#surveyDashboard").hide();
+               // $("#Subject").show();
+                //break;
             default:
                 $("#surveyDashboard").hide();
-              $("#subjectsDashboard").show();
-                 //$("#headerBar").show();
+              $("#Subject").show();
                 break;
         }
         
@@ -114,3 +137,35 @@ Shiny.addCustomMessageHandler('updateSelections',
     //alert("url: ", data);                 
 });
                    
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip({
+        placement : 'top'
+    });
+});
+
+
+//$('#survey').on('click', 'li > a', function() {
+ //$("#surveyDashboard").show();
+   //             $("#Subject").hide();
+//});
+
+(function($) {
+    $.fn.textfill = function(maxFontSize) {
+        maxFontSize = parseInt(maxFontSize, 10);
+        return this.each(function(){
+            var ourText = $("span", this),
+                parent = ourText.parent(),
+                maxHeight = parent.height(),
+                maxWidth = parent.width(),
+                fontSize = parseInt(ourText.css("fontSize"), 10),
+                multiplier = maxWidth/ourText.width(),
+                newSize = (fontSize*(multiplier-0.1));
+            ourText.css(
+                "fontSize", 
+                (maxFontSize > 0 && newSize > maxFontSize) ? 
+                    maxFontSize : 
+                    newSize
+            );
+        });
+    };
+})(jQuery);

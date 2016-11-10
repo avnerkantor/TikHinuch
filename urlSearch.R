@@ -14,18 +14,19 @@ observe({
   querySearch <- parseQueryString(session$clientData$url_search)
   
   updateSelectInput(session, "Subject", selected=querySearch$subject)
-  updateCheckboxGroupInput(session, inputId="Gender", selected = querySearch$gender)
-  updateCheckboxGroupInput(session, inputId="Escs", selected = querySearch$escs)
+  #updateCheckboxGroupInput(session, inputId="Gender", selected = querySearch$gender)
+  #updateCheckboxGroupInput(session, inputId="Escs", selected = querySearch$escs)
   updateRadioButtons(session, "worldOrIsrael", selected=querySearch$worldOrIsrael)
   updateSelectInput(session, "Country1", selected=querySearch$country1)
   updateSelectInput(session, "Country2", selected=querySearch$country2)
   updateSelectInput(session, "Country3", selected=querySearch$country3)
   updateSelectInput(session, "Country4", selected=querySearch$country4)
   #updateNumericInput(session, "LevelNumber", selected=querySearch$level)
-  updateSelectInput(session, "SurveyYear", selected=querySearch$surveyYear)
+  #updateSelectInput(session, "SurveyYear", selected=querySearch$surveyYear)
   updateSelectInput(session, "SurveySubject", selected=querySearch$hebSubject)
   updateSelectInput(session, "SurveyCategory", selected=querySearch$hebCategory)
-  #updateSelectInput(session, "ModelId", selected=querySearch$modelId)
+  updateSelectInput(session, "SurveySubCategory", selected=querySearch$hebSubCategory)
+  #updateSelectInput(session, "ModelId", selected=querySearch$modelId)zz
 })
 
 #Push to url
@@ -33,11 +34,10 @@ observe({
   #query search is case sensitive
   queryHash <- parseQueryString(session$clientData$url_hash_initial)
   data<-paste0(queryHash, "?subject=", input$Subject, 
-               "&gender=", input$Gender, "&escs=", input$Escs,
-               "&worldOrIsrael=", input$worldOrIsrael,
+               #"&gender=", input$Gender, "&escs=", input$Escs,
                "&country1=", input$Country1, "&country2=", input$Country2, "&country3=", input$Country3,
-                "&country4=", input$Country4, 
-              "&level=", input$LevelNumber, 
+                "&country4=", input$Country4, "&worldOrIsrael=", input$worldOrIsrael,
+              #"&level=", input$LevelNumber, 
               "&surveyYear=", input$SurveyYear, "&hebSubject=", input$SurveySubject,
               "&hebCategory=", input$SurveyCategory, "&hebSubCategory="=input$SurveySubCategory)
         # "$modelId=", ModelId)  
