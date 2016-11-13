@@ -1,30 +1,33 @@
-observe({
-  updateSelectizeInput(session, 'analyzeVariables',
-                       choices = as.character(pisaDictionary$ID),
-                       selected = "WEALTH",
-                       options=list(placeholder="בחר/י"))
-})
-observe({
-  updateSelectInput(session, inputId="ModelId", label="", choices = c(
-    "רגרסיה לינארית"="lm",
-    "רגרסיה מקומית"="loess"
-  ),
-  selected="loess")
-})
+# observe({
+#   updateSelectizeInput(session, 'analyzeVariables',
+#                        choices = as.character(pisaDictionary$ID),
+#                        selected = "WEALTH",
+#                        options=list(placeholder="בחר/י"))
+# })
+# observe({
+#   updateSelectInput(session, inputId="ModelId", label="", choices = c(
+#     "רגרסיה לינארית"="lm",
+#     "רגרסיה מקומית"="loess"
+#   ),
+#   selected="loess")
+# })
 
-# output$pisaScoresTable <- DT::renderDataTable(
-#   filter='bottom',
-#   colnames = c('משתנה', 'אנגלית', 'נושא', 'קטגוריה', 'תת-קטגוריה'),
-#   options=list(
-#     pageLength = 5,
-#     searching=TRUE,
-#     autoWidth = TRUE
-#   ), rownames= FALSE,
-#   {
-#     pisaDictionary%>%select(ID, Measure, HebSubject, HebCategory, HebSubCategory)%>%
-#       filter(HebSubject=="מדדים")
-# 
-#   })
+#https://rstudio.github.io/DT/options.html
+output$pisaScoresTable <- DT::renderDataTable(
+  filter='bottom',
+  colnames = c('שם משתנה', 'תיאור באנגלית', 'נושא', 'תחום', 'תת-תחום'),
+  options=list(
+    pageLength = 5,
+    searching=TRUE,
+    autoWidth = TRUE,
+    language=list(url="//cdn.datatables.net/plug-ins/1.10.12/i18n/Hebrew.json"),
+    order = list(list(3, 'desc'), list(4, 'desc'))
+  ), rownames= FALSE,
+  {
+    pisaDictionary%>%select(ID, Measure, HebSubject, HebCategory, HebSubCategory)
+  #  %>%filter(HebSubject=="מדדים")
+
+  })
 
 # 
 # #Analyze

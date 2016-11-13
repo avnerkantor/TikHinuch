@@ -22,3 +22,6 @@ avnerkantor - library='/home/avnerkantor/R/x86_64-pc-linux-gnu-library/3.3'
 devtools::install_github("ropensci/plotly")
 shiny library='/usr/local/lib/R/site-library'
 avnerkantor - library='/home/avnerkantor/R/x86_64-pc-linux-gnu-library/3.3' 
+
+sudo chown -R shiny:shiny /srv/shiny-server
+sudo chown -R avnerkantor:shiny /srv/shiny-server

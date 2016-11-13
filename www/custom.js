@@ -68,7 +68,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-   $("#surveyDashboard").hide();
+//   $("#surveyDashboard").hide();
 });
 
 $(document).on('activate.bs.scrollspy', function(e) {
@@ -81,6 +81,7 @@ $(document).on('activate.bs.scrollspy', function(e) {
             case "#survey":
                 $("#surveyDashboard").show();
                 $("#Subject").hide();
+                alert("Asd");
                 break;
              // case "#analyze":
                // $("#surveyDashboard").show();
@@ -104,15 +105,6 @@ $(document).on('activate.bs.scrollspy', function(e) {
     return $node.attr('id', $hash);
   }
 });
-
-  // $(document).ready(function() {
-    //    $('#pisaScoresTable').dataTable( {
-      //      "language": {
-        //        "url": "dataTables.hebrew.lang"
-          //  }
-//        } );
-//    } );
-
 
 
 // This recieves messages from the server.
