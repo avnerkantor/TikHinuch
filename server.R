@@ -21,12 +21,12 @@ LevelExplenation<-read.csv("data/LevelExplenation.csv", header = TRUE, sep=",")
 
 #load(url("https://storage.googleapis.com/opisa/student2012b.rda"))
 #pisa2012<-read.csv(url("https://storage.googleapis.com/opisa/pisa2012.csv"))
-load("../pisa2012.rda")
+# load("../pisa2012.rda")
 
-# pisadb<-src_bigquery("r-shiny-1141", "pisa")
-# pisa2012bq<- tbl(pisadb, "pisa2012")
-#pisa2009<- tbl(pisadb, "pisa2009")
-#pisa2006<- tbl(pisadb, "pisa2006")
+pisadb<-src_bigquery("r-shiny-1141", "pisa")
+pisa2012<- tbl(pisadb, "pisa2012")
+pisa2009<- tbl(pisadb, "pisa2009")
+pisa2006<- tbl(pisadb, "pisa2006")
 
 
 groupColours<- c(
@@ -49,7 +49,7 @@ shinyServer(function(input, output, session) {
   source('pisa.scores.R', local=TRUE)
   source('pisa.expertise.R', local=TRUE)
   source('pisa.survey.R', local=TRUE)
-   source('pisa.analyze.R', local=TRUE)
+  source('pisa.analyze.R', local=TRUE)
   source('urlSearch.R', local=TRUE)
 
 

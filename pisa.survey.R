@@ -1,14 +1,7 @@
 ######UI #####
 observe({
   updateSelectInput(session, inputId="SurveyYear", label="", 
-                    choices = c(2012)
-                    #list(
-                    #  'מבחן פיז"ה 2015 - בקרוב'=c('שאלון תלמידים'='student2015', 'שאלון בתי ספר'='school2015'),
-                    #'מבחן פיז"ה 2012'=c('שאלון תלמידים'='student2012', 'שאלון בתי ספר'='school2012')
-                    # 'מבחן פיז"ה 2009'=c("שאלון תלמידים"="student2009", "שאלון בתי ספר"="school2009"),
-                    #  'מבחן פיז"ה 2006'=c("שאלון תלמידים"="student2006", "שאלון בתי ספר"="school2006"),
-                    # 'שאלונים חוזרים - בקרוב'=c("זמינות ושימוש באמצעי תקשוב"="t1", "פתרון בעיות"="t2")
-                    , selected = 2012)
+                    choices = c(2012), selected = 2012)
 })
 
 observeEvent(input$SurveyYear,{
@@ -66,7 +59,7 @@ observe({
         #General
         surveyTable<-surveyData1%>%
           count_(SurveySelectedID)
-         #surveyTable<-collect(surveyTable)
+         surveyTable<-collect(surveyTable)
         surveyTable<-surveyTable%>% mutate(freq = round(100 * n/sum(n), 1), groupColour="General")%>%
           rename_(answer=SurveySelectedID)
       } else {
@@ -76,7 +69,7 @@ observe({
           group_by_("ESCS", SurveySelectedID)%>%
           tally  %>%
           group_by(ESCS)
-         #surveyTable<-collect(surveyTable)
+         surveyTable<-collect(surveyTable)
         surveyTable<-surveyTable%>%   mutate(freq = round(100 * n/sum(n), 0))%>%
           rename_(answer=SurveySelectedID, group="ESCS") %>%
           mutate(groupColour=str_c("General", group))
@@ -90,7 +83,7 @@ observe({
             group_by_("ST04Q01", SurveySelectedID)%>%
             tally  %>%
             group_by(ST04Q01)
-           #surveyTable<-collect(surveyTable)
+           surveyTable<-collect(surveyTable)
           surveyTable<-surveyTable%>%   mutate(freq = round(100 * n/sum(n), 0))%>%
             rename_(answer=SurveySelectedID, groupColour="ST04Q01") 
           
@@ -101,7 +94,7 @@ observe({
             group_by_("ESCS", SurveySelectedID)%>%
             tally  %>%
             group_by(ESCS)
-           #surveyTable<-collect(surveyTable)
+           surveyTable<-collect(surveyTable)
           surveyTable<-surveyTable%>%  mutate(freq = round(100 * n/sum(n), 0), group1=input$Gender)%>%
             rename_(answer=SurveySelectedID, group="ESCS")%>%
             mutate(groupColour=str_c(group1, group))
@@ -113,7 +106,7 @@ observe({
           group_by_("ST04Q01", SurveySelectedID)%>%
           tally  %>%
           group_by(ST04Q01)
-         #surveyTable<-collect(surveyTable)
+         surveyTable<-collect(surveyTable)
         surveyTable<-surveyTable%>%   mutate(freq = round(100 * n/sum(n), 0))%>%
           rename_(answer=SurveySelectedID, groupColour="ST04Q01")
       } 
@@ -121,7 +114,6 @@ observe({
     #print(surveyTable)
     ####ggplot####
     gh<-ggplot(data=surveyTable, aes(x=answer, y=freq, text=paste0(round(freq, digits = 1), "%"))) +
-      
       geom_bar(aes(colour=groupColour, fill=groupColour), stat="identity") +
       coord_flip() +
       scale_colour_manual(values =groupColours) +
@@ -147,29 +139,19 @@ observe({
     ggplotly(gh, tooltip = c("text"))%>%
       config(p = ., displayModeBar = FALSE)%>%
       layout(hovermode="y")
-    
   }
   
   ### Plots ####  
   if(length(SurveySelectedID)==1){
-    #print(is.data.frame(get("surveyData")))
-    # print(exists("surveyData"))
-    # print(is.null(surveyData))
-    # print(is.data.frame(get("surveyData")))
-    
     output$Country1SurveyPlot<-renderPlotly({
       surveyPlotFunction(input$Country1)
     })
-    
     output$Country2SurveyPlot<-renderPlotly({
       surveyPlotFunction(input$Country2)
     })
-    
     output$Country3SurveyPlot<-renderPlotly({
       surveyPlotFunction(input$Country3)
-      
     })
-    
     output$Country4SurveyPlot<-renderPlotly({
       surveyPlotFunction(input$Country4)
     })

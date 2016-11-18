@@ -39,15 +39,15 @@ $(document).on('change', function() {
 $(function() {
     $('#dashboard').affix({
         offset: { 
-          top: $('#dashboard').offset().top-50,
-          bottom: $('#dashboard--wrap').height($("#dashboard").height())
+          top: $('#dashboard').offset().top,
+          bottom: $('#dashboard--wrap').height($("#dashboard").height()-40)
         }
     });
 });
 
 //Set countries width the same width as plots width
 $(window).on('resize', function(){
-  $("#Country1, #Country2, #Country3, #Country4, #SurveyYear, #SurveySubject, #SurveyCategory, #SurveySubCategory, #modelId, #analyzeVariables" ).css('width', ($("#Country1Plot").width()+'px'));
+  $("#Country1, #Country2, #Country3, #Country4, #SurveyYear, #SurveySubject, #SurveyCategory, #SurveySubCategory, #AnalyzeYear, #AnalyzeVariable, #ModelId" ).css('width', ($("#Country1Plot").width()+'px'));
 }).resize();
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -74,21 +74,23 @@ $(document).ready(function () {
 $(document).on('activate.bs.scrollspy', function(e) {
    var x = $(".nav li.active > a").attr('href');
         switch (x) {
+            case "#scores":
+                $("#surveyDashboard").hide();
+                $("#Subject").show();
+                break;
             case "#expertise":
                $("#surveyDashboard").show();
                 $("#Subject").hide();
                 break;
             case "#survey":
-                $("#surveyDashboard").show();
-                $("#Subject").hide();
-                alert("Asd");
+                $("#surveyDashboard").hide();
+                $("#Subject").show();
                 break;
-             // case "#analyze":
-               // $("#surveyDashboard").show();
-              //  $("#Subject").show();
-              //  break;
-               // break;
-            default:
+            case "#analyze":
+                $("#surveyDashboard").hide();
+                $("#Subject").show();
+                break;
+            case "#about":
                 $("#surveyDashboard").hide();
                 $("#Subject").show();
                 break;
@@ -119,3 +121,4 @@ $(document).ready(function(){
         placement : 'top'
     });
 });
+

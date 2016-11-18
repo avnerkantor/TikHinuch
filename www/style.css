@@ -59,20 +59,23 @@ html {
 }
 
 #scores {
-  
   width:100%;
 }
 
 #expertise {
-  
 }
 
 #survey {
- padding-top:50px;
- padding-bottom:50px;
+  padding-bottom:150px;
 }
 
 #analyze {
+ 
+ padding-bottom:50px;
+}
+
+#about {
+  
 }
 
 
@@ -326,13 +329,39 @@ input[type="checkbox"] {
     color: #777777;
 }
 
-.plotly {
-    height: 200px;
-    cursor:pointer;
+
+.selectize-input > * {
+  vertical-align: middle;
+}
+.selectize-input .item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+}
+
+/* respnonsive */
+.selectize-input {
+  display: table !important;
+  table-layout: fixed;
+  width: 100%;
+}
+.selectize-input > * {
+  vertical-align: middle;
+}
+.selectize-input .item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 80%;
 }
 
 
 
+.plotly, .shiny-plot-output {
+    height: 200px;
+    cursor:pointer;
+}
 
 #LevelNumberDiv {
     width: 100px;

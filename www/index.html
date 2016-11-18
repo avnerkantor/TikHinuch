@@ -7,7 +7,7 @@
     <meta name="description" content="Open PISA - OECD PISA 2015 Data Explorer Platform">
     <meta name="author" content="Avner Kantor">
 
-    <title>Open PISA|פיז"ה פתוח</title>
+    <title>פיז"ה פתוח</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script type="application/shiny-singletons"></script>
     <script type="application/html-dependencies">
@@ -40,11 +40,12 @@
 
 <link href="style.css" rel="stylesheet">
 <script src="custom.js"></script>
+<script type="text/javascript" src="js/iframeResizer.min.js"></script> 
 <script src="google-analytics.js"></script>
 <link rel="short/cut icon" href="img/bag-512.png">
 
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar">
+<body id="home" data-spy="scroll" data-target=".navbar">
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
          <div class="navbar-header">
@@ -61,20 +62,20 @@
         <ul class="nav navbar-nav navbar-right">
                                   <!-- Hidden li included to remove active class from about link when scrolled up past about section--> 
                     <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
+                        <a class="page-scroll" href="#home"></a>
                     </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="http://opisa.org">English</a>
-                    </li>-->
+                    <li>
+                        <a class="page-scroll" href="http://openpisa.org">English</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="http://blog.opisa.org">בלוג</a>
                     </li>
                     <li>
                       <a class="page-scroll" href="#about">אודות</a>
                   </li>
-                  <!--<li>
-                      <a class="page-scroll" href="#analyze">מתאם</a>
-                  </li>-->
+                  <li>
+                      <a class="page-scroll" href="#analyze">ניתוח</a>
+                  </li>
                   <li>
                     <a class="page-scroll" href="#survey">אקלים</a>
                 </li>
@@ -424,26 +425,63 @@
 <!--Analyze-->
 <section>
   <div id="analyze" class="container-fluid">
-               <!--     <div class="row" style="direction: ltr">
+               <div class="row" style="direction: ltr">
                         <div class="col-xs-3 ">
-                          <div id="Country1AnalyzePlot" class="plotly html-widget html-widget-output">
+                          <div id="Country1AnalyzePlot" class="shiny-plot-output" style="height:200px">
                           </div>
                       </div>
                       <div class="col-xs-3">
-                        <div id="Country2AnalyzePlot" class="plotly html-widget html-widget-output">
+                        <div id="Country2AnalyzePlot" class="shiny-plot-output" style="height:200px">
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div id="Country3AnalyzePlot" class="plotly html-widget html-widget-output">
+                        <div id="Country3AnalyzePlot" class="shiny-plot-output" style="height:200px">
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div id="Country4AnalyzePlot" class="plotly html-widget html-widget-output">
+                        <div id="Country4AnalyzePlot" class="shiny-plot-output" style="height:200px">
                         </div>
                     </div>
                 </div>
                 
-                <div class="row">
+                <div class="row col-xs-12" style="height: 30px; "></div>
+<div id="analyzeDashboard" class="row">
+  <div class="col-xs-3"></div>
+<div class="col-xs-3 ">
+    <div class="form-group shiny-input-container">
+        <span>מודל סטטיסטי</span>
+        <select id="ModelId">
+        </select>
+        <script type="application/json" data-for="ModelId">{}</script>
+    </div>
+</div>
+
+<div class="col-xs-3">
+    <div class="form-group shiny-input-container">
+        <label class="control-label" for="AnalyzeVariable"></label>
+        <span>מדדים</span>
+        <div>
+            <select id="AnalyzeVariable">
+                <option value="" selected></option>
+            </select>
+            <script type="application/json" data-for="AnalyzeVariable">{}</script>
+        </div>
+    </div>
+</div>
+  <div class="col-xs-3">
+    <div class="form-group shiny-input-container">
+        <label class="control-label" for="AnalyzeYear"></label>
+        <span>שנת מבחן</span>
+        <div>
+            <select id="AnalyzeYear">
+                <option value="" selected></option>
+            </select>
+            <script type="application/json" data-for="AnalyzeYear">{}</script>
+        </div>
+    </div>
+</div>
+</div>
+      <!--          <div class="row">
                     <div class="col-xs-2 col-sm-6 "></div>
                     <div class="col-xs-5 col-sm-3">
                         <form>
@@ -473,41 +511,9 @@
 <!--About-->
 <section>
     <div id="about" class="container-fluid">
-      <h1>אודות</h1>
-      <p>פיז"ה פתוח הוא מיזם משותף ל<a href="http://www.trump.org.il/">קרן טראמפ</a> ו<a href="http://infosoc.haifa.ac.il/index.php/he/">למרכז לחקר האינטרנט באוניברסיטת חיפה</a>.
-      </p>
-      <p>
-        מטרת המיזם היא הנגשה של נתוני מבחן פיז"ה לציבור ולחוקרים. 
-    </p>
-    <p>
-        מבחן פיז"ה בוחן את כישוריהם של תלמידים בני 15 לקראת חיים בוגרים ועצמאיים. המבחן מתמקד במקצועות מתמטיקה, מדעים וקריאה. המבחן מתקיים משנת 2000 במחזורים של 3 שנים ומנוהל על ידי ה-OECD. הוא כולל למעלה מ-80 מדינות וכחצי מיליון תלמידים בכל מחזור. בישראל נבחנים כ-5000 תלמידים. 
-    </p>
-    <p>
-        פיז"ה פתוח מציג את הנתונים לאורך השנים ומאפשר לפלח בין מגזרים, להשוות בין מדינות ולנתח השפעות של גורמים שונים.  
-    </p>
-    <p>
-        זוהי מערכת ראשונה מסוגה בעולם ואנו תקווה שהיא תקדם את השיח והמחקר של מערכת החינוך הישראלית ושל חינוך מבוסס ראיות.
-    </p>
-    <p>
-        צוות הפרויקט:
-        <ul>
-          <li>מנהל: פרופ' <a href="http://rafaeli.net/">שיזף רפאלי</a></li>
-          <li>מנהלת מחקר, תכנון ופרויקטים אקדמיים: ד"ר עו"ד עדי ליבסקר</li>
-          <li>מחקר, אפיון ופיתוח: <a href="http://avnerkantor.com">אבנר קנטור</a></li>
-          <li>הדמיית נתונים: <a href="http://infoserviz.co.il/">בלה גוטיה, חברת InfoserViz</a></li>
-      </ul>
-      <p>
-        ליצירת קשר: avnerkantor@gmail.com
-    </p>
-
-    <div>
-      
-    </div>
+        <iframe width= "100%" height="600px" frameborder="0" scrolling="no" src="http://blog.opisa.org/post1/%D7%90%D7%95%D7%93%D7%95%D7%AA/"></iframe>
 </div>
-    <!--
-    <iframe width="800" height="1200" frameborder="0" scrolling="no" src="http://blog.tikhinuch.org"></iframe>
 
--->
 </section>
 </body>
 </html>
