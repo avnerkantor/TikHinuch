@@ -68,7 +68,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-//   $("#surveyDashboard").hide();
+   $("#surveyDashboard").hide();
 });
 
 $(document).on('activate.bs.scrollspy', function(e) {

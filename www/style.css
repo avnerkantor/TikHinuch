@@ -52,8 +52,6 @@ html {
   width:100%;
 }
 
-
-
 #myHeader{
   min-height:230px;
 }
@@ -62,22 +60,9 @@ html {
   width:100%;
 }
 
-#expertise {
-}
-
-#survey {
-  padding-bottom:150px;
-}
-
-#analyze {
- 
+#expertise, #survey, #analyze, #about {
  padding-bottom:50px;
 }
-
-#about {
-  
-}
-
 
 /*navbar*/
 nav {
