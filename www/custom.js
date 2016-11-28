@@ -39,8 +39,8 @@ $(document).on('change', function() {
 $(function() {
     $('#dashboard').affix({
         offset: { 
-          top: $('#dashboard').offset().top,
-          bottom: $('#dashboard--wrap').height($("#dashboard").height()-40)
+          top: $('#dashboard').offset().top-40,
+          bottom: $('#dashboard--wrap').height($("#dashboard").height())
         }
     });
 });
@@ -87,7 +87,7 @@ $(document).on('activate.bs.scrollspy', function(e) {
                 $("#Subject").show();
                 break;
             case "#analyze":
-                $("#surveyDashboard").hide();
+                $("#surveyDashboard").show();
                 $("#Subject").show();
                 break;
             case "#about":

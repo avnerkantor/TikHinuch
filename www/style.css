@@ -41,7 +41,7 @@ html {
     overflow-x: hidden !important;
 }
 
-#dashboard  {
+#dashboard, #dashboard--wrap {
    z-index:999; 
    background-image: url("img/bg.jpg");
    width:100%;
@@ -53,7 +53,7 @@ html {
 }
 
 #myHeader{
-  min-height:230px;
+  min-height:200px;
 }
 
 #scores {

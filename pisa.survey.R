@@ -8,24 +8,25 @@ observeEvent(input$SurveyYear,{
   switch (input$SurveyYear,
           "2012" = {
             updateSelectInput(session, inputId="SurveySubject", label="", choices = c(
-              # "אוריינות פיננסית" = "אוריינות פיננסית"
-              #"אוריינות מחשב" = "אוריינות מחשב",
-              "זמינות ושימוש באמצעי תקשוב"="זמינות ושימוש באמצעי תקשוב",
-              "משפחה ובית"="משפחה ובית",
-              "פתרון בעיות"="פתרון בעיות",
-              "לימודי מתמטיקה"="לימודי מתמטיקה",
-              "אופי בית הספר"="אופי בית הספר",
-              "מורים"="מורים",
-              "משאבי בית הספר"="משאבי בית הספר",
-              "תכנית הלימודים"="תכנית הלימודים",
-              "בית הספר"="בית הספר",
-              "מדיניות בית הספר"="מדיניות בית הספר"
-              #"מנהיגות חינוכית"="מנהיגות חינוכית"
+              unique(pisaDictionary%>%filter(Year=="2012")%>%select(HebSubject))
             ),
             selected="לימודי מתמטיקה"
             )
           },
-          "2009"={print("asdf") }
+          "2009" = {
+            updateSelectInput(session, inputId="SurveySubject", label="", choices = c(
+              unique(pisaDictionary%>%filter(Year=="2009")%>%select(HebSubject))
+            ),
+            selected="זמינות ושימוש באמצעי תקשוב"
+            )
+          },
+          "2006" = {
+            updateSelectInput(session, inputId="SurveySubject", label="", choices = c(
+              unique(pisaDictionary%>%filter(Year=="2006")%>%select(HebSubject))
+            ),
+            selected="זמינות ושימוש באמצעי תקשוב"
+            )
+          }
   )
 })
 
@@ -111,7 +112,6 @@ observe({
           rename_(answer=SurveySelectedID, groupColour="ST04Q01")
       } 
     }
-    #print(surveyTable)
     ####ggplot####
     gh<-ggplot(data=surveyTable, aes(x=answer, y=freq, text=paste0(round(freq, digits = 1), "%"))) +
       geom_bar(aes(colour=groupColour, fill=groupColour), stat="identity") +

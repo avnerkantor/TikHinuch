@@ -3,8 +3,9 @@ observe({
                     choices = c(2012), selected = 2012)
 })
 
-observeEvent(input$AnalyzeYear, {
-  updateSelectInput(session, "AnalyzeVariable", "", as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject == "מדדים"), HebCategory))), selected = "עושר")
+hebVariables<-c("מדדים", "מדדי בית ספר")
+observe({
+  updateSelectInput(session, "AnalyzeVariable", "", as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject %in% hebVariables), HebCategory))), selected = "עושר")
 })
 
 observe({
@@ -12,7 +13,7 @@ observe({
     "רגרסיה לינארית"="lm",
     "רגרסיה מקומית"="loess"
   ),
-  selected="loess")
+  selected="lm")
 })
 
 #https://rstudio.github.io/DT/options.html
@@ -51,14 +52,14 @@ observe({
   )
   
   
-  analyzeSelectedID <- as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject == "מדדים", HebCategory==input$AnalyzeVariable), ID)))
+  analyzeSelectedID <- as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject %in% hebVariables, HebCategory==input$AnalyzeVariable), ID)))
 
   analyzePlotFunction<-function(country) {
 
     Country<-as.vector(unlist(Countries%>%filter(Hebrew==country)%>%select(CNT)))
 
     analyzeData1<-surveyData%>%select_("CNT", analyzeSelectedID, "ST04Q01", "ESCS", analyzeSubject)%>%filter(CNT==Country)
-    analyzeData1<-collect(analyzeData1)
+    # analyzeData1<-collect(analyzeData1)
 
     if(is.null(input$Gender)){
       if(is.null(input$Escs)){
@@ -89,6 +90,14 @@ observe({
       }
     }
 
+    analyzeData1[, analyzeSelectedID]<-as.numeric(analyzeData1[, analyzeSelectedID])
+    analyzeData1[, analyzeSubject]<-as.numeric(analyzeData1[, analyzeSubject])
+    
+    analyzeData3<-analyzeData2 %>% group_by(groupColour) %>% summarize(correlation = cor(analyzeData2[,analyzeSubject], analyzeData2[,analyzeSelectedID], use="complete", method = "pearson"))
+    corData<-as.data.frame(analyzeData3)
+    names(corData)<-c("Group", "Cor")
+    corData$Cor<-round(corData$Cor, digits = 2)
+    
     #lm
     #lm(WEALTH~PV1MATH, analyzeData1)
     #dplyr+lm
@@ -105,8 +114,9 @@ observe({
     #analyzeData3<-setDT(analyzeData2)[, list(Slope = summary(lm(WEALTH ~ PV1MATH))$coeff[2], Pearson=cor(WEALTH, use="complete", PV1MATH, method = "pearson")), groupColour]
 
     ggplot(data=analyzeData2, aes_string(y=analyzeSubject, x=analyzeSelectedID)) +
-      geom_smooth(method=input$modelId, aes(colour=groupColour)) +
-      geom_point(aes(colour=groupColour)) +
+      geom_smooth(method=input$ModelId, aes(colour=groupColour), se=FALSE) +
+      #geom_point(aes(colour=groupColour)) +
+      geom_text(data=corData, aes(x=0, y=800, label=paste("Cor", Cor), show_guide=F)) +
       scale_colour_manual(values = groupColours) +
       labs(title="", y="" ,x= "") +
       theme_bw() +
@@ -124,7 +134,8 @@ observe({
             axis.title.x=element_blank(),
             axis.text.x=element_blank(),
             axis.ticks.x=element_blank()
-      )
+      ) +
+      scale_y_continuous(limits = c(0,800)) 
 
     # ggplotly(gh, tooltip = c("text"))%>%
     # config(p = ., displayModeBar = FALSE)%>%
