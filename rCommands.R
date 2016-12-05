@@ -25,3 +25,12 @@ avnerkantor - library='/home/avnerkantor/R/x86_64-pc-linux-gnu-library/3.3'
 
 sudo chown -R shiny:shiny /srv/shiny-server
 sudo chown -R avnerkantor:shiny /srv/shiny-server
+
+
+sudo groupadd shiny-apps
+sudo usermod -aG shiny-apps dean
+sudo usermod -aG shiny-apps shiny
+cd /srv/shiny-server
+sudo chown -R dean:shiny-apps .
+sudo chmod g+w .
+sudo chmod g+s .

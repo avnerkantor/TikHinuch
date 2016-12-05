@@ -23,10 +23,10 @@ LevelExplenation<-read.csv("data/LevelExplenation.csv", header = TRUE, sep=",")
 #pisa2012<-read.csv(url("https://storage.googleapis.com/opisa/pisa2012.csv"))
 load("../pisa2012.rda")
 
-pisadb<-src_bigquery("r-shiny-1141", "pisa")
+# pisadb<-src_bigquery("r-shiny-1141", "pisa")
 # pisa2012<- tbl(pisadb, "pisa2012")
-pisa2009<- tbl(pisadb, "pisa2009")
-pisa2006<- tbl(pisadb, "pisa2006")
+# pisa2009<- tbl(pisadb, "pisa2009")
+# pisa2006<- tbl(pisadb, "pisa2006")
 
 
 groupColours<- c(

@@ -82,7 +82,7 @@
                 <!--<a class="page-scroll" href="#heterogeneity">פיזור</a>-->
                 <!--</li>-->
                 <li>
-                    <a class="page-scroll" href="#expertise">בקיאות</a>
+                    <a class="page-scroll" href="#expertise">פערים</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#scores">הישגים</a>
@@ -94,8 +94,8 @@
 <header>
   <div id="myHeader">
     <div class="header-image"></div>
- <div class="text-image">מה מספר מבחן פיז"ה על החינוך בישראל</div>    <div class="underHeaderText">
-פיז"ה בוחן ומשווה רמות הישגים לימודיים של בני 15 במדינות שונות בעולם, מתוך שאיפה לשפר את שיטות החינוך ואת ההישגים הלימודיים בבתי הספר ובמערכות חינוך.
+ <div class="text-image">מה מספר מבחן פיז"ה</div>    <div class="underHeaderText">
+מבחן פיז"ה נערך מדי שלוש שנים בקרב תלמידי כיתה י' במדינות רבות בעולם. תוצאותיו מאפשרות ללמוד על התקדמות מערכת החינוך במקצועות שונים ועל אקלים הלימודים.  
 </div>
 </div>
 </header>
@@ -338,18 +338,13 @@
             <div class="row">
                 <br>
                 <div class="col-xs-12">
-<p>
-  המבחנים בודקים את יכולת התלמידים ליישם ידע וכישורים שרכשו בתחומים מרכזיים, וכן לנתח, להסיק ולהסביר בצורה יעילה את הדרכים שבהן הם ניגשים לבעיות, מפרשים אותן ומוצאים להן פתרונות, במגוון מצבים.
-</p>
-<p>
-  לאורך השנים ישראל רושמת התקדמות עקבית על אף הפערים הגדולים בין קבוצות שונות.
-</p>
-
-              </div>
+                  <p>
+המבחנים בודקים את רמת התלמידים, כיצד הם מיישמים ידע וכישורים שרכשו בשנות לימודיהם. ניתן לראות שישראל רושמת התקדמות עקבית על אף פערים גדולים בין המגזרים.</p>
+ </div>
               
-              <div id="ExplenationTable" class="shiny-html-output col-xs-10"></div>
-              <div id="LevelNumberDiv" class="form-group shiny-input-container col-xs-2">
-                <span>רמת בקיאות</span>
+              <div id="ExplenationTable" class="shiny-html-output col-xs-9 text-justify "></div>
+              <div id="LevelNumberDiv" class="form-group shiny-input-container col-xs-3">
+                <span>רמת מיומנות</span>
                 <input id="LevelNumber" type="number" class="form-control" value="3" min="1" max="6" step="1"/>
             </div>
 
@@ -362,7 +357,7 @@
         <div class="row text-center" style="height: 30px; margin-top: 30px">
             <div class="col-xs-5" style="border-bottom: 1px solid #c7c7c7; left: 10px;"></div>
             <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 16px">
-                <span>מצטיינים</span></div>
+                <span>אחוז מצטיינים</span></div>
                 <div class="col-xs-5 " style="border-bottom: 1px solid #c7c7c7; right: 10px; "></div>
             </div>
             <div class="row" style="direction: ltr">
@@ -379,10 +374,14 @@
                     <div id="Country1HighPlot" class="plotly html-widget html-widget-output"></div>
                 </div>
             </div>
+                           <div>
+ <br>
+אחוז המצטיינים (רמות 5-6) בישראל נמצא בעלייה בכל התחומים וגובהו דומה לזה של מדינות אחרות. 
+ </div> 
             <div class="row text-center" style="height: 30px; margin-top: 30px">
                 <div class="col-xs-5" style="border-bottom: 1px solid #c7c7c7; left: 10px;"></div>
                 <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 16px">
-                    <span>מתקשים</span></div>
+                    <span>אחוז מתקשים</span></div>
                     <div class="col-xs-5 " style="border-bottom: 1px solid #c7c7c7; right: 10px; "></div>
                 </div>
                 <div class="row" style="direction: ltr">
@@ -399,16 +398,16 @@
                         <div id="Country1LowPlot" class="plotly html-widget html-widget-output"></div>
                     </div>
                 </div>
-               <div>
-                 <br>
-אחוז המצטיינים (רמות 5-6) נמצא בעלייה בכל התחומים וגובהם זהה לזה של מדינות אחרות. אחוז המתקשים (רמות 1-2) נמצא בירידה עקבית.
- </div> 
             </div>
         </section>
 <!--Survey-->
 <section>
 <div id="survey" class="container-fluid">
-                <div class="row col-xs-12" style="height: 30px; "></div>
+                <div>
+                בנוסף למבחן מועברים לתלמידים שאלונים בנושא הרקע שלהם, הסביבה החינוכית ועמדותיהם ותפיסותיהם לגבי הלימודים. כמו כן ממלאים מנהלי בתי הספר שאלון אודות מדיניות בית הספר ואקלימו.
+                <br>
+ </div>
+ <br/>
                 <div class="row" style="direction: ltr">
                     <div class="col-xs-3">
                         <div id="Country4SurveyPlot" class="plotly html-widget html-widget-output"></div>
@@ -423,31 +422,35 @@
                         <div id="Country1SurveyPlot" class="plotly html-widget html-widget-output"></div>
                     </div>
                 </div>
-                <br/>
-<div>
-במבחן נאסף מידע אודות הרקע של התלמידים, הסביבה החינוכית ועמדותיהם ותפיסותיהם לגבי הלימודים. בנוסף, נשאלים מנהלי בתי הספר אודות מדיניות בית הספר ואקלימו.
- </div>
+                
+
                     <!--<p id="SurveySelectedIDOutput" class="shiny-text-output"></p>-->
 </div>
 </section>
 <!--Analyze-->
 <section>
+
   <div id="analyze" class="container-fluid">
+    <div>
+הנתונים שנאספים במבחן מאפשרים לנסות להסביר את רמת ההישגים הלימודיים באמצעות משתני רקע ומשתנים אחרים (כגון, המדיניות הבית ספרית, האקלים הבית ספרי, עמדות התלמידים כלפי תחום הדעת, מספר שעות הלימוד ועוד)
+
+ </div>
+  <br/>
                <div class="row" style="direction: ltr">
                         <div class="col-xs-3 ">
-                          <div id="Country1AnalyzePlot" class="shiny-plot-output" style="height:200px">
+                          <div id="Country4AnalyzePlot" class="shiny-plot-output" style="height:200px">
                           </div>
                       </div>
                       <div class="col-xs-3">
-                        <div id="Country2AnalyzePlot" class="shiny-plot-output" style="height:200px">
-                        </div>
-                    </div>
-                    <div class="col-xs-3">
                         <div id="Country3AnalyzePlot" class="shiny-plot-output" style="height:200px">
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div id="Country4AnalyzePlot" class="shiny-plot-output" style="height:200px">
+                        <div id="Country2AnalyzePlot" class="shiny-plot-output" style="height:200px">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div id="Country1AnalyzePlot" class="shiny-plot-output" style="height:200px">
                         </div>
                     </div>
                 </div>
@@ -514,9 +517,7 @@
             </div>-->
 <!--        <div id="pisaScoresTable" class="datatables html-widget html-widget-output"></div>-->
 
-<div>
-הנתונים שנאספים במבחן מאפשרים לנסות להסביר את רמת ההישגים הלימודיים באמצעות משתני רקע ומשתנים אחרים (כגון, המדיניות הבית ספרית, האקלים הבית ספרי, עמדות התלמידים כלפי תחום הדעת, מספר שעות הלימוד ועוד)
- </div>
+
 </div>
 
 </section>

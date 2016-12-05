@@ -90,8 +90,8 @@ observe({
       }
     }
 
-    analyzeData1[, analyzeSelectedID]<-as.numeric(analyzeData1[, analyzeSelectedID])
-    analyzeData1[, analyzeSubject]<-as.numeric(analyzeData1[, analyzeSubject])
+    analyzeData2[, analyzeSelectedID]<-as.numeric(unlist(analyzeData1[, analyzeSelectedID]))
+    analyzeData2[, analyzeSubject]<-as.numeric(unlist(analyzeData1[, analyzeSubject]))
     
     analyzeData3<-analyzeData2 %>% group_by(groupColour) %>% summarize(correlation = cor(analyzeData2[,analyzeSubject], analyzeData2[,analyzeSelectedID], use="complete", method = "pearson"))
     corData<-as.data.frame(analyzeData3)
@@ -114,7 +114,7 @@ observe({
     #analyzeData3<-setDT(analyzeData2)[, list(Slope = summary(lm(WEALTH ~ PV1MATH))$coeff[2], Pearson=cor(WEALTH, use="complete", PV1MATH, method = "pearson")), groupColour]
 
     ggplot(data=analyzeData2, aes_string(y=analyzeSubject, x=analyzeSelectedID)) +
-      geom_smooth(method=input$ModelId, aes(colour=groupColour), se=FALSE) +
+      geom_smooth(method=input$ModelId, aes(colour=groupColour), se=TRUE) +
       #geom_point(aes(colour=groupColour)) +
       geom_text(data=corData, aes(x=0, y=800, label=paste("Cor", Cor), show_guide=F)) +
       scale_colour_manual(values = groupColours) +

@@ -1,7 +1,7 @@
 ###UI
-# observeEvent(input$generalBtn, {
-#   updateCheckboxGroupInput(session, inputId="Gender", selected = "General")
-# })
+observeEvent(input$generalBtn, {
+  updateCheckboxGroupInput(session, inputId="Gender", selected = "")
+})
 
 # observeEvent(input$generalBtn, {
 #  updateCheckboxGroupInput(session, inputId="Escs", selected = NULL)
@@ -67,7 +67,7 @@ observe({
       scale_colour_manual(values = groupColours) +
       guides(colour=FALSE) +
       
-      labs(title="", y="" ,x= "") +
+      labs(title="", y="רמה" ,x= "") +
       theme_bw() +
       #geom_label() +
       theme(plot.margin=unit(c(0,15,5,10), "pt"),

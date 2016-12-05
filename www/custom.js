@@ -83,7 +83,7 @@ $(document).on('activate.bs.scrollspy', function(e) {
                 $("#Subject").hide();
                 break;
             case "#survey":
-                $("#surveyDashboard").hide();
+                $("#surveyDashboard").show();
                 $("#Subject").show();
                 break;
             case "#analyze":
