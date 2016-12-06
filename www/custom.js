@@ -66,13 +66,14 @@ $(document).ready(function () {
       window.location.hash = hash;
     });
 });
-
+/*
 $(document).ready(function () {
    $("#surveyDashboard").hide();
-});
+});*/
 
 $(document).on('activate.bs.scrollspy', function(e) {
    var x = $(".nav li.active > a").attr('href');
+   /*
         switch (x) {
             case "#scores":
                 $("#surveyDashboard").hide();
@@ -91,7 +92,7 @@ $(document).on('activate.bs.scrollspy', function(e) {
                 $("#Subject").show();
                 break;
         }
-        
+        */
   var $hash, $node;
   $hash = $("a[href^='#']", e.target).attr("href").replace(/^#/, '');
   $node = $('#' + $hash);

@@ -39,6 +39,7 @@
 <script src="shared/bootstrap/shim/respond.min.js"></script>
 <link href="style.css" rel="stylesheet">
 <script type="text/javascript" src="custom.js"></script>
+<script type="text/javascript" src="google-analytics.js"></script>
 <link rel="short/cut icon" href="img/bag-512.png">
 
 </head>
@@ -144,54 +145,6 @@
             </div>
         </form>
     </div>
-</div>
-<div id="surveyDashboard" class="row">
-    <div class="col-xs-3">
-        <div class="form-group shiny-input-container">
-            <label class="control-label" for="SurveySubCategory"></label>
-            <div>
-                <select id="SurveySubCategory">
-                    <option value="" selected></option>
-                </select>
-                <script type="application/json" data-for="SurveySubCategory">{}</script>
-            </div>
-        </div>
-
-    </div>
-    <div class="col-xs-3">
-        <div class="form-group shiny-input-container">
-            <label class="control-label" for="SurveyCategory"></label>
-            <div>
-                <select id="SurveyCategory">
-                    <option value="" selected></option>
-                </select>
-                <script type="application/json" data-for="SurveyCategory">{}</script>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-3">
-        <div class="form-group shiny-input-container">
-            <label class="control-label" for="SurveySubject"></label>
-            <div>
-                <select id="SurveySubject">
-                    <option value="" selected></option>
-                </select>
-                <script type="application/json" data-for="SurveySubject">{}</script>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-3">
-        <div class="form-group shiny-input-container">
-            <label class="control-label" for="SurveyYear"></label>
-            <div>
-                <select id="SurveyYear">
-                    <option value="" selected></option>
-                </select>
-                <script type="application/json" data-for="SurveyYear">{}</script>
-            </div>
-        </div>
-    </div>
-    
 </div>
 <div id="measurmentsDashboard" class="row">
   <div class="hidden-xs hidden-sm col-md-3"></div>
@@ -407,6 +360,55 @@
                 <br>
  </div>
  <br/>
+ <div id="surveyDashboard" class="row">
+    <div class="col-xs-3">
+        <div class="form-group shiny-input-container">
+            <label class="control-label" for="SurveySubCategory"></label>
+            <div>
+                <select id="SurveySubCategory">
+                    <option value="" selected></option>
+                </select>
+                <script type="application/json" data-for="SurveySubCategory">{}</script>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-xs-3">
+        <div class="form-group shiny-input-container">
+            <label class="control-label" for="SurveyCategory"></label>
+            <div>
+                <select id="SurveyCategory">
+                    <option value="" selected></option>
+                </select>
+                <script type="application/json" data-for="SurveyCategory">{}</script>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3">
+        <div class="form-group shiny-input-container">
+            <label class="control-label" for="SurveySubject"></label>
+            <div>
+                <select id="SurveySubject">
+                    <option value="" selected></option>
+                </select>
+                <script type="application/json" data-for="SurveySubject">{}</script>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3">
+        <div class="form-group shiny-input-container">
+            <label class="control-label" for="SurveyYear"></label>
+            <div>
+                <select id="SurveyYear">
+                    <option value="" selected></option>
+                </select>
+                <script type="application/json" data-for="SurveyYear">{}</script>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
                 <div class="row" style="direction: ltr">
                     <div class="col-xs-3">
                         <div id="Country4SurveyPlot" class="plotly html-widget html-widget-output"></div>
