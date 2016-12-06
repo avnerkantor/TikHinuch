@@ -90,10 +90,6 @@ $(document).on('activate.bs.scrollspy', function(e) {
                 $("#surveyDashboard").show();
                 $("#Subject").show();
                 break;
-            case "#about":
-                $("#surveyDashboard").hide();
-                $("#Subject").show();
-                break;
         }
         
   var $hash, $node;

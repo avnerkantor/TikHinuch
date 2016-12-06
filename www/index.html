@@ -7,7 +7,7 @@
     <meta name="description" content="Open PISA - OECD PISA 2015 Data Explorer Platform">
     <meta name="author" content="Avner Kantor">
 
-    <title>פיז"ה פתוח</title>
+    <title>פיזה פתוח</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script type="application/shiny-singletons"></script>
     <script type="application/html-dependencies">
@@ -37,10 +37,8 @@
 <script src="shared/bootstrap/js/bootstrap.min.js"></script>
 <script src="shared/bootstrap/shim/html5shiv.min.js"></script>
 <script src="shared/bootstrap/shim/respond.min.js"></script>
-
 <link href="style.css" rel="stylesheet">
-<script src="custom.js"></script>
-<script src="google-analytics.js"></script>
+<script type="text/javascript" src="custom.js"></script>
 <link rel="short/cut icon" href="img/bag-512.png">
 
 </head>
@@ -63,14 +61,13 @@
                     <li class="hidden">
                         <a class="page-scroll" href="#home"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="http://openpisa.org">English</a>
-                    </li>
+                    <!--<li><a class="page-scroll" href="http://openpisa.org">English</a>
+                    </li>-->
                     <li>
                         <a class="page-scroll" href="http://blog.opisa.org">בלוג</a>
                     </li>
                     <li>
-                      <a class="page-scroll" href="#about">אודות</a>
+                      <a class="page-scroll" href="about.html">אודות</a>
                   </li>
                   <li>
                       <a class="page-scroll" href="#analyze">ניתוח</a>
@@ -354,10 +351,11 @@
 <!--Expertise-->
 <section>
     <div id="expertise" class="container-fluid">
+      <p style="font-size: 18px">פערים</p>
         <div class="row text-center" style="height: 30px; margin-top: 30px">
             <div class="col-xs-5" style="border-bottom: 1px solid #c7c7c7; left: 10px;"></div>
-            <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 16px">
-                <span>אחוז מצטיינים</span></div>
+            <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 18px">
+                <span>מצטיינים</span></div>
                 <div class="col-xs-5 " style="border-bottom: 1px solid #c7c7c7; right: 10px; "></div>
             </div>
             <div class="row" style="direction: ltr">
@@ -380,8 +378,8 @@
  </div> 
             <div class="row text-center" style="height: 30px; margin-top: 30px">
                 <div class="col-xs-5" style="border-bottom: 1px solid #c7c7c7; left: 10px;"></div>
-                <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 16px">
-                    <span>אחוז מתקשים</span></div>
+                <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 18px">
+                    <span>מתקשים</span></div>
                     <div class="col-xs-5 " style="border-bottom: 1px solid #c7c7c7; right: 10px; "></div>
                 </div>
                 <div class="row" style="direction: ltr">
@@ -403,6 +401,7 @@
 <!--Survey-->
 <section>
 <div id="survey" class="container-fluid">
+      <p style="font-size: 18px">אקלים</p>
                 <div>
                 בנוסף למבחן מועברים לתלמידים שאלונים בנושא הרקע שלהם, הסביבה החינוכית ועמדותיהם ותפיסותיהם לגבי הלימודים. כמו כן ממלאים מנהלי בתי הספר שאלון אודות מדיניות בית הספר ואקלימו.
                 <br>
@@ -422,15 +421,17 @@
                         <div id="Country1SurveyPlot" class="plotly html-widget html-widget-output"></div>
                     </div>
                 </div>
-                
-
+                <br/><br/>
                     <!--<p id="SurveySelectedIDOutput" class="shiny-text-output"></p>-->
+                                         <p>מילון אקלים</p>
+                <div id="pisaScoresTable" class="datatables html-widget html-widget-output"></div>
 </div>
 </section>
 <!--Analyze-->
 <section>
 
   <div id="analyze" class="container-fluid">
+      <p style="font-size: 18px">ניתוח</p>
     <div>
 הנתונים שנאספים במבחן מאפשרים לנסות להסביר את רמת ההישגים הלימודיים באמצעות משתני רקע ומשתנים אחרים (כגון, המדיניות הבית ספרית, האקלים הבית ספרי, עמדות התלמידים כלפי תחום הדעת, מספר שעות הלימוד ועוד)
 
@@ -492,41 +493,18 @@
     </div>
 </div>
 </div>
-      <!--          <div class="row">
-                    <div class="col-xs-2 col-sm-6 "></div>
-                    <div class="col-xs-5 col-sm-3">
-                        <form>
-                            <div class="form-group shiny-input-container">
-                                <span>משתנים</span>
-                                <select style="display: none;" tabindex="-1" id="analyzeVariables"
-                                class="form-control selectized shiny-bound-input"
-                                multiple="multiple">
-                            </select>
-                            <script type="application/json" data-for="analyzeVariables">{}</script>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-xs-5 col-sm-3 ">
-                    <div class="form-group shiny-input-container">
-                        <span>מודל סטטיסטי</span>
-                        <select id="ModelId">
-                        </select>
-                        <script type="application/json" data-for="ModelId">{}</script>
-                    </div>
-                </div>
-            </div>-->
-<!--        <div id="pisaScoresTable" class="datatables html-widget html-widget-output"></div>-->
-
-
 </div>
 
 </section>
 <!--About-->
+<!--
 <section>
     <div id="about" class="container-fluid">
+       <div class="col-xs-12">
+         <p style="font-size: 18px">אודות</p>     
         <iframe width= "100%" height="600px" frameborder="0" scrolling="no" src="http://blog.opisa.org/post1/%D7%90%D7%95%D7%93%D7%95%D7%AA/"></iframe>
 </div>
-
-</section>
+</div>
+</section>-->
 </body>
 </html>

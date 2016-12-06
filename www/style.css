@@ -41,6 +41,7 @@ html {
     overflow-x: hidden !important;
 }
 
+
 #dashboard, #dashboard--wrap {
    z-index:999; 
    background-image: url("img/bg.jpg");
@@ -60,7 +61,7 @@ html {
   width:100%;
 }
 
-#expertise, #survey, #analyze, #about {
+#expertise, #survey, #analyze {
  padding-bottom:50px;
 }
 

@@ -16,24 +16,7 @@ observe({
   selected="lm")
 })
 
-#https://rstudio.github.io/DT/options.html
-# output$pisaScoresTable <- DT::renderDataTable(
-#   filter='bottom',
-#   colnames = c('שם משתנה', 'תיאור באנגלית', 'נושא', 'תחום', 'תת-תחום'),
-#   options=list(
-#     pageLength = 5,
-#     searching=TRUE,
-#     autoWidth = TRUE,
-#     language=list(url="//cdn.datatables.net/plug-ins/1.10.12/i18n/Hebrew.json"),
-#     order = list(list(3, 'desc'), list(4, 'desc'))
-#   ), rownames= FALSE,
-#   {
-#     pisaDictionary%>%select(ID, Measure, HebSubject, HebCategory, HebSubCategory)
-#   #  %>%filter(HebSubject=="מדדים")
-# 
-#   })
-
-# 
+ 
 #Analyze
 observe({
   
