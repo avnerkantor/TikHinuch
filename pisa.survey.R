@@ -1,11 +1,18 @@
 ######UI #####
 observe({
   updateSelectInput(session, inputId="SurveyYear", label="", 
-                    choices = c(2012), selected = 2012)
+                    choices = c(2015, 2012), selected = 2015)
 })
 
 observeEvent(input$SurveyYear,{
   switch (input$SurveyYear,
+          "2015" = {
+            updateSelectInput(session, inputId="SurveySubject", label="", choices = c(
+              unique(pisaDictionary%>%filter(Year=="2015")%>%select(HebSubject))
+            ),
+            selected=""
+            )
+          },
           "2012" = {
             updateSelectInput(session, inputId="SurveySubject", label="", choices = c(
               unique(pisaDictionary%>%filter(Year=="2012")%>%select(HebSubject))
@@ -44,12 +51,16 @@ observe({
   SurveySelectedID <- as.vector(unlist(select(filter(pisaDictionary, Year == input$SurveyYear, HebSubject == input$SurveySubject, HebCategory==input$SurveyCategory, HebSubCategory==input$SurveySubCategory), ID))) 
   
   surveyPlotFunction<-function(country) {
-    Country<-as.vector(unlist(Countries%>%filter(Hebrew==country)%>%select(CNT)))
+    switch(input$SurveyYear,
+           "2015"={surveyData<-pisa2015},
+           "2012"={surveyData<-pisa2012}
+           # "2009"={surveyData<-pisa2009},
+           # "2006"={surveyData<-pisa2006}
+    )
 
-    if(input$SurveyYear==2012)
-      surveyData<-pisa2012
+    Country<-as.vector(unlist(Countries%>%filter(Hebrew==country)%>%select(Country)))
     
-    surveyData1<-surveyData%>%select_("CNT", SurveySelectedID, "ST04Q01", "ESCS")%>%filter(CNT==Country)
+    surveyData1<-surveyData%>%select_("COUNTRY", SurveySelectedID, "ST04Q01", "ESCS")%>%filter(COUNTRY==Country)
     
     if(is.null(input$Gender)){
       if(is.null(input$Escs)){
@@ -166,7 +177,7 @@ output$pisaScoresTable <- DT::renderDataTable(
     order = list(list(3, 'desc'), list(4, 'desc'))
   ), rownames= FALSE, 
   {
-    pisaDictionary%>%select(ID, Measure, HebSubject, HebCategory, HebSubCategory)
+    pisaDictionary%>%filter(Year==input$SurveyYear)%>%select(ID, Measure, HebSubject, HebCategory, HebSubCategory)
     #  %>%filter(HebSubject=="מדדים")
     
   })

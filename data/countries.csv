@@ -1,74 +1,88 @@
 CNT,Country,Hebrew
 ALB,Albania,אלבניה
+ARE,United Arab Emirates,סעודיה
 ARG,Argentina,ארגנטינה
 AUS,Australia,אוסטרליה
 AUT,Austria,אוסטריה
 BEL,Belgium,בלגיה
-BRA,Brazil,ברזיל
 BGR,Bulgaria,בולגריה
+BRA,Brazil,ברזיל
 CAN,Canada,קנדה
+CHE,Switzerland,שוויץ
 CHL,Chile,צילה
-QCN,Shanghai-China,שאנגחאי (סין)
-TAP,Chinese Taipei,סין
 COL,Colombia,קולומביה
 CRI,Costa Rica,קוסטה-ריקה
-HRV,Croatia,קרואטיה
 CZE,Czech Republic,צ'כיה
+DEU,Germany,גרמניה
 DNK,Denmark,דנמרק
+DOM,Dominican Republic,הרפובליקה הדומיניקנית
+DZA,Algeria,אלג'יריה
+ESP,Spain,ספרד
 EST,Estonia,אסטוניה
 FIN,Finland,פינלנד
 FRA,France,צרפת
-DEU,Germany,גרמניה
+GBR,United Kingdom,בריטניה
+GEO,Georgia,גאורגיה
 GRC,Greece,יוון
 HKG,Hong Kong-China,הונג-קונג
+HRV,Croatia,קרואטיה
 HUN,Hungary,הונגריה
-ISL,Iceland,איסלנד
 IDN,Indonesia,אינדונזיה
 IRL,Ireland,אירלנד
+ISL,Iceland,איסלנד
 ISR,Israel,ישראל
+ISR_Arabic,Israel Arabic,דוברי ערבית
+ISR_Hebrew,Israel Hebrew,דוברי עברית
+ISR_Hebrew_Religious,Israel Hebrew Religious,ממלכתי-דתי
+ISR_Hebrew_Secular,Israel Hebrew Secular,חינוך-ממלכתי
+ISR_Ultra_Orthodox_Girls,Israel Ultra Orthodox Girls,חרדים-בנות
 ITA,Italy,איטליה
-JPN,Japan,יפן
 JOR,Jordan,ירדן
+JPN,Japan,יפן
 KAZ,Kazakhstan,קזחסטן
 KOR,Korea,דרום-קוריאה
-LVA,Latvia,לטביה
+KSV,Kosovo,קוסובו
+LBN,Lebanon,לבנון
 LIE,Liechtenstein,ליכטנשטיין
 LTU,Lithuania,לטביה
 LUX,Luxembourg,לוקסמבורג
+LVA,Latvia,לטביה
 MAC,Macao-China,מקאו (סין)
-MYS,Malaysia,מלזיה
+MDA,Moldova,מולדובה
 MEX,Mexico,מקסיקו
+MKD,Macedonia,מקדוניה
+MLT,Malta,מלטה
 MNE,Montenegro,מונטגרו
+MYS,Malaysia,מלזיה
 NLD,Netherlands,הולנד
-NZL,New Zealand,ניו-זילנד
 NOR,Norway,נורווגיה
-QRS,Perm (Russian Federation),פרם (רוסיה)
+NZL,New Zealand,ניו-זילנד
 PER,Peru,פרו
 POL,Poland,פולין
 PRT,Portugal,פורטוגל
+QAR,Argentina (Ciudad Autónoma de Buenos),בואנוס איירס
 QAT,Qatar,קאטר
-ROU,Romania,רומניה
-RUS,Russian Federation,רוסיה
-SRB,Serbia,סרביה
-SGP,Singapore,סינגפור
-SVK,Slovak Republic,סלובקיה
-SVN,Slovenia,סלובניה
-ESP,Spain,ספרד
-SWE,Sweden,שוודיה
-CHE,Switzerland,שוויץ
-THA,Thailand,תאילנד
-TUN,Tunisia,תוניסיה
-TUR,Turkey,טורקיה
-GBR,United Kingdom,בריטניה
-ARE,United Arab Emirates,סעודיה
-USA,United States of America,ארצות-הברית
-URY,Uruguay,אורוגוואי
-VNM,Viet Nam,ויאטנם
+QCH,B-S-J-G (China),סין (B-S-J-G)
+QCN,Shanghai-China,שאנגחאי (סין)
+QES,Spain (Regions),ספרד (איזורים)
+QRS,Perm (Russian Federation),פרם (רוסיה)
 QUA,Florida (USA),פלורידה
 QUB,Connecticut (USA),קונטיקט
 QUC,Massachusetts (USA),מסצ'וסטס
-ISR_Hebrew,Israel Hebrew,דוברי עברית
-ISR_Arabic,Israel Arabic,דוברי ערבית
-ISR_Hebrew_Secular,Israel Hebrew Secular,חינוך-ממלכתי
-ISR_Hebrew_Religious,Israel Hebrew Religious,ממלכתי-דתי
-ISR_Ultra_Orthodox_Girls,Israel Ultra Orthodox Girls,חרדים-בנות
+QUD,Puerto Rico (USA),פורטו ריקו
+QUE,North Carolina (USA),צפון-קרולינה
+ROU,Romania,רומניה
+RUS,Russian Federation,רוסיה
+SGP,Singapore,סינגפור
+SRB,Serbia,סרביה
+SVK,Slovak Republic,סלובקיה
+SVN,Slovenia,סלובניה
+SWE,Sweden,שוודיה
+TAP,Chinese Taipei,סין
+THA,Thailand,תאילנד
+TTO,Trinidad and Tobago,טרינדד וטובגו
+TUN,Tunisia,תוניסיה
+TUR,Turkey,טורקיה
+URY,Uruguay,אורוגוואי
+USA,United States of America,ארצות-הברית
+VNM,Viet Nam,ויאטנם

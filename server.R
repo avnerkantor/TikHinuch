@@ -1,33 +1,37 @@
-#PisaSelectIndex<-read.csv("data/PisaSelectIndex.csv", header = TRUE, sep=",")
-load("data/pisaData2.rda")
+(shiny.sanitize.errors = FALSE)
 
-#download.file(url = "https://docs.google.com/spreadsheets/d/1aNfTVO9PGfNicmrdLHPdCtkOEyhCekLFdBpFPbgagg0/pub?gid=991054399&single=true&output=csv", destfile="data/pisaDictionary.csv", 'curl')
+load("data/pisaData.rda")
+
+#download.file(url = "https://docs.google.com/spreadsheets/d/1LYmlzL14xQlF-nRen9a6morTmU0FsULSoee8xWEw9fA/pub?gid=1417149183&single=true&output=csv", destfile="data/pisaDictionary.csv", 'curl')
 pisaDictionary<-read.csv("data/pisaDictionary.csv", header = TRUE, sep=",")
 #load("data/pisaDictionary.rda")
 
-oecdCountries<-read.csv("data/oecdCountries.csv", header = TRUE, sep=",")
-oecdList<-oecdCountries$CNT
-names(oecdList)<-oecdCountries$Hebrew
-israelCountries<-read.csv("data/israelCountries.csv", header = TRUE, sep=",")
-israelList<-israelCountries$CNT
-names(israelList)<-israelCountries$Hebrew
-Countries<-read.csv("data/countries.csv", header = TRUE, sep=",")
-countriesList<-Countries$CNT
-names(countriesList)<-Countries$Hebrew
-ExpertiseLevels<-read.csv("data/ExpertiseLevels.csv", header = TRUE, sep=",")
-ExpertiseLevelsLimits<-read.csv("data/expertiseLevelsLimits.csv", header = TRUE, sep=",")
-#download.file(url = "https://docs.google.com/spreadsheets/d/1RlZdX9bp4d-CxGd-bpR85Ye0tN5_CAdCCqnjqTC1i0E/pub?gid=439183945&single=true&output=csv", destfile="data/LevelExplenation.csv", 'curl')
-LevelExplenation<-read.csv("data/LevelExplenation.csv", header = TRUE, sep=",")
-
-#load(url("https://storage.googleapis.com/opisa/student2012b.rda"))
-#pisa2012<-read.csv(url("https://storage.googleapis.com/opisa/pisa2012.csv"))
+print("loading pisa 2015")
+load("../pisa2015.rda")
+print("loading pisa 2012")
 load("../pisa2012.rda")
-
 # pisadb<-src_bigquery("r-shiny-1141", "pisa")
 # pisa2012<- tbl(pisadb, "pisa2012")
 # pisa2009<- tbl(pisadb, "pisa2009")
 # pisa2006<- tbl(pisadb, "pisa2006")
 
+oecdCountries<-read.csv("data/oecdCountries.csv", header = TRUE, sep=",")
+oecdCountries<-arrange(oecdCountries, Hebrew)
+oecdList<-oecdCountries$CNT
+names(oecdList)<-oecdCountries$Hebrew
+
+israelCountries<-read.csv("data/israelCountries.csv", header = TRUE, sep=",")
+israelList<-israelCountries$CNT
+names(israelList)<-israelCountries$Hebrew
+
+Countries<-read.csv("data/countries.csv", header = TRUE, sep=",")
+countriesList<-Countries$CNT
+names(countriesList)<-Countries$Hebrew
+
+ExpertiseLevels<-read.csv("data/ExpertiseLevels.csv", header = TRUE, sep=",")
+ExpertiseLevelsLimits<-read.csv("data/expertiseLevelsLimits.csv", header = TRUE, sep=",")
+#download.file(url = "https://docs.google.com/spreadsheets/d/1RlZdX9bp4d-CxGd-bpR85Ye0tN5_CAdCCqnjqTC1i0E/pub?gid=439183945&single=true&output=csv", destfile="data/LevelExplenation.csv", 'curl')
+LevelExplenation<-read.csv("data/LevelExplenation.csv", header = TRUE, sep=",")
 
 groupColours<- c(
   General="#b276b2", 
@@ -51,7 +55,6 @@ shinyServer(function(input, output, session) {
   source('pisa.survey.R', local=TRUE)
   source('pisa.analyze.R', local=TRUE)
   source('urlSearch.R', local=TRUE)
-
 
   
 })

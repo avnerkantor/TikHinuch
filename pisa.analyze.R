@@ -1,6 +1,6 @@
 observe({
   updateSelectInput(session, inputId="AnalyzeYear", label="",
-                    choices = c(2012), selected = 2012)
+                    choices = c(2015, 2012), selected = 2015)
 })
 
 hebVariables<-c("מדדים", "מדדי בית ספר")
@@ -8,19 +8,20 @@ observe({
   updateSelectInput(session, "AnalyzeVariable", "", as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject %in% hebVariables), HebCategory))), selected = "עושר")
 })
 
-observe({
-  updateSelectInput(session, inputId="ModelId", label="", choices = c(
-    "רגרסיה לינארית"="lm",
-    "רגרסיה מקומית"="loess"
-  ),
-  selected="lm")
-})
+# observe({
+#   updateSelectInput(session, inputId="ModelId", label="", choices = c(
+#     "רגרסיה לינארית"="lm",
+#     "רגרסיה מקומית"="loess"
+#   ),
+#   selected="lm")
+# })
 
  
 #Analyze
 observe({
   
   switch(input$AnalyzeYear,
+         "2015"={surveyData<-pisa2015},
          "2012"={surveyData<-pisa2012},
          "2009"={surveyData<-pisa2012},
          "2006"={surveyData<-pisa2012}
@@ -29,9 +30,9 @@ observe({
   switch (input$Subject,
           Math = {analyzeSubject<-"PV1MATH"},
           Science={analyzeSubject<-"PV1SCIE"},
-          Reading={analyzeSubject<-"PV1READ"},
-          ProblemSolving={analyzeSubject<-"PV1CPRO"},
-          Financial={analyzeSubject<-"PV1FLIT"}
+          Reading={analyzeSubject<-"PV1READ"}
+          # ProblemSolving={analyzeSubject<-"PV1CPRO"},
+          # Financial={analyzeSubject<-"PV1FLIT"}
   )
   
   
@@ -39,9 +40,9 @@ observe({
 
   analyzePlotFunction<-function(country) {
 
-    Country<-as.vector(unlist(Countries%>%filter(Hebrew==country)%>%select(CNT)))
+    Country<-as.vector(unlist(Countries%>%filter(Hebrew==country)%>%select(Country)))
 
-    analyzeData1<-surveyData%>%select_("CNT", analyzeSelectedID, "ST04Q01", "ESCS", analyzeSubject)%>%filter(CNT==Country)
+    analyzeData1<-surveyData%>%select_("COUNTRY", analyzeSelectedID, "ST04Q01", "ESCS", analyzeSubject)%>%filter(COUNTRY==Country)
     # analyzeData1<-collect(analyzeData1)
 
     if(is.null(input$Gender)){
@@ -97,13 +98,14 @@ observe({
     #analyzeData3<-setDT(analyzeData2)[, list(Slope = summary(lm(WEALTH ~ PV1MATH))$coeff[2], Pearson=cor(WEALTH, use="complete", PV1MATH, method = "pearson")), groupColour]
 
     ggplot(data=analyzeData2, aes_string(y=analyzeSubject, x=analyzeSelectedID)) +
-      geom_smooth(method=input$ModelId, aes(colour=groupColour), se=TRUE) +
+      geom_smooth(method="lm", aes(colour=groupColour), se=TRUE) +
       #geom_point(aes(colour=groupColour)) +
       geom_text(data=corData, aes(x=0, y=800, label=paste("Cor", Cor), show_guide=F)) +
       scale_colour_manual(values = groupColours) +
       labs(title="", y="" ,x= "") +
       theme_bw() +
       guides(colour=FALSE) +
+      scale_y_continuous(limits = c(0,800)) +
       theme(plot.margin=unit(c(0,15,5,10), "pt"),
             panel.border = element_blank(),
             axis.ticks = element_blank(),
@@ -115,7 +117,7 @@ observe({
             strip.background = element_blank(),
             strip.text.x = element_blank(),
             axis.title.x=element_blank(),
-            axis.text.x=element_blank(),
+            # axis.text.x=element_blank(),
             axis.ticks.x=element_blank()
       ) +
       scale_y_continuous(limits = c(0,800)) 
