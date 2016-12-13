@@ -99,7 +99,7 @@ observe({
 
     ggplot(data=analyzeData2, aes_string(y=analyzeSubject, x=analyzeSelectedID)) +
       geom_smooth(method="lm", aes(colour=groupColour), se=TRUE) +
-      #geom_point(aes(colour=groupColour)) +
+      geom_point(aes(colour=groupColour)) +
       geom_text(data=corData, aes(x=0, y=800, label=paste("Cor", Cor), show_guide=F)) +
       scale_colour_manual(values = groupColours) +
       labs(title="", y="" ,x= "") +
