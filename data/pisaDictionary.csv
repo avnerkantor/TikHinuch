@@ -626,7 +626,7 @@ SC32Q03,Admission - Feeder schools,School Policies and Practices,Admission , Fee
 SC32Q04,Admission - Parents endorsement,School Policies and Practices,Admission , Parents endorsement,מדיניות בית הספר,קבלת תלמידים,תמיכת ההורים בגישה החינוכית או הדתית של בית הספר,2012
 SC32Q05,Admission - Special Programme,School Policies and Practices,Admission , Special Programme,מדיניות בית הספר,קבלת תלמידים,האם התלמיד זקוק לתכנית מיוחדת או מעוניין במגמה מיוחד,2012
 SC32Q06,Admission - Family members,School Policies and Practices,Admission , Family members,מדיניות בית הספר,קבלת תלמידים,העדפה הניתנת לבני משפחה של תלמידים בהווה ושל תלמידים לשעבר,2012
-SC32Q07,Admission - Residence,School Policies and Practices,Admission , Residence,מדיניות בית הספר,קבלת תלמידים,,2012
+SC32Q07,Admission - Residence,School Policies and Practices,Admission , Residence,מדיניות בית הספר,קבלת תלמידים,מגורים,2012
 SC32Q08,Admission - Other,School Policies and Practices,Admission , Other,מדיניות בית הספר,קבלת תלמידים,גורם אחר,2012
 SC33Q01A,Responsibility - Hiring teachers - Principals,Responsibility,Hiring teachers , Principals,מדיניות בית הספר,קבלת מורים,המנהלים,2012
 SC33Q01B,Responsibility - Hiring teachers - Teachers,Responsibility,Hiring teachers , Teachers,מדיניות בית הספר,קבלת מורים,המורים,2012
@@ -1889,70 +1889,73 @@ ST123Q01NA,<this academic year>: My parents are interested in my school activiti
 ST123Q02NA,<this academic year>: My parents support my educational efforts and achievements.,Family and Home,My parents,support educational efforts,משפחה ובית,ההורים,תומכים בלמידה,2015
 ST123Q03NA,<this academic year>: My parents support me when I am facing difficulties at school.,Family and Home,My parents,support me when I am facing difficulties,משפחה ובית,ההורים,תומכים בקשיים,2015
 ST123Q04NA,<this academic year>: My parents encourage me to be confident.,Family and Home,My parents,encourage to be confident,משפחה ובית,ההורים,מעודדים בטחון,2015
-ST019AQ01T,Country of Birth International - Self,Family and Home,,,משפחה ובית,,,2015
-ST019BQ01T,Country of Birth International - Mother,Family and Home,,,משפחה ובית,,,2015
-ST019CQ01T,Country of Birth International - Father,Family and Home,,,משפחה ובית,,,2015
-ST021Q01TA,How old were you when you arrived in <country of test>?,Family and Home,,,משפחה ובית,,,2015
-ST022Q01TA,International Language at Home,Family and Home,,,משפחה ובית,,,2015
-ST124Q01TA,Did you attend <ISCED 0>?,Family and Home,,,משפחה ובית,,,2015
-ST125Q01NA,How old were you when you started <ISCED 0>? Years,Family and Home,,,משפחה ובית,,,2015
-ST126Q01TA,How old were you when you started <ISCED 1>? Years,Family and Home,,,משפחה ובית,,,2015
-ST127Q01TA,Have you ever repeated a <grade>? At <ISCED 1>,Family and Home,,,משפחה ובית,,,2015
-ST127Q02TA,Have you ever repeated a <grade>? At <ISCED 2>,Family and Home,,,משפחה ובית,,,2015
-ST127Q03TA,Have you ever repeated a <grade>? At <ISCED 3>,Family and Home,,,משפחה ובית,,,2015
-ST111Q01TA,Which of the following do you expect to complete?,Family and Home,,,משפחה ובית,,,2015
-ST118Q01NA,To what extent do you disagree or agree about yourself? I often worry that it will be difficult for me taking a test.,Family and Home,,,משפחה ובית,עמדות התלמיד,חשש ממבחן,2015
-ST118Q02NA,To what extent do you disagree or agree about yourself? I worry that I will get poor <grades> at school.,Family and Home,,,משפחה ובית,עמדות התלמיד,חשש מציון נמוך,2015
-ST118Q03NA,To what extent do you disagree or agree about yourself? Even if I am well-prepared for a test I feel very anxious.,Family and Home,,,משפחה ובית,עמדות התלמיד,חרדה למרות התכוננות למבחן,2015
-ST118Q04NA,I get very tense when I study for a test.,Family and Home,,,משפחה ובית,עמדות התלמיד,לחץ בזמן למידה למבחן,2015
-ST118Q05NA,I get nervous when I don't know how to solve a task at school.,Family and Home,,,משפחה ובית,עמדות התלמיד,עצבנות בכשלון לפתור בעיה בבית הספר,2015
-ST119Q01NA,I want top grades in most or all of my courses.,Family and Home,,,משפחה ובית,עמדות התלמיד,רצון בציונים גבוהים בכל המקצועות,2015
-ST119Q02NA,I want to be able to select from among the best opportunities available when I graduate.,Family and Home,,,משפחה ובית,עמדות התלמיד,רצון לבחור באפשרות הטובה ביותר לאחר הלימודים,2015
-ST119Q03NA,"I want to be the best, whatever I do.",Family and Home,,,משפחה ובית,עמדות התלמיד,רצון להיות הטוב ביותר בהכל,2015
-ST119Q04NA,I see myself as an ambitious person.,Family and Home,,,משפחה ובית,עמדות התלמיד,אמביציה,2015
-ST119Q05NA,I want to be one of the best students in my class.,Family and Home,,,משפחה ובית,עמדות התלמיד,מצוינות,2015
-ST121Q01NA,<NAME 1> is motivated? Gives up easily when confronted with a problem and is often not prepared,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST121Q02NA,<NAME 2> is motivated? Mostly remains interested in the tasks she starts and sometimes does more than expected,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST121Q03NA,<NAME 3> is motivated? Wants to get top grades at school and continues working on tasks until perfect.,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST082Q01NA,To what extent do you disagree or agree about yourself? I prefer working as part of a team to working alone.,Family and Home,,,משפחה ובית,עמדות התלמיד,העדפה לעבודה בקבוצה,2015
-ST082Q02NA,To what extent do you disagree or agree about yourself? I am a good listener.,Family and Home,,,משפחה ובית,עמדות התלמיד,יכולת הקשבה,2015
-ST082Q03NA,To what extent do you disagree or agree about yourself? I enjoy seeing my classmates be successful.,Family and Home,,,משפחה ובית,עמדות התלמיד,הנאה מהצלחה של אחרים,2015
-ST082Q08NA,To what extent do you disagree or agree about yourself? I take into account what others are interested in.,Family and Home,,,משפחה ובית,עמדות התלמיד,הבאה בחשבון של דברי אחרים,2015
-ST082Q09NA,To what extent do you disagree or agree about yourself? I find that teams make better decisions than individuals.,Family and Home,,,משפחה ובית,עמדות התלמיד,קבוצות מחליטות טוב יותר,2015
-ST082Q12NA,To what extent do you disagree or agree about yourself? I enjoy considering different perspectives.,Family and Home,,,משפחה ובית,עמדות התלמיד,"נהנה לשקול עמדות שונות
+ST019AQ01T,Country of Birth International - Self,Family and Home,,,משפחה ובית,ארץ לידה,"התלמיד
 ",2015
-ST082Q13NA,To what extent do you disagree or agree about yourself? I find that teamwork raises my own efficiency.,Family and Home,,,משפחה ובית,עמדות התלמיד,עבודה קבוצתית עוזרת ליעילות,2015
-ST082Q14NA,To what extent do you disagree or agree about yourself? I enjoy cooperating with peers.,Family and Home,,,משפחה ובית,עמדות התלמיד,"הנאה מעבודה בזוגות
+ST019BQ01T,Country of Birth International - Mother,Family and Home,,,משפחה ובית,ארץ לידה,אמא,2015
+ST019CQ01T,Country of Birth International - Father,Family and Home,,,משפחה ובית,ארץ לידה,אבא,2015
+ST021Q01TA,How old were you when you arrived in <country of test>?,Family and Home,,,משפחה ובית,ארץ לידה,גיל עלייה,2015
+ST022Q01TA,International Language at Home,Family and Home,,,משפחה ובית,שפה בבית,,2015
+ST124Q01TA,Did you attend <ISCED 0>?,Family and Home,,,בית הספר,,,2015
+ST125Q01NA,How old were you when you started <ISCED 0>? Years,Family and Home,,,בית הספר,,,2015
+ST126Q01TA,How old were you when you started <ISCED 1>? Years,Family and Home,,,בית הספר,,,2015
+ST127Q01TA,Have you ever repeated a <grade>? At <ISCED 1>,Family and Home,,,בית הספר,,,2015
+ST127Q02TA,Have you ever repeated a <grade>? At <ISCED 2>,Family and Home,,,בית הספר,,,2015
+ST127Q03TA,Have you ever repeated a <grade>? At <ISCED 3>,Family and Home,,,בית הספר,,,2015
+ST111Q01TA,Which of the following do you expect to complete?,Family and Home,,,בית הספר,,,2015
+ST118Q01NA,To what extent do you disagree or agree about yourself? I often worry that it will be difficult for me taking a test.,Family and Home,,,בית הספר,עמדות התלמיד,חשש ממבחן,2015
+ST118Q02NA,To what extent do you disagree or agree about yourself? I worry that I will get poor <grades> at school.,Family and Home,,,בית הספר,עמדות התלמיד,חשש מציון נמוך,2015
+ST118Q03NA,To what extent do you disagree or agree about yourself? Even if I am well-prepared for a test I feel very anxious.,Family and Home,,,בית הספר,עמדות התלמיד,חרדה למרות התכוננות למבחן,2015
+ST118Q04NA,I get very tense when I study for a test.,Family and Home,,,בית הספר,עמדות התלמיד,לחץ בזמן למידה למבחן,2015
+ST118Q05NA,I get nervous when I don't know how to solve a task at school.,Family and Home,,,בית הספר,עמדות התלמיד,עצבנות בכשלון לפתור בעיה בבית הספר,2015
+ST119Q01NA,I want top grades in most or all of my courses.,Family and Home,,,בית הספר,עמדות התלמיד,רצון בציונים גבוהים בכל המקצועות,2015
+ST119Q02NA,I want to be able to select from among the best opportunities available when I graduate.,Family and Home,,,בית הספר,עמדות התלמיד,רצון לבחור באפשרות הטובה ביותר לאחר הלימודים,2015
+ST119Q03NA,"I want to be the best, whatever I do.",Family and Home,,,בית הספר,עמדות התלמיד,רצון להיות הטוב ביותר בהכל,2015
+ST119Q04NA,I see myself as an ambitious person.,Family and Home,,,בית הספר,עמדות התלמיד,אמביציה,2015
+ST119Q05NA,I want to be one of the best students in my class.,Family and Home,,,בית הספר,עמדות התלמיד,מצוינות,2015
+ST121Q01NA,<NAME 1> is motivated? Gives up easily when confronted with a problem and is often not prepared,Family and Home,,,בית הספר,עמדות התלמיד,,2015
+ST121Q02NA,<NAME 2> is motivated? Mostly remains interested in the tasks she starts and sometimes does more than expected,Family and Home,,,בית הספר,עמדות התלמיד,,2015
+ST121Q03NA,<NAME 3> is motivated? Wants to get top grades at school and continues working on tasks until perfect.,Family and Home,,,בית הספר,עמדות התלמיד,,2015
+ST082Q01NA,To what extent do you disagree or agree about yourself? I prefer working as part of a team to working alone.,Family and Home,,,בית הספר,עבודה בקבוצה,העדפה לעבודה בקבוצה,2015
+ST082Q02NA,To what extent do you disagree or agree about yourself? I am a good listener.,Family and Home,,,בית הספר,עבודה בקבוצה,יכולת הקשבה,2015
+ST082Q03NA,To what extent do you disagree or agree about yourself? I enjoy seeing my classmates be successful.,Family and Home,,,בית הספר,עבודה בקבוצה,הנאה מהצלחה של אחרים,2015
+ST082Q08NA,To what extent do you disagree or agree about yourself? I take into account what others are interested in.,Family and Home,,,בית הספר,עבודה בקבוצה,הבאה בחשבון של דברי אחרים,2015
+ST082Q09NA,To what extent do you disagree or agree about yourself? I find that teams make better decisions than individuals.,Family and Home,,,בית הספר,עבודה בקבוצה,קבוצות מחליטות טוב יותר,2015
+ST082Q12NA,To what extent do you disagree or agree about yourself? I enjoy considering different perspectives.,Family and Home,,,בית הספר,עבודה בקבוצה,"נהנה לשקול עמדות שונות
 ",2015
-ST034Q01TA,I feel like an outsider (or left out of things) at school.,Family and Home,,,משפחה ובית,עמדות התלמיד,הרגשה של אאוטסיידר,2015
-ST034Q02TA,I make friends easily at school.,Family and Home,,,משפחה ובית,עמדות התלמיד,"השגת חברים בקלות
+ST082Q13NA,To what extent do you disagree or agree about yourself? I find that teamwork raises my own efficiency.,Family and Home,,,בית הספר,עבודה בקבוצה,עבודה קבוצתית עוזרת ליעילות,2015
+ST082Q14NA,To what extent do you disagree or agree about yourself? I enjoy cooperating with peers.,Family and Home,,,בית הספר,עבודה בקבוצה,"הנאה מעבודה בזוגות
 ",2015
-ST034Q03TA,I feel like I belong at school.,Family and Home,,,משפחה ובית,עמדות התלמיד,הרגשת שייכות לבית הספר,2015
-ST034Q04TA,I feel awkward and out of place in my school.,Family and Home,,,משפחה ובית,עמדות התלמיד,הרגשת חוסר שייכות לבי ספר,2015
-ST034Q05TA,Other students seem to like me.,Family and Home,,,משפחה ובית,עמדות התלמיד,תלמידים אחרים אוהבים אותי,2015
-ST034Q06TA,I feel lonely at school.,Family and Home,,,משפחה ובית,עמדות התלמיד,הרגשת בדידות בבית הספר,2015
-ST039Q01NA,Teachers called on me less often than they called on other students.,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST039Q02NA,Teachers graded me harder than they graded other students.,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST039Q03NA,Teachers gave me the impression that they think I am less smart than I really am.,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST039Q04NA,Teachers disciplined me more harshly than other students.,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST039Q05NA,Teachers ridiculed me in front of others.,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST039Q06NA,Teachers said something insulting to me in front of others.,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST059Q01TA,Number of <class periods> required per week in <test language>,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST059Q02TA,Number of <class periods> required per week in mathematics,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST059Q03TA,Number of <class periods> required per week in <science>,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST060Q01NA,"In a normal, full week at school, how many <class periods> are you required to attend in total?",Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST061Q01NA,"How many minutes, on average, are there in a <class period>?",Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST062Q01TA,"In the last two full weeks of school, how often: I <skipped> a whole school day",Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST062Q02TA,"In the last two full weeks of school, how often: I <skipped> some classes",Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST062Q03TA,"In the last two full weeks of school, how often: I arrived late for school",Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST071Q01NA,"This school year, approximately how many hours per week do you spend learning in addition? <School Science>",Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST071Q02NA,"This school year, approximately how many hours per week do you spend learning in addition? Mathematics",Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST071Q03NA,"This school year, approximately how many hours per week do you spend learning in addition? <Test language>",Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST071Q04NA,"This school year, approximately how many hours per week do you spend learning in addition? <Foreign language>",Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST071Q05NA,"This school year, approximately how many hours per week do you spend learning in addition? Other",Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST031Q01NA,"On avg, how many days do you attend physical education classes each week?",Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST032Q01NA,Moderate physical activities for a total of at least 60 minutes per day,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
-ST032Q02NA,Vigorous physical activities for at least 20 minutes per day that made you sweat and breathe hard,Family and Home,,,משפחה ובית,עמדות התלמיד,,2015
+ST034Q01TA,I feel like an outsider (or left out of things) at school.,Family and Home,,,בית הספר,תחושת שייכות,הרגשה של אאוטסיידר,2015
+ST034Q02TA,I make friends easily at school.,Family and Home,,,בית הספר,תחושת שייכות,"השגת חברים בקלות
+",2015
+ST034Q03TA,I feel like I belong at school.,Family and Home,,,בית הספר,תחושת שייכות,הרגשת שייכות לבית הספר,2015
+ST034Q04TA,I feel awkward and out of place in my school.,Family and Home,,,בית הספר,תחושת שייכות,הרגשת חוסר שייכות לבי ספר,2015
+ST034Q05TA,Other students seem to like me.,Family and Home,,,בית הספר,תחושת שייכות,תלמידים אחרים אוהבים אותי,2015
+ST034Q06TA,I feel lonely at school.,Family and Home,,,בית הספר,תחושת שייכות,הרגשת בדידות בבית הספר,2015
+ST039Q01NA,Teachers called on me less often than they called on other students.,Family and Home,,,בית הספר,יחס מורים,"מורים פונים אליי פחות
+",2015
+ST039Q02NA,Teachers graded me harder than they graded other students.,Family and Home,,,בית הספר,יחס מורים,מורים בודקים אותי בקפדנות,2015
+ST039Q03NA,Teachers gave me the impression that they think I am less smart than I really am.,Family and Home,,,בית הספר,יחס מורים,מורים נותנים לי את ההרגשה שאני פחות חכם,2015
+ST039Q04NA,Teachers disciplined me more harshly than other students.,Family and Home,,,בית הספר,יחס מורים,מורים מענישים אותי יותר,2015
+ST039Q05NA,Teachers ridiculed me in front of others.,Family and Home,,,בית הספר,יחס מורים,מורים מגחיכים אותי מול אחרים,2015
+ST039Q06NA,Teachers said something insulting to me in front of others.,Family and Home,,,בית הספר,יחס מורים,מורים מעליבים אותי מול אחרים,2015
+ST059Q01TA,Number of <class periods> required per week in <test language>,Family and Home,,,בית הספר,שיעורי חובה,בקריאה,2015
+ST059Q02TA,Number of <class periods> required per week in mathematics,Family and Home,,,בית הספר,שיעורי חובה,במתמטיקה,2015
+ST059Q03TA,Number of <class periods> required per week in <science>,Family and Home,,,בית הספר,שיעורי חובה,במדעים,2015
+ST060Q01NA,"In a normal, full week at school, how many <class periods> are you required to attend in total?",Family and Home,,,בית הספר,שיעורי חובה,סך הכל,2015
+ST061Q01NA,"How many minutes, on average, are there in a <class period>?",Family and Home,,,בית הספר,שעות לימוד,מספר דקות לשיעור,2015
+ST062Q01TA,"In the last two full weeks of school, how often: I <skipped> a whole school day",Family and Home,,,בית הספר,חיסורים,"חיסורים בשבועיים האחרונים
+",2015
+ST062Q02TA,"In the last two full weeks of school, how often: I <skipped> some classes",Family and Home,,,בית הספר,חיסורים,חיסורי שיעורים בשבועיים האחרונים,2015
+ST062Q03TA,"In the last two full weeks of school, how often: I arrived late for school",Family and Home,,,בית הספר,חיסורים,איחורים בשבועים האחרונים,2015
+ST071Q01NA,"This school year, approximately how many hours per week do you spend learning in addition? <School Science>",Family and Home,,,בית הספר,שעות לימוד,במדעים,2015
+ST071Q02NA,"This school year, approximately how many hours per week do you spend learning in addition? Mathematics",Family and Home,,,בית הספר,שעות לימוד,במתמטיקה,2015
+ST071Q03NA,"This school year, approximately how many hours per week do you spend learning in addition? <Test language>",Family and Home,,,בית הספר,שעות לימוד,בקריאה,2015
+ST071Q04NA,"This school year, approximately how many hours per week do you spend learning in addition? <Foreign language>",Family and Home,,,בית הספר,שעות לימוד,בשפה זרה,2015
+ST071Q05NA,"This school year, approximately how many hours per week do you spend learning in addition? Other",Family and Home,,,בית הספר,שעות לימוד,אחר,2015
+ST031Q01NA,"On avg, how many days do you attend physical education classes each week?",Family and Home,,,בית הספר,,,2015
+ST032Q01NA,Moderate physical activities for a total of at least 60 minutes per day,Family and Home,,,בית הספר,,,2015
+ST032Q02NA,Vigorous physical activities for at least 20 minutes per day that made you sweat and breathe hard,Family and Home,,,בית הספר,,,2015
 ST063Q01NA,Which <school science> course did you attend? Physics: This year,Learning Science,,Course,לימודי מדעים,שיעורים,פיסיקה השנה,2015
 ST063Q01NB,Which <school science> course did you attend? Physics: Last year,Learning Science,,Course,לימודי מדעים,שיעורים,פיסיקה בשנה שעברה,2015
 ST063Q02NA,Which <school science> course did you attend? Chemistry: This year,Learning Science,,Course,לימודי מדעים,שיעורים,כימיה השנה,2015
@@ -2102,208 +2105,222 @@ IC006Q01TA,"During a typical weekday, for how long do you use the Internet outsi
 IC007Q01TA,"On a typical weekend day, for how long do you use the Internet outside of school?",Computer Orientation,Freuency of use,,זמינות ושימוש באמצעי תקשוב,שימוש באינטרנט,"מחוץ לבית הספר בסופ""ש",2015
 IC008Q01TA,Use digital devices outside school for playing one-player games.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,משחק עם שחקן אחד,2015
 IC008Q02TA,Use digital devices outside school for playing collaborative online games.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,משחק רב-משתתפים,2015
-IC008Q03TA,Use digital devices outside school for using email.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC008Q04TA,Use digital devices outside school for <Chatting online> (e.g. <MSN®>).,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC008Q05TA,"Use digital devices outside school for social networks (e.g. <Facebook>, <MySpace>).",Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC008Q07NA,"Use digital devices outside school for online games\Social Networks (e.g. <Farmville®>, <The Sims Social>).",Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC008Q08TA,"Use digital devices outside school for browsing the Internet for fun videos, e.g. <YouTube>).",Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC008Q09TA,Use digital devices outside school for reading news on the Internet (e.g. current affairs).,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC008Q10TA,Use digital devices outside school for obtaining practical information from the Internet,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC008Q11TA,"Use digital devices outside school for downloading music, films, games or software from the Internet.",Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC008Q12TA,Use digital devices outside school for uploading your own created contents for sharing,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC008Q13NA,Use digital devices outside school for downloading new apps on a mobile device.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC010Q01TA,Frequency of use outside of school: Browsing the Internet for schoolwork (e.g. for preparing an essay or presentation,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC010Q02NA,"Frequency of use outside of school: Browsing the Internet to follow up lessons, e.g. for finding explanations.",Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC010Q03TA,Frequency of use outside of school: Using email for communication with other students about schoolwork.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC010Q04TA,Frequency of use outside of school: Using email for communication with teacher\submit of homework or other schoolwork,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC010Q05NA,Frequency of use outside of school: Using Social Networks for communication with other students about schoolwork.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC010Q06NA,Frequency of use outside of school: Using Social Networks for communication with teachers.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC010Q07TA,Frequency of use outside of school: Download\upload\browsing from school website (e.g. time table or course materials,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC010Q08TA,"Frequency of use outside of school: Checking the schools website for announcements, e.g. absence of teachers.",Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC010Q09NA,Frequency of use outside of school: Doing homework on a computer.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC010Q10NA,Frequency of use outside of school: Doing homework on a mobile device.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC010Q11NA,Frequency of use outside of school: Downloading learning apps on a mobile device.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC010Q12NA,Frequency of use outside of school: Downloading science learning apps on a mobile device.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,,2015
-IC011Q01TA,Frequency of use at school: <Chatting on line> at school.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,,2015
-IC011Q02TA,Frequency of use at school: Using email at school.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,,2015
-IC011Q03TA,Frequency of use at school: Browsing the Internet for schoolwork.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,,2015
-IC011Q04TA,Frequency of use at school: Download\upload\browse schools web (e.g. <intranet>).,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,,2015
-IC011Q05TA,Frequency of use at school: Posting my work on the schools website.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,,2015
-IC011Q06TA,Frequency of use at school: Playing simulations at school.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,,2015
-IC011Q07TA,"Frequency of use at school: Practicing and drilling, foreign language learning or math.",Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,,2015
-IC011Q08TA,Frequency of use at school: Doing homework on a school computer.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,,2015
-IC011Q09TA,Frequency of use at school: Using school computers for group work and communication with other students.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,,2015
-IC013Q01NA,I forget about time when I'm using digital devices.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC013Q04NA,"The Internet is a great resource for obtaining information I am interested in (e.g. news, sports, dictionary).",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC013Q05NA,It is very useful to have Social Networks on the Internet.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC013Q11NA,I am really excited discovering new digital devices or applications.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC013Q12NA,I really feel bad if no Internet connection is possible.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC013Q13NA,I like using digital devices.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC014Q03NA,I feel comfortable using digital devices that I am less familiar with.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC014Q04NA,"If my friends and relatives want to buy new digital devices or applications, I can give them advice.",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC014Q06NA,I feel comfortable using my digital devices at home.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC014Q08NA,"When I come across problems with digital devices, I think I can solve them.",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC014Q09NA,"If my friends and relatives have a problem with digital devices, I can help them.",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC015Q02NA,"If I need new software, I install it by myself.",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC015Q03NA,I read information about digital devices to be independent.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC015Q05NA,I use digital devices as I want to use them.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC015Q07NA,If I have a problem with digital devices I start to solve it on my own.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC015Q09NA,"If I need a new application, I choose it by myself.",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC016Q01NA,"To learn something new about digital devices, I like to talk about them with my friends.",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC016Q02NA,I like to exchange solutions to problems with digital devices with others on the Internet.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC016Q04NA,I like to meet friends and play computer and video games with them.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC016Q05NA,I like to share information about digital devices with my friends.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-IC016Q07NA,I learn a lot about digital media by discussing with my friends and relatives.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,,2015
-EC001Q01NA,Approx how many hrs\week attend add. instruct in the follow. domains? <School science> or <broad science>,,,,שיעורי עזר,מדעים,,2015
-EC001Q02NA,Approx how many hrs\week attend add. instruct in the follow. domains? Mathematics,,,,שיעורי עזר,מתמטיקה,,2015
-EC001Q03NA,Approx how many hrs\week attend add. instruct in the follow. domains? <Test language>,,,,שיעורי עזר,קריאה,,2015
-EC001Q04NA,Approx how many hrs\week attend add. instruct in the follow. domains? <Foreign languages>,,,,שיעורי עזר,שפה זרה,,2015
-EC001Q05NA,Approx how many hrs\week attend add. instruct in the follow. domains? Social sciences,,,,שיעורי עזר,מדעי החברה,,2015
-EC001Q06NA,Approx how many hrs\week attend add. instruct in the follow. domains? Music,,,,שיעורי עזר,מוזיקה,,2015
-EC001Q07NA,Approx how many hrs\week attend add. instruct in the follow. domains? Sports,,,,שיעורי עזר,ספורט,,2015
-EC001Q08NA,Approx how many hrs\week attend add. instruct in the follow. domains? Performing arts,,,,שיעורי עזר,תיאטרון או מחול,,2015
-EC001Q09NA,Approx how many hrs\week attend add. instruct in the follow. domains? Visual arts,,,,שיעורי עזר,אמנות פלסטית,,2015
-EC001Q10NA,Approx how many hrs\week attend add. instruct in the follow. domains? Other,,,,שיעורי עזר,אחר,,2015
+IC008Q03TA,Use digital devices outside school for using email.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,"שימוש בדוא""ל",2015
+IC008Q04TA,Use digital devices outside school for <Chatting online> (e.g. <MSN®>).,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,שימוש בתוכנות צ'אט,2015
+IC008Q05TA,"Use digital devices outside school for social networks (e.g. <Facebook>, <MySpace>).",Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,שימוש ברשות חברתיות,2015
+IC008Q07NA,"Use digital devices outside school for online games\Social Networks (e.g. <Farmville®>, <The Sims Social>).",Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,השתתפות במשחקים רב משתתפים מבוססי שרת,2015
+IC008Q08TA,"Use digital devices outside school for browsing the Internet for fun videos, e.g. <YouTube>).",Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,צפייה בסרטונים,2015
+IC008Q09TA,Use digital devices outside school for reading news on the Internet (e.g. current affairs).,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,מעקב אחר החדשות,2015
+IC008Q10TA,Use digital devices outside school for obtaining practical information from the Internet,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,השגת מידע שימושי,2015
+IC008Q11TA,"Use digital devices outside school for downloading music, films, games or software from the Internet.",Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,הורדת סרטים ומוזיקה,2015
+IC008Q12TA,Use digital devices outside school for uploading your own created contents for sharing,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,"שיתוף והעלאה של תוכן אישי
+",2015
+IC008Q13NA,Use digital devices outside school for downloading new apps on a mobile device.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,הורדה של אפליקציות,2015
+IC010Q01TA,Frequency of use outside of school: Browsing the Internet for schoolwork (e.g. for preparing an essay or presentation,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,תדירות השימוש באינטרנט לחיפוש מידע לעבודות ושעורי בית,2015
+IC010Q02NA,"Frequency of use outside of school: Browsing the Internet to follow up lessons, e.g. for finding explanations.",Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,תדירות השימוש באינטרנט למעקב אחרי שעורים,2015
+IC010Q03TA,Frequency of use outside of school: Using email for communication with other students about schoolwork.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,תדירות של תקשורת של תלמידים בנושאי בית הספר,2015
+IC010Q04TA,Frequency of use outside of school: Using email for communication with teacher\submit of homework or other schoolwork,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,"תדירות של תקשורת בין תלמידים למורים, כולל הגשת עבודות",2015
+IC010Q05NA,Frequency of use outside of school: Using Social Networks for communication with other students about schoolwork.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,תדירות השימוש ברשתות החברתיות בנושאים לימודים,2015
+IC010Q06NA,Frequency of use outside of school: Using Social Networks for communication with teachers.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,תדירות השימוש ברשתות חברתיות לתקשורת עם מורים,2015
+IC010Q07TA,Frequency of use outside of school: Download\upload\browsing from school website (e.g. time table or course materials,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,תדירות ההורדות מאתר בית הספר,2015
+IC010Q08TA,"Frequency of use outside of school: Checking the schools website for announcements, e.g. absence of teachers.",Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,תדירות הכניסות לאתר בית הספר,2015
+IC010Q09NA,Frequency of use outside of school: Doing homework on a computer.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,תדירות הכנת שעורי הבית דרך המחשב,2015
+IC010Q10NA,Frequency of use outside of school: Doing homework on a mobile device.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,תדירות הכנת שעורי הבית דרך הטלפון הנייד,2015
+IC010Q11NA,Frequency of use outside of school: Downloading learning apps on a mobile device.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,תדירות הורדת אפליקציות לימודיות,2015
+IC010Q12NA,Frequency of use outside of school: Downloading science learning apps on a mobile device.,Computer Orientation,Outside School,,זמינות ושימוש באמצעי תקשוב,מחוץ לבית הספר,תדירות הורדת אפליקציות לימודיות בנושא מדע,2015
+IC011Q01TA,Frequency of use at school: <Chatting on line> at school.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,שימוש בצ'אט,2015
+IC011Q02TA,Frequency of use at school: Using email at school.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,"שימוש בדוא""ל",2015
+IC011Q03TA,Frequency of use at school: Browsing the Internet for schoolwork.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,שימוש באינטרנט בשביל עבודות ושעורי בית,2015
+IC011Q04TA,Frequency of use at school: Download\upload\browse schools web (e.g. <intranet>).,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,הורדה מאתר בית הספר,2015
+IC011Q05TA,Frequency of use at school: Posting my work on the schools website.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,פרסום העבודות דרך אתר בית הספר,2015
+IC011Q06TA,Frequency of use at school: Playing simulations at school.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,משחק בסימולציות,2015
+IC011Q07TA,"Frequency of use at school: Practicing and drilling, foreign language learning or math.",Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,לימוד ותרגול של שפות נוספות או מתמטיקה,2015
+IC011Q08TA,Frequency of use at school: Doing homework on a school computer.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,הכנת שעורי הבית במחשבי בית הספר,2015
+IC011Q09TA,Frequency of use at school: Using school computers for group work and communication with other students.,Computer Orientation,At School,,זמינות ושימוש באמצעי תקשוב,בבית הספר,"עבודה קבוצתית או תקשורת עם תלמידים אחרים על מחשבי בית הספר
+",2015
+IC013Q01NA,I forget about time when I'm using digital devices.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,הזמן עובר מהר כשאני משתמש בטכנולוגיה,2015
+IC013Q04NA,"The Internet is a great resource for obtaining information I am interested in (e.g. news, sports, dictionary).",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,האינטרנט הוא מקור מידע נהדר עבורי,2015
+IC013Q05NA,It is very useful to have Social Networks on the Internet.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,"השתתפות ברשתות חברתיות מאוד עוזר לי
+",2015
+IC013Q11NA,I am really excited discovering new digital devices or applications.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני מתרגש לגלות טכנולוגיה חדשה,2015
+IC013Q12NA,I really feel bad if no Internet connection is possible.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,"כשאין אינטרנט אני מרגיש לא טוב
+",2015
+IC013Q13NA,I like using digital devices.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני אוהב להשתמש בטכנולוגיה,2015
+IC014Q03NA,I feel comfortable using digital devices that I am less familiar with.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,חוסר ההכרות שלי עם מכשיר חדש אינו מפריע לי,2015
+IC014Q04NA,"If my friends and relatives want to buy new digital devices or applications, I can give them advice.",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אוכל להמליץ על מכשיר חדש לחברים ואו משפחה,2015
+IC014Q06NA,I feel comfortable using my digital devices at home.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני נהנה להשתמש בטכנולוגיה בבית,2015
+IC014Q08NA,"When I come across problems with digital devices, I think I can solve them.",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני יכול לפתור בעיות טכנולוגיות,2015
+IC014Q09NA,"If my friends and relatives have a problem with digital devices, I can help them.",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני יכול לעזור לאחרים עם בעיות טכנולוגיות,2015
+IC015Q02NA,"If I need new software, I install it by myself.",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני מתקין לעצמי תוכנות חדשות,2015
+IC015Q03NA,I read information about digital devices to be independent.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני לומד באופן עצמאי על טכנולוגיה,2015
+IC015Q05NA,I use digital devices as I want to use them.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני משתמש בטכנולוגיה באופן שבה אני רוצה להשתמש,2015
+IC015Q07NA,If I have a problem with digital devices I start to solve it on my own.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני מנסה לפתור בעצמי בעיות בטכנולוגיה,2015
+IC015Q09NA,"If I need a new application, I choose it by myself.",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני בוחר בעצמי אפליקציות חדשות,2015
+IC016Q01NA,"To learn something new about digital devices, I like to talk about them with my friends.",Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני אוהב לדבר על טכנולוגיות חדשות עם חברים,2015
+IC016Q02NA,I like to exchange solutions to problems with digital devices with others on the Internet.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני אוהב להתייעץ עם אחרים דרך האינטרנט על טכנולוגיה,2015
+IC016Q04NA,I like to meet friends and play computer and video games with them.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני אוהב לפגוש חברים ולשחק איתם במשחקי מחשב,2015
+IC016Q05NA,I like to share information about digital devices with my friends.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני אוהב לספר לחברים על טכנולוגיה חדשה,2015
+IC016Q07NA,I learn a lot about digital media by discussing with my friends and relatives.,Computer Orientation,,,זמינות ושימוש באמצעי תקשוב,עמדות,אני לומד הרבה על טכנולוגיה מחברים ומשפחה,2015
+EC001Q01NA,Approx how many hrs\week attend add. instruct in the follow. domains? <School science> or <broad science>,,,,שיעורי עזר,שעות בשבוע,מדעים,2015
+EC001Q02NA,Approx how many hrs\week attend add. instruct in the follow. domains? Mathematics,,,,שיעורי עזר,שעות בשבוע,מתמטיקה,2015
+EC001Q03NA,Approx how many hrs\week attend add. instruct in the follow. domains? <Test language>,,,,שיעורי עזר,שעות בשבוע,קריאה,2015
+EC001Q04NA,Approx how many hrs\week attend add. instruct in the follow. domains? <Foreign languages>,,,,שיעורי עזר,שעות בשבוע,שפה זרה,2015
+EC001Q05NA,Approx how many hrs\week attend add. instruct in the follow. domains? Social sciences,,,,שיעורי עזר,שעות בשבוע,מדעי החברה,2015
+EC001Q06NA,Approx how many hrs\week attend add. instruct in the follow. domains? Music,,,,שיעורי עזר,שעות בשבוע,מוזיקה,2015
+EC001Q07NA,Approx how many hrs\week attend add. instruct in the follow. domains? Sports,,,,שיעורי עזר,שעות בשבוע,ספורט,2015
+EC001Q08NA,Approx how many hrs\week attend add. instruct in the follow. domains? Performing arts,,,,שיעורי עזר,שעות בשבוע,תיאטרון או מחול,2015
+EC001Q09NA,Approx how many hrs\week attend add. instruct in the follow. domains? Visual arts,,,,שיעורי עזר,שעות בשבוע,אמנות פלסטית,2015
+EC001Q10NA,Approx how many hrs\week attend add. instruct in the follow. domains? Other,,,,שיעורי עזר,שעות בשבוע,אחר,2015
 EC003Q01NA,Which <school science> subjects are covered? Physics,Learning Science,Subjects,Physics,לימודי מדעים,תחומים,פיזיקה,2015
 EC003Q02NA,Which <school science> subjects are covered? Chemistry,Learning Science,Subjects,Chemistry,לימודי מדעים,תחומים,כימיה,2015
 EC003Q03NA,Which <school science> subjects are covered? Biology,Learning Science,Subjects,Biology,לימודי מדעים,תחומים,ביולוגיה,2015
 EC003Q04NA,Which <school science> subjects are covered? <Earth and space>,Learning Science,Subjects,Earth and space,לימודי מדעים,תחומים,כדור הארץ וחלל,2015
 EC003Q05NA,Which <school science> subjects are covered? Applied science and technology (e.g. <country-specific example>),Learning Science,Subjects,Applied science and technology,לימודי מדעים,תחומים,טכנולוגיה,2015
 EC003Q06NA,Which <school science> subjects are covered? <General or integrated science> (e.g. <country-specific example>),Learning Science,Subjects,General or integrated science,לימודי מדעים,תחומים,מדע כללי,2015
-EC004Q01NA,Add science inst. cover? Content covered in regular school courses,Learning Science,,,לימודי מדעים,שיעורי עזר,חומר הלימודים,2015
-EC004Q02NA,Add science inst. cover? New or additional content not covered in regular school courses,Learning Science,,,לימודי מדעים,שיעורי עזר,חומר חדש,2015
-EC005Q01NA,Sci. instruct. participate? One-on-one tutoring with a person,Learning Science,,,לימודי מדעים,שיעורי עזר,שיעור פרטי,2015
-EC005Q02NA,Sci. instruct. participate? Internet tutoring with a person (including e.g. <Skype>),Learning Science,,,לימודי מדעים,שיעורי עזר,שיעור פרטי באינטרנט,2015
-EC005Q03NA,Sci. instruct. participate? Internet or computer tutoring with a programme or application,Learning Science,,,לימודי מדעים,שיעורי עזר,שיעור עם תוכנה,2015
-EC005Q04NA,Sci. instruct. participate? Live instruction by a person,Learning Science,,,לימודי מדעים,שיעורי עזר,שיעור חי באינטרנט,2015
-EC005Q05NA,Sci. instruct. participate? Video-recorded instruction by a person,Learning Science,,,לימודי מדעים,שיעורי עזר,שיעור מוקלט באינטרנט,2015
-EC005Q06NA,Sci. instruct. participate? Small group study or practice (2 to 7 students),Learning Science,,,לימודי מדעים,שיעורי עזר,קבוצה קטנה,2015
-EC005Q07NA,Sci. instruct. participate? Large group study or practice (8 or more students),Learning Science,,,לימודי מדעים,שיעורי עזר,קבוצה גדולה,2015
-EC005Q08NA,Sci. instruct. participate? Other additional science instruction,Learning Science,,,לימודי מדעים,שיעורי עזר,משאבים אחרים,2015
-EC007Q01NA,Where do you attend this additional science instruction? In my regular school building,Learning Science,,,לימודי מדעים,שיעורי עזר,מקום השיעור בבית הספר,2015
-EC007Q02NA,"Where do you attend this additional science instruction? At some other place, i.e., not in my reg school building",Learning Science,,,לימודי מדעים,שיעורי עזר,מקום השיעור מחוץ בית הספר,2015
-EC008Q01NA,The teacher is one of my regular teachers in this years school courses. (science),Learning Science,,,לימודי מדעים,,המורה שלי למדעים,2015
-EC008Q02NA,The teacher regularly teaches students my age in school but is not my teacher in any of my regular courses. (science),Learning Science,,,לימודי מדעים,,מורה ,2015
-EC008Q03NA,The teacher mainly works for a business or organisation specialised in additional instruction. (science),Learning Science,,,לימודי מדעים,,,2015
-EC008Q04NA,The teacher is not specialised teaching personnel (e.g. a student). (science),Learning Science,,,לימודי מדעים,,,2015
-EC009Q03NA,Compare your <school science> lessons at school\your add sci inst. My teacher does a lot to help,Learning Science,,,לימודי מדעים,,,2015
-EC009Q07NA,Compare your <school science> lessons at school\your add sci inst. My teacher is pleased when I,Learning Science,,,לימודי מדעים,,,2015
-EC009Q10NA,Compare your <school science> lessons at school\your add sci inst. My teacher gives hints,Learning Science,,,לימודי מדעים,,,2015
-EC009Q12NA,Compare your <school science> lessons at school\your add sci inst. My teacher helps me\find ways,Learning Science,,,לימודי מדעים,,,2015
-EC009Q13NA,Compare your <school science> lessons at school\your add sci inst. Once we identify why,Learning Science,,,לימודי מדעים,,,2015
-EC009Q14NA,Compare your <school science> lessons at school\your add sci inst. My teacher adapts the content,Learning Science,,,לימודי מדעים,,,2015
-EC010Q04NA,Compare <school science> lessons in school\add sci instruct. It takes long time until I have gathered all the materia,Learning Science,,,לימודי מדעים,,,2015
-EC010Q06NA,Compare <school science> lessons in school\add sci instruct. I talk about things that don't have anything to do with,Learning Science,,,לימודי מדעים,,,2015
-EC010Q07NA,"Compare <school science> lessons in school\add sci instruct. At the end of a lesson, my teacher summarises learning",Learning Science,,,לימודי מדעים,,,2015
-EC010Q08NA,Compare <school science> lessons in school\add sci instruct. My teacher points out the most important aspects\topic.,Learning Science,,,לימודי מדעים,,,2015
-EC010Q09NA,Compare <school science> lessons in school\add sci instruct. I am often bored.,Learning Science,,,לימודי מדעים,,,2015
-EC010Q10NA,Compare <school science> lessons in school\add sci instruct. It takes very long until I am ready to get started.,Learning Science,,,לימודי מדעים,,,2015
-EC010Q11NA,Compare <school science> lessons in school\add sci instruct. I should learn in a cert actvty.,Learning Science,,,לימודי מדעים,,,2015
-EC010Q12NA,Compare <school science> lessons in school\add sci instruct. My teacher points out the broader context of a learning,Learning Science,,,לימודי מדעים,,,2015
-EC011Q01NA,Compare <school science> lessons in school\add sci instruct. I get along well with my teachers.,Learning Science,,,לימודי מדעים,,,2015
-EC011Q02NA,Compare <school science> lessons in school\add sci instruct. My teachers are interested in my well-being.,Learning Science,,,לימודי מדעים,,,2015
-EC011Q03NA,Compare <school science> lessons in school\add sci instruct. My teachers really listen to what I have to say.,Learning Science,,,לימודי מדעים,,,2015
-EC011Q04NA,"Compare <school science> lessons in school\add sci instruct. If I need extra help, I will receive it from teachers.",Learning Science,,,לימודי מדעים,,,2015
-EC011Q05NA,Compare <school science> lessons in school\add sci instruct. My teachers treat me fairly.,Learning Science,,,לימודי מדעים,,,2015
-EC012Q01NA,Why do you attend additional science instruction in this school year? I want to learn more.,Learning Science,,,לימודי מדעים,,,2015
-EC012Q02NA,Why do you attend additional science instruction in this school year? I want to prepare for exams.,Learning Science,,,לימודי מדעים,,,2015
-EC012Q03NA,Why do you attend additional science instruction in this school year? I was attracted by the tutoring advertisement.,Learning Science,,,לימודי מדעים,,,2015
-EC012Q04NA,Why do you attend additional science instruction in this school year? My parents wanted me to attend.,Learning Science,,,לימודי מדעים,,,2015
-EC012Q05NA,Why do you attend additional science instruction in this school year? Many of my friends are doing it.,Learning Science,,,לימודי מדעים,,,2015
-EC012Q06NA,Why do you attend additional science instruction in this school year? My teachers recommend it.,Learning Science,,,לימודי מדעים,,,2015
-EC012Q07NA,Why do you attend additional science instruction in this school year? I want to improve my grades.,Learning Science,,,לימודי מדעים,,,2015
-EC012Q08NA,Why do you attend additional science instruction in this school year? I need to improve my grades.,Learning Science,,,לימודי מדעים,,,2015
-EC012Q09NA,Why do you attend additional science instruction in this school year? It is gratifying to study.,Learning Science,,,לימודי מדעים,,,2015
-EC012Q10NA,Why do you attend additional science instruction in this school year? It looks good on a résumé.,Learning Science,,,לימודי מדעים,,,2015
-EC012Q11NA,Why do you attend additional science instruction in this school year? It is necessary for a job.,Learning Science,,,לימודי מדעים,,,2015
-EC012Q12NA,Why do you attend additional science instruction in this school year? Other reason.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q01NA,Why don't you attend additional science in this school year? I don't need any additional science instruction.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q02NA,Why don't you attend additional science in this school year? None of the available offerings suit my needs.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q03NA,Why don't you attend additional science in this school year? Not many of my friends are doing it.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q04NA,Why don't you attend additional science in this school year? I don't have time.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q05NA,Why don't you attend additional science in this school year? I don't have the money.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q06NA,Why don't you attend additional science in this school year? My school teachers are knowledgeable enough.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q07NA,Why don't you attend additional science in this school year? My parents don't want me to do it.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q08NA,Why don't you attend additional science in this school year? It doesnt seem worth the money.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q09NA,Why don't you attend additional science in this school year? My teachers say it is not useful.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q10NA,Why don't you attend additional science in this school year? I have never considered add. science instruction.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q11NA,Why don't you attend additional science in this school year? Add. science instruction not avail. where I live.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q12NA,Why don't you attend additional science in this school year? My family helps me instead.,Learning Science,,,לימודי מדעים,,,2015
-EC013Q13NA,Why don't you attend additional science in this school year? My peers and friends help me instead.,Learning Science,,,לימודי מדעים,,,2015
-EC014Q01NA,What does additional math cover? Content covered in regular school courses,Learning Math,,,לימודי מתמטיקה,,,2015
-EC014Q02NA,What does additonal math cover? New or additional content notcovered in regular school courses,Learning Math,,,לימודי מתמטיקה,,,2015
-EC015Q01NA,Which math instruction do you participate? One-on-one tutoring with a person,Learning Math,,,לימודי מתמטיקה,,,2015
-EC015Q02NA,Which math instruction do you participate? Internet tutoring with a person (including e.g. <Skype>),Learning Math,,,לימודי מתמטיקה,,,2015
-EC015Q03NA,Which math instruction do you participate? Internet or computer tutoring with a programme or application,Learning Math,,,לימודי מתמטיקה,,,2015
-EC015Q04NA,Which math instruction do you participate? Live instruction by a person,Learning Math,,,לימודי מתמטיקה,,,2015
-EC015Q05NA,Which math instruction do you participate? Video-recorded instruction by a person,Learning Math,,,לימודי מתמטיקה,,,2015
-EC015Q06NA,Which math instruction do you participate? Small group study or practice (2 to 7 students),Learning Math,,,לימודי מתמטיקה,,,2015
-EC015Q07NA,Which math instruction do you participate? Large group study or practice (8 or more students),Learning Math,,,לימודי מתמטיקה,,,2015
-EC015Q08NA,Which math instruction do you participate? Other additional mathematics instruction,Learning Math,,,לימודי מתמטיקה,,,2015
-EC017Q01NA,Where do you attend this additional mathematics instruction? In my regular school building,Learning Math,,,לימודי מתמטיקה,,,2015
-EC017Q02NA,"Where do you attend this additional mathematics instruction? At some other place, i.e., not in my regular school",Learning Math,,,לימודי מתמטיקה,,,2015
-EC018Q01NA,The teacher is one of my regular teachers in this years school courses. (mathematics),Learning Math,,,לימודי מתמטיקה,,,2015
-EC018Q02NA,The teacher regularly teaches students my age in school but is not my teacher in any of my regular school courses. (m,Learning Math,,,לימודי מתמטיקה,,,2015
-EC018Q03NA,The teacher mainly works for a business or organisation specialised in additional instruction. (mathematics),Learning Math,,,לימודי מתמטיקה,,,2015
-EC018Q04NA,The teacher is not specialised teaching personnel (e.g. a student). (mathematics),Learning Math,,,לימודי מתמטיקה,,,2015
-EC019Q03NA,My teacher does a lot to help me.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC019Q07NA,My teacher is pleased when I come up with new solutions to a problem.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC019Q10NA,My teacher gives hints or offers strategies that help me to solve a task.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC019Q12NA,My teacher helps me to find ways how to solve a problem.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC019Q13NA,"Once we identify why I have a certain problem, my teacher provides me with a working strategy.",Learning Math,,,לימודי מתמטיקה,,,2015
-EC019Q14NA,My teacher adapts the content and method to my needs.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC020Q04NA,Where do math situations occur? It takes a long time until I have gathered all the material to get started.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC020Q06NA,Where do math situations occur? I talk about things that don't have anything to do with our tasks\topic.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC020Q07NA,Where do math situations occur? My teacher summarises the learning content I have covered.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC020Q08NA,Where do math situations occur? My teacher points out the most important aspects of a topic.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC020Q09NA,Where do math situations occur? I am often bored.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC020Q10NA,Where do math situations occur? It takes very long until I am ready to get started.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC020Q11NA,Where do math situations occur? My teacher tells me what I should learn in a certain activity.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC020Q12NA,Where do math situations occur? My teacher points out the broader context of a learning unit.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC021Q01NA,I get along well with my teachers.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC021Q02NA,My teachers are interested in my well-being.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC021Q03NA,My teachers really listen to what I have to say.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC021Q04NA,"If I need extra help, I will receive it from my teachers.",Learning Math,,,לימודי מתמטיקה,,,2015
-EC021Q05NA,My teachers treat me fairly.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC022Q01NA,Why do you attend additional mathematics in this school year: I want to learn more.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC022Q02NA,Why do you attend additional mathematics in this school year: I want to prepare for exams.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC022Q03NA,Why do you attend additional mathematics in this school year: I was attracted by the tutoring advertis.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC022Q04NA,Why do you attend additional mathematics in this school year: My parents wanted me to attend.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC022Q05NA,Why do you attend additional mathematics in this school year: Many of my friends are doing it.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC022Q06NA,Why do you attend additional mathematics in this school year: My teachers recommend it.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC022Q07NA,Why do you attend additional mathematics in this school year: I want to improve my grades.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC022Q08NA,Why do you attend additional mathematics in this school year: I need to improve my grades.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC022Q09NA,Why do you attend additional mathematics in this school year: It is gratifying to study.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC022Q10NA,Why do you attend additional mathematics in this school year: It looks good on a résumé.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC022Q11NA,Why do you attend additional mathematics in this school year: It is necessary for a job.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC022Q12NA,Why do you attend additional mathematics in this school year: Other reason.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q01NA,Why don't you attend additional mathematics in this school year: I don't need any add math instruction.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q02NA,Why don't you attend additional mathematics in this school year: None of the offerings suit my needs.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q03NA,Why don't you attend additional mathematics in this school year: Not many of my friends are doing it.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q04NA,Why don't you attend additional mathematics in this school year: I don't have time.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q05NA,Why don't you attend additional mathematics in this school year: I don't have the money.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q06NA,Why don't you attend additional mathematics in this school year: My teachers are knowledgeable enough.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q07NA,Why don't you attend additional mathematics in this school year: My parents don't want me to do it.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q08NA,Why don't you attend additional mathematics in this school year: It doesnt seem worth the money.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q09NA,Why don't you attend additional mathematics in this school year: My teachers say it is not useful.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q10NA,Why don't you attend additional mathematics in this school year: I never considered add. math instruction.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q11NA,Why don't you attend additional mathematics in this school year: Add. math instruc. not avail. where I live.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q12NA,Why don't you attend additional mathematics in this school year: My family helps me instead.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC023Q13NA,Why don't you attend additional mathematics in this school year: My peers and friends help me instead.,Learning Math,,,לימודי מתמטיקה,,,2015
-EC024Q01NA,Which type of add. <test language> instruct. do you participate in during this school year? One-on-one tutoring,Learning Reading,,,לימודי קריאה,,,2015
-EC024Q02NA,Which type of add. <test language> instruct. do you participate in during this school year? Internet tutor.( <Skype>),Learning Reading,,,לימודי קריאה,,,2015
-EC024Q03NA,"Which type of add.<test language> instruct. do you participate in during this school year? Internet\comp tutoring, ap",Learning Reading,,,לימודי קריאה,,,2015
-EC024Q04NA,Which type of add.<test language> instruct. do you participate in during this school year? Live instruction,Learning Reading,,,לימודי קריאה,,,2015
-EC024Q05NA,Which type of add.<test language> instruct. do you participate in during this school year? Video-recorded instruction,Learning Reading,,,לימודי קריאה,,,2015
-EC024Q06NA,Which type of add. <test language> instruct. do you participate in during this school year? Small gp study\practice,Learning Reading,,,לימודי קריאה,,,2015
-EC024Q07NA,Which type of add. <test language> instruct. do you participate in during this school year? Large group study\practic,Learning Reading,,,לימודי קריאה,,,2015
-EC024Q08NA,Which type of add. <test language> instruct. do you participate in during this school year? Other add. <test language,Learning Reading,,,לימודי קריאה,,,2015
-EC026Q01NA,Where do you attend this additional <test language> instruction? In my regular school building,Learning Reading,,,לימודי קריאה,,,2015
-EC026Q02NA,"Where do you attend this additional <test language> instruction? At some other place, i.e., not regular school build",Learning Reading,,,לימודי קריאה,,,2015
-EC027Q01NA,The Teacher is one of my regular teachers in this years school courses. (test language),Learning Reading,,,לימודי קריאה,,,2015
-EC027Q02NA,The teacher regularly teaches students my age in school but is not my teacher in any of my regular school courses. (t,Learning Reading,,,לימודי קריאה,,,2015
-EC027Q03NA,The teacher mainly works for a business or organisation specialised in additional instruction. (test language),Learning Reading,,,לימודי קריאה,,,2015
-EC027Q04NA,The teacher is not specialised teaching personnel (e.g. a student). (test language),Learning Reading,,,לימודי קריאה,,,2015
+EC004Q01NA,Add science inst. cover? Content covered in regular school courses,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,חומר הלימודים,2015
+EC004Q02NA,Add science inst. cover? New or additional content not covered in regular school courses,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,חומר חדש,2015
+EC005Q01NA,Sci. instruct. participate? One-on-one tutoring with a person,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,שיעור פרטי,2015
+EC005Q02NA,Sci. instruct. participate? Internet tutoring with a person (including e.g. <Skype>),Learning Science,,,לימודי מדעים,אופי שיעורי העזר,שיעור פרטי באינטרנט,2015
+EC005Q03NA,Sci. instruct. participate? Internet or computer tutoring with a programme or application,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,שיעור עם תוכנה,2015
+EC005Q04NA,Sci. instruct. participate? Live instruction by a person,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,שיעור חי באינטרנט,2015
+EC005Q05NA,Sci. instruct. participate? Video-recorded instruction by a person,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,שיעור מוקלט באינטרנט,2015
+EC005Q06NA,Sci. instruct. participate? Small group study or practice (2 to 7 students),Learning Science,,,לימודי מדעים,אופי שיעורי העזר,קבוצה קטנה,2015
+EC005Q07NA,Sci. instruct. participate? Large group study or practice (8 or more students),Learning Science,,,לימודי מדעים,אופי שיעורי העזר,קבוצה גדולה,2015
+EC005Q08NA,Sci. instruct. participate? Other additional science instruction,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,משאבים אחרים,2015
+EC007Q01NA,Where do you attend this additional science instruction? In my regular school building,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,מקום השיעור בבית הספר,2015
+EC007Q02NA,"Where do you attend this additional science instruction? At some other place, i.e., not in my reg school building",Learning Science,,,לימודי מדעים,אופי שיעורי העזר,מקום השיעור מחוץ בית הספר,2015
+EC008Q01NA,The teacher is one of my regular teachers in this years school courses. (science),Learning Science,,,לימודי מדעים,אופי שיעורי העזר,המורה שלי למדעים,2015
+EC008Q02NA,The teacher regularly teaches students my age in school but is not my teacher in any of my regular courses. (science),Learning Science,,,לימודי מדעים,אופי שיעורי העזר,מורה אחר בבי הספר,2015
+EC008Q03NA,The teacher mainly works for a business or organisation specialised in additional instruction. (science),Learning Science,,,לימודי מדעים,אופי שיעורי העזר,מורה חברה,2015
+EC008Q04NA,The teacher is not specialised teaching personnel (e.g. a student). (science),Learning Science,,,לימודי מדעים,אופי שיעורי העזר,סטודנט,2015
+EC009Q03NA,Compare your <school science> lessons at school\your add sci inst. My teacher does a lot to help,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,"המורה עוזר הרבה
+",2015
+EC009Q07NA,Compare your <school science> lessons at school\your add sci inst. My teacher is pleased when I,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,"המורה מראה שביעות רצון
+",2015
+EC009Q10NA,Compare your <school science> lessons at school\your add sci inst. My teacher gives hints,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,המורה נותן רמזים,2015
+EC009Q12NA,Compare your <school science> lessons at school\your add sci inst. My teacher helps me\find ways,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,המורה עוזר למצוא דרכים,2015
+EC009Q13NA,Compare your <school science> lessons at school\your add sci inst. Once we identify why,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,,2015
+EC009Q14NA,Compare your <school science> lessons at school\your add sci inst. My teacher adapts the content,Learning Science,,,לימודי מדעים,אופי שיעורי העזר,המורה מתאים את החומר,2015
+EC010Q04NA,Compare <school science> lessons in school\add sci instruct. It takes long time until I have gathered all the materia,Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,,2015
+EC010Q06NA,Compare <school science> lessons in school\add sci instruct. I talk about things that don't have anything to do with,Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,המורה מדבר על דברים שאין מה לעשות איתם,2015
+EC010Q07NA,"Compare <school science> lessons in school\add sci instruct. At the end of a lesson, my teacher summarises learning",Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,המורה מסכם בסוף השיעור,2015
+EC010Q08NA,Compare <school science> lessons in school\add sci instruct. My teacher points out the most important aspects\topic.,Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,המורה מדגיש את הדברים החשובים,2015
+EC010Q09NA,Compare <school science> lessons in school\add sci instruct. I am often bored.,Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,אני משועמם בדרך כלל,2015
+EC010Q10NA,Compare <school science> lessons in school\add sci instruct. It takes very long until I am ready to get started.,Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,,2015
+EC010Q11NA,Compare <school science> lessons in school\add sci instruct. I should learn in a cert actvty.,Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,,2015
+EC010Q12NA,Compare <school science> lessons in school\add sci instruct. My teacher points out the broader context of a learning,Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,,2015
+EC011Q01NA,Compare <school science> lessons in school\add sci instruct. I get along well with my teachers.,Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,אני מסתדר עם מוריי,2015
+EC011Q02NA,Compare <school science> lessons in school\add sci instruct. My teachers are interested in my well-being.,Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,המורים מתעניינים ברווחתי,2015
+EC011Q03NA,Compare <school science> lessons in school\add sci instruct. My teachers really listen to what I have to say.,Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,המורים מקשיבים בתשומת לב,2015
+EC011Q04NA,"Compare <school science> lessons in school\add sci instruct. If I need extra help, I will receive it from teachers.",Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,המורה נותן עזרה נוספת,2015
+EC011Q05NA,Compare <school science> lessons in school\add sci instruct. My teachers treat me fairly.,Learning Science,,,לימודי מדעים,אופי שיעורי הכיתה,המורה נותן בהוגנות,2015
+EC012Q01NA,Why do you attend additional science instruction in this school year? I want to learn more.,Learning Science,,,לימודי מדעים,מוטיבציה לשיעורי עזר,"ללמוד יותר
+",2015
+EC012Q02NA,Why do you attend additional science instruction in this school year? I want to prepare for exams.,Learning Science,,,לימודי מדעים,מוטיבציה לשיעורי עזר,להתכונן לבחינות,2015
+EC012Q03NA,Why do you attend additional science instruction in this school year? I was attracted by the tutoring advertisement.,Learning Science,,,לימודי מדעים,מוטיבציה לשיעורי עזר,תשומת לב,2015
+EC012Q04NA,Why do you attend additional science instruction in this school year? My parents wanted me to attend.,Learning Science,,,לימודי מדעים,מוטיבציה לשיעורי עזר,ההורים רצו,2015
+EC012Q05NA,Why do you attend additional science instruction in this school year? Many of my friends are doing it.,Learning Science,,,לימודי מדעים,מוטיבציה לשיעורי עזר,חברים רבים עושים זאת,2015
+EC012Q06NA,Why do you attend additional science instruction in this school year? My teachers recommend it.,Learning Science,,,לימודי מדעים,מוטיבציה לשיעורי עזר,המורים המליצו,2015
+EC012Q07NA,Why do you attend additional science instruction in this school year? I want to improve my grades.,Learning Science,,,לימודי מדעים,מוטיבציה לשיעורי עזר,כדי לשפר את הציונים,2015
+EC012Q08NA,Why do you attend additional science instruction in this school year? I need to improve my grades.,Learning Science,,,לימודי מדעים,מוטיבציה לשיעורי עזר,צורך בשיפור הציונים,2015
+EC012Q09NA,Why do you attend additional science instruction in this school year? It is gratifying to study.,Learning Science,,,לימודי מדעים,מוטיבציה לשיעורי עזר,"סיפוק בלמידה
+",2015
+EC012Q10NA,Why do you attend additional science instruction in this school year? It looks good on a résumé.,Learning Science,,,לימודי מדעים,מוטיבציה לשיעורי עזר,נראה טוב בקורות חיים,2015
+EC012Q11NA,Why do you attend additional science instruction in this school year? It is necessary for a job.,Learning Science,,,לימודי מדעים,מוטיבציה לשיעורי עזר,הכרחי לעבודה,2015
+EC012Q12NA,Why do you attend additional science instruction in this school year? Other reason.,Learning Science,,,לימודי מדעים,מוטיבציה לשיעורי עזר,סיבות אחרות,2015
+EC013Q01NA,Why don't you attend additional science in this school year? I don't need any additional science instruction.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,לא צריך,2015
+EC013Q02NA,Why don't you attend additional science in this school year? None of the available offerings suit my needs.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,לא מתאים,2015
+EC013Q03NA,Why don't you attend additional science in this school year? Not many of my friends are doing it.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,חבריי לא עושים זאת,2015
+EC013Q04NA,Why don't you attend additional science in this school year? I don't have time.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,חוסר זמן,2015
+EC013Q05NA,Why don't you attend additional science in this school year? I don't have the money.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,"מחסור בכסף
+",2015
+EC013Q06NA,Why don't you attend additional science in this school year? My school teachers are knowledgeable enough.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,המורה יודע מספיק,2015
+EC013Q07NA,Why don't you attend additional science in this school year? My parents don't want me to do it.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,ההורים לא רוצים,2015
+EC013Q08NA,Why don't you attend additional science in this school year? It doesnt seem worth the money.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,לא שווה את הכסף,2015
+EC013Q09NA,Why don't you attend additional science in this school year? My teachers say it is not useful.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,המורים אומרים שאין צורך,2015
+EC013Q10NA,Why don't you attend additional science in this school year? I have never considered add. science instruction.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,מעולם לא חשבתי על זה,2015
+EC013Q11NA,Why don't you attend additional science in this school year? Add. science instruction not avail. where I live.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,אין במקום מגוריי,2015
+EC013Q12NA,Why don't you attend additional science in this school year? My family helps me instead.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,משפחתי עוזרת לי,2015
+EC013Q13NA,Why don't you attend additional science in this school year? My peers and friends help me instead.,Learning Science,,,לימודי מדעים,חוסר מוטיבציה לשיעורי עזר,חבריי עוזרים לי,2015
+EC014Q01NA,What does additional math cover? Content covered in regular school courses,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,חומר הלימודים,2015
+EC014Q02NA,What does additonal math cover? New or additional content notcovered in regular school courses,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,חומר חדש,2015
+EC015Q01NA,Which math instruction do you participate? One-on-one tutoring with a person,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,שיעור פרטי,2015
+EC015Q02NA,Which math instruction do you participate? Internet tutoring with a person (including e.g. <Skype>),Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,שיעור פרטי באינטרנט,2015
+EC015Q03NA,Which math instruction do you participate? Internet or computer tutoring with a programme or application,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,שיעור עם תוכנה,2015
+EC015Q04NA,Which math instruction do you participate? Live instruction by a person,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,שיעור חי באינטרנט,2015
+EC015Q05NA,Which math instruction do you participate? Video-recorded instruction by a person,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,שיעור מוקלט באינטרנט,2015
+EC015Q06NA,Which math instruction do you participate? Small group study or practice (2 to 7 students),Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,קבוצה קטנה,2015
+EC015Q07NA,Which math instruction do you participate? Large group study or practice (8 or more students),Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,קבוצה גדולה,2015
+EC015Q08NA,Which math instruction do you participate? Other additional mathematics instruction,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,משאבים אחרים,2015
+EC017Q01NA,Where do you attend this additional mathematics instruction? In my regular school building,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,מקום השיעור בבית הספר,2015
+EC017Q02NA,"Where do you attend this additional mathematics instruction? At some other place, i.e., not in my regular school",Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,מקום השיעור מחוץ בית הספר,2015
+EC018Q01NA,The teacher is one of my regular teachers in this years school courses. (mathematics),Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,המורה שלי למתמטיקה,2015
+EC018Q02NA,The teacher regularly teaches students my age in school but is not my teacher in any of my regular school courses. (m,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,מורה אחר בבי הספר,2015
+EC018Q03NA,The teacher mainly works for a business or organisation specialised in additional instruction. (mathematics),Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,מורה חברה,2015
+EC018Q04NA,The teacher is not specialised teaching personnel (e.g. a student). (mathematics),Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,סטודנט,2015
+EC019Q03NA,My teacher does a lot to help me.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,"המורה עוזר הרבה
+",2015
+EC019Q07NA,My teacher is pleased when I come up with new solutions to a problem.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,"המורה מראה שביעות רצון
+",2015
+EC019Q10NA,My teacher gives hints or offers strategies that help me to solve a task.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,המורה נותן רמזים,2015
+EC019Q12NA,My teacher helps me to find ways how to solve a problem.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,המורה עוזר למצוא דרכים,2015
+EC019Q13NA,"Once we identify why I have a certain problem, my teacher provides me with a working strategy.",Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,,2015
+EC019Q14NA,My teacher adapts the content and method to my needs.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי העזר,המורה מתאים את החומר,2015
+EC020Q04NA,Where do math situations occur? It takes a long time until I have gathered all the material to get started.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,,2015
+EC020Q06NA,Where do math situations occur? I talk about things that don't have anything to do with our tasks\topic.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,המורה מדבר על דברים שאין מה לעשות איתם,2015
+EC020Q07NA,Where do math situations occur? My teacher summarises the learning content I have covered.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,המורה מסכם בסוף השיעור,2015
+EC020Q08NA,Where do math situations occur? My teacher points out the most important aspects of a topic.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,המורה מדגיש את הדברים החשובים,2015
+EC020Q09NA,Where do math situations occur? I am often bored.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,אני משועמם בדרך כלל,2015
+EC020Q10NA,Where do math situations occur? It takes very long until I am ready to get started.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,,2015
+EC020Q11NA,Where do math situations occur? My teacher tells me what I should learn in a certain activity.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,,2015
+EC020Q12NA,Where do math situations occur? My teacher points out the broader context of a learning unit.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,,2015
+EC021Q01NA,I get along well with my teachers.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,אני מסתדר עם מוריי,2015
+EC021Q02NA,My teachers are interested in my well-being.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,המורים מתעניינים ברווחתי,2015
+EC021Q03NA,My teachers really listen to what I have to say.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,המורים מקשיבים בתשומת לב,2015
+EC021Q04NA,"If I need extra help, I will receive it from my teachers.",Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,המורה נותן עזרה נוספת,2015
+EC021Q05NA,My teachers treat me fairly.,Learning Math,,,לימודי מתמטיקה,אופי שיעורי הכיתה,המורה נותן בהוגנות,2015
+EC022Q01NA,Why do you attend additional mathematics in this school year: I want to learn more.,Learning Math,,,לימודי מתמטיקה,מוטיבציה לשיעורי עזר,"ללמוד יותר
+",2015
+EC022Q02NA,Why do you attend additional mathematics in this school year: I want to prepare for exams.,Learning Math,,,לימודי מתמטיקה,מוטיבציה לשיעורי עזר,להתכונן לבחינות,2015
+EC022Q03NA,Why do you attend additional mathematics in this school year: I was attracted by the tutoring advertis.,Learning Math,,,לימודי מתמטיקה,מוטיבציה לשיעורי עזר,תשומת לב,2015
+EC022Q04NA,Why do you attend additional mathematics in this school year: My parents wanted me to attend.,Learning Math,,,לימודי מתמטיקה,מוטיבציה לשיעורי עזר,ההורים רצו,2015
+EC022Q05NA,Why do you attend additional mathematics in this school year: Many of my friends are doing it.,Learning Math,,,לימודי מתמטיקה,מוטיבציה לשיעורי עזר,חברים רבים עושים זאת,2015
+EC022Q06NA,Why do you attend additional mathematics in this school year: My teachers recommend it.,Learning Math,,,לימודי מתמטיקה,מוטיבציה לשיעורי עזר,המורים המליצו,2015
+EC022Q07NA,Why do you attend additional mathematics in this school year: I want to improve my grades.,Learning Math,,,לימודי מתמטיקה,מוטיבציה לשיעורי עזר,כדי לשפר את הציונים,2015
+EC022Q08NA,Why do you attend additional mathematics in this school year: I need to improve my grades.,Learning Math,,,לימודי מתמטיקה,מוטיבציה לשיעורי עזר,צורך בשיפור הציונים,2015
+EC022Q09NA,Why do you attend additional mathematics in this school year: It is gratifying to study.,Learning Math,,,לימודי מתמטיקה,מוטיבציה לשיעורי עזר,"סיפוק בלמידה
+",2015
+EC022Q10NA,Why do you attend additional mathematics in this school year: It looks good on a résumé.,Learning Math,,,לימודי מתמטיקה,מוטיבציה לשיעורי עזר,נראה טוב בקורות חיים,2015
+EC022Q11NA,Why do you attend additional mathematics in this school year: It is necessary for a job.,Learning Math,,,לימודי מתמטיקה,מוטיבציה לשיעורי עזר,הכרחי לעבודה,2015
+EC022Q12NA,Why do you attend additional mathematics in this school year: Other reason.,Learning Math,,,לימודי מתמטיקה,מוטיבציה לשיעורי עזר,סיבות אחרות,2015
+EC023Q01NA,Why don't you attend additional mathematics in this school year: I don't need any add math instruction.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,לא צריך,2015
+EC023Q02NA,Why don't you attend additional mathematics in this school year: None of the offerings suit my needs.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,לא מתאים,2015
+EC023Q03NA,Why don't you attend additional mathematics in this school year: Not many of my friends are doing it.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,חבריי לא עושים זאת,2015
+EC023Q04NA,Why don't you attend additional mathematics in this school year: I don't have time.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,חוסר זמן,2015
+EC023Q05NA,Why don't you attend additional mathematics in this school year: I don't have the money.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,"מחסור בכסף
+",2015
+EC023Q06NA,Why don't you attend additional mathematics in this school year: My teachers are knowledgeable enough.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,המורה יודע מספיק,2015
+EC023Q07NA,Why don't you attend additional mathematics in this school year: My parents don't want me to do it.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,ההורים לא רוצים,2015
+EC023Q08NA,Why don't you attend additional mathematics in this school year: It doesnt seem worth the money.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,לא שווה את הכסף,2015
+EC023Q09NA,Why don't you attend additional mathematics in this school year: My teachers say it is not useful.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,המורים אומרים שאין צורך,2015
+EC023Q10NA,Why don't you attend additional mathematics in this school year: I never considered add. math instruction.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,מעולם לא חשבתי על זה,2015
+EC023Q11NA,Why don't you attend additional mathematics in this school year: Add. math instruc. not avail. where I live.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,אין במקום מגוריי,2015
+EC023Q12NA,Why don't you attend additional mathematics in this school year: My family helps me instead.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,משפחתי עוזרת לי,2015
+EC023Q13NA,Why don't you attend additional mathematics in this school year: My peers and friends help me instead.,Learning Math,,,לימודי מתמטיקה,חוסר מוטיבציה לשיעורי עזר,חבריי עוזרים לי,2015
+EC024Q01NA,Which type of add. <test language> instruct. do you participate in during this school year? One-on-one tutoring,Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,שיעור פרטי,2015
+EC024Q02NA,Which type of add. <test language> instruct. do you participate in during this school year? Internet tutor.( <Skype>),Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,שיעור פרטי באינטרנט,2015
+EC024Q03NA,"Which type of add.<test language> instruct. do you participate in during this school year? Internet\comp tutoring, ap",Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,שיעור עם תוכנה,2015
+EC024Q04NA,Which type of add.<test language> instruct. do you participate in during this school year? Live instruction,Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,שיעור חי באינטרנט,2015
+EC024Q05NA,Which type of add.<test language> instruct. do you participate in during this school year? Video-recorded instruction,Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,שיעור מוקלט באינטרנט,2015
+EC024Q06NA,Which type of add. <test language> instruct. do you participate in during this school year? Small gp study\practice,Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,קבוצה קטנה,2015
+EC024Q07NA,Which type of add. <test language> instruct. do you participate in during this school year? Large group study\practic,Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,קבוצה גדולה,2015
+EC024Q08NA,Which type of add. <test language> instruct. do you participate in during this school year? Other add. <test language,Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,משאבים אחרים,2015
+EC026Q01NA,Where do you attend this additional <test language> instruction? In my regular school building,Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,מקום השיעור בבית הספר,2015
+EC026Q02NA,"Where do you attend this additional <test language> instruction? At some other place, i.e., not regular school build",Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,מקום השיעור מחוץ בית הספר,2015
+EC027Q01NA,The Teacher is one of my regular teachers in this years school courses. (test language),Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,המורה שלי למדעים,2015
+EC027Q02NA,The teacher regularly teaches students my age in school but is not my teacher in any of my regular school courses. (t,Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,מורה אחר בבי הספר,2015
+EC027Q03NA,The teacher mainly works for a business or organisation specialised in additional instruction. (test language),Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,מורה חברה,2015
+EC027Q04NA,The teacher is not specialised teaching personnel (e.g. a student). (test language),Learning Reading,,,לימודי קריאה,אופי שיעורי העזר,סטודנט,2015
 EC028Q01NA,Did you attend additional instruction earlier in your education? In <ISCED 0>,,,,,,,2015
 EC028Q02NA,Did you attend additional instruction earlier in your education? In <ISCED 1>,,,,,,,2015
 EC028Q03NA,Did you attend additional instruction earlier in your education? In <ISCED 2>,,,,,,,2015
@@ -2464,11 +2481,11 @@ PA039Q05TA,In what country was this person born? Paternal Grandmother,Parents,In
 PA039Q06TA,In what country was this person born? Paternal Grandfather,Parents,In what country was this person born? Paternal Grandfather,,,,,2015
 PA041Q01TA,"In the last twelve months, about how much would you have paid to educational providers for services?",Parents,"In the last twelve months, about how much would you have paid to educational providers for services?",,,,,2015
 PA042Q01TA,What is your annual household income?,Parents,What is your annual household income?,,,,,2015
-AGE,Age,OECDindex,Age,,מדדים,,,2015
+AGE,Age,OECDindex,Age,,מדדים,גיל,,2015
 PROGN,Unique national study programme code,OECDindex,Unique national study programme code,,מדדים,,,2015
-ISCEDL,ISCED level,OECDindex,ISCED level,,מדדים,,,2015
-ISCEDD,ISCED designation,OECDindex,ISCED designation,,מדדים,,,2015
-ISCEDO,ISCED orientation,OECDindex,ISCED orientation,,מדדים,,,2015
+ISCEDL,ISCED level,OECDindex,ISCED level,,מדדים,רמת השכלה,,2015
+ISCEDD,ISCED designation,OECDindex,ISCED designation,,מדדים,יעד השכלה,,2015
+ISCEDO,ISCED orientation,OECDindex,ISCED orientation,,מדדים,אוריינות השכלה,,2015
 DISCLISCI,Disciplinary climate in science classes (WLE),OECDindex,Disciplinary climate in science classes (WLE),,מדדים,אקלים בשיעורי מדעים,,2015
 TEACHSUP,Teacher support in a science classes of students choice (WLE),OECDindex,Teacher support in a science classes of students choice (WLE),,מדדים,תמיכת המורה בשיעורי מדעים,,2015
 IBTEACH,Inquiry-based science teaching an learning practices (WLE),OECDindex,Inquiry-based science teaching an learning practices (WLE),,מדדים,חקירה בשיעורי מדעים,,2015
@@ -2477,11 +2494,12 @@ ENVAWARE,Environmental Awareness (WLE),OECDindex,Environmental Awareness (WLE),,
 ENVOPT,Environmental optimism (WLE),OECDindex,Environmental optimism (WLE),,מדדים,אופטימיות סביבתית,,2015
 JOYSCIE,Enjoyment of science (WLE),OECDindex,Enjoyment of science (WLE),,מדדים,הנאה ממדע,,2015
 INTBRSCI,Interest in broad science topics (WLE),OECDindex,Interest in broad science topics (WLE),,מדדים,עניין בנושאים מדעיים,,2015
-INSTSCIE,Instrumental motivation (WLE),OECDindex,Instrumental motivation (WLE),,מדדים,,,2015
-SCIEEFF,Science self-efficacy (WLE),OECDindex,Science self-efficacy (WLE),,מדדים,,,2015
-EPIST,Epistemological beliefs (WLE),OECDindex,Epistemological beliefs (WLE),,מדדים,,,2015
-SCIEACT,Index science activities (WLE),OECDindex,Index science activities (WLE),,מדדים,,,2015
-BSMJ,Students’ expected occupational status (SEI),OECDindex,Students’ expected occupational status (SEI),,מדדים,,,2015
+INSTSCIE,Instrumental motivation (WLE),OECDindex,Instrumental motivation (WLE),,מדדים,"מוטיבציה ככלי
+",,2015
+SCIEEFF,Science self-efficacy (WLE),OECDindex,Science self-efficacy (WLE),,מדדים,מסוגלות עצמית מדעית,,2015
+EPIST,Epistemological beliefs (WLE),OECDindex,Epistemological beliefs (WLE),,מדדים,דעות אפיסטמיות,,2015
+SCIEACT,Index science activities (WLE),OECDindex,Index science activities (WLE),,מדדים,אינדס פעילות מדעית,,2015
+BSMJ,Students’ expected occupational status (SEI),OECDindex,Students’ expected occupational status (SEI),,מדדים,המקצועות אליהם מכוונים הלימודים,,2015
 GRADE,Grade compared to modal grade in country,OECDindex,Grade compared to modal grade in country,,מדדים,,,2015
 IMMIG,Index Immigration status,OECDindex,Index Immigration status,,מדדים,סטטוס עולה,,2015
 MISCED,Mother’s Education (ISCED),OECDindex,Mother’s Education (ISCED),,מדדים,השכלת האם,,2015
@@ -2491,35 +2509,37 @@ HOMESCH,ICT use outside of school for schoolwork (WLE),OECDindex,ICT use outside
 ENTUSE,ICT use outside of school leisure (WLE),OECDindex,ICT use outside of school leisure (WLE),,מדדים,,,2015
 BMMJ1,ISEI of mother,OECDindex,ISEI of mother,,מדדים,,,2015
 BFMJ2,ISEI of father,OECDindex,ISEI of father,,מדדים,,,2015
-hisei,Index highest parental occupational status,OECDindex,Index highest parental occupational status,,מדדים,,,2015
-REPEAT,Grade Repetition,OECDindex,Grade Repetition,,מדדים,,,2015
-DURECEC,Duration in early childhood education and care,OECDindex,Duration in early childhood education and care,,מדדים,,,2015
+hisei,Index highest parental occupational status,OECDindex,Index highest parental occupational status,,מדדים,אינדקס מקצועות הורים מקסימליים,,2015
+REPEAT,Grade Repetition,OECDindex,Grade Repetition,,מדדים,"ציונים חוזרים
+",,2015
+DURECEC,Duration in early childhood education and care,OECDindex,Duration in early childhood education and care,,מדדים,שעורים פרטיים,,2015
 OUTHOURS,Out-of-School Study Time per week (Sum),OECDindex,Out-of-School Study Time per week (Sum),,מדדים,זמן לימוד מחוץ לבית הספר,,2015
 MMINS,Learning time (minutes per week) - <Mathematics>,OECDindex,Learning time (minutes per week) - <Mathematics>,,מדדים,זמן לימוד מתמטיקה,,2015
 LMINS,Learning time (minutes per week) - <test language>,OECDindex,Learning time (minutes per week) - <test language>,,מדדים,זמן לימוד קריאה,,2015
 SMINS,Learning time (minutes per week) - <science>,OECDindex,Learning time (minutes per week) - <science>,,מדדים,זמן לימוד מדעים,,2015
 TMINS,Learning time (minutes per week) - in total,OECDindex,Learning time (minutes per week) - in total,,מדדים,זמן לימוד בבית הספר,,2015
-BELONG,Subjective well-being: Sense of Belonging to School (WLE),OECDindex,Subjective well-being: Sense of Belonging to School (WLE),,מדדים,,,2015
-ANXTEST,Personality: Test Anxiety (WLE),OECDindex,Personality: Test Anxiety (WLE),,מדדים,,,2015
-MOTIVAT,"Student Atttidudes, Preferences and Self-related beliefs: Achieving motivation (WLE)",OECDindex,"Student Atttidudes, Preferences and Self-related beliefs: Achieving motivation (WLE)",,מדדים,,,2015
-COOPERATE,Collaboration and teamwork dispositions: Enjoy cooperation (WLE),OECDindex,Collaboration and teamwork dispositions: Enjoy cooperation (WLE),,מדדים,,,2015
-CPSVALUE,Collaboration and teamwork dispositions: Value cooperation (WLE),OECDindex,Collaboration and teamwork dispositions: Value cooperation (WLE),,מדדים,,,2015
+BELONG,Subjective well-being: Sense of Belonging to School (WLE),OECDindex,Subjective well-being: Sense of Belonging to School (WLE),,מדדים,תחושת השייכות לבית הספר,,2015
+ANXTEST,Personality: Test Anxiety (WLE),OECDindex,Personality: Test Anxiety (WLE),,מדדים,רמת לחץ אישית,,2015
+MOTIVAT,"Student Atttidudes, Preferences and Self-related beliefs: Achieving motivation (WLE)",OECDindex,"Student Atttidudes, Preferences and Self-related beliefs: Achieving motivation (WLE)",,מדדים,"גישת התלמידים, מוטיבצה והעדפות",,2015
+COOPERATE,Collaboration and teamwork dispositions: Enjoy cooperation (WLE),OECDindex,Collaboration and teamwork dispositions: Enjoy cooperation (WLE),,מדדים,הנאה משיתוף פעולה,,2015
+CPSVALUE,Collaboration and teamwork dispositions: Value cooperation (WLE),OECDindex,Collaboration and teamwork dispositions: Value cooperation (WLE),,מדדים,הערכה של העקרון של שיתוף פעולה,,2015
 EMOSUPS,Parents emotional support (WLE),OECDindex,Parents emotional support (WLE),,מדדים,תמיכה רגשית של ההורים,,2015
-PERFEED,Perceived Feedback (WLE),OECDindex,Perceived Feedback (WLE),,מדדים,,,2015
-ADINST,Adaption of instruction (WLE),OECDindex,Adaption of instruction (WLE),,מדדים,,,2015
+PERFEED,Perceived Feedback (WLE),OECDindex,Perceived Feedback (WLE),,מדדים,משוב,,2015
+ADINST,Adaption of instruction (WLE),OECDindex,Adaption of instruction (WLE),,מדדים,גמישות בתהליך הלימוד,,2015
 SCCHANGE,Number of school changes,OECDindex,Number of school changes,,מדדים,מספר שינויי בית ספר,,2015
-CHANGE,Number of changes in educational biography (Sum),OECDindex,Number of changes in educational biography (Sum),,מדדים,,,2015
-SADDINST,Number of learning domains with additional instruction,OECDindex,Number of learning domains with additional instruction,,מדדים,,,2015
+CHANGE,Number of changes in educational biography (Sum),OECDindex,Number of changes in educational biography (Sum),,מדדים,"מספר שינויים בביוגרפיה הלימודית
+",,2015
+SADDINST,Number of learning domains with additional instruction,OECDindex,Number of learning domains with additional instruction,,מדדים,מספר מקצועות מוגברים,,2015
 HADDINST,Total hours of additional instruction (Sum),OECDindex,Total hours of additional instruction (Sum),,מדדים,זמן עזרה בבית הספר,,2015
-ADDSCIIN,Number of science disciplines and subjects  with additional instruction (Sum),OECDindex,Number of science disciplines and subjects  with additional instruction (Sum),,מדדים,,,2015
-COMSCSUP,Comparison science school lessons and additional instruction support (Mean),OECDindex,Comparison science school lessons and additional instruction support (Mean),,מדדים,,,2015
-COMSCSTRLE,Comparison science school lessons and additional instruction structuredness lessons (Mean),OECDindex,Comparison science school lessons and additional instruction structuredness lessons (Mean),,מדדים,,,2015
-COMSCSTRCO,Comparison science school lessons and additional instruction structuredness content (Mean),OECDindex,Comparison science school lessons and additional instruction structuredness content (Mean),,מדדים,,,2015
-COMSCTSREL,Comparison science school lessons and additional instruction teacher-student relation,OECDindex,Comparison science school lessons and additional instruction teacher-student relation,,מדדים,,,2015
-COMMASUP,Comparison mathematics school lessons and additional instruction support (Mean),OECDindex,Comparison mathematics school lessons and additional instruction support (Mean),,מדדים,,,2015
-COMMASTRLE,Comparison mathematics school lessons and additional instruction structuredness lessons (Mean),OECDindex,Comparison mathematics school lessons and additional instruction structuredness lessons (Mean),,מדדים,,,2015
-COMMASTRCO,Comparison mathematics school lessons and additional instruction structuredness content (Mean),OECDindex,Comparison mathematics school lessons and additional instruction structuredness content (Mean),,מדדים,,,2015
-COMMATSREL,Comparison mathematics school lessons and additional instruction teacher-student relation,OECDindex,Comparison mathematics school lessons and additional instruction teacher-student relation,,מדדים,,,2015
+ADDSCIIN,Number of science disciplines and subjects  with additional instruction (Sum),OECDindex,Number of science disciplines and subjects  with additional instruction (Sum),,מדדים,מספר מקצועות מוגברים במדעים,,2015
+COMSCSUP,Comparison science school lessons and additional instruction support (Mean),OECDindex,Comparison science school lessons and additional instruction support (Mean),,מדדים,"השוואה בין שעורי מדע רגילים, לאלה המוגברים",,2015
+COMSCSTRLE,Comparison science school lessons and additional instruction structuredness lessons (Mean),OECDindex,Comparison science school lessons and additional instruction structuredness lessons (Mean),,מדדים,"השוואה בין מערכי שעורי מדע רגילים, לאלה המוגברים",,2015
+COMSCSTRCO,Comparison science school lessons and additional instruction structuredness content (Mean),OECDindex,Comparison science school lessons and additional instruction structuredness content (Mean),,מדדים,"השוואה בין תוכן מערכי שעורי מדע רגילים, לאלה המוגברים",,2015
+COMSCTSREL,Comparison science school lessons and additional instruction teacher-student relation,OECDindex,Comparison science school lessons and additional instruction teacher-student relation,,מדדים,השוואה בין יחס מורה תלמיד בין שעורים רגילים במדעים ללימודים מוגברים ,,2015
+COMMASUP,Comparison mathematics school lessons and additional instruction support (Mean),OECDindex,Comparison mathematics school lessons and additional instruction support (Mean),,מדדים,"השוואה בין שעורי מתמטיקה רגילים, לאלה המוגברים",,2015
+COMMASTRLE,Comparison mathematics school lessons and additional instruction structuredness lessons (Mean),OECDindex,Comparison mathematics school lessons and additional instruction structuredness lessons (Mean),,מדדים,"השוואה בין מערכי שעורי מתמטיקה רגילים, לאלה המוגברים",,2015
+COMMASTRCO,Comparison mathematics school lessons and additional instruction structuredness content (Mean),OECDindex,Comparison mathematics school lessons and additional instruction structuredness content (Mean),,מדדים,"השוואה בין תוכן מערכי שעורי מתמטיקה רגילים, לאלה המוגברים",,2015
+COMMATSREL,Comparison mathematics school lessons and additional instruction teacher-student relation,OECDindex,Comparison mathematics school lessons and additional instruction teacher-student relation,,מדדים,השוואה בין יחס מורה תלמיד בין שעורים רגילים במתמטיקה ללימודים מוגברים,,2015
 USESCH,Use of ICT at school in general (WLE),OECDindex,Use of ICT at school in general (WLE),,מדדים,,,2015
 INTICT,Students’ ICT Interest (WLE),OECDindex,Students’ ICT Interest (WLE),,מדדים,,,2015
 COMPICT,Students’ Perceived ICT Competence (WLE),OECDindex,Students’ Perceived ICT Competence (WLE),,מדדים,,,2015
@@ -2527,51 +2547,52 @@ AUTICT,Students’ Perceived Autonomy related to ICT Use (WLE),OECDindex,Student
 SOIAICT,Students’ ICT as a topic in Social Interaction (WLE),OECDindex,Students’ ICT as a topic in Social Interaction (WLE),,מדדים,,,2015
 ICTHOME,ICT available at Home Index (Sum),OECDindex,ICT available at Home Index (Sum),,מדדים,,,2015
 ICTSCH,ICT available at School Index (Sum),OECDindex,ICT available at School Index (Sum),,מדדים,,,2015
-PRESUPP,Child’s past science activities (WLE),OECDindex,Child’s past science activities (WLE),,מדדים,,,2015
-CURSUPP,Parental current support for learning at home (WLE),OECDindex,Parental current support for learning at home (WLE),,מדדים,,,2015
-EMOSUPP,Parental emotional support (WLE),OECDindex,Parental emotional support (WLE),,מדדים,,,2015
-PQSCHOOL,Parents perceived school quality (WLE),OECDindex,Parents perceived school quality (WLE),,מדדים,,,2015
-PASCHPOL,School policies for parental involvement (WLE),OECDindex,School policies for parental involvement (WLE),,מדדים,,,2015
-PQGENSCI,Parents’ view on science (WLE),OECDindex,Parents’ view on science (WLE),,מדדים,,,2015
-PQENPERC,Parents concerns regarding environmental topics (WLE),OECDindex,Parents concerns regarding environmental topics (WLE),,מדדים,,,2015
-PQENVOPT,Parents’ view on future environmental topics (WLE),OECDindex,Parents’ view on future environmental topics (WLE),,מדדים,,,2015
-unfairteacher,Teacher Fairness (Sum),OECDindex,Teacher Fairness (Sum),,מדדים,,,2015
-PARED,Index highest parental education in years of schooling,OECDindex,Index highest parental education in years of schooling,,מדדים,,,2015
-COBN_F,Country of Birth National Categories- Father,OECDindex,Country of Birth National Categories- Father,,מדדים,,,2015
-COBN_M,Country of Birth National Categories- Mother,OECDindex,Country of Birth National Categories- Mother,,מדדים,,,2015
-COBN_S,Country of Birth National Categories- Self,OECDindex,Country of Birth National Categories- Self,,מדדים,,,2015
-LANGN,Language at home (3-digit code),OECDindex,Language at home (3-digit code),,מדדים,,,2015
-OCOD1,ISCO-08 Occupation code - Mother,OECDindex,ISCO-08 Occupation code - Mother,,מדדים,,,2015
-OCOD2,ISCO-08 Occupation code - Father,OECDindex,ISCO-08 Occupation code - Father,,מדדים,,,2015
-OCOD3,ISCO-08 Occupation code - Self,OECDindex,ISCO-08 Occupation code - Self,,מדדים,,,2015
-CULTPOSS,Cultural possessions at home (WLE),OECDindex,Cultural possessions at home (WLE),,מדדים,,,2015
-HEDRES,Home educational resources (WLE),OECDindex,Home educational resources (WLE),,מדדים,,,2015
-HOMEPOS,Home possessions (WLE),OECDindex,Home possessions (WLE),,מדדים,,,2015
+PRESUPP,Child’s past science activities (WLE),OECDindex,Child’s past science activities (WLE),,מדדים,השתתפות קודמת של ילדים בתחום המדע,,2015
+CURSUPP,Parental current support for learning at home (WLE),OECDindex,Parental current support for learning at home (WLE),,מדדים,תמיכה של הורים בלימוד בבית,,2015
+EMOSUPP,Parental emotional support (WLE),OECDindex,Parental emotional support (WLE),,מדדים,תמיכה רגשית של הורים,,2015
+PQSCHOOL,Parents perceived school quality (WLE),OECDindex,Parents perceived school quality (WLE),,מדדים,איכות בית הספר על ידי ההורים,,2015
+PASCHPOL,School policies for parental involvement (WLE),OECDindex,School policies for parental involvement (WLE),,מדדים,מדיניות בית הספר למעורבות של הורים,,2015
+PQGENSCI,Parents’ view on science (WLE),OECDindex,Parents’ view on science (WLE),,מדדים,הדעה של ההורים על מדע,,2015
+PQENPERC,Parents concerns regarding environmental topics (WLE),OECDindex,Parents concerns regarding environmental topics (WLE),,מדדים,המעורבות של הורים באיכות הסביבה,,2015
+PQENVOPT,Parents’ view on future environmental topics (WLE),OECDindex,Parents’ view on future environmental topics (WLE),,מדדים,הדעות של הורים בנושאים סביבתיים,,2015
+unfairteacher,Teacher Fairness (Sum),OECDindex,Teacher Fairness (Sum),,מדדים,הוגנות של מורים,,2015
+PARED,Index highest parental education in years of schooling,OECDindex,Index highest parental education in years of schooling,,מדדים,אינדקס של שנות השכלה של הורים,,2015
+COBN_F,Country of Birth National Categories- Father,OECDindex,Country of Birth National Categories- Father,,מדדים,"מדינה בה נולד האב
+",,2015
+COBN_M,Country of Birth National Categories- Mother,OECDindex,Country of Birth National Categories- Mother,,מדדים,מדינה בה נולדה האם,,2015
+COBN_S,Country of Birth National Categories- Self,OECDindex,Country of Birth National Categories- Self,,מדדים,מדינה בה נולד הילד,,2015
+LANGN,Language at home (3-digit code),OECDindex,Language at home (3-digit code),,מדדים,השפה בה מדברים בבית,,2015
+OCOD1,ISCO-08 Occupation code - Mother,OECDindex,ISCO-08 Occupation code - Mother,,מדדים,עיסוק האם,,2015
+OCOD2,ISCO-08 Occupation code - Father,OECDindex,ISCO-08 Occupation code - Father,,מדדים,עיסוק האב,,2015
+OCOD3,ISCO-08 Occupation code - Self,OECDindex,ISCO-08 Occupation code - Self,,מדדים,עיסוק של הילד,,2015
+CULTPOSS,Cultural possessions at home (WLE),OECDindex,Cultural possessions at home (WLE),,מדדים,נכסים תרבותיות בבית,,2015
+HEDRES,Home educational resources (WLE),OECDindex,Home educational resources (WLE),,מדדים,משאבים ללימוד מהבית,,2015
+HOMEPOS,Home possessions (WLE),OECDindex,Home possessions (WLE),,מדדים,נכסים בבית,,2015
 ICTRES,ICT Resources (WLE),OECDindex,ICT Resources (WLE),,מדדים,,,2015
 WEALTH,Family wealth (WLE),OECDindex,Family wealth (WLE),,מדדים,עושר,,2015
-ESCS,"Index of economic, social and cultural status (WLE)",OECDindex,"Index of economic, social and cultural status (WLE)",,מדדים,,,2015
-LANGTEST,Language of Questionnaire\Assessment,OECDindex,Language of Questionnaire\Assessment,,מדדים,,,2015
-SC001Q01TA,Which of the following definitions best describes the community in which your school is located?,,,,,,,2015
-SC002Q01TA,"As at <February 1, 2014>, what was the total school enrolment (number of students)? Number of boys:",,,,,,,2015
-SC002Q02TA,"As at <February 1, 2014>, what was the total school enrolment (number of students)? Number of girls:",,,,,,,2015
-SC003Q01TA,What is the average size of <test language> classes in <national modal grade for 15-year-olds> in your school?,,,,,,,2015
-SC004Q01TA,Student-comp ratio in <national modal grade for 15-year-olds>. Total num.\stud. <national modal grade for 15-year-old,,,,,,,2015
-SC004Q02TA,Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are avail for students for ed,,,,,,,2015
-SC004Q03TA,Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are connected to Internet\World,,,,,,,2015
-SC004Q04NA,"Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are portable (e.g. laptop, tablet)?",,,,,,,2015
-SC004Q05NA,Total No. of interactive whiteboards in the school altogether,,,,,,,2015
-SC004Q06NA,Total No. of data projectors in the school altogether,,,,,,,2015
-SC004Q07NA,Total No. of computers with internet connection available for teachers in the school.,,,,,,,2015
-SC053Q01TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Band, orchestra\choir",,,,,,,2015
-SC053Q02TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? School play\musical",,,,,,,2015
-SC053Q03TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? School yrbk, newspaper",,,,,,,2015
-SC053Q04TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>?  Volunteering or servic",,,,,,,2015
-SC053Q05NA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Science club",,,,,,,2015
-SC053Q06NA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>?  Science competitions",,,,,,,2015
-SC053Q07TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Chess club",,,,,,,2015
-SC053Q08TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Inform\Commun. Tech.",,,,,,,2015
-SC053Q09TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Art club\activities.",,,,,,,2015
-SC053Q10TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Sport team\activities",,,,,,,2015
+ESCS,"Index of economic, social and cultural status (WLE)",OECDindex,"Index of economic, social and cultural status (WLE)",,מדדים,אינדקס של מעמד סוציואקונומי תרבותי,,2015
+LANGTEST,Language of Questionnaire\Assessment,OECDindex,Language of Questionnaire\Assessment,,מדדים,שפת השאלון,,2015
+SC001Q01TA,Which of the following definitions best describes the community in which your school is located?,,,,אופי בית הספר,קהילת בית הספר,,2015
+SC002Q01TA,"As at <February 1, 2014>, what was the total school enrolment (number of students)? Number of boys:",,,,אופי בית הספר,גודל,מספר בנים,2015
+SC002Q02TA,"As at <February 1, 2014>, what was the total school enrolment (number of students)? Number of girls:",,,,אופי בית הספר,גודל,מספר בנות,2015
+SC003Q01TA,What is the average size of <test language> classes in <national modal grade for 15-year-olds> in your school?,,,,אופי בית הספר,גודל,גודל כיתה,2015
+SC004Q01TA,Student-comp ratio in <national modal grade for 15-year-olds>. Total num.\stud. <national modal grade for 15-year-old,,,,משאבי בית הספר,מחשבים,יחס תלמיד-מחשב,2015
+SC004Q02TA,Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are avail for students for ed,,,,משאבי בית הספר,מחשבים,מספר מחשבים לתלמידים,2015
+SC004Q03TA,Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are connected to Internet\World,,,,משאבי בית הספר,מחשבים,מספר מחשבים מחוברים לאינטרנט,2015
+SC004Q04NA,"Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are portable (e.g. laptop, tablet)?",,,,משאבי בית הספר,מחשבים,מספר מחשבים ניידים,2015
+SC004Q05NA,Total No. of interactive whiteboards in the school altogether,,,,משאבי בית הספר,מחשבים,מספר לוחות דיגיטלים,2015
+SC004Q06NA,Total No. of data projectors in the school altogether,,,,משאבי בית הספר,מחשבים,מספר מקרנים,2015
+SC004Q07NA,Total No. of computers with internet connection available for teachers in the school.,,,,משאבי בית הספר,מחשבים,מספר מחשבים למורים,2015
+SC053Q01TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Band, orchestra\choir",,,,בית הספר,פעילויות,להקה,2015
+SC053Q02TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? School play\musical",,,,בית הספר,פעילויות,הצגה או מחזמר של בית הספר,2015
+SC053Q03TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? School yrbk, newspaper",,,,בית הספר,פעילויות,ספר מחזור או עיתון בית ספר,2015
+SC053Q04TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>?  Volunteering or servic",,,,בית הספר,פעילויות,פעילויות התנדבות,2015
+SC053Q05NA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Science club",,,,בית הספר,פעילויות,מועדון מתמטיקה,2015
+SC053Q06NA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>?  Science competitions",,,,בית הספר,פעילויות,תחרויות מתמטיקה,2015
+SC053Q07TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Chess club",,,,בית הספר,פעילויות,מועדון שחמט,2015
+SC053Q08TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Inform\Commun. Tech.",,,,בית הספר,פעילויות,מועדון מחשבים,2015
+SC053Q09TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Art club\activities.",,,,בית הספר,פעילויות,מועדון אמנות,2015
+SC053Q10TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Sport team\activities",,,,בית הספר,פעילויות,קבוצת ספורט,2015
 SC053D11TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? <country specific item>",,,,,,,2015
 SC059Q01NA,"Compared to other departments, our school's <school science department> is well equipped.",,,,,,,2015
 SC059Q02NA,"If we ever have some extra funding, a big share goes into improvement of our <school science> teaching.",,,,,,,2015
@@ -2596,79 +2617,80 @@ SC009Q10TA,Frequency of <the last academic year>. I engage teachers to help buil
 SC009Q11TA,Frequency of <the last academic year>. I ask teachers to participate in reviewing management practices.,,,,,,,2015
 SC009Q12TA,"Frequency of <the last academic year>. When a teacher brings up a classroom problem, we solve the problem together",,,,,,,2015
 SC009Q13TA,Frequency of <the last academic year>. I discuss the school's academic goals with teachers at faculty meetings.,,,,,,,2015
-SC010Q01TA,Selecting teachers for hire: Principal,Responsibility,Hiring teachers,Principal,,,,2015
-SC010Q01TB,Selecting teachers for hire: Teachers,Responsibility,Hiring teachers,Teachers,,,,2015
-SC010Q01TC,Selecting teachers for hire: <School governing board>,Responsibility,Hiring teachers,School govering board,,,,2015
-SC010Q01TD,Selecting teachers for hire: <Regional or local education authority>,Responsibility,Hiring teachers,Regional or local education authority,,,,2015
-SC010Q01TE,Selecting teachers for hire: National education authority,Responsibility,Hiring teachers,National education authority,,,,2015
-SC010Q02TA,Firing teachers: Principal,Responsibility,Firing teachers,Principal,,,,2015
-SC010Q02TB,Firing teachers: Teachers,Responsibility,Firing teachers,Teachers,,,,2015
-SC010Q02TC,Firing teachers: <School governing board>,Responsibility,Firing teachers,School governing board,,,,2015
-SC010Q02TD,Firing teachers: <Regional or local education authority>,Responsibility,Firing teachers,Regional or local education authority,,,,2015
-SC010Q02TE,Firing teachers: National education authority,Responsibility,Firing teachers,National education authority,,,,2015
-SC010Q03TA,Establishing teachers' starting salaries: Principal,Responsibility,Teachers' starting salaries,Principal,,,,2015
-SC010Q03TB,Establishing teachers' starting salaries: Teachers,Responsibility,Teachers' starting salaries,Teachers,,,,2015
-SC010Q03TC,Establishing teachers' starting salaries: <School governing board>,Responsibility,Teachers' starting salaries,School governing board,,,,2015
-SC010Q03TD,Establishing teachers' starting salaries: <Regional or local education authority>,Responsibility,Teachers' starting salaries,Regional or local education authority,,,,2015
-SC010Q03TE,Establishing teachers' starting salaries: National education authority,Responsibility,Teachers' starting salaries,National education authority,,,,2015
-SC010Q04TA,Determining teachers' salary increases: Principal,Responsibility,Teachers' salary increases,Principal,,,,2015
-SC010Q04TB,Determining teachers' salary increases: Teachers,Responsibility,Teachers' salary increases,Teachers,,,,2015
-SC010Q04TC,Determining teachers' salary increases: <School governing board>,Responsibility,Teachers' salary increases,School governing board,,,,2015
-SC010Q04TD,Determining teachers' salary increases: <Regional or local education authority>,Responsibility,Teachers' salary increases,Regional or local education authority,,,,2015
-SC010Q04TE,Determining teachers' salary increases: National education authority,Responsibility,Teachers' salary increases,National education authority,,,,2015
-SC010Q05TA,Formulating the school budget: Principal,Responsibility,School budget,Principal,,,,2015
-SC010Q05TB,Formulating the school budget: Teachers,Responsibility,School budget,Teachers,,,,2015
-SC010Q05TC,Formulating the school budget: <School governing board>,Responsibility,School budget,School governing board,,,,2015
-SC010Q05TD,Formulating the school budget: <Regional or local education authority>,Responsibility,School budget,Regional or local education authority,,,,2015
-SC010Q05TE,Formulating the school budget: National education authority,Responsibility,School budget,National education authority,,,,2015
-SC010Q06TA,Deciding on budget allocations within the school: Principal,Responsibility,Budget allocations,Principal,,,,2015
-SC010Q06TB,Deciding on budget allocations within the school: Teachers,Responsibility,Budget allocations,Teachers,,,,2015
-SC010Q06TC,Deciding on budget allocations within the school: <School governing board>,Responsibility,Budget allocations,School governing board,,,,2015
-SC010Q06TD,Deciding on budget allocations within the school: <Regional or local education authority>,Responsibility,Budget allocations,Regional or local education authority,,,,2015
-SC010Q06TE,Deciding on budget allocations within the school: National education authority,Responsibility,Budget allocations,National education authority,,,,2015
-SC010Q07TA,Establishing student disciplinary policies: Principal,Responsibility,Student disciplinary policies,Principal,,,,2015
-SC010Q07TB,Establishing student disciplinary policies: Teachers,Responsibility,Student disciplinary policies,Teachers,,,,2015
-SC010Q07TC,Establishing student disciplinary policies: <School governing board>,Responsibility,Student disciplinary policies,School governing board,,,,2015
-SC010Q07TD,Establishing student disciplinary policies: <Regional or local education authority>,Responsibility,Student disciplinary policies,Regional or local education authority,,,,2015
-SC010Q07TE,Establishing student disciplinary policies: National education authority,Responsibility,Student disciplinary policies,National education authority,,,,2015
-SC010Q08TA,Establishing student assessment policies: Principal,Responsibility,Student assessment policies,Principal,,,,2015
-SC010Q08TB,Establishing student assessment policies: Teachers,Responsibility,Student assessment policies,Teachers,,,,2015
-SC010Q08TC,Establishing student assessment policies: <School governing board>,Responsibility,Student assessment policies,School governing board,,,,2015
-SC010Q08TD,Establishing student assessment policies: <Regional or local education authority>,Responsibility,Student assessment policies,Regional or local education authority,,,,2015
-SC010Q08TE,Establishing student assessment policies: National education authority,Responsibility,Student assessment policies,National education authority,,,,2015
-SC010Q09TA,Approving students for admission to the school: Principal,Responsibility,Approving students for admission to the school,Principal,,,,2015
-SC010Q09TB,Approving students for admission to the school: Teachers,Responsibility,Approving students for admission to the school,Teachers,,,,2015
-SC010Q09TC,Approving students for admission to the school: <School governing board>,Responsibility,Approving students for admission to the school,School governing board,,,,2015
-SC010Q09TD,Approving students for admission to the school: <Regional or local education authority>,Responsibility,Approving students for admission to the school,Regional or local education authority,,,,2015
-SC010Q09TE,Approving students for admission to the school: National education authority,Responsibility,Approving students for admission to the school,National education authority,,,,2015
-SC010Q10TA,Choosing which textbooks are used: Principal,Responsibility,Textbooks,Principal,,,,2015
-SC010Q10TB,Choosing which textbooks are used: Teachers,Responsibility,Textbooks,Teachers,,,,2015
-SC010Q10TC,Choosing which textbooks are used: <School governing board>,Responsibility,Textbooks,School governing board,,,,2015
-SC010Q10TD,Choosing which textbooks are used: <Regional or local education authority>,Responsibility,Textbooks,Regional or local education authority,,,,2015
-SC010Q10TE,Choosing which textbooks are used: National education authority,Responsibility,Textbooks,National education authority,,,,2015
-SC010Q11TA,Determining course content: Principal,Responsibility,Course content,Principal,,,,2015
-SC010Q11TB,Determining course content: Teachers,Responsibility,Course content,Teachers,,,,2015
-SC010Q11TC,Determining course content: <School governing board>,Responsibility,Course content,School governing board,,,,2015
-SC010Q11TD,Determining course content: <Regional or local education authority>,Responsibility,Course content,Regional or local education authority,,,,2015
-SC010Q11TE,Determining course content: National education authority,Responsibility,Course content,National education authority,,,,2015
-SC010Q12TA,Deciding which courses are offered: Principal,Responsibility,Course offered,Principal,,,,2015
-SC010Q12TB,Deciding which courses are offered: Teachers,Responsibility,Course offered,Teachers,,,,2015
-SC010Q12TC,Deciding which courses are offered: <School governing board>,Responsibility,Course offered,School governing board,,,,2015
-SC010Q12TD,Deciding which courses are offered: <Regional or local education authority>,Responsibility,Course offered,Regional or local education authority,,,,2015
-SC010Q12TE,Deciding which courses are offered: National education authority,Responsibility,Course offered,National education authority,,,,2015
-SC012Q01TA,Student admission to school: Student's record of academic performance (including placement tests),Student admission,Student's record of academic performance,,,,,2015
-SC012Q02TA,Student admission to school: Recommendation of feeder schools,Student admission,Recommendation of feeder schools,,,,,2015
-SC012Q03TA,Student admission to school: Parents' endorsement of the instructional or religious philosophy of the school,Student admission,Parents' endorsement,,,,,2015
-SC012Q04TA,Student admission to school: Whether the student requires or is interested in a special programme,Student admission,Students,,,,,2015
-SC012Q05TA,Student admission to school: Preference given to family members of current or former students,Student admission,Family,,,,,2015
-SC012Q06TA,Student admission to school: Residence in a particular area,Student admission,Residence,,,,,2015
-SC012Q07TA,Student admission to school: Other,Student admission,Other,,,,,2015
-SC013Q01TA,Is your school a public or a private school?,,,,,,,2015
-SC014Q01NA,What kind of organisation runs your school?,,,,,,,2015
-SC016Q01TA,Percent. total funding for school year comes from? Government,Total funding for school,Government,,,,,2015
-SC016Q02TA,Percent. total funding for school year comes from? Student fees or school charges paid by parents,Total funding for school,Students,,,,,2015
-SC016Q03TA,"Percent. total funding for school year comes from? Benefactors, donations, bequests, sponsorships, parent funraising",Total funding for school,Benefactors,,,,,2015
-SC016Q04TA,Percent. total funding for school year comes from? Other,Total funding for school,Other,,,,,2015
+SC010Q01TA,Selecting teachers for hire: Principal,Responsibility,Hiring teachers,Principal,מדיניות בית הספר,קבלת מורים,המנהלים,2015
+SC010Q01TB,Selecting teachers for hire: Teachers,Responsibility,Hiring teachers,Teachers,מדיניות בית הספר,קבלת מורים,המורים,2015
+SC010Q01TC,Selecting teachers for hire: <School governing board>,Responsibility,Hiring teachers,School govering board,מדיניות בית הספר,קבלת מורים,הנהגת הורים,2015
+SC010Q01TD,Selecting teachers for hire: <Regional or local education authority>,Responsibility,Hiring teachers,Regional or local education authority,מדיניות בית הספר,קבלת מורים,רשת חינוך מקומית,2015
+SC010Q01TE,Selecting teachers for hire: National education authority,Responsibility,Hiring teachers,National education authority,מדיניות בית הספר,קבלת מורים,משרד החינוך,2015
+SC010Q02TA,Firing teachers: Principal,Responsibility,Firing teachers,Principal,מדיניות בית הספר,פיטורי מורים,המנהלים,2015
+SC010Q02TB,Firing teachers: Teachers,Responsibility,Firing teachers,Teachers,מדיניות בית הספר,פיטורי מורים,המורים,2015
+SC010Q02TC,Firing teachers: <School governing board>,Responsibility,Firing teachers,School governing board,מדיניות בית הספר,פיטורי מורים,הנהגת הורים,2015
+SC010Q02TD,Firing teachers: <Regional or local education authority>,Responsibility,Firing teachers,Regional or local education authority,מדיניות בית הספר,פיטורי מורים,רשת חינוך מקומית,2015
+SC010Q02TE,Firing teachers: National education authority,Responsibility,Firing teachers,National education authority,מדיניות בית הספר,פיטורי מורים,משרד החינוך,2015
+SC010Q03TA,Establishing teachers' starting salaries: Principal,Responsibility,Teachers' starting salaries,Principal,מדיניות בית הספר,שכר התחלתי למורים,המנהלים,2015
+SC010Q03TB,Establishing teachers' starting salaries: Teachers,Responsibility,Teachers' starting salaries,Teachers,מדיניות בית הספר,שכר התחלתי למורים,המורים,2015
+SC010Q03TC,Establishing teachers' starting salaries: <School governing board>,Responsibility,Teachers' starting salaries,School governing board,מדיניות בית הספר,שכר התחלתי למורים,הנהגת הורים,2015
+SC010Q03TD,Establishing teachers' starting salaries: <Regional or local education authority>,Responsibility,Teachers' starting salaries,Regional or local education authority,מדיניות בית הספר,שכר התחלתי למורים,רשת חינוך מקומית,2015
+SC010Q03TE,Establishing teachers' starting salaries: National education authority,Responsibility,Teachers' starting salaries,National education authority,מדיניות בית הספר,שכר התחלתי למורים,משרד החינוך,2015
+SC010Q04TA,Determining teachers' salary increases: Principal,Responsibility,Teachers' salary increases,Principal,מדיניות בית הספר,העלאות שכר,המנהלים,2015
+SC010Q04TB,Determining teachers' salary increases: Teachers,Responsibility,Teachers' salary increases,Teachers,מדיניות בית הספר,העלאות שכר,המורים,2015
+SC010Q04TC,Determining teachers' salary increases: <School governing board>,Responsibility,Teachers' salary increases,School governing board,מדיניות בית הספר,העלאות שכר,הנהגת הורים,2015
+SC010Q04TD,Determining teachers' salary increases: <Regional or local education authority>,Responsibility,Teachers' salary increases,Regional or local education authority,מדיניות בית הספר,העלאות שכר,רשת חינוך מקומית,2015
+SC010Q04TE,Determining teachers' salary increases: National education authority,Responsibility,Teachers' salary increases,National education authority,מדיניות בית הספר,העלאות שכר,משרד החינוך,2015
+SC010Q05TA,Formulating the school budget: Principal,Responsibility,School budget,Principal,מדיניות בית הספר,תקציב בית הספר,המנהלים,2015
+SC010Q05TB,Formulating the school budget: Teachers,Responsibility,School budget,Teachers,מדיניות בית הספר,תקציב בית הספר,המורים,2015
+SC010Q05TC,Formulating the school budget: <School governing board>,Responsibility,School budget,School governing board,מדיניות בית הספר,תקציב בית הספר,הנהגת הורים,2015
+SC010Q05TD,Formulating the school budget: <Regional or local education authority>,Responsibility,School budget,Regional or local education authority,מדיניות בית הספר,תקציב בית הספר,רשת חינוך מקומית,2015
+SC010Q05TE,Formulating the school budget: National education authority,Responsibility,School budget,National education authority,מדיניות בית הספר,תקציב בית הספר,משרד החינוך,2015
+SC010Q06TA,Deciding on budget allocations within the school: Principal,Responsibility,Budget allocations,Principal,מדיניות בית הספר,חלוקת התקציב,המנהלים,2015
+SC010Q06TB,Deciding on budget allocations within the school: Teachers,Responsibility,Budget allocations,Teachers,מדיניות בית הספר,חלוקת התקציב,המורים,2015
+SC010Q06TC,Deciding on budget allocations within the school: <School governing board>,Responsibility,Budget allocations,School governing board,מדיניות בית הספר,חלוקת התקציב,הנהגת הורים,2015
+SC010Q06TD,Deciding on budget allocations within the school: <Regional or local education authority>,Responsibility,Budget allocations,Regional or local education authority,מדיניות בית הספר,חלוקת התקציב,רשת חינוך מקומית,2015
+SC010Q06TE,Deciding on budget allocations within the school: National education authority,Responsibility,Budget allocations,National education authority,מדיניות בית הספר,חלוקת התקציב,משרד החינוך,2015
+SC010Q07TA,Establishing student disciplinary policies: Principal,Responsibility,Student disciplinary policies,Principal,מדיניות בית הספר,נהלי משמעת,המנהלים,2015
+SC010Q07TB,Establishing student disciplinary policies: Teachers,Responsibility,Student disciplinary policies,Teachers,מדיניות בית הספר,נהלי משמעת,המורים,2015
+SC010Q07TC,Establishing student disciplinary policies: <School governing board>,Responsibility,Student disciplinary policies,School governing board,מדיניות בית הספר,נהלי משמעת,הנהגת הורים,2015
+SC010Q07TD,Establishing student disciplinary policies: <Regional or local education authority>,Responsibility,Student disciplinary policies,Regional or local education authority,מדיניות בית הספר,נהלי משמעת,רשת חינוך מקומית,2015
+SC010Q07TE,Establishing student disciplinary policies: National education authority,Responsibility,Student disciplinary policies,National education authority,מדיניות בית הספר,נהלי משמעת,משרד החינוך,2015
+SC010Q08TA,Establishing student assessment policies: Principal,Responsibility,Student assessment policies,Principal,מדיניות בית הספר,הערכת תלמידים,המנהלים,2015
+SC010Q08TB,Establishing student assessment policies: Teachers,Responsibility,Student assessment policies,Teachers,מדיניות בית הספר,הערכת תלמידים,המורים,2015
+SC010Q08TC,Establishing student assessment policies: <School governing board>,Responsibility,Student assessment policies,School governing board,מדיניות בית הספר,הערכת תלמידים,הנהגת הורים,2015
+SC010Q08TD,Establishing student assessment policies: <Regional or local education authority>,Responsibility,Student assessment policies,Regional or local education authority,מדיניות בית הספר,הערכת תלמידים,רשת חינוך מקומית,2015
+SC010Q08TE,Establishing student assessment policies: National education authority,Responsibility,Student assessment policies,National education authority,מדיניות בית הספר,הערכת תלמידים,משרד החינוך,2015
+SC010Q09TA,Approving students for admission to the school: Principal,Responsibility,Approving students for admission to the school,Principal,מדיניות בית הספר,קבלת תלמידים,המנהלים,2015
+SC010Q09TB,Approving students for admission to the school: Teachers,Responsibility,Approving students for admission to the school,Teachers,מדיניות בית הספר,קבלת תלמידים,המורים,2015
+SC010Q09TC,Approving students for admission to the school: <School governing board>,Responsibility,Approving students for admission to the school,School governing board,מדיניות בית הספר,קבלת תלמידים,הנהגת הורים,2015
+SC010Q09TD,Approving students for admission to the school: <Regional or local education authority>,Responsibility,Approving students for admission to the school,Regional or local education authority,מדיניות בית הספר,קבלת תלמידים,רשת חינוך מקומית,2015
+SC010Q09TE,Approving students for admission to the school: National education authority,Responsibility,Approving students for admission to the school,National education authority,מדיניות בית הספר,קבלת תלמידים,משרד החינוך,2015
+SC010Q10TA,Choosing which textbooks are used: Principal,Responsibility,Textbooks,Principal,מדיניות בית הספר,בחירת ספרי לימוד,המנהלים,2015
+SC010Q10TB,Choosing which textbooks are used: Teachers,Responsibility,Textbooks,Teachers,מדיניות בית הספר,בחירת ספרי לימוד,המורים,2015
+SC010Q10TC,Choosing which textbooks are used: <School governing board>,Responsibility,Textbooks,School governing board,מדיניות בית הספר,בחירת ספרי לימוד,הנהגת הורים,2015
+SC010Q10TD,Choosing which textbooks are used: <Regional or local education authority>,Responsibility,Textbooks,Regional or local education authority,מדיניות בית הספר,בחירת ספרי לימוד,רשת חינוך מקומית,2015
+SC010Q10TE,Choosing which textbooks are used: National education authority,Responsibility,Textbooks,National education authority,מדיניות בית הספר,בחירת ספרי לימוד,משרד החינוך,2015
+SC010Q11TA,Determining course content: Principal,Responsibility,Course content,Principal,מדיניות בית הספר,קביעת תכני השיעורים,המנהלים,2015
+SC010Q11TB,Determining course content: Teachers,Responsibility,Course content,Teachers,מדיניות בית הספר,קביעת תכני השיעורים,המורים,2015
+SC010Q11TC,Determining course content: <School governing board>,Responsibility,Course content,School governing board,מדיניות בית הספר,קביעת תכני השיעורים,הנהגת הורים,2015
+SC010Q11TD,Determining course content: <Regional or local education authority>,Responsibility,Course content,Regional or local education authority,מדיניות בית הספר,קביעת תכני השיעורים,רשת חינוך מקומית,2015
+SC010Q11TE,Determining course content: National education authority,Responsibility,Course content,National education authority,מדיניות בית הספר,קביעת תכני השיעורים,משרד החינוך,2015
+SC010Q12TA,Deciding which courses are offered: Principal,Responsibility,Course offered,Principal,מדיניות בית הספר,קביעת המקצועות,המנהלים,2015
+SC010Q12TB,Deciding which courses are offered: Teachers,Responsibility,Course offered,Teachers,מדיניות בית הספר,קביעת המקצועות,המורים,2015
+SC010Q12TC,Deciding which courses are offered: <School governing board>,Responsibility,Course offered,School governing board,מדיניות בית הספר,קביעת המקצועות,הנהגת הורים,2015
+SC010Q12TD,Deciding which courses are offered: <Regional or local education authority>,Responsibility,Course offered,Regional or local education authority,מדיניות בית הספר,קביעת המקצועות,רשת חינוך מקומית,2015
+SC010Q12TE,Deciding which courses are offered: National education authority,Responsibility,Course offered,National education authority,מדיניות בית הספר,קביעת המקצועות,משרד החינוך,2015
+SC012Q01TA,Student admission to school: Student's record of academic performance (including placement tests),School Policies and Practices,Student admission,Student's record of academic performance,מדיניות בית הספר,קבלת תלמידים,ההישגים הלימודיים שהיו לתלמיד בעבר (כולל מבחני מיון),2015
+SC012Q02TA,Student admission to school: Recommendation of feeder schools,School Policies and Practices,Student admission,Recommendation of feeder schools,מדיניות בית הספר,קבלת תלמידים,המלצות מבתי ספר קודמים,2015
+SC012Q03TA,Student admission to school: Parents' endorsement of the instructional or religious philosophy of the school,School Policies and Practices,Student admission,Parents' endorsement,מדיניות בית הספר,קבלת תלמידים,תמיכת ההורים בגישה החינוכית או הדתית של בית הספר,2015
+SC012Q04TA,Student admission to school: Whether the student requires or is interested in a special programme,School Policies and Practices,Student admission,Students,מדיניות בית הספר,קבלת תלמידים,האם התלמיד זקוק לתכנית מיוחדת או מעוניין במגמה מיוחד,2015
+SC012Q05TA,Student admission to school: Preference given to family members of current or former students,School Policies and Practices,Student admission,Family,מדיניות בית הספר,קבלת תלמידים,העדפה הניתנת לבני משפחה של תלמידים בהווה ושל תלמידים לשעבר,2015
+SC012Q06TA,Student admission to school: Residence in a particular area,School Policies and Practices,Student admission,Residence,מדיניות בית הספר,קבלת תלמידים,מגורים,2015
+SC012Q07TA,Student admission to school: Other,School Policies and Practices,Student admission,Other,מדיניות בית הספר,קבלת תלמידים,גורם אחר,2015
+SC013Q01TA,Is your school a public or a private school?,The Structure and Organisation of the School,Funding,,אופי בית הספר,ציבורי או פרטי,,2015
+SC014Q01NA,What kind of organisation runs your school?,The Structure and Organisation of the School,Funding,,אופי בית הספר,עמותה,,2015
+SC016Q01TA,Percent. total funding for school year comes from? Government,The Structure and Organisation of the School,Funding,Government,אופי בית הספר,"מימון ממשלתי
+",,2015
+SC016Q02TA,Percent. total funding for school year comes from? Student fees or school charges paid by parents,The Structure and Organisation of the School,Funding,Students,אופי בית הספר,מימון הורים,,2015
+SC016Q03TA,"Percent. total funding for school year comes from? Benefactors, donations, bequests, sponsorships, parent funraising",The Structure and Organisation of the School,Funding,Benefactors,אופי בית הספר,מימון תורמים,,2015
+SC016Q04TA,Percent. total funding for school year comes from? Other,The Structure and Organisation of the School,Funding,Other,,מימון אחר,,2015
 SC017Q01NA,School instruction hindered by: A lack of teaching staff.,School instruction hindered,A lack of teaching staff,,,,,2015
 SC017Q02NA,School instruction hindered by: Inadequate or poorly qualified teaching staff.,School instruction hindered,Inadequate or poorly qualified teaching staff,,,,,2015
 SC017Q03NA,School instruction hindered by: A lack of assisting staff.,School instruction hindered,A lack of assisting staff,,,,,2015
@@ -2677,14 +2699,22 @@ SC017Q05NA,"School instruction hindered by: Lack of educational material (e.g. t
 SC017Q06NA,"School instruction hindered by: Inadequate or poor quality educational material (e.g. textbooks, IT equipment).",School instruction hindered,Inadequate or poor quality educational material,,,,,2015
 SC017Q07NA,"School instruction hindered by: Lack of physical infrastructure (building, grounds, heating\cooling, lighting).",School instruction hindered,Inadequate or poor quality educational material,,,,,2015
 SC017Q08NA,"School instruction hindered by: Inadequate\poor quality phys infrastructure (building, grounds, heating\cooling).",School instruction hindered,Inadequate\poor quality phys infrastructure,,,,,2015
-SC018Q01TA01,Teachers in TOTAL: Full-time,The Student and Teacher Body,Teachers,Full-time,,,,2015
-SC018Q01TA02,Teachers in TOTAL: Part-time,The Student and Teacher Body,Teachers,Part-time,,,,2015
-SC018Q02TA01,Teachers <fully certified> by <the appropriate authority>: Full-time,The Student and Teacher Body,Teachers fully certified,Full-time,,,,2015
-SC018Q02TA02,Teachers <fully certified> by <the appropriate authority>: Part-time,The Student and Teacher Body,Teachers fully certified,Part-time,,,,2015
-SC018Q05NA01,Teachers with an <ISCED Level 5A Bachelor degree> qualification: Full-time,The Student and Teacher Body,Teachers with an ISCED Level 5A Bachelor degree,Full-time,,,,2015
-SC018Q05NA02,Teachers with an <ISCED Level 5A Bachelor degree> qualification: Part-time,The Student and Teacher Body,Teachers with an ISCED Level 5A Bachelor degree,Part-time,,,,2015
-SC018Q06NA01,Teachers with an <ISCED Level 5A Master's degree> qualification: Full-time,The Student and Teacher Body,Teachers with an ISCED Level 5A Master's degree,Full-time,,,,2015
-SC018Q06NA02,Teachers with an <ISCED Level 5A Master's degree> qualification: Part-time,The Student and Teacher Body,Teachers with an ISCED Level 5A Master's degree,Part-time,,,,2015
+SC018Q01TA01,Teachers in TOTAL: Full-time,The Student and Teacher Body,Teachers,Full-time,"מורים
+",מספר מורים,משרה מלאה,2015
+SC018Q01TA02,Teachers in TOTAL: Part-time,The Student and Teacher Body,Teachers,Part-time,"מורים
+",מספר מורים,משרה חלקית,2015
+SC018Q02TA01,Teachers <fully certified> by <the appropriate authority>: Full-time,The Student and Teacher Body,Teachers fully certified,Full-time,"מורים
+",מספר מורים,מוסמכים על ידי משרד החינוך במשרה מלאה,2015
+SC018Q02TA02,Teachers <fully certified> by <the appropriate authority>: Part-time,The Student and Teacher Body,Teachers fully certified,Part-time,"מורים
+",מספר מורים,מוסמכים על ידי משרד החינוך במשרה חלקית,2015
+SC018Q05NA01,Teachers with an <ISCED Level 5A Bachelor degree> qualification: Full-time,The Student and Teacher Body,Teachers with an ISCED Level 5A Bachelor degree,Full-time,"מורים
+",מספר מורים,בעלי תואר אקדמי במשרה מלאה,2015
+SC018Q05NA02,Teachers with an <ISCED Level 5A Bachelor degree> qualification: Part-time,The Student and Teacher Body,Teachers with an ISCED Level 5A Bachelor degree,Part-time,"מורים
+",מספר מורים,בעלי תואר אקדמי במשרה חלקית,2015
+SC018Q06NA01,Teachers with an <ISCED Level 5A Master's degree> qualification: Full-time,The Student and Teacher Body,Teachers with an ISCED Level 5A Master's degree,Full-time,"מורים
+",מספר מורים,בעלי תואר שני במשרה מלאה,2015
+SC018Q06NA02,Teachers with an <ISCED Level 5A Master's degree> qualification: Part-time,The Student and Teacher Body,Teachers with an ISCED Level 5A Master's degree,Part-time,"מורים
+",מספר מורים,בעלי תואר שני במשרה חלקית,2015
 SC018Q07NA01,Teachers with an <ISCED Level 6> qualification: Full-time,The Student and Teacher Body,Teachers with an ISCED Level 6,Full-time,,,,2015
 SC018Q07NA02,Teachers with an <ISCED Level 6> qualification: Part-time,The Student and Teacher Body,Teachers with an ISCED Level 6,Part-time,,,,2015
 SC019Q01NA01,<School science> teachers in TOTAL: Full-time,The Student and Teacher Body,Science teachers,Full-time,,,,2015

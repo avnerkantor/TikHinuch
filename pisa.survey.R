@@ -51,12 +51,19 @@ observe({
   SurveySelectedID <- as.vector(unlist(select(filter(pisaDictionary, Year == input$SurveyYear, HebSubject == input$SurveySubject, HebCategory==input$SurveyCategory, HebSubCategory==input$SurveySubCategory), ID))) 
   
   surveyPlotFunction<-function(country) {
-    switch(input$SurveyYear,
-           "2015"={surveyData<-pisa2015},
-           "2012"={surveyData<-pisa2012}
-           # "2009"={surveyData<-pisa2009},
-           # "2006"={surveyData<-pisa2006}
-    )
+    if(input$SurveyYear=="2015" & input$worldOrIsrael=="Israel"){
+      surveyData<-israel2015
+    }
+    if(input$SurveyYear=="2015" & input$worldOrIsrael=="World"){
+      surveyData<-pisa2015
+    }
+    if(input$SurveyYear=="2012" & input$worldOrIsrael=="Israel"){
+      surveyData<-israel2012
+    }
+    if(input$SurveyYear=="2012" & input$worldOrIsrael=="World"){
+      surveyData<-pisa2012
+    }
+    
 
     Country<-as.vector(unlist(Countries%>%filter(Hebrew==country)%>%select(Country)))
     

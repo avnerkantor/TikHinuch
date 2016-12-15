@@ -20,12 +20,19 @@ observe({
 #Analyze
 observe({
   
-  switch(input$AnalyzeYear,
-         "2015"={surveyData<-pisa2015},
-         "2012"={surveyData<-pisa2012},
-         "2009"={surveyData<-pisa2012},
-         "2006"={surveyData<-pisa2012}
-  )
+  if(input$AnalyzeYear=="2015" & input$worldOrIsrael=="Israel"){
+    surveyData<-israel2015
+  }
+  if(input$AnalyzeYear=="2015" & input$worldOrIsrael=="World"){
+    surveyData<-pisa2015
+  }
+  if(input$AnalyzeYear=="2012" & input$worldOrIsrael=="Israel"){
+    surveyData<-israel2012
+  }
+  if(input$AnalyzeYear=="2012" & input$worldOrIsrael=="World"){
+    surveyData<-pisa2012
+  }
+  
   
   switch (input$Subject,
           Math = {analyzeSubject<-"PV1MATH"},

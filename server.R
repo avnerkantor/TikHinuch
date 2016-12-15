@@ -1,6 +1,6 @@
 (shiny.sanitize.errors = FALSE)
 
-load("data/pisaData.rda")
+load("data/pisaData1.rda")
 
 download.file(url = "https://docs.google.com/spreadsheets/d/1LYmlzL14xQlF-nRen9a6morTmU0FsULSoee8xWEw9fA/pub?gid=1417149183&single=true&output=csv", destfile="data/pisaDictionary.csv", 'curl')
 pisaDictionary<-read.csv("data/pisaDictionary.csv", header = TRUE, sep=",")
@@ -8,8 +8,11 @@ pisaDictionary<-read.csv("data/pisaDictionary.csv", header = TRUE, sep=",")
 
 print("loading pisa 2015")
 load("../pisa2015.rda")
+load("../israel2015.rda")
 print("loading pisa 2012")
 load("../pisa2012.rda")
+load("../israel2012b.rda")
+
 # pisadb<-src_bigquery("r-shiny-1141", "pisa")
 # pisa2012<- tbl(pisadb, "pisa2012")
 # pisa2009<- tbl(pisadb, "pisa2009")
@@ -20,9 +23,13 @@ oecdCountries<-arrange(oecdCountries, Hebrew)
 oecdList<-oecdCountries$CNT
 names(oecdList)<-oecdCountries$Hebrew
 
-israelCountries<-read.csv("data/israelCountries.csv", header = TRUE, sep=",")
-israelList<-israelCountries$CNT
+# israelCountries<-read.csv("data/israelCountries.csv", header = TRUE, sep=",")
+# israelList<-israelCountries$CNT
+# names(israelList)<-israelCountries$Hebrew
+israelCountries<-read.csv("data/israelGroups.csv", header = TRUE, sep=",")
+israelList<-israelCountries$Country
 names(israelList)<-israelCountries$Hebrew
+
 
 Countries<-read.csv("data/countries.csv", header = TRUE, sep=",")
 countriesList<-Countries$CNT
