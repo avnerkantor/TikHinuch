@@ -5,36 +5,8 @@ observe({
 })
 
 observeEvent(input$SurveyYear,{
-  switch (input$SurveyYear,
-          "2015" = {
-            updateSelectInput(session, inputId="SurveySubject", label="", choices = c(
-              unique(pisaDictionary%>%filter(Year=="2015")%>%select(HebSubject))
-            ),
-            selected="לימודי מדעים"
-            )
-          },
-          "2012" = {
-            updateSelectInput(session, inputId="SurveySubject", label="", choices = c(
-              unique(pisaDictionary%>%filter(Year=="2012")%>%select(HebSubject))
-            ),
-            selected="לימודי מתמטיקה"
-            )
-          },
-          "2009" = {
-            updateSelectInput(session, inputId="SurveySubject", label="", choices = c(
-              unique(pisaDictionary%>%filter(Year=="2009")%>%select(HebSubject))
-            ),
-            selected="זמינות ושימוש באמצעי תקשוב"
-            )
-          },
-          "2006" = {
-            updateSelectInput(session, inputId="SurveySubject", label="", choices = c(
-              unique(pisaDictionary%>%filter(Year=="2006")%>%select(HebSubject))
-            ),
-            selected="זמינות ושימוש באמצעי תקשוב"
-            )
-          }
-  )
+  updateSelectInput(session, "SurveySubject", "", choices = c(unique(pisaDictionary%>%filter(Year==input$SurveyYear)%>%select(HebSubject))),
+  selected="זמינות ושימוש באמצעי תקשוב")
 })
 
 observeEvent(input$SurveySubject,{
@@ -49,6 +21,9 @@ observeEvent(input$SurveyCategory,{
 observe({
   
   SurveySelectedID <- as.vector(unlist(select(filter(pisaDictionary, Year == input$SurveyYear, HebSubject == input$SurveySubject, HebCategory==input$SurveyCategory, HebSubCategory==input$SurveySubCategory), ID))) 
+  # SurveySelectedMeasure <- as.vector(unlist(pisaDictionary%>%filter(ID==SurveySelectedID, Year == input$SurveyYear)%>%select(Measure)))
+  SurveySelectedMeasure <- as.vector(unlist(select(filter(pisaDictionary, Year == input$SurveyYear, HebSubject == input$SurveySubject, HebCategory==input$SurveyCategory, HebSubCategory==input$SurveySubCategory), Measure))) 
+  
   
   surveyPlotFunction<-function(country) {
     if(input$SurveyYear=="2015" & input$worldOrIsrael=="Israel"){
@@ -68,6 +43,8 @@ observe({
     Country<-as.vector(unlist(Countries%>%filter(Hebrew==country)%>%select(Country)))
     
     surveyData1<-surveyData%>%select_("COUNTRY", SurveySelectedID, "ST04Q01", "ESCS")%>%filter(COUNTRY==Country)
+    
+    output$SurveySelectedIDOutput<-renderText(paste0(SurveySelectedMeasure, ' (',SurveySelectedID, ')'))
     
     if(is.null(input$Gender)){
       if(is.null(input$Escs)){
@@ -188,3 +165,11 @@ output$pisaScoresTable <- DT::renderDataTable(
     #  %>%filter(HebSubject=="מדדים")
     
   })
+
+observeEvent(input$pisaDictionary, {
+  showModal(modalDialog(
+    title = "Important message",
+    "This is an important message!",
+    easyClose = TRUE
+  ))
+})

@@ -1,12 +1,3 @@
-###UI
-# observeEvent(input$generalBtn, {
-#   updateCheckboxGroupInput(session, inputId="Gender", selected = "")
-# })
-
-# observeEvent(input$generalBtn, {
-#  updateCheckboxGroupInput(session, inputId="Escs", selected = NULL)
-# })
-
 observe({
   if (input$worldOrIsrael=="World")
   {
@@ -21,7 +12,8 @@ observe({
     updateSelectInput(session, "Country4", choices = names(israelList), selected = "דוברי ערבית")
   }
 })
-####
+
+
 observe({
   
   SubjectExpertiseLevels<-ExpertiseLevels %>%
@@ -29,8 +21,7 @@ observe({
     filter(!is.na(input$Subject))
   
   plotData1<-pisaData%>%filter(Subject==input$Subject, Performers==0)%>%select(-Subject, -Performers)
-  #print(input$Gender)#if(input$Gender=="General"){
-  #TODO
+  
   if(is.null(input$Gender)){
     if(is.null(input$Escs)){
       plotData2<-plotData1 %>%
@@ -129,9 +120,6 @@ observe({
     output$Country4Plot<-renderPlotly({
       scoresPlotFunction(input$Country4)
     })
-    # output$ScoresPlot<-renderPlotly({
-    #   scoresPlotFunction(input$countries)
-    # })
   }
 })
 

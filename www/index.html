@@ -71,7 +71,7 @@
                       <a class="page-scroll" href="about.html">אודות</a>
                   </li>
                   <li>
-                      <a class="page-scroll" href="#analyze">ניתוח</a>
+                      <a class="page-scroll" href="#analyze">גורמים</a>
                   </li>
                   <li>
                     <a class="page-scroll" href="#survey">אקלים</a>
@@ -80,24 +80,28 @@
                 <!--<a class="page-scroll" href="#heterogeneity">פיזור</a>-->
                 <!--</li>-->
                 <li>
-                    <a class="page-scroll" href="#expertise">פערים</a>
+                    <a class="page-scroll" href="#expertise">בקיאות</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#scores">הישגים</a>
+                    <a class="page-scroll" href="#scores">מיומנות</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
 <header>
   <div id="myHeader">
     <div class="header-image"></div>
- <div class="text-image">מה מספר מבחן פיז"ה</div>    <div class="underHeaderText">
-פיז"ה הוא מבחן בינלאומי בתחום החינוך הנערך מדי שלוש שנים בקרב תלמידים בני חמש-עשרה ברחבי העולם. תוצאותיו
-משמשות לניתוח תהליכים חינוכיים ולבחינת התקדמות מערכת החינוך.  
+ <div class="text-image">מה מספר מבחן פיז"ה?</div>   
+ <div class="underHeaderText">
+ <p>פיז"ה הוא מבחן בינלאומי בתחום החינוך הנערך בקרב תלמידים בני חמש-עשרה ברחבי העולם. תוצאותיו
+משמשות לבחינת התקדמות מערכת החינוך ולניתוח גורמים המשפיעים בתוכה.</p>
+<p>פרויקט פיז"ה פתוח הוא פרויקט ראשון בעולם שמאפשר גישה נוחה לנתונים וניתוח סטטיסטי ויזואלי. </p>
 </div>
 </div>
 </header>
+
 <!--Dashboard-->
 <section>
 <div id="dashboard--wrap">
@@ -148,8 +152,8 @@
     </div>
 </div>
 <div id="measurmentsDashboard" class="row">
-  <div class="hidden-xs hidden-sm col-md-3"></div>
-  <div id="escsDiv" class="col-xs-6 col-sm-4 col-md-3">
+  <div class="col-xs-3"></div>
+  <div id="escsDiv" class="col-xs-3">
     <!--<small>רקע חברתי-תרבותי-כלכלי</small>-->
     <small>
         <a href="#" data-toggle="tooltip" title="הרקע מחושב על בסיס שאלונים שמעוברים לתלמידים">
@@ -178,7 +182,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="genderDiv" class="col-xs-6 col-sm-4 col-md-3">
+                    <div id="genderDiv" class="col-xs-3">
                         <small>מגדר</small>
                         <div id="Gender"
                         class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-container-inline">
@@ -198,7 +202,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden-xs col-sm-4 col-md-3">
+                <div class="col-xs-3">
                     <div id="worldOrIsrael" class="form-group shiny-input-radiogroup shiny-input-container">
                         <form class="form-horizontal" method="post" action="">
                             <div data-toggle="buttons">
@@ -219,7 +223,7 @@
                     </div>
                 </div>
             </div>
-            <div id="countriesDashboard" class="row text-center">
+            <div id="countriesDashboard" class="row">
                 <div class="col-xs-3">
                     <div class="form-group shiny-input-container">
                         <label class="control-label" for="Country4"></label>
@@ -288,24 +292,20 @@
             </div>
             <div class="row">
                 <br>
-                <div class="col-xs-12">
-                  <p>
-המבחנים בודקים את רמת התלמידים, כיצד הם מיישמים ידע וכישורים שרכשו בשנות לימודיהם. ניתן לראות שישראל רושמת התקדמות עקבית על אף פערים גדולים בין המגזרים.</p>
- </div>
+
               
               <div id="ExplenationTable" class="shiny-html-output col-xs-9 text-justify "></div>
               <div id="LevelNumberDiv" class="form-group shiny-input-container col-xs-3">
                 <span>רמת מיומנות</span>
                 <input id="LevelNumber" type="number" class="form-control" value="3" min="1" max="6" step="1"/>
             </div>
-
         </div>
     </div>
 </section>
 <!--Expertise-->
 <section>
     <div id="expertise" class="container-fluid">
-      <p style="font-size: 18px">פערים</p>
+      <p style="font-size: 18px">בקיאות</p>
         <div class="row text-center" style="height: 30px; margin-top: 30px">
             <div class="col-xs-5" style="border-bottom: 1px solid #c7c7c7; left: 10px;"></div>
             <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 18px">
@@ -326,10 +326,9 @@
                     <div id="Country1HighPlot" class="plotly html-widget html-widget-output"></div>
                 </div>
             </div>
-                           <div>
+                           
  <br>
-אחוז המצטיינים (רמות 5-6) בישראל נמצא בעלייה בכל התחומים וגובהו דומה לזה של מדינות אחרות. 
- </div> 
+
             <div class="row text-center" style="height: 30px; margin-top: 30px">
                 <div class="col-xs-5" style="border-bottom: 1px solid #c7c7c7; left: 10px;"></div>
                 <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 18px">
@@ -356,14 +355,17 @@
 <section>
 <div id="survey" class="container-fluid">
       <p style="font-size: 18px">אקלים</p>
-                <div>
-                בנוסף למבחן מועברים לתלמידים שאלונים בנושא הרקע שלהם, הסביבה החינוכית ועמדותיהם ותפיסותיהם לגבי הלימודים. כמו כן ממלאים מנהלי בתי הספר שאלון אודות מדיניות בית הספר ואקלימו.
-                <br>
+<div>
+<p>בנוסף למבחן מועברים לתלמידים שאלונים בנושאי רקע, סביבה חינוכית ועמדות ותפיסות לגבי הלימודים. גם מנהלי בתי הספר ממלאים שאלון אודות מדיניות בית הספר ואקלימו.
+ </p>
+ <p>
+ בדוגמא שלפנינו נשאלו התלמידים האם בביתם ישנו מחשב שולחני והאם הם משתמשים בו. הגרף מציג את התפלגות התשובות באחוזים.
+ </p>
  </div>
- <br/>
  <div id="surveyDashboard" class="row">
     <div class="col-xs-3">
         <div class="form-group shiny-input-container">
+          <span>תת-תחום</span>
             <label class="control-label" for="SurveySubCategory"></label>
             <div>
                 <select id="SurveySubCategory">
@@ -376,6 +378,7 @@
     </div>
     <div class="col-xs-3">
         <div class="form-group shiny-input-container">
+          <span>תחום</span>
             <label class="control-label" for="SurveyCategory"></label>
             <div>
                 <select id="SurveyCategory">
@@ -387,6 +390,7 @@
     </div>
     <div class="col-xs-3">
         <div class="form-group shiny-input-container">
+          <span>נושא שאלון</span>
             <label class="control-label" for="SurveySubject"></label>
             <div>
                 <select id="SurveySubject">
@@ -398,6 +402,7 @@
     </div>
     <div class="col-xs-3">
         <div class="form-group shiny-input-container">
+          <span>שנת מבחן</span>
             <label class="control-label" for="SurveyYear"></label>
             <div>
                 <select id="SurveyYear">
@@ -407,11 +412,9 @@
             </div>
         </div>
     </div>
-    
 </div>
-
                 <div class="row" style="direction: ltr">
-                    <div class="col-xs-3">
+                  <div class="col-xs-3">
                         <div id="Country4SurveyPlot" class="plotly html-widget html-widget-output"></div>
                     </div>
                     <div class="col-xs-3">
@@ -424,22 +427,21 @@
                         <div id="Country1SurveyPlot" class="plotly html-widget html-widget-output"></div>
                     </div>
                 </div>
-                <br/><br/>
-                    <!--<p id="SurveySelectedIDOutput" class="shiny-text-output"></p>-->
-                                         <p>מילון אקלים</p>
-                <div id="pisaScoresTable" class="datatables html-widget html-widget-output"></div>
+               <!-- <br/>
+                <button id="pisaDictionary" type="button" class="btn btn-default action-button shiny-bound-input">מילון משתנים</button>-->
+                    <!--<div id="SurveySelectedIDOutput" class="shiny-text-output"></div>
+                <div id="pisaScoresTable" class="datatables html-widget html-widget-output"></div>-->
 </div>
 </section>
 <!--Analyze-->
 <section>
 
   <div id="analyze" class="container-fluid">
-      <p style="font-size: 18px">ניתוח</p>
-    <div>
-הנתונים שנאספים במבחן מאפשרים לנסות להסביר את רמת ההישגים הלימודיים באמצעות משתני רקע ומשתנים אחרים (כגון, המדיניות הבית ספרית, האקלים הבית ספרי, עמדות התלמידים כלפי תחום הדעת, מספר שעות הלימוד ועוד)
-
- </div>
-  <br/>
+      <p style="font-size: 18px">גורמים</p>
+<div>
+<p>הנתונים שנאספים במבחן מאפשרים לחפש קשרים בין משתני רקע ובין ההישגים.</p>
+<p>בדוגמא שלפנינו מוצגים ציוני התלמידים אל מול הגודל הממוצע של הכיתה בבית ספרם. קו הרגרסיה הלינארית ומתאם פירסון (המצוין לצידו) מראים כי מתקיים קשר חיובי בין גודל הכתה להישגים. 
+כלומר, ככל שהכיתה גדולה יותר, ההישגים עולים. כדי להבין תוצאה (מפתיעה) זו לעומקה, יש להשוותה עם מדדים נוספים.</p> </div>
   <div id="analyzeDashboard" class="row">
   <div class="col-xs-6"></div>
   
@@ -454,8 +456,8 @@
 
 <div class="col-xs-3">
     <div class="form-group shiny-input-container">
+      <span>שם מדד</span>
         <label class="control-label" for="AnalyzeVariable"></label>
-        <span>מדדים</span>
         <div>
             <select id="AnalyzeVariable">
                 <option value="" selected></option>
@@ -466,8 +468,8 @@
 </div>
   <div class="col-xs-3">
     <div class="form-group shiny-input-container">
+      <span>שנת מבחן</span>
         <label class="control-label" for="AnalyzeYear"></label>
-        <span>שנת מבחן</span>
         <div>
             <select id="AnalyzeYear">
                 <option value="" selected></option>

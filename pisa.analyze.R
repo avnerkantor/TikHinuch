@@ -5,7 +5,7 @@ observe({
 
 hebVariables<-c("מדדים", "מדדי בית ספר")
 observe({
-  updateSelectInput(session, "AnalyzeVariable", "", as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject %in% hebVariables), HebCategory))), selected = "עושר")
+  updateSelectInput(session, "AnalyzeVariable", "", as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject %in% hebVariables), HebCategory))), selected = "גודל הכיתה")
 })
 
 # observe({
@@ -105,11 +105,11 @@ observe({
     #analyzeData3<-setDT(analyzeData2)[, list(Slope = summary(lm(WEALTH ~ PV1MATH))$coeff[2], Pearson=cor(WEALTH, use="complete", PV1MATH, method = "pearson")), groupColour]
 
     ggplot(data=analyzeData2, aes_string(y=analyzeSubject, x=analyzeSelectedID)) +
-      geom_smooth(method="lm", aes(colour=groupColour), se=TRUE) +
+      geom_smooth(method="lm", aes(colour=groupColour), se=FALSE) +
       geom_point(aes(colour=groupColour)) +
-      geom_text(data=corData, aes(x=0, y=800, label=paste("Cor", Cor), show_guide=F)) +
+      geom_text(data=corData, aes(x=0, y=800, label=paste("p=", Cor), show_guide=F)) +
       scale_colour_manual(values = groupColours) +
-      labs(title="", y="" ,x= "") +
+      labs(title="", y="ציון" ,x= "") +
       theme_bw() +
       guides(colour=FALSE) +
       scale_y_continuous(limits = c(0,800)) +

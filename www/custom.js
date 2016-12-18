@@ -46,9 +46,14 @@ $(function() {
 });
 
 //Set countries width the same width as plots width
-$(window).on('resize', function(){
+$(document).ready(function(){
   $("#Country1, #Country2, #Country3, #Country4, #SurveyYear, #SurveySubject, #SurveyCategory, #SurveySubCategory, #AnalyzeYear, #AnalyzeVariable, #ModelId" ).css('width', ($("#Country1Plot").width()+'px'));
-}).resize();
+});
+
+$(window).resize(function(){
+    $("#Country1, #Country2, #Country3, #Country4, #SurveyYear, #SurveySubject, #SurveyCategory, #SurveySubCategory, #AnalyzeYear, #AnalyzeVariable, #ModelId" ).css('width', ($("#Country1Plot").width()+'px'));
+});
+
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(document).ready(function () {
