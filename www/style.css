@@ -399,6 +399,10 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
   
 }
 
+.tooltip-inner{
+  text-align:right;
+}
+
 #TrumpLogo {
     margin-top: -12px;
     width: 80px;
