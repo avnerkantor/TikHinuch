@@ -5,7 +5,7 @@ observe({
 
 hebVariables<-c("מדדים", "מדדי בית ספר")
 observe({
-  updateSelectInput(session, "AnalyzeVariable", "", as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject %in% hebVariables), HebCategory))), selected = "גודל הכיתה")
+  updateSelectInput(session, "AnalyzeVariable", "", as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject %in% hebVariables), HebCategory))), selected = "גודל כיתה")
 })
 
 # observe({
@@ -107,13 +107,13 @@ observe({
     ggplot(data=analyzeData2, aes_string(y=analyzeSubject, x=analyzeSelectedID)) +
       geom_smooth(method="lm", aes(colour=groupColour), se=FALSE) +
       geom_point(aes(colour=groupColour)) +
-      geom_text(data=corData, aes(x=0, y=800, label=paste("p=", Cor), show_guide=F)) +
+      #geom_text(data=corData, aes(x=0, y=800, label=paste("p=", Cor), show_guide=F)) +
       scale_colour_manual(values = groupColours) +
-      labs(title="", y="ציון" ,x= "") +
+      labs(title=paste("p=", corData$Cor), y="ציון" ,x= "") +
       theme_bw() +
       guides(colour=FALSE) +
       scale_y_continuous(limits = c(0,800)) +
-      theme(plot.margin=unit(c(0,15,5,10), "pt"),
+      theme(plot.margin=unit(c(5,15,5,10), "pt"),
             panel.border = element_blank(),
             axis.ticks = element_blank(),
             panel.grid.major.x=element_blank(),

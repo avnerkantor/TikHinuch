@@ -5,8 +5,13 @@ observe({
 })
 
 observeEvent(input$SurveyYear,{
-  updateSelectInput(session, "SurveySubject", "", choices = c(unique(pisaDictionary%>%filter(Year==input$SurveyYear)%>%select(HebSubject))),
-  selected="זמינות ושימוש באמצעי תקשוב")
+  choices<-c("בית הספר", "משפחה ובית", "לימודי מדעים", "זמינות ושימוש באמצעי תקשוב", "מדיניות בית הספר")
+  switch(input$SurveyYear,
+         "2015"={choices<-c("בית הספר", "משפחה ובית", "לימודי מדעים", "זמינות ושימוש באמצעי תקשוב", "מדיניות בית הספר")},
+         "2012"={choices<-c(unique(pisaDictionary%>%filter(Year=="2012")%>%select(HebSubject)))}
+  )
+  updateSelectInput(session, "SurveySubject", "", choices = choices,
+                    selected="זמינות ושימוש באמצעי תקשוב")
 })
 
 observeEvent(input$SurveySubject,{
