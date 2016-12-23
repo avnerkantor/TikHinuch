@@ -2481,7 +2481,7 @@ PA039Q06TA,In what country was this person born? Paternal Grandfather,Parents,In
 PA041Q01TA,"In the last twelve months, about how much would you have paid to educational providers for services?",Parents,"In the last twelve months, about how much would you have paid to educational providers for services?",,,,,2015
 PA042Q01TA,What is your annual household income?,Parents,What is your annual household income?,,,,,2015
 AGE,Age,OECDindex,Age,,מדדים,גיל,,2015
-PROGN,Unique national study programme code,OECDindex,Unique national study programme code,,מדדים,,,2015
+PROGN,Unique national study programme code,OECDindex,Unique national study programme code,,,,,2015
 ISCEDL,ISCED level,OECDindex,ISCED level,,מדדים,רמת השכלה,,2015
 ISCEDD,ISCED designation,OECDindex,ISCED designation,,מדדים,יעד השכלה,,2015
 ISCEDO,ISCED orientation,OECDindex,ISCED orientation,,מדדים,אוריינות השכלה,,2015
@@ -2499,15 +2499,15 @@ SCIEEFF,Science self-efficacy (WLE),OECDindex,Science self-efficacy (WLE),,מד�
 EPIST,Epistemological beliefs (WLE),OECDindex,Epistemological beliefs (WLE),,מדדים,דעות אפיסטמיות,,2015
 SCIEACT,Index science activities (WLE),OECDindex,Index science activities (WLE),,מדדים,פעילויות מדעיות,,2015
 BSMJ,Students’ expected occupational status (SEI),OECDindex,Students’ expected occupational status (SEI),,מדדים,המקצועות אליהם מכוונים הלימודים,,2015
-GRADE,Grade compared to modal grade in country,OECDindex,Grade compared to modal grade in country,,מדדים,,,2015
+GRADE,Grade compared to modal grade in country,OECDindex,Grade compared to modal grade in country,,,,,2015
 IMMIG,Index Immigration status,OECDindex,Index Immigration status,,מדדים,סטטוס עולה,,2015
 MISCED,Mother’s Education (ISCED),OECDindex,Mother’s Education (ISCED),,מדדים,השכלת האם,,2015
 FISCED,Father’s Education (ISCED),OECDindex,Father’s Education (ISCED),,מדדים,השכלת האב,,2015
 HISCED,Highest Education of parents (ISCED),OECDindex,Highest Education of parents (ISCED),,מדדים,השכלת הורים,,2015
-HOMESCH,ICT use outside of school for schoolwork (WLE),OECDindex,ICT use outside of school for schoolwork (WLE),,מדדים,,,2015
-ENTUSE,ICT use outside of school leisure (WLE),OECDindex,ICT use outside of school leisure (WLE),,מדדים,,,2015
-BMMJ1,ISEI of mother,OECDindex,ISEI of mother,,מדדים,,,2015
-BFMJ2,ISEI of father,OECDindex,ISEI of father,,מדדים,,,2015
+HOMESCH,ICT use outside of school for schoolwork (WLE),OECDindex,ICT use outside of school for schoolwork (WLE),,,,,2015
+ENTUSE,ICT use outside of school leisure (WLE),OECDindex,ICT use outside of school leisure (WLE),,,,,2015
+BMMJ1,ISEI of mother,OECDindex,ISEI of mother,,,,,2015
+BFMJ2,ISEI of father,OECDindex,ISEI of father,,,,,2015
 hisei,Index highest parental occupational status,OECDindex,Index highest parental occupational status,,מדדים,תעסוקת הורים,,2015
 REPEAT,Grade Repetition,OECDindex,Grade Repetition,,מדדים,"ציונים חוזרים
 ",,2015
@@ -2526,7 +2526,7 @@ EMOSUPS,Parents emotional support (WLE),OECDindex,Parents emotional support (WLE
 PERFEED,Perceived Feedback (WLE),OECDindex,Perceived Feedback (WLE),,מדדים,משוב,,2015
 ADINST,Adaption of instruction (WLE),OECDindex,Adaption of instruction (WLE),,מדדים,גמישות בתהליך הלימוד,,2015
 SCCHANGE,Number of school changes,OECDindex,Number of school changes,,מדדים,מספר שינויי בית ספר,,2015
-CHANGE,Number of changes in educational biography (Sum),OECDindex,Number of changes in educational biography (Sum),,מדדים,,,2015
+CHANGE,Number of changes in educational biography (Sum),OECDindex,Number of changes in educational biography (Sum),,,,,2015
 SADDINST,Number of learning domains with additional instruction,OECDindex,Number of learning domains with additional instruction,,מדדים,מספר מקצועות מוגברים,,2015
 HADDINST,Total hours of additional instruction (Sum),OECDindex,Total hours of additional instruction (Sum),,מדדים,זמן עזרה בבית הספר,,2015
 ADDSCIIN,Number of science disciplines and subjects  with additional instruction (Sum),OECDindex,Number of science disciplines and subjects  with additional instruction (Sum),,מדדים,מספר מקצועות מוגברים במדעים,,2015
@@ -2538,13 +2538,13 @@ COMMASUP,Comparison mathematics school lessons and additional instruction suppor
 COMMASTRLE,Comparison mathematics school lessons and additional instruction structuredness lessons (Mean),OECDindex,Comparison mathematics school lessons and additional instruction structuredness lessons (Mean),,מדדים,השוואה בין מערכי שעורי מתמטיקה רגילים למוגברים,,2015
 COMMASTRCO,Comparison mathematics school lessons and additional instruction structuredness content (Mean),OECDindex,Comparison mathematics school lessons and additional instruction structuredness content (Mean),,מדדים,השוואה בין תוכן מערכי שעורי מתמטיקה רגילים למוגברים,,2015
 COMMATSREL,Comparison mathematics school lessons and additional instruction teacher-student relation,OECDindex,Comparison mathematics school lessons and additional instruction teacher-student relation,,מדדים,השוואה בין יחס מורה תלמיד בין שעורים רגילים במתמטיקה ללימודים מוגברים,,2015
-USESCH,Use of ICT at school in general (WLE),OECDindex,Use of ICT at school in general (WLE),,מדדים,,,2015
-INTICT,Students’ ICT Interest (WLE),OECDindex,Students’ ICT Interest (WLE),,מדדים,,,2015
-COMPICT,Students’ Perceived ICT Competence (WLE),OECDindex,Students’ Perceived ICT Competence (WLE),,מדדים,,,2015
-AUTICT,Students’ Perceived Autonomy related to ICT Use (WLE),OECDindex,Students’ Perceived Autonomy related to ICT Use (WLE),,מדדים,,,2015
-SOIAICT,Students’ ICT as a topic in Social Interaction (WLE),OECDindex,Students’ ICT as a topic in Social Interaction (WLE),,מדדים,,,2015
-ICTHOME,ICT available at Home Index (Sum),OECDindex,ICT available at Home Index (Sum),,מדדים,,,2015
-ICTSCH,ICT available at School Index (Sum),OECDindex,ICT available at School Index (Sum),,מדדים,,,2015
+USESCH,Use of ICT at school in general (WLE),OECDindex,Use of ICT at school in general (WLE),,,,,2015
+INTICT,Students’ ICT Interest (WLE),OECDindex,Students’ ICT Interest (WLE),,,,,2015
+COMPICT,Students’ Perceived ICT Competence (WLE),OECDindex,Students’ Perceived ICT Competence (WLE),,,,,2015
+AUTICT,Students’ Perceived Autonomy related to ICT Use (WLE),OECDindex,Students’ Perceived Autonomy related to ICT Use (WLE),,,,,2015
+SOIAICT,Students’ ICT as a topic in Social Interaction (WLE),OECDindex,Students’ ICT as a topic in Social Interaction (WLE),,,,,2015
+ICTHOME,ICT available at Home Index (Sum),OECDindex,ICT available at Home Index (Sum),,,,,2015
+ICTSCH,ICT available at School Index (Sum),OECDindex,ICT available at School Index (Sum),,,,,2015
 PRESUPP,Child’s past science activities (WLE),OECDindex,Child’s past science activities (WLE),,מדדים,השתתפות קודמת של ילדים בתחום המדע,,2015
 CURSUPP,Parental current support for learning at home (WLE),OECDindex,Parental current support for learning at home (WLE),,מדדים,תמיכה של הורים בלימוד בבית,,2015
 EMOSUPP,Parental emotional support (WLE),OECDindex,Parental emotional support (WLE),,מדדים,תמיכה רגשית של הורים,,2015
@@ -2566,14 +2566,14 @@ OCOD3,ISCO-08 Occupation code - Self,OECDindex,ISCO-08 Occupation code - Self,,�
 CULTPOSS,Cultural possessions at home (WLE),OECDindex,Cultural possessions at home (WLE),,מדדים,נכסים תרבותיים בבית,,2015
 HEDRES,Home educational resources (WLE),OECDindex,Home educational resources (WLE),,מדדים,משאבים ללימוד בבית,,2015
 HOMEPOS,Home possessions (WLE),OECDindex,Home possessions (WLE),,מדדים,נכסים בבית,,2015
-ICTRES,ICT Resources (WLE),OECDindex,ICT Resources (WLE),,מדדים,,,2015
+ICTRES,ICT Resources (WLE),OECDindex,ICT Resources (WLE),,,,,2015
 WEALTH,Family wealth (WLE),OECDindex,Family wealth (WLE),,מדדים,עושר,,2015
-ESCS,"Index of economic, social and cultural status (WLE)",OECDindex,"Index of economic, social and cultural status (WLE)",,מדדים,,,2015
-LANGTEST,Language of Questionnaire\Assessment,OECDindex,Language of Questionnaire\Assessment,,מדדים,,,2015
+ESCS,"Index of economic, social and cultural status (WLE)",OECDindex,"Index of economic, social and cultural status (WLE)",,,,,2015
+LANGTEST,Language of Questionnaire\Assessment,OECDindex,Language of Questionnaire\Assessment,,,,,2015
 SC001Q01TA,Which of the following definitions best describes the community in which your school is located?,,,,,קהילת בית הספר,,2015
 SC002Q01TA,"As at <February 1, 2014>, what was the total school enrolment (number of students)? Number of boys:",,,,,גודל,מספר בנים,2015
 SC002Q02TA,"As at <February 1, 2014>, what was the total school enrolment (number of students)? Number of girls:",,,,,גודל,מספר בנות,2015
-SC003Q01TA,What is the average size of <test language> classes in <national modal grade for 15-year-olds> in your school?,,,,גודל כיתה,,,2015
+SC003Q01TA,What is the average size of <test language> classes in <national modal grade for 15-year-olds> in your school?,,,,,גודל,גודל כיתה,2015
 SC004Q01TA,Student-comp ratio in <national modal grade for 15-year-olds>. Total num.\stud. <national modal grade for 15-year-old,,,,,מחשבים,יחס תלמיד-מחשב,2015
 SC004Q02TA,Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are avail for students for ed,,,,,מחשבים,מספר מחשבים לתלמידים,2015
 SC004Q03TA,Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are connected to Internet\World,,,,,מחשבים,מספר מחשבים מחוברים לאינטרנט,2015

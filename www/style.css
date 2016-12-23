@@ -59,7 +59,7 @@ html {
 
 #scores {
   width:100%;
-  padding-top:0px;
+  padding-top:0;
 }
 
 #expertise, #survey, #analyze {
@@ -110,7 +110,7 @@ nav {
 
 .underHeaderText {
     right: 10px;
-    font-size: 18pt;
+    font-size: 16pt;
     margin-right:15px;
 }
 
@@ -395,10 +395,6 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
   text-align:right;
 }
 
-#pisaScoresTable{
-  margin:15px;
-  
-}
 
 .tooltip-inner{
   text-align:right;

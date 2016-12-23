@@ -95,9 +95,8 @@
     <div class="header-image"></div>
  <div class="text-image">מה מספר מבחן פיז"ה?</div>   
  <div class="underHeaderText">
-פיז"ה הוא מבחן בינלאומי בתחום החינוך הנערך בקרב תלמידים בני חמש-עשרה ברחבי העולם. תוצאותיו
-משמשות לבחינת התקדמות מערכת החינוך ולניתוח גורמים המשפיעים בתוכה. 
-פיז"ה פתוח הוא פרויקט ראשון בעולם שמאפשר גישה נוחה לנתונים וניתוח סטטיסטי ויזואלי. </div>
+פיז"ה הוא מבחן בינלאומי בתחום החינוך הנערך בקרב תלמידים בני חמש-עשרה ברחבי העולם. הוא כולל נְתוּנֵי עָתֵק שמתארים מגמות במערכות חינוך מגוונות. פיז"ה פתוח הוא פרויקט ראשון בעולם שמאפשר גישה נוחה לנתונים בשילוב יכולת חקירת משתנים חינוכיים.  
+</div>
 </div>
 </header>
 
@@ -429,6 +428,28 @@
                         <div id="Country1SurveyPlot" class="plotly html-widget html-widget-output"></div>
                     </div>
                 </div>
+                <br/>
+                                <button type="button" class="btn btn-countries" data-toggle="modal" data-target="#myModal">
+ מילון פריטים
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">מילון משתנים</h4>
+      </div>
+      <div class="modal-body">
+        <div id="pisaScoresTable" class="datatables html-widget html-widget-output"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">סגור</button>
+      </div>
+    </div>
+  </div>
+</div>
                <!-- <br/>
                 <button id="pisaDictionary" type="button" class="btn btn-default action-button shiny-bound-input">מילון משתנים</button>-->
                     <!--<div id="SurveySelectedIDOutput" class="shiny-text-output"></div>
@@ -443,18 +464,21 @@
 <div>
 <p>האם ישנו קשר בין הישגי התלמידים לבין עמדות ומשתני אקלים? בעזרת כלים סטטיסטיים שונים נבדוק האם אפשר לזהות  מתאם או קשר סיבתי המשפיע על ההישגים בכיתה.</p>
 <p>בדוגמא שלפנינו מוצגים ציוני התלמידים אל מול הגודל הממוצע של הכיתה בבית ספרם. קו הרגרסיה הלינארית ומתאם פירסון (המצוין לצידו) מראים כי מתקיים קשר חיובי בין גודל הכתה להישגים. 
-כלומר, ככל שהכיתה גדולה יותר, ההישגים עולים. כדי להבין תוצאה (מפתיעה) זו לעומקה, יש להשוותה עם מדדים נוספים.</p> </div>
+כלומר, ככל שהכיתה גדולה יותר, ההישגים עולים. כדי להבין תוצאה (מפתיעה) זו לעומקה, יש להשוותה עם מדדים נוספים.</p> 
+                  <p>
+                    הנכם מוזמנים לפנות להוספת פרמטרים נוספים (פרטים ב'אודות').                  </p>
+</div>
   <div id="analyzeDashboard" class="row">
-  <div class="col-xs-6"></div>
+  <div class="col-xs-3"></div>
   
-<!--<div class="col-xs-3 ">
+<div class="col-xs-3 ">
     <div class="form-group shiny-input-container">
         <span>מודל סטטיסטי</span>
         <select id="ModelId">
         </select>
         <script type="application/json" data-for="ModelId">{}</script>
     </div>
-</div>-->
+</div>
 
 <div class="col-xs-3">
     <div class="form-group shiny-input-container">
@@ -482,38 +506,29 @@
 </div>
 </div>
 <br/>
-               <div class="row" style="direction: ltr">
-                        <div class="col-xs-3 ">
-                          <div id="Country4AnalyzePlot" class="shiny-plot-output" style="height:200px">
-                          </div>
-                      </div>
-                      <div class="col-xs-3">
-                        <div id="Country3AnalyzePlot" class="shiny-plot-output" style="height:200px">
-                        </div>
-                    </div>
-                    <div class="col-xs-3">
-                        <div id="Country2AnalyzePlot" class="shiny-plot-output" style="height:200px">
-                        </div>
-                    </div>
-                    <div class="col-xs-3">
-                        <div id="Country1AnalyzePlot" class="shiny-plot-output" style="height:200px">
-                        </div>
-                    </div>
+   <div class="row" style="direction:ltr">
+    <div class="col-xs-3 ">
+      <div id="Country1AnalyzePlot" class="shiny-plot-output"></div>
+       <div id="Country1AnalyzePlotText" class="shiny-text-output"></div>
+  </div>
+  <div class="col-xs-3">
+    <div id="Country2AnalyzePlot" class="shiny-plot-output"></div>
+    <div id="Country2AnalyzePlotText" class="shiny-text-output"></div>
+</div>
+<div class="col-xs-3">
+    <div id="Country3AnalyzePlot" class="shiny-plot-output"></div>
+    <div id="Country3AnalyzePlotText" class="shiny-text-output"></div>
+</div>
+<div class="col-xs-3">
+    <div id="Country4AnalyzePlot" class="shiny-plot-output"></div>
+    <div id="Country4AnalyzePlotText" class="shiny-text-output"></div>
+</div>
+</div>
+                <div class="row col-xs-12" style="height: 30px; ">
+
                 </div>
-                
-                <div class="row col-xs-12" style="height: 30px; "></div>
 </div>
 
 </section>
-<!--About-->
-<!--
-<section>
-    <div id="about" class="container-fluid">
-       <div class="col-xs-12">
-         <p style="font-size: 18px">אודות</p>     
-        <iframe width= "100%" height="600px" frameborder="0" scrolling="no" src="http://blog.opisa.org/post1/%D7%90%D7%95%D7%93%D7%95%D7%AA/"></iframe>
-</div>
-</div>
-</section>-->
 </body>
 </html>
