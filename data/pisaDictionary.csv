@@ -398,103 +398,103 @@ ST24Q03,Acculturation - Perceived Host-Heritage Cultural Differences - Teacher T
 SCLANG,Language of test,,,,,שפת המבחן,,2012
 STRATUM,General Stratum,,,,,סוג בית ספר,,2012
 SES,SES-Israeli,,,,,מדד טיפוח,,2012
-CLCUSE1,Calculator Use,OECDindex,Calculator Use,,מדדים,שימוש במחשבון,,2012
-CLCUSE301,Effort-real 1,OECDindex,Effort-real 1,,מדדים,מאמצים - מדד 1,,2012
-CLCUSE302,Effort-real 2,OECDindex,Effort-real 2,,מדדים,מאמצים - מדד 2,,2012
-DEFFORT,Difference in Effort,OECDindex,Difference in Effort,,מדדים,הבדל במאמצים,,2012
-QUESTID,Student Questionnaire Form,OECDindex,Student Questionnaire Form,,מדדים,טופס שאלון תלמיד,,2012
-BOOKID,Booklet ID,OECDindex,Booklet ID,,מדדים,מספר חוברת,,2012
-EASY,Standard or simplified set of booklets,OECDindex,Standard or simplified set of booklets,,מדדים,סוג החוברת,,2012
-AGE,Age of student,OECDindex,Age of student,,מדדים,גיל התלמיד,,2012
-GRADE,Grade compared to modal grade in country,OECDindex,Grade compared to modal grade in country,,מדדים,הגיל,,2012
-PROGN,Unique national study programme code,OECDindex,Unique national study programme code,,מדדים,,,2012
-ANXMAT,Mathematics Anxiety,OECDindex,Mathematics Anxiety,,מדדים,חרדה ממתמטיקה,,2012
-ATSCHL,Attitude towards School: Learning Outcomes,OECDindex,Attitude towards School: Learning Outcomes,,מדדים,גישה כלפי בית הספר - למידת התוצרים,,2012
-ATTLNACT,Attitude towards School: Learning Activities,OECDindex,Attitude towards School: Learning Activities,,מדדים,גישה כלפי בית הספר - למידת פעילויות,,2012
-BELONG,Sense of Belonging to School,OECDindex,Sense of Belonging to School,,מדדים,תחושת שייכות לבית הספר,,2012
-BFMJ2,Father SQ ISEI,OECDindex,Father SQ ISEI,,מדדים,השכלת אב,,2012
-BMMJ1,Mother SQ ISEI,OECDindex,Mother SQ ISEI,,מדדים,השכלת אם,,2012
-CLSMAN,Mathematics Teacher's Classroom Management,OECDindex,Mathematics Teacher's Classroom Management,,מדדים,ניהול שיעורי מתמטיקה,,2012
-COBN_F,Country of Birth National Categories- Father,OECDindex,Country of Birth National Categories- Father,,מדדים,מדינת לידה - אבא,,2012
-COBN_M,Country of Birth National Categories- Mother,OECDindex,Country of Birth National Categories- Mother,,מדדים,מדינת לידה - אמא,,2012
-COBN_S,Country of Birth National Categories- Self,OECDindex,Country of Birth National Categories- Self,,מדדים,מדינת לידה - תלמיד,,2012
-COGACT,Cognitive Activation in Mathematics Lessons,OECDindex,Cognitive Activation in Mathematics Lessons,,מדדים,הפעלת קוגניטיבית בשיעורי מתמטיקה,,2012
-CULTDIST,Cultural Distance between Host and Heritage Culture,OECDindex,Cultural Distance between Host and Heritage Culture,,מדדים,הבדל תרבותי בין מהגרים לילידים,,2012
-CULTPOS,Cultural Possessions,OECDindex,Cultural Possessions,,מדדים,,,2012
-DISCLIMA,Disciplinary Climate,OECDindex,Disciplinary Climate,,מדדים,אקלים משמעת,,2012
-ENTUSE,ICT Entertainment Use,OECDindex,ICT Entertainment Use,,מדדים,,,2012
-ESCS,"Index of economic, social and cultural status",OECDindex,"Index of economic, social and cultural status",,מדדים,,,2012
-EXAPPLM,Experience with Applied Mathematics Tasks at School,OECDindex,Experience with Applied Mathematics Tasks at School,,מדדים,ניסיון עם משימות מתמטיקה יישומית בבית הספר,,2012
-EXPUREM,Experience with Pure Mathematics Tasks at School,OECDindex,Experience with Pure Mathematics Tasks at School,,מדדים,ניסיון עם משימות מתמטיקה טהורה בבית הספר,,2012
-FAILMAT,Attributions to Failure in Mathematics,OECDindex,Attributions to Failure in Mathematics,,מדדים,,,2012
-FAMCON,Familiarity with Mathematical Concepts,OECDindex,Familiarity with Mathematical Concepts,,מדדים,היכרות עם מושגים מתמטים,,2012
-FAMCONC,Familiarity with Mathematical Concepts (Signal Detection Adjusted),OECDindex,Familiarity with Mathematical Concepts (Signal Detection Adjusted),,מדדים,,,2012
-FAMSTRUC,Family Structure,OECDindex,Family Structure,,מדדים,מבנה המשפחה,,2012
-FISCED,Educational level of father (ISCED),OECDindex,Educational level of father (ISCED),,מדדים,,,2012
-HEDRES,Home educational resources,OECDindex,Home educational resources,,מדדים,משאבי חינוך בבית,,2012
-HERITCUL,Acculturation: Heritage Culture Oriented Strategies,OECDindex,Acculturation: Heritage Culture Oriented Strategies,,מדדים,אסטרגיות מוכוונות מורשת,,2012
-HISCED,Highest educational level of parents,OECDindex,Highest educational level of parents,,מדדים,השכלה מקסימלית של הורים,,2012
-HISEI,Highest parental occupational status,OECDindex,Highest parental occupational status,,מדדים,מצב תעסוקתי מקסימלי של הורים,,2012
-HOMEPOS,Home Possessions,OECDindex,Home Possessions,,מדדים,בעלות על חפצים יקרי ערך,,2012
-HOMSCH,ICT Use at Home for School-related Tasks,OECDindex,ICT Use at Home for School-related Tasks,,מדדים,,,2012
-HOSTCUL,Acculturation: Host Culture Oriented Strategies,OECDindex,Acculturation: Host Culture Oriented Strategies,,מדדים,אסטרגטיות מוכוונות מורשת מקומית,,2012
-ICTATTNEG,Attitudes Towards Computers: Limitations of the Computer as a Tool for School Learning,OECDindex,Attitudes Towards Computers: Limitations of the Computer as a Tool for School Learning,,מדדים,מגבלות מחשב ככלי לימוד בבית ספר,,2012
-ICTATTPOS,Attitudes Towards Computers: Computer as a Tool for School Learning,OECDindex,Attitudes Towards Computers: Computer as a Tool for School Learning,,מדדים,מחשב ככלי לימוד בבית ספר,,2012
-ICTHOME,ICT Availability at Home,OECDindex,ICT Availability at Home,,מדדים,,,2012
-ICTSCH,ICT Availability at School,OECDindex,ICT Availability at School,,מדדים,,,2012
-IMMIG,Immigration status,OECDindex,Immigration status,,מדדים,סטטוס הגירה,,2012
-INFOCAR,Information about Careers,OECDindex,Information about Careers,,מדדים,מידע על קריירה,,2012
-INFOJOB1,Information about the Labour Market provided by the School,OECDindex,Information about the Labour Market provided by the School,,מדדים,מידע על שוק העבודה שמסופק בבית הספר,,2012
-INFOJOB2,Information about the Labour Market provided outside of School,OECDindex,Information about the Labour Market provided outside of School,,מדדים,מידע על שוק העבודה שמסופק מחוץ לבית הספר,,2012
-INSTMOT,Instrumental Motivation for Mathematics,OECDindex,Instrumental Motivation for Mathematics,,מדדים,מוטיבציה אינסטרומנטלית למתמטיקה,,2012
-INTMAT,Mathematics Interest,OECDindex,Mathematics Interest,,מדדים,עניין במתמטיקה,,2012
-ISCEDD,ISCED designation,OECDindex,ISCED designation,,מדדים,,,2012
-ISCEDL,ISCED level,OECDindex,ISCED level,,מדדים,,,2012
-ISCEDO,ISCED orientation,OECDindex,ISCED orientation,,מדדים,,,2012
-LANGCOMM,Preference for Heritage Language in Conversations with Family and Friends,OECDindex,Preference for Heritage Language in Conversations with Family and Friends,,מדדים,קידום שימוש בשפה בה התלמיד מדבר,,2012
-LANGN,Language at home (3-digit code),OECDindex,Language at home,,מדדים,שפה בבית,,2012
-LANGRPPD,Preference for Heritage Language in Language Reception and Production,OECDindex,Preference for Heritage Language in Language Reception and Production,,מדדים,העדפה של שפה בה התלמיד מדבר כפי שמשתקף בתוצרים,,2012
-LMINS,Learning time (minutes per week) - <test language>,OECDindex,Learning time (minutes per week) - <test language>,,מדדים,דקות לימוד פר שבוע,,2012
-MATBEH,Mathematics Behaviour,OECDindex,Mathematics Behaviour,,מדדים,התנהגות מתמטיקה,,tא
-MATHEFF,Mathematics Self-Efficacy,OECDindex,Mathematics Self-Efficacy,,מדדים,הערכה עצמית במתמטיקה,,2012
-MATINTFC,Mathematics Intentions,OECDindex,Mathematics Intentions,,מדדים,הסיבות ללימוד מתמטיקה,,2012
-MATWKETH,Mathematics Work Ethic,OECDindex,Mathematics Work Ethic,,מדדים,אתיקת עבודה במתמטיקה,,2012
-MISCED,Educational level of mother (ISCED),OECDindex,Educational level of mother (ISCED),,מדדים,השכלת האם,,2012
-MMINS,Learning time (minutes per week)- <Mathematics>,OECDindex,Learning time (minutes per week)- <Mathematics>,,מדדים,זמן למידה בשבוע (בדקות) במתמטיקה,,2012
-MTSUP,Mathematics Teacher's Support,OECDindex,Mathematics Teacher's Support,,מדדים,תמיכת המורה למתמטיקה,,2012
-OCOD1,ISCO-08 Occupation code - Mother,OECDindex,ISCO-08 Occupation code - Mother,,מדדים,עבודת האם,,2012
-OCOD2,ISCO-08 Occupation code - Father,OECDindex,ISCO-08 Occupation code - Father,,מדדים,עבודת האב,,2012
-OPENPS,Openness for Problem Solving,OECDindex,Openness for Problem Solving,,מדדים,פתיחות לפתירת בעיות,,2012
-OUTHOURS,Out-of-School Study Time,OECDindex,Out-of-School Study Time,,מדדים,זמן למידה מחוץ לבית הספר,,2012
-PARED,Highest parental education in years,OECDindex,Highest parental education in years,,מדדים,"ההשכלה המקסימלית של הורה, בשנות השכלה",,2012
-PERSEV,Perseverance,OECDindex,Perseverance,,מדדים,התמדה,,2012
-REPEAT,Grade Repetition,OECDindex,Grade Repetition,,מדדים,"ציונים חוזרים
+CLCUSE1,Calculator Use,OECDindex,Calculator Use,,מדדי תלמידים,שימוש במחשבון,,2012
+CLCUSE301,Effort-real 1,OECDindex,Effort-real 1,,מדדי תלמידים,מאמצים - מדד 1,,2012
+CLCUSE302,Effort-real 2,OECDindex,Effort-real 2,,מדדי תלמידים,מאמצים - מדד 2,,2012
+DEFFORT,Difference in Effort,OECDindex,Difference in Effort,,מדדי תלמידים,הבדל במאמצים,,2012
+QUESTID,Student Questionnaire Form,OECDindex,Student Questionnaire Form,,מדדי תלמידים,טופס שאלון תלמיד,,2012
+BOOKID,Booklet ID,OECDindex,Booklet ID,,מדדי תלמידים,מספר חוברת,,2012
+EASY,Standard or simplified set of booklets,OECDindex,Standard or simplified set of booklets,,מדדי תלמידים,סוג החוברת,,2012
+AGE,Age of student,OECDindex,Age of student,,מדדי תלמידים,גיל התלמיד,,2012
+GRADE,Grade compared to modal grade in country,OECDindex,Grade compared to modal grade in country,,מדדי תלמידים,הגיל,,2012
+PROGN,Unique national study programme code,OECDindex,Unique national study programme code,,מדדי תלמידים,,,2012
+ANXMAT,Mathematics Anxiety,OECDindex,Mathematics Anxiety,,מדדי תלמידים,חרדה ממתמטיקה,,2012
+ATSCHL,Attitude towards School: Learning Outcomes,OECDindex,Attitude towards School: Learning Outcomes,,מדדי תלמידים,גישה כלפי בית הספר - למידת התוצרים,,2012
+ATTLNACT,Attitude towards School: Learning Activities,OECDindex,Attitude towards School: Learning Activities,,מדדי תלמידים,גישה כלפי בית הספר - למידת פעילויות,,2012
+BELONG,Sense of Belonging to School,OECDindex,Sense of Belonging to School,,מדדי תלמידים,תחושת שייכות לבית הספר,,2012
+BFMJ2,Father SQ ISEI,OECDindex,Father SQ ISEI,,מדדי תלמידים,השכלת אב,,2012
+BMMJ1,Mother SQ ISEI,OECDindex,Mother SQ ISEI,,מדדי תלמידים,השכלת אם,,2012
+CLSMAN,Mathematics Teacher's Classroom Management,OECDindex,Mathematics Teacher's Classroom Management,,מדדי תלמידים,ניהול שיעורי מתמטיקה,,2012
+COBN_F,Country of Birth National Categories- Father,OECDindex,Country of Birth National Categories- Father,,מדדי תלמידים,מדינת לידה - אבא,,2012
+COBN_M,Country of Birth National Categories- Mother,OECDindex,Country of Birth National Categories- Mother,,מדדי תלמידים,מדינת לידה - אמא,,2012
+COBN_S,Country of Birth National Categories- Self,OECDindex,Country of Birth National Categories- Self,,מדדי תלמידים,מדינת לידה - תלמיד,,2012
+COGACT,Cognitive Activation in Mathematics Lessons,OECDindex,Cognitive Activation in Mathematics Lessons,,מדדי תלמידים,הפעלת קוגניטיבית בשיעורי מתמטיקה,,2012
+CULTDIST,Cultural Distance between Host and Heritage Culture,OECDindex,Cultural Distance between Host and Heritage Culture,,מדדי תלמידים,הבדל תרבותי בין מהגרים לילידים,,2012
+CULTPOS,Cultural Possessions,OECDindex,Cultural Possessions,,מדדי תלמידים,,,2012
+DISCLIMA,Disciplinary Climate,OECDindex,Disciplinary Climate,,מדדי תלמידים,אקלים משמעת,,2012
+ENTUSE,ICT Entertainment Use,OECDindex,ICT Entertainment Use,,מדדי תלמידים,,,2012
+ESCS,"Index of economic, social and cultural status",OECDindex,"Index of economic, social and cultural status",,מדדי תלמידים,,,2012
+EXAPPLM,Experience with Applied Mathematics Tasks at School,OECDindex,Experience with Applied Mathematics Tasks at School,,מדדי תלמידים,ניסיון עם משימות מתמטיקה יישומית בבית הספר,,2012
+EXPUREM,Experience with Pure Mathematics Tasks at School,OECDindex,Experience with Pure Mathematics Tasks at School,,מדדי תלמידים,ניסיון עם משימות מתמטיקה טהורה בבית הספר,,2012
+FAILMAT,Attributions to Failure in Mathematics,OECDindex,Attributions to Failure in Mathematics,,מדדי תלמידים,,,2012
+FAMCON,Familiarity with Mathematical Concepts,OECDindex,Familiarity with Mathematical Concepts,,מדדי תלמידים,היכרות עם מושגים מתמטים,,2012
+FAMCONC,Familiarity with Mathematical Concepts (Signal Detection Adjusted),OECDindex,Familiarity with Mathematical Concepts (Signal Detection Adjusted),,מדדי תלמידים,,,2012
+FAMSTRUC,Family Structure,OECDindex,Family Structure,,מדדי תלמידים,מבנה המשפחה,,2012
+FISCED,Educational level of father (ISCED),OECDindex,Educational level of father (ISCED),,מדדי תלמידים,,,2012
+HEDRES,Home educational resources,OECDindex,Home educational resources,,מדדי תלמידים,משאבי חינוך בבית,,2012
+HERITCUL,Acculturation: Heritage Culture Oriented Strategies,OECDindex,Acculturation: Heritage Culture Oriented Strategies,,מדדי תלמידים,אסטרגיות מוכוונות מורשת,,2012
+HISCED,Highest educational level of parents,OECDindex,Highest educational level of parents,,מדדי תלמידים,השכלה מקסימלית של הורים,,2012
+HISEI,Highest parental occupational status,OECDindex,Highest parental occupational status,,מדדי תלמידים,מצב תעסוקתי מקסימלי של הורים,,2012
+HOMEPOS,Home Possessions,OECDindex,Home Possessions,,מדדי תלמידים,בעלות על חפצים יקרי ערך,,2012
+HOMSCH,ICT Use at Home for School-related Tasks,OECDindex,ICT Use at Home for School-related Tasks,,מדדי תלמידים,,,2012
+HOSTCUL,Acculturation: Host Culture Oriented Strategies,OECDindex,Acculturation: Host Culture Oriented Strategies,,מדדי תלמידים,אסטרגטיות מוכוונות מורשת מקומית,,2012
+ICTATTNEG,Attitudes Towards Computers: Limitations of the Computer as a Tool for School Learning,OECDindex,Attitudes Towards Computers: Limitations of the Computer as a Tool for School Learning,,מדדי תלמידים,מגבלות מחשב ככלי לימוד בבית ספר,,2012
+ICTATTPOS,Attitudes Towards Computers: Computer as a Tool for School Learning,OECDindex,Attitudes Towards Computers: Computer as a Tool for School Learning,,מדדי תלמידים,מחשב ככלי לימוד בבית ספר,,2012
+ICTHOME,ICT Availability at Home,OECDindex,ICT Availability at Home,,מדדי תלמידים,,,2012
+ICTSCH,ICT Availability at School,OECDindex,ICT Availability at School,,מדדי תלמידים,,,2012
+IMMIG,Immigration status,OECDindex,Immigration status,,מדדי תלמידים,סטטוס הגירה,,2012
+INFOCAR,Information about Careers,OECDindex,Information about Careers,,מדדי תלמידים,מידע על קריירה,,2012
+INFOJOB1,Information about the Labour Market provided by the School,OECDindex,Information about the Labour Market provided by the School,,מדדי תלמידים,מידע על שוק העבודה שמסופק בבית הספר,,2012
+INFOJOB2,Information about the Labour Market provided outside of School,OECDindex,Information about the Labour Market provided outside of School,,מדדי תלמידים,מידע על שוק העבודה שמסופק מחוץ לבית הספר,,2012
+INSTMOT,Instrumental Motivation for Mathematics,OECDindex,Instrumental Motivation for Mathematics,,מדדי תלמידים,מוטיבציה אינסטרומנטלית למתמטיקה,,2012
+INTMAT,Mathematics Interest,OECDindex,Mathematics Interest,,מדדי תלמידים,עניין במתמטיקה,,2012
+ISCEDD,ISCED designation,OECDindex,ISCED designation,,מדדי תלמידים,,,2012
+ISCEDL,ISCED level,OECDindex,ISCED level,,מדדי תלמידים,,,2012
+ISCEDO,ISCED orientation,OECDindex,ISCED orientation,,מדדי תלמידים,,,2012
+LANGCOMM,Preference for Heritage Language in Conversations with Family and Friends,OECDindex,Preference for Heritage Language in Conversations with Family and Friends,,מדדי תלמידים,קידום שימוש בשפה בה התלמיד מדבר,,2012
+LANGN,Language at home (3-digit code),OECDindex,Language at home,,מדדי תלמידים,שפה בבית,,2012
+LANGRPPD,Preference for Heritage Language in Language Reception and Production,OECDindex,Preference for Heritage Language in Language Reception and Production,,מדדי תלמידים,העדפה של שפה בה התלמיד מדבר כפי שמשתקף בתוצרים,,2012
+LMINS,Learning time (minutes per week) - <test language>,OECDindex,Learning time (minutes per week) - <test language>,,מדדי תלמידים,דקות לימוד פר שבוע,,2012
+MATBEH,Mathematics Behaviour,OECDindex,Mathematics Behaviour,,מדדי תלמידים,התנהגות מתמטיקה,,tא
+MATHEFF,Mathematics Self-Efficacy,OECDindex,Mathematics Self-Efficacy,,מדדי תלמידים,הערכה עצמית במתמטיקה,,2012
+MATINTFC,Mathematics Intentions,OECDindex,Mathematics Intentions,,מדדי תלמידים,הסיבות ללימוד מתמטיקה,,2012
+MATWKETH,Mathematics Work Ethic,OECDindex,Mathematics Work Ethic,,מדדי תלמידים,אתיקת עבודה במתמטיקה,,2012
+MISCED,Educational level of mother (ISCED),OECDindex,Educational level of mother (ISCED),,מדדי תלמידים,השכלת האם,,2012
+MMINS,Learning time (minutes per week)- <Mathematics>,OECDindex,Learning time (minutes per week)- <Mathematics>,,מדדי תלמידים,זמן למידה בשבוע (בדקות) במתמטיקה,,2012
+MTSUP,Mathematics Teacher's Support,OECDindex,Mathematics Teacher's Support,,מדדי תלמידים,תמיכת המורה למתמטיקה,,2012
+OCOD1,ISCO-08 Occupation code - Mother,OECDindex,ISCO-08 Occupation code - Mother,,מדדי תלמידים,עבודת האם,,2012
+OCOD2,ISCO-08 Occupation code - Father,OECDindex,ISCO-08 Occupation code - Father,,מדדי תלמידים,עבודת האב,,2012
+OPENPS,Openness for Problem Solving,OECDindex,Openness for Problem Solving,,מדדי תלמידים,פתיחות לפתירת בעיות,,2012
+OUTHOURS,Out-of-School Study Time,OECDindex,Out-of-School Study Time,,מדדי תלמידים,זמן למידה מחוץ לבית הספר,,2012
+PARED,Highest parental education in years,OECDindex,Highest parental education in years,,מדדי תלמידים,"ההשכלה המקסימלית של הורה, בשנות השכלה",,2012
+PERSEV,Perseverance,OECDindex,Perseverance,,מדדי תלמידים,התמדה,,2012
+REPEAT,Grade Repetition,OECDindex,Grade Repetition,,מדדי תלמידים,"ציונים חוזרים
 ",,2012
-SCMAT,Mathematics Self-Concept,OECDindex,Mathematics Self-Concept,,מדדים,הערכה עצמית במתמטיקה,,2012
-SMINS,Learning time (minutes per week) - <Science>,OECDindex,Learning time (minutes per week) - <Science>,,מדדים,זמן למידה בשבוע (בדקות) במדעים,,2012
-STUDREL,Teacher Student Relations,OECDindex,Teacher Student Relations,,מדדים,יחסי מורה-תלמיד,,2012
-SUBNORM,Subjective Norms in Mathematics,OECDindex,Subjective Norms in Mathematics,,מדדים,נורמות אישיות במתמטיקה,,2012
-TCHBEHFA,Teacher Behaviour: Formative Assessment,OECDindex,Teacher Behaviour: Formative Assessment,,מדדים,התנהגות מורה: הערכה פורמלית,,2012
-TCHBEHSO,Teacher Behaviour: Student Orientation,OECDindex,Teacher Behaviour: Student Orientation,,מדדים,התנהגות מורה: אוריינות תלמיד,,2012
-TCHBEHTD,Teacher Behaviour: Teacher-directed Instruction,OECDindex,Teacher Behaviour: Teacher-directed Instruction,,מדדים,התנהגות מורה,,2012
-TEACHSUP,Teacher Support,OECDindex,Teacher Support,,מדדים,תמיכת מורה,,2012
-TESTLANG,Language of the test,OECDindex,Language of the test,,מדדים,שפת המבחן,,2012
-TIMEINT,Time of computer use (mins),OECDindex,Time of computer use (mins),,מדדים,זמן שימוש במחשב (דקות),,2012
-USEMATH,Use of ICT in Mathematic Lessons,OECDindex,Use of ICT in Mathematic Lessons,,מדדים,,,2012
-USESCH,Use of ICT at School,OECDindex,Use of ICT at School,,מדדים,,,2012
-WEALTH,Wealth,OECDindex,Wealth,,מדדים,עושר,,2012
-ANCATSCHL,Attitude towards School: Learning Outcomes (Anchored),OECDindex,Attitude towards School: Learning Outcomes ,,מדדים,גישה לבית הספר: למידת תוצרים,,2012
-ANCATTLNACT,Attitude towards School: Learning Activities (Anchored),OECDindex,Attitude towards School: Learning Activities ,,מדדים,גישה לבית הספר: למידת פעילויות,,2012
-ANCBELONG,Sense of Belonging to School (Anchored),OECDindex,Sense of Belonging to School ,,מדדים,תחושת שייכות לבית הספר,,2012
-ANCCLSMAN,Mathematics Teacher's Classroom Management (Anchored),OECDindex,Mathematics Teacher's Classroom Management ,,מדדים,ניהול הכיתה של מורת מתמטיקה,,2012
-ANCCOGACT,Cognitive Activation in Mathematics Lessons (Anchored),OECDindex,Cognitive Activation in Mathematics Lessons ,,מדדים,פעילות קוגנטיבית בשיעורי מתמטיקה,,2012
-ANCINSTMOT,Instrumental Motivation for Mathematics (Anchored),OECDindex,Instrumental Motivation for Mathematics ,,מדדים,מוטיבציה אינסטרומנטלית למתמטיקה,,2012
-ANCINTMAT,Mathematics Interest (Anchored),OECDindex,Mathematics Interest ,,מדדים,עניין במתמטיקה,,2012
-ANCMATWKETH,Mathematics Work Ethic (Anchored),OECDindex,Mathematics Work Ethic ,,מדדים,אתיקת עבודה במתמטיקה,,2012
-ANCMTSUP,Mathematics Teacher's Support (Anchored),OECDindex,Mathematics Teacher's Support ,,מדדים,תמיכת המורה למתמטיקה,,2012
-ANCSCMAT,Mathematics Self-Concept (Anchored),OECDindex,Mathematics Self Concept,,מדדים,הערכה עצמית במתמטיקה,,2012
-ANCSTUDREL,Teacher Student Relations (Anchored),OECDindex,Teacher Student Relations ,,מדדים,יחסי מורה-תלמיד,,2012
-ANCSUBNORM,Subjective Norms in Mathematics (Anchored),OECDindex,Subjective Norms in Mathematics ,,מדדים,נורמות אישיות במתמטיקה,,2012
+SCMAT,Mathematics Self-Concept,OECDindex,Mathematics Self-Concept,,מדדי תלמידים,הערכה עצמית במתמטיקה,,2012
+SMINS,Learning time (minutes per week) - <Science>,OECDindex,Learning time (minutes per week) - <Science>,,מדדי תלמידים,זמן למידה בשבוע (בדקות) במדעים,,2012
+STUDREL,Teacher Student Relations,OECDindex,Teacher Student Relations,,מדדי תלמידים,יחסי מורה-תלמיד,,2012
+SUBNORM,Subjective Norms in Mathematics,OECDindex,Subjective Norms in Mathematics,,מדדי תלמידים,נורמות אישיות במתמטיקה,,2012
+TCHBEHFA,Teacher Behaviour: Formative Assessment,OECDindex,Teacher Behaviour: Formative Assessment,,מדדי תלמידים,התנהגות מורה: הערכה פורמלית,,2012
+TCHBEHSO,Teacher Behaviour: Student Orientation,OECDindex,Teacher Behaviour: Student Orientation,,מדדי תלמידים,התנהגות מורה: אוריינות תלמיד,,2012
+TCHBEHTD,Teacher Behaviour: Teacher-directed Instruction,OECDindex,Teacher Behaviour: Teacher-directed Instruction,,מדדי תלמידים,התנהגות מורה,,2012
+TEACHSUP,Teacher Support,OECDindex,Teacher Support,,מדדי תלמידים,תמיכת מורה,,2012
+TESTLANG,Language of the test,OECDindex,Language of the test,,מדדי תלמידים,שפת המבחן,,2012
+TIMEINT,Time of computer use (mins),OECDindex,Time of computer use (mins),,מדדי תלמידים,זמן שימוש במחשב (דקות),,2012
+USEMATH,Use of ICT in Mathematic Lessons,OECDindex,Use of ICT in Mathematic Lessons,,מדדי תלמידים,,,2012
+USESCH,Use of ICT at School,OECDindex,Use of ICT at School,,מדדי תלמידים,,,2012
+WEALTH,Wealth,OECDindex,Wealth,,מדדי תלמידים,עושר,,2012
+ANCATSCHL,Attitude towards School: Learning Outcomes (Anchored),OECDindex,Attitude towards School: Learning Outcomes ,,מדדי תלמידים,גישה לבית הספר: למידת תוצרים,,2012
+ANCATTLNACT,Attitude towards School: Learning Activities (Anchored),OECDindex,Attitude towards School: Learning Activities ,,מדדי תלמידים,גישה לבית הספר: למידת פעילויות,,2012
+ANCBELONG,Sense of Belonging to School (Anchored),OECDindex,Sense of Belonging to School ,,מדדי תלמידים,תחושת שייכות לבית הספר,,2012
+ANCCLSMAN,Mathematics Teacher's Classroom Management (Anchored),OECDindex,Mathematics Teacher's Classroom Management ,,מדדי תלמידים,ניהול הכיתה של מורת מתמטיקה,,2012
+ANCCOGACT,Cognitive Activation in Mathematics Lessons (Anchored),OECDindex,Cognitive Activation in Mathematics Lessons ,,מדדי תלמידים,פעילות קוגנטיבית בשיעורי מתמטיקה,,2012
+ANCINSTMOT,Instrumental Motivation for Mathematics (Anchored),OECDindex,Instrumental Motivation for Mathematics ,,מדדי תלמידים,מוטיבציה אינסטרומנטלית למתמטיקה,,2012
+ANCINTMAT,Mathematics Interest (Anchored),OECDindex,Mathematics Interest ,,מדדי תלמידים,עניין במתמטיקה,,2012
+ANCMATWKETH,Mathematics Work Ethic (Anchored),OECDindex,Mathematics Work Ethic ,,מדדי תלמידים,אתיקת עבודה במתמטיקה,,2012
+ANCMTSUP,Mathematics Teacher's Support (Anchored),OECDindex,Mathematics Teacher's Support ,,מדדי תלמידים,תמיכת המורה למתמטיקה,,2012
+ANCSCMAT,Mathematics Self-Concept (Anchored),OECDindex,Mathematics Self Concept,,מדדי תלמידים,הערכה עצמית במתמטיקה,,2012
+ANCSTUDREL,Teacher Student Relations (Anchored),OECDindex,Teacher Student Relations ,,מדדי תלמידים,יחסי מורה-תלמיד,,2012
+ANCSUBNORM,Subjective Norms in Mathematics (Anchored),OECDindex,Subjective Norms in Mathematics ,,מדדי תלמידים,נורמות אישיות במתמטיקה,,2012
 SC01Q01,Public or private,The Structure and Organisation of the School,Funding,Public or private,אופי בית הספר,ציבורי או פרטי,,2012
 SC02Q01,Funding - Government,The Structure and Organisation of the School,Funding,Government,אופי בית הספר,אחוזי מימון,,2012
 SC02Q02,Funding - Student fees,The Structure and Organisation of the School,Funding,Student fees,אופי בית הספר,מימון הורים,,2012
@@ -1955,21 +1955,21 @@ ST071Q05NA,"This school year, approximately how many hours per week do you spend
 ST031Q01NA,"On avg, how many days do you attend physical education classes each week?",Family and Home,,,,,,2015
 ST032Q01NA,Moderate physical activities for a total of at least 60 minutes per day,Family and Home,,,,,,2015
 ST032Q02NA,Vigorous physical activities for at least 20 minutes per day that made you sweat and breathe hard,Family and Home,,,,,,2015
-ST063Q01NA,Which <school science> course did you attend? Physics: This year,Learning Science,,Course,לימודי מדעים,שיעורים,פיסיקה השנה,2015
-ST063Q01NB,Which <school science> course did you attend? Physics: Last year,Learning Science,,Course,לימודי מדעים,שיעורים,פיסיקה בשנה שעברה,2015
-ST063Q02NA,Which <school science> course did you attend? Chemistry: This year,Learning Science,,Course,לימודי מדעים,שיעורים,כימיה השנה,2015
-ST063Q02NB,Which <school science> course did you attend? Chemistry: Last year,Learning Science,,Course,לימודי מדעים,שיעורים,כימיה בשנה שעברה,2015
-ST063Q03NA,Which <school science> course did you attend? Biology: This year,Learning Science,,Course,לימודי מדעים,שיעורים,ביולוגיה השנה,2015
-ST063Q03NB,Which <school science> course did you attend? Biology: Last year,Learning Science,,Course,לימודי מדעים,שיעורים,ביולוגיה בשנה שעברה,2015
-ST063Q04NA,Which <school science> course did you attend? <Earth and space>: This year,Learning Science,,Course,לימודי מדעים,שיעורים,מדעי כדור הארץ השנה,2015
-ST063Q04NB,Which <school science> course did you attend? <Earth and space>: Last year,Learning Science,,Course,לימודי מדעים,שיעורים,מדעי כדור הארץ בשנה שעברה,2015
-ST063Q05NA,Which <school science> course did you attend? Applied sciences and technology: This year,Learning Science,,Course,לימודי מדעים,שיעורים,מדע וטכנולוגיה השנה,2015
-ST063Q05NB,Which <school science> course did you attend? Applied sciences and technology: Last year,Learning Science,,Course,לימודי מדעים,שיעורים,מדע וטכנולוגיה בשנה שעברה,2015
-ST063Q06NA,"Which <school science> course did you attend? <General, integrated, or comprehen science> course: This year",Learning Science,,Course,לימודי מדעים,שיעורים,מדעים כללי השנה,2015
-ST063Q06NB,"Which <school science> course did you attend? <General, integrated, or comprehen science> course: Last year",Learning Science,,Course,לימודי מדעים,שיעורים,מדעים כללי בשנה שעברה,2015
-ST064Q01NA,<school science> courses? I can choose the <school science> course(s) I study.,Learning Science,,Course,לימודי מדעים,שיעורים,יכולת בחירת קורס,2015
-ST064Q02NA,<school science> courses? I can choose the level of difficulty.,Learning Science,,Course,לימודי מדעים,שיעורים,יכולת בחירת רמה,2015
-ST064Q03NA,<school science> courses? I can choose the number of <school science> courses or <class periods>.,Learning Science,,Course,לימודי מדעים,שיעורים,יכולת בחירת שעות,2015
+ST063Q01NA,Which <school science> course did you attend? Physics: This year,Learning Science,,Course attend,Physics: This year,שיעורים,פיסיקה השנה,2015
+ST063Q01NB,Which <school science> course did you attend? Physics: Last year,Learning Science,,Course attend,Physics: Last year,שיעורים,פיסיקה בשנה שעברה,2015
+ST063Q02NA,Which <school science> course did you attend? Chemistry: This year,Learning Science,,Course attend,Chemistry: This year,שיעורים,כימיה השנה,2015
+ST063Q02NB,Which <school science> course did you attend? Chemistry: Last year,Learning Science,,Course attend,Chemistry: Last year,שיעורים,כימיה בשנה שעברה,2015
+ST063Q03NA,Which <school science> course did you attend? Biology: This year,Learning Science,,Course attend,Biology: This year,שיעורים,ביולוגיה השנה,2015
+ST063Q03NB,Which <school science> course did you attend? Biology: Last year,Learning Science,,Course attend,Biology: Last year,שיעורים,ביולוגיה בשנה שעברה,2015
+ST063Q04NA,Which <school science> course did you attend? <Earth and space>: This year,Learning Science,,Course attend,Earth and space: This year,שיעורים,מדעי כדור הארץ השנה,2015
+ST063Q04NB,Which <school science> course did you attend? <Earth and space>: Last year,Learning Science,,Course attend,Earth and space: Last year,שיעורים,מדעי כדור הארץ בשנה שעברה,2015
+ST063Q05NA,Which <school science> course did you attend? Applied sciences and technology: This year,Learning Science,,Course attend,Applied sciences and technology: This year,שיעורים,מדע וטכנולוגיה השנה,2015
+ST063Q05NB,Which <school science> course did you attend? Applied sciences and technology: Last year,Learning Science,,Course attend,Applied sciences and technology: Last year,שיעורים,מדע וטכנולוגיה בשנה שעברה,2015
+ST063Q06NA,"Which <school science> course did you attend? <General, integrated, or comprehen science> course: This year",Learning Science,,Course attend,"General, integrated, or comprehen science course: This year",שיעורים,מדעים כללי השנה,2015
+ST063Q06NB,"Which <school science> course did you attend? <General, integrated, or comprehen science> course: Last year",Learning Science,,Course attend,"General, integrated, or comprehen science course: Last year",שיעורים,מדעים כללי בשנה שעברה,2015
+ST064Q01NA,<school science> courses? I can choose the <school science> course(s) I study.,Learning Science,,,,שיעורים,יכולת בחירת קורס,2015
+ST064Q02NA,<school science> courses? I can choose the level of difficulty.,Learning Science,,,,שיעורים,יכולת בחירת רמה,2015
+ST064Q03NA,<school science> courses? I can choose the number of <school science> courses or <class periods>.,Learning Science,,,,שיעורים,יכולת בחירת שעות,2015
 ST097Q01TA,How often does this happen in your <school science> lessons? Students don't listen to what the teacher says.,Learning Science,,,לימודי מדעים,אקלים בשיעורים,התלמידים לא מקשיבים,2015
 ST097Q02TA,How often does this happen in your <school science> lessons? There is noise and disorder.,Learning Science,,,לימודי מדעים,אקלים בשיעורים,יש רעש ובלאגן,2015
 ST097Q03TA,How often does this happen in your <school science> lessons? The teacher waits long for students to quiet down.,Learning Science,,,לימודי מדעים,אקלים בשיעורים,המורה מחכה לשקט,2015
@@ -2480,64 +2480,64 @@ PA039Q05TA,In what country was this person born? Paternal Grandmother,Parents,In
 PA039Q06TA,In what country was this person born? Paternal Grandfather,Parents,In what country was this person born? Paternal Grandfather,,,,,2015
 PA041Q01TA,"In the last twelve months, about how much would you have paid to educational providers for services?",Parents,"In the last twelve months, about how much would you have paid to educational providers for services?",,,,,2015
 PA042Q01TA,What is your annual household income?,Parents,What is your annual household income?,,,,,2015
-AGE,Age,OECDindex,Age,,מדדים,גיל,,2015
+AGE,Age,OECDindex,Age,,מדדי תלמידים,מאפייני התלמיד,גיל,2015
 PROGN,Unique national study programme code,OECDindex,Unique national study programme code,,,,,2015
-ISCEDL,ISCED level,OECDindex,ISCED level,,מדדים,רמת השכלה,,2015
-ISCEDD,ISCED designation,OECDindex,ISCED designation,,מדדים,יעד השכלה,,2015
-ISCEDO,ISCED orientation,OECDindex,ISCED orientation,,מדדים,אוריינות השכלה,,2015
-DISCLISCI,Disciplinary climate in science classes (WLE),OECDindex,Disciplinary climate in science classes (WLE),,מדדים,אקלים בשיעורי מדעים,,2015
-TEACHSUP,Teacher support in a science classes of students choice (WLE),OECDindex,Teacher support in a science classes of students choice (WLE),,מדדים,תמיכת המורה בשיעורי מדעים,,2015
-IBTEACH,Inquiry-based science teaching an learning practices (WLE),OECDindex,Inquiry-based science teaching an learning practices (WLE),,מדדים,חקירה בשיעורי מדעים,,2015
-TDTEACH,Teacher-directed science instruction (WLE),OECDindex,Teacher-directed science instruction (WLE),,מדדים,הנחיה בשיעורי מדעים,,2015
-ENVAWARE,Environmental Awareness (WLE),OECDindex,Environmental Awareness (WLE),,מדדים,מודעות סביבתית,,2015
-ENVOPT,Environmental optimism (WLE),OECDindex,Environmental optimism (WLE),,מדדים,אופטימיות סביבתית,,2015
-JOYSCIE,Enjoyment of science (WLE),OECDindex,Enjoyment of science (WLE),,מדדים,הנאה ממדע,,2015
-INTBRSCI,Interest in broad science topics (WLE),OECDindex,Interest in broad science topics (WLE),,מדדים,עניין בנושאים מדעיים,,2015
-INSTSCIE,Instrumental motivation (WLE),OECDindex,Instrumental motivation (WLE),,מדדים,"מוטיבציה ככלי
-",,2015
-SCIEEFF,Science self-efficacy (WLE),OECDindex,Science self-efficacy (WLE),,מדדים,מסוגלות עצמית מדעית,,2015
-EPIST,Epistemological beliefs (WLE),OECDindex,Epistemological beliefs (WLE),,מדדים,דעות אפיסטמיות,,2015
-SCIEACT,Index science activities (WLE),OECDindex,Index science activities (WLE),,מדדים,פעילויות מדעיות,,2015
-BSMJ,Students’ expected occupational status (SEI),OECDindex,Students’ expected occupational status (SEI),,מדדים,המקצועות אליהם מכוונים הלימודים,,2015
+ISCEDL,ISCED level,OECDindex,ISCED level,,מדדי תלמידים,מאפייני התלמיד,רמת השכלה,2015
+ISCEDD,ISCED designation,OECDindex,ISCED designation,,מדדי תלמידים,מאפייני התלמיד,יעד השכלה,2015
+ISCEDO,ISCED orientation,OECDindex,ISCED orientation,,מדדי תלמידים,מאפייני התלמיד,אוריינות השכלה,2015
+DISCLISCI,Disciplinary climate in science classes (WLE),OECDindex,Disciplinary climate in science classes (WLE),,מדדי תלמידים,מדעים,אקלים בשיעורי מדעים,2015
+TEACHSUP,Teacher support in a science classes of students choice (WLE),OECDindex,Teacher support in a science classes of students choice (WLE),,מדדי תלמידים,מדעים,תמיכת המורה בשיעורי מדעים,2015
+IBTEACH,Inquiry-based science teaching an learning practices (WLE),OECDindex,Inquiry-based science teaching an learning practices (WLE),,מדדי תלמידים,מדעים,חקירה בשיעורי מדעים,2015
+TDTEACH,Teacher-directed science instruction (WLE),OECDindex,Teacher-directed science instruction (WLE),,מדדי תלמידים,מדעים,הנחיה בשיעורי מדעים,2015
+ENVAWARE,Environmental Awareness (WLE),OECDindex,Environmental Awareness (WLE),,מדדי תלמידים,מדעים,מודעות סביבתית,2015
+ENVOPT,Environmental optimism (WLE),OECDindex,Environmental optimism (WLE),,מדדי תלמידים,מדעים,אופטימיות סביבתית,2015
+JOYSCIE,Enjoyment of science (WLE),OECDindex,Enjoyment of science (WLE),,מדדי תלמידים,מדעים,הנאה ממדע,2015
+INTBRSCI,Interest in broad science topics (WLE),OECDindex,Interest in broad science topics (WLE),,מדדי תלמידים,מדעים,עניין בנושאים מדעיים,2015
+INSTSCIE,Instrumental motivation (WLE),OECDindex,Instrumental motivation (WLE),,מדדי תלמידים,מאפייני התלמיד,"מוטיבציה ככלי
+",2015
+SCIEEFF,Science self-efficacy (WLE),OECDindex,Science self-efficacy (WLE),,מדדי תלמידים,מדעים,מסוגלות עצמית מדעית,2015
+EPIST,Epistemological beliefs (WLE),OECDindex,Epistemological beliefs (WLE),,מדדי תלמידים,מדעים,דעות אפיסטמיות,2015
+SCIEACT,Index science activities (WLE),OECDindex,Index science activities (WLE),,מדדי תלמידים,מדעים,פעילויות מדעיות,2015
+BSMJ,Students’ expected occupational status (SEI),OECDindex,Students’ expected occupational status (SEI),,מדדי תלמידים,עמדות,המקצועות אליהם מכוונים הלימודים,2015
 GRADE,Grade compared to modal grade in country,OECDindex,Grade compared to modal grade in country,,,,,2015
-IMMIG,Index Immigration status,OECDindex,Index Immigration status,,מדדים,סטטוס עולה,,2015
-MISCED,Mother’s Education (ISCED),OECDindex,Mother’s Education (ISCED),,מדדים,השכלת האם,,2015
-FISCED,Father’s Education (ISCED),OECDindex,Father’s Education (ISCED),,מדדים,השכלת האב,,2015
-HISCED,Highest Education of parents (ISCED),OECDindex,Highest Education of parents (ISCED),,מדדים,השכלת הורים,,2015
+IMMIG,Index Immigration status,OECDindex,Index Immigration status,,מדדי תלמידים,משפחה ובית,סטטוס עולה,2015
+MISCED,Mother’s Education (ISCED),OECDindex,Mother’s Education (ISCED),,מדדי תלמידים,משפחה ובית,השכלת האם,2015
+FISCED,Father’s Education (ISCED),OECDindex,Father’s Education (ISCED),,מדדי תלמידים,משפחה ובית,השכלת האב,2015
+HISCED,Highest Education of parents (ISCED),OECDindex,Highest Education of parents (ISCED),,מדדי תלמידים,משפחה ובית,השכלת הורים,2015
 HOMESCH,ICT use outside of school for schoolwork (WLE),OECDindex,ICT use outside of school for schoolwork (WLE),,,,,2015
 ENTUSE,ICT use outside of school leisure (WLE),OECDindex,ICT use outside of school leisure (WLE),,,,,2015
 BMMJ1,ISEI of mother,OECDindex,ISEI of mother,,,,,2015
 BFMJ2,ISEI of father,OECDindex,ISEI of father,,,,,2015
-hisei,Index highest parental occupational status,OECDindex,Index highest parental occupational status,,מדדים,תעסוקת הורים,,2015
-REPEAT,Grade Repetition,OECDindex,Grade Repetition,,מדדים,"ציונים חוזרים
-",,2015
-DURECEC,Duration in early childhood education and care,OECDindex,Duration in early childhood education and care,,מדדים,שעורים פרטיים,,2015
-OUTHOURS,Out-of-School Study Time per week (Sum),OECDindex,Out-of-School Study Time per week (Sum),,מדדים,זמן לימוד מחוץ לבית הספר,,2015
-MMINS,Learning time (minutes per week) - <Mathematics>,OECDindex,Learning time (minutes per week) - <Mathematics>,,מדדים,זמן לימוד מתמטיקה,,2015
-LMINS,Learning time (minutes per week) - <test language>,OECDindex,Learning time (minutes per week) - <test language>,,מדדים,זמן לימוד קריאה,,2015
-SMINS,Learning time (minutes per week) - <science>,OECDindex,Learning time (minutes per week) - <science>,,מדדים,זמן לימוד מדעים,,2015
-TMINS,Learning time (minutes per week) - in total,OECDindex,Learning time (minutes per week) - in total,,מדדים,זמן לימוד בבית הספר,,2015
-BELONG,Subjective well-being: Sense of Belonging to School (WLE),OECDindex,Subjective well-being: Sense of Belonging to School (WLE),,מדדים,תחושת השייכות לבית הספר,,2015
-ANXTEST,Personality: Test Anxiety (WLE),OECDindex,Personality: Test Anxiety (WLE),,מדדים,רמת לחץ אישית,,2015
-MOTIVAT,"Student Atttidudes, Preferences and Self-related beliefs: Achieving motivation (WLE)",OECDindex,"Student Atttidudes, Preferences and Self-related beliefs: Achieving motivation (WLE)",,מדדים,"גישת התלמידים, מוטיבצה והעדפות",,2015
-COOPERATE,Collaboration and teamwork dispositions: Enjoy cooperation (WLE),OECDindex,Collaboration and teamwork dispositions: Enjoy cooperation (WLE),,מדדים,הנאה משיתוף פעולה,,2015
-CPSVALUE,Collaboration and teamwork dispositions: Value cooperation (WLE),OECDindex,Collaboration and teamwork dispositions: Value cooperation (WLE),,מדדים,הערכה של שיתוף פעולה,,2015
-EMOSUPS,Parents emotional support (WLE),OECDindex,Parents emotional support (WLE),,מדדים,תמיכה רגשית של ההורים,,2015
-PERFEED,Perceived Feedback (WLE),OECDindex,Perceived Feedback (WLE),,מדדים,משוב,,2015
-ADINST,Adaption of instruction (WLE),OECDindex,Adaption of instruction (WLE),,מדדים,גמישות בתהליך הלימוד,,2015
-SCCHANGE,Number of school changes,OECDindex,Number of school changes,,מדדים,מספר שינויי בית ספר,,2015
+hisei,Index highest parental occupational status,OECDindex,Index highest parental occupational status,,מדדי תלמידים,משפחה ובית,תעסוקת הורים,2015
+REPEAT,Grade Repetition,OECDindex,Grade Repetition,,מדדי תלמידים,מאפייני התלמיד,"ציונים חוזרים
+",2015
+DURECEC,Duration in early childhood education and care,OECDindex,Duration in early childhood education and care,,מדדי תלמידים,זמן לימודים,שעורים פרטיים,2015
+OUTHOURS,Out-of-School Study Time per week (Sum),OECDindex,Out-of-School Study Time per week (Sum),,מדדי תלמידים,זמן לימודים,זמן לימוד מחוץ לבית הספר,2015
+MMINS,Learning time (minutes per week) - <Mathematics>,OECDindex,Learning time (minutes per week) - <Mathematics>,,מדדי תלמידים,זמן לימודים,זמן לימוד מתמטיקה,2015
+LMINS,Learning time (minutes per week) - <test language>,OECDindex,Learning time (minutes per week) - <test language>,,מדדי תלמידים,זמן לימודים,זמן לימוד קריאה,2015
+SMINS,Learning time (minutes per week) - <science>,OECDindex,Learning time (minutes per week) - <science>,,מדדי תלמידים,זמן לימודים,זמן לימוד מדעים,2015
+TMINS,Learning time (minutes per week) - in total,OECDindex,Learning time (minutes per week) - in total,,מדדי תלמידים,זמן לימודים,זמן לימוד בבית הספר,2015
+BELONG,Subjective well-being: Sense of Belonging to School (WLE),OECDindex,Subjective well-being: Sense of Belonging to School (WLE),,מדדי תלמידים,עמדות,תחושת השייכות לבית הספר,2015
+ANXTEST,Personality: Test Anxiety (WLE),OECDindex,Personality: Test Anxiety (WLE),,מדדי תלמידים,עמדות,רמת לחץ אישית,2015
+MOTIVAT,"Student Atttidudes, Preferences and Self-related beliefs: Achieving motivation (WLE)",OECDindex,"Student Atttidudes, Preferences and Self-related beliefs: Achieving motivation (WLE)",,מדדי תלמידים,עמדות,"גישת התלמידים, מוטיבצה והעדפות",2015
+COOPERATE,Collaboration and teamwork dispositions: Enjoy cooperation (WLE),OECDindex,Collaboration and teamwork dispositions: Enjoy cooperation (WLE),,מדדי תלמידים,עמדות,הנאה משיתוף פעולה,2015
+CPSVALUE,Collaboration and teamwork dispositions: Value cooperation (WLE),OECDindex,Collaboration and teamwork dispositions: Value cooperation (WLE),,מדדי תלמידים,עמדות,הערכה של שיתוף פעולה,2015
+EMOSUPS,Parents emotional support (WLE),OECDindex,Parents emotional support (WLE),,מדדי תלמידים,הורים,תמיכה רגשית של ההורים,2015
+PERFEED,Perceived Feedback (WLE),OECDindex,Perceived Feedback (WLE),,מדדי תלמידים,בית הספר,משוב,2015
+ADINST,Adaption of instruction (WLE),OECDindex,Adaption of instruction (WLE),,מדדי תלמידים,בית הספר,גמישות בתהליך הלימוד,2015
+SCCHANGE,Number of school changes,OECDindex,Number of school changes,,מדדי תלמידים,בית הספר,מספר שינויי בית ספר,2015
 CHANGE,Number of changes in educational biography (Sum),OECDindex,Number of changes in educational biography (Sum),,,,,2015
-SADDINST,Number of learning domains with additional instruction,OECDindex,Number of learning domains with additional instruction,,מדדים,מספר מקצועות מוגברים,,2015
-HADDINST,Total hours of additional instruction (Sum),OECDindex,Total hours of additional instruction (Sum),,מדדים,זמן עזרה בבית הספר,,2015
-ADDSCIIN,Number of science disciplines and subjects  with additional instruction (Sum),OECDindex,Number of science disciplines and subjects  with additional instruction (Sum),,מדדים,מספר מקצועות מוגברים במדעים,,2015
-COMSCSUP,Comparison science school lessons and additional instruction support (Mean),OECDindex,Comparison science school lessons and additional instruction support (Mean),,מדדים,השוואה בין שעורי מדע רגילים למוגברים,,2015
-COMSCSTRLE,Comparison science school lessons and additional instruction structuredness lessons (Mean),OECDindex,Comparison science school lessons and additional instruction structuredness lessons (Mean),,מדדים,השוואה בין מערכי שעורי מדע רגילים למוגברים,,2015
-COMSCSTRCO,Comparison science school lessons and additional instruction structuredness content (Mean),OECDindex,Comparison science school lessons and additional instruction structuredness content (Mean),,מדדים,השוואה בין תוכן מערכי שעורי מדע רגילים למוגברים,,2015
-COMSCTSREL,Comparison science school lessons and additional instruction teacher-student relation,OECDindex,Comparison science school lessons and additional instruction teacher-student relation,,מדדים,השוואה בין יחס מורה תלמיד בין שעורים רגילים במדעים ללימודים מוגברים ,,2015
-COMMASUP,Comparison mathematics school lessons and additional instruction support (Mean),OECDindex,Comparison mathematics school lessons and additional instruction support (Mean),,מדדים,השוואה בין שעורי מתמטיקה רגילים למוגברים,,2015
-COMMASTRLE,Comparison mathematics school lessons and additional instruction structuredness lessons (Mean),OECDindex,Comparison mathematics school lessons and additional instruction structuredness lessons (Mean),,מדדים,השוואה בין מערכי שעורי מתמטיקה רגילים למוגברים,,2015
-COMMASTRCO,Comparison mathematics school lessons and additional instruction structuredness content (Mean),OECDindex,Comparison mathematics school lessons and additional instruction structuredness content (Mean),,מדדים,השוואה בין תוכן מערכי שעורי מתמטיקה רגילים למוגברים,,2015
-COMMATSREL,Comparison mathematics school lessons and additional instruction teacher-student relation,OECDindex,Comparison mathematics school lessons and additional instruction teacher-student relation,,מדדים,השוואה בין יחס מורה תלמיד בין שעורים רגילים במתמטיקה ללימודים מוגברים,,2015
+SADDINST,Number of learning domains with additional instruction,OECDindex,Number of learning domains with additional instruction,,מדדי תלמידים,בית הספר,מספר מקצועות מוגברים,2015
+HADDINST,Total hours of additional instruction (Sum),OECDindex,Total hours of additional instruction (Sum),,מדדי תלמידים,בית הספר,זמן עזרה בבית הספר,2015
+ADDSCIIN,Number of science disciplines and subjects  with additional instruction (Sum),OECDindex,Number of science disciplines and subjects  with additional instruction (Sum),,מדדי תלמידים,בית הספר,מספר מקצועות מוגברים במדעים,2015
+COMSCSUP,Comparison science school lessons and additional instruction support (Mean),OECDindex,Comparison science school lessons and additional instruction support (Mean),,,,השוואה בין שעורי מדע רגילים למוגברים,2015
+COMSCSTRLE,Comparison science school lessons and additional instruction structuredness lessons (Mean),OECDindex,Comparison science school lessons and additional instruction structuredness lessons (Mean),,,,השוואה בין מערכי שעורי מדע רגילים למוגברים,2015
+COMSCSTRCO,Comparison science school lessons and additional instruction structuredness content (Mean),OECDindex,Comparison science school lessons and additional instruction structuredness content (Mean),,,,השוואה בין תוכן מערכי שעורי מדע רגילים למוגברים,2015
+COMSCTSREL,Comparison science school lessons and additional instruction teacher-student relation,OECDindex,Comparison science school lessons and additional instruction teacher-student relation,,מדדי תלמידים,בית הספר,השוואה בין יחס מורה תלמיד בין שעורים רגילים במדעים ללימודים מוגברים ,2015
+COMMASUP,Comparison mathematics school lessons and additional instruction support (Mean),OECDindex,Comparison mathematics school lessons and additional instruction support (Mean),,,,השוואה בין שעורי מתמטיקה רגילים למוגברים,2015
+COMMASTRLE,Comparison mathematics school lessons and additional instruction structuredness lessons (Mean),OECDindex,Comparison mathematics school lessons and additional instruction structuredness lessons (Mean),,,,השוואה בין מערכי שעורי מתמטיקה רגילים למוגברים,2015
+COMMASTRCO,Comparison mathematics school lessons and additional instruction structuredness content (Mean),OECDindex,Comparison mathematics school lessons and additional instruction structuredness content (Mean),,,,השוואה בין תוכן מערכי שעורי מתמטיקה רגילים למוגברים,2015
+COMMATSREL,Comparison mathematics school lessons and additional instruction teacher-student relation,OECDindex,Comparison mathematics school lessons and additional instruction teacher-student relation,,מדדי תלמידים,,השוואה בין יחס מורה תלמיד בין שעורים רגילים במתמטיקה ללימודים מוגברים,2015
 USESCH,Use of ICT at school in general (WLE),OECDindex,Use of ICT at school in general (WLE),,,,,2015
 INTICT,Students’ ICT Interest (WLE),OECDindex,Students’ ICT Interest (WLE),,,,,2015
 COMPICT,Students’ Perceived ICT Competence (WLE),OECDindex,Students’ Perceived ICT Competence (WLE),,,,,2015
@@ -2545,29 +2545,29 @@ AUTICT,Students’ Perceived Autonomy related to ICT Use (WLE),OECDindex,Student
 SOIAICT,Students’ ICT as a topic in Social Interaction (WLE),OECDindex,Students’ ICT as a topic in Social Interaction (WLE),,,,,2015
 ICTHOME,ICT available at Home Index (Sum),OECDindex,ICT available at Home Index (Sum),,,,,2015
 ICTSCH,ICT available at School Index (Sum),OECDindex,ICT available at School Index (Sum),,,,,2015
-PRESUPP,Child’s past science activities (WLE),OECDindex,Child’s past science activities (WLE),,מדדים,השתתפות קודמת של ילדים בתחום המדע,,2015
-CURSUPP,Parental current support for learning at home (WLE),OECDindex,Parental current support for learning at home (WLE),,מדדים,תמיכה של הורים בלימוד בבית,,2015
-EMOSUPP,Parental emotional support (WLE),OECDindex,Parental emotional support (WLE),,מדדים,תמיכה רגשית של הורים,,2015
-PQSCHOOL,Parents perceived school quality (WLE),OECDindex,Parents perceived school quality (WLE),,מדדים,איכות בית הספר על ידי ההורים,,2015
-PASCHPOL,School policies for parental involvement (WLE),OECDindex,School policies for parental involvement (WLE),,מדדים,מדיניות בית הספר למעורבות של הורים,,2015
-PQGENSCI,Parents’ view on science (WLE),OECDindex,Parents’ view on science (WLE),,מדדים,הדעה של ההורים על מדע,,2015
-PQENPERC,Parents concerns regarding environmental topics (WLE),OECDindex,Parents concerns regarding environmental topics (WLE),,מדדים,המעורבות של הורים באיכות הסביבה,,2015
-PQENVOPT,Parents’ view on future environmental topics (WLE),OECDindex,Parents’ view on future environmental topics (WLE),,מדדים,הדעות של הורים בנושאים סביבתיים,,2015
-unfairteacher,Teacher Fairness (Sum),OECDindex,Teacher Fairness (Sum),,מדדים,הוגנות של מורים,,2015
-PARED,Index highest parental education in years of schooling,OECDindex,Index highest parental education in years of schooling,,מדדים,שנות השכלה של הורים,,2015
-COBN_F,Country of Birth National Categories- Father,OECDindex,Country of Birth National Categories- Father,,מדדים,"מדינת לידת האב
-",,2015
-COBN_M,Country of Birth National Categories- Mother,OECDindex,Country of Birth National Categories- Mother,,מדדים,מדינת לידת האם,,2015
-COBN_S,Country of Birth National Categories- Self,OECDindex,Country of Birth National Categories- Self,,מדדים,מדינת לידת התלמיד,,2015
-LANGN,Language at home (3-digit code),OECDindex,Language at home (3-digit code),,מדדים,שפה מדוברת בבית,,2015
-OCOD1,ISCO-08 Occupation code - Mother,OECDindex,ISCO-08 Occupation code - Mother,,מדדים,עיסוק האם,,2015
-OCOD2,ISCO-08 Occupation code - Father,OECDindex,ISCO-08 Occupation code - Father,,מדדים,עיסוק האב,,2015
-OCOD3,ISCO-08 Occupation code - Self,OECDindex,ISCO-08 Occupation code - Self,,מדדים,עיסוק הילד בבית,,2015
-CULTPOSS,Cultural possessions at home (WLE),OECDindex,Cultural possessions at home (WLE),,מדדים,נכסים תרבותיים בבית,,2015
-HEDRES,Home educational resources (WLE),OECDindex,Home educational resources (WLE),,מדדים,משאבים ללימוד בבית,,2015
-HOMEPOS,Home possessions (WLE),OECDindex,Home possessions (WLE),,מדדים,נכסים בבית,,2015
+PRESUPP,Child’s past science activities (WLE),OECDindex,Child’s past science activities (WLE),,מדדי תלמידים,מדעים,השתתפות קודמת של ילדים בתחום המדע,2015
+CURSUPP,Parental current support for learning at home (WLE),OECDindex,Parental current support for learning at home (WLE),,מדדי תלמידים,הורים,תמיכה של הורים בלימוד בבית,2015
+EMOSUPP,Parental emotional support (WLE),OECDindex,Parental emotional support (WLE),,מדדי תלמידים,הורים,תמיכה רגשית של הורים,2015
+PQSCHOOL,Parents perceived school quality (WLE),OECDindex,Parents perceived school quality (WLE),,מדדי תלמידים,הורים,איכות בית הספר על ידי ההורים,2015
+PASCHPOL,School policies for parental involvement (WLE),OECDindex,School policies for parental involvement (WLE),,מדדי תלמידים,הורים,מדיניות בית הספר למעורבות של הורים,2015
+PQGENSCI,Parents’ view on science (WLE),OECDindex,Parents’ view on science (WLE),,מדדי תלמידים,הורים,הדעה של ההורים על מדע,2015
+PQENPERC,Parents concerns regarding environmental topics (WLE),OECDindex,Parents concerns regarding environmental topics (WLE),,מדדי תלמידים,הורים,המעורבות של הורים באיכות הסביבה,2015
+PQENVOPT,Parents’ view on future environmental topics (WLE),OECDindex,Parents’ view on future environmental topics (WLE),,מדדי תלמידים,הורים,הדעות של הורים בנושאים סביבתיים,2015
+unfairteacher,Teacher Fairness (Sum),OECDindex,Teacher Fairness (Sum),,מדדי תלמידים,מורים,הוגנות של מורים,2015
+PARED,Index highest parental education in years of schooling,OECDindex,Index highest parental education in years of schooling,,מדדי תלמידים,משפחה ובית,שנות השכלה של הורים,2015
+COBN_F,Country of Birth National Categories- Father,OECDindex,Country of Birth National Categories- Father,,מדדי תלמידים,משפחה ובית,"מדינת לידת האב
+",2015
+COBN_M,Country of Birth National Categories- Mother,OECDindex,Country of Birth National Categories- Mother,,מדדי תלמידים,משפחה ובית,מדינת לידת האם,2015
+COBN_S,Country of Birth National Categories- Self,OECDindex,Country of Birth National Categories- Self,,מדדי תלמידים,משפחה ובית,מדינת לידת התלמיד,2015
+LANGN,Language at home (3-digit code),OECDindex,Language at home (3-digit code),,מדדי תלמידים,משפחה ובית,שפה מדוברת בבית,2015
+OCOD1,ISCO-08 Occupation code - Mother,OECDindex,ISCO-08 Occupation code - Mother,,מדדי תלמידים,משפחה ובית,עיסוק האם,2015
+OCOD2,ISCO-08 Occupation code - Father,OECDindex,ISCO-08 Occupation code - Father,,מדדי תלמידים,משפחה ובית,עיסוק האב,2015
+OCOD3,ISCO-08 Occupation code - Self,OECDindex,ISCO-08 Occupation code - Self,,מדדי תלמידים,משפחה ובית,עיסוק הילד בבית,2015
+CULTPOSS,Cultural possessions at home (WLE),OECDindex,Cultural possessions at home (WLE),,מדדי תלמידים,משפחה ובית,נכסים תרבותיים בבית,2015
+HEDRES,Home educational resources (WLE),OECDindex,Home educational resources (WLE),,מדדי תלמידים,משפחה ובית,משאבים ללימוד בבית,2015
+HOMEPOS,Home possessions (WLE),OECDindex,Home possessions (WLE),,מדדי תלמידים,משפחה ובית,נכסים בבית,2015
 ICTRES,ICT Resources (WLE),OECDindex,ICT Resources (WLE),,,,,2015
-WEALTH,Family wealth (WLE),OECDindex,Family wealth (WLE),,מדדים,עושר,,2015
+WEALTH,Family wealth (WLE),OECDindex,Family wealth (WLE),,מדדי תלמידים,משפחה ובית,עושר,2015
 ESCS,"Index of economic, social and cultural status (WLE)",OECDindex,"Index of economic, social and cultural status (WLE)",,,,,2015
 LANGTEST,Language of Questionnaire\Assessment,OECDindex,Language of Questionnaire\Assessment,,,,,2015
 SC001Q01TA,Which of the following definitions best describes the community in which your school is located?,,,,,קהילת בית הספר,,2015
@@ -2800,41 +2800,41 @@ SC064Q01TA,"<the last academic year>, what proport. of parents part. school-rela
 SC064Q02TA,"<the last academic year>, what proport. of parents part. school-related activit? On initiative of child's teachers",School Climate,Parents,Teachers initiate,,,,2015
 SC064Q03TA,"<the last academic year>, what proport. of parents part. school-related activit? Partici. in local school government",School Climate,Parents,,,,,2015
 SC064Q04NA,"<the last academic year>, what proport. of parents part. school-related activit? Volun\phys, or extra-curricular act",School Climate,Parents,extra-curricular act,,,,2015
-SCHSIZE,School Size (Sum),SchoolIndex,School Size (Sum),,מדדי בית ספר,גודל בית הספר,,2015
-CLSIZE,Class Size,SchoolIndex,Class Size,,מדדי בית ספר,גודל כיתה,,2015
-RATCMP1,Number of available computers per student at modal grade,SchoolIndex,Number of available computers per student at modal grade,,מדדי בית ספר,"כמות מחשבים לתלמידים
-",,2015
-RATCMP2,Proportion of available computers that are connected to the Internet,SchoolIndex,Proportion of available computers that are connected to the Internet,,מדדי בית ספר,כמות מחשבים המחוברים לאינטרנט עבור התלמידים,,2015
-LEAD,Educational leadership (WLE),SchoolIndex,Educational leadership (WLE),,מדדי בית ספר,מנהיגות חינוכית,,2015
-LEADCOM,Curricular development (WLE),SchoolIndex,Curricular development (WLE),,מדדי בית ספר,פיתוח מערכי שעור,,2015
-LEADINST,Instructional leadership (WLE),SchoolIndex,Instructional leadership (WLE),,מדדי בית ספר,מנהיגות בתהליך הלימודים,,2015
-LEADPD,Professional development (WLE),SchoolIndex,Professional development (WLE),,מדדי בית ספר,"פיתוח מקצועי
-",,2015
-LEADTCH,Teachers participation (WLE),SchoolIndex,Teachers participation (WLE),,מדדי בית ספר,מעורבות מורים,,2015
-RESPCUR,Responsibility for curriculum,SchoolIndex,Responsibility for curriculum,,מדדי בית ספר,בניית מערכי שיעור באופן עצמאי,,2015
-RESPRES,Responsibility for ressources,SchoolIndex,Responsibility for ressources,,מדדי בית ספר,בחירת מקורות לימוד באופן עצמאי,,2015
-SCHAUT,School autonomy (Mean),SchoolIndex,School autonomy (Mean),,מדדי בית ספר,"עצמאות בית הספר
-",,2015
-TEACHPART,Teacher participation (Sum),SchoolIndex,Teacher participation (Sum),,מדדי בית ספר,מעורבות מורים (סכום),,2015
-EDUSHORT,Shortage of educational material (WLE),SchoolIndex,Shortage of educational material (WLE),,מדדי בית ספר,חוסרים בחומרי לימוד,,2015
-STAFFSHORT,Shortage of educational staff (WLE),SchoolIndex,Shortage of educational staff (WLE),,מדדי בית ספר,חוסר בכוח אדם,,2015
-PROAT5AB,Index proportion of all teachers ISCED LEVEL 5A Bachelor,SchoolIndex,Index proportion of all teachers ISCED LEVEL 5A Bachelor,,מדדי בית ספר,מורים בעלי תואר ראשון,,2015
-PROAT5AM,Index proportion of all teachers ISCED LEVEL 5A Master,SchoolIndex,Index proportion of all teachers ISCED LEVEL 5A Master,,מדדי בית ספר,מורים בעלי תואר שני,,2015
-PROAT6,Index proportion of all teachers ISCED LEVEL 6,SchoolIndex,Index proportion of all teachers ISCED LEVEL 6,,מדדי בית ספר,מורים בעלי תואר שלישי,,2015
-PROATCE,Index proportion of all teachers fully certified,SchoolIndex,Index proportion of all teachers fully certified,,מדדי בית ספר,"מורים מוסמכים
-",,2015
-TOTAT,Total number of all teachers at school,SchoolIndex,Total number of all teachers at school,,מדדי בית ספר,מספר מורים בבית הספר,,2015
-PROSTAT,Index propotion of science teachers by all teachers,SchoolIndex,Index propotion of science teachers by all teachers,,מדדי בית ספר,"כמות מורים למדעים
-",,2015
-PROSTCE,Index proportion of science teachers fully certified,SchoolIndex,Index proportion of science teachers fully certified,,מדדי בית ספר,"כמות מורים מוסמכים למדעים
-",,2015
-PROSTMAS,Index proportion of science teachers with ISCED level 5A and a major in science,SchoolIndex,Index proportion of science teachers with ISCED level 5A and a major in science,,מדדי בית ספר,מורים למדעים בעלי תואר מדעי,,2015
-TOTST,Total number of science teachers at school,SchoolIndex,Total number of science teachers at school,,מדדי בית ספר,מספר מורים למדעים בבית הספר,,2015
-CREACTIV,Creative extra-curricular activities (Sum),SchoolIndex,Creative extra-curricular activities (Sum),,מדדי בית ספר,פעילות יצירתית לאחר הלימודים,,2015
-SCIERES,Index science specific ressources (Sum),SchoolIndex,Index science specific ressources (Sum),,מדדי בית ספר,משאבים במדעים,,2015
-STUBEHA,Student behaviour hindering learning (WLE),SchoolIndex,Student behaviour hindering learning (WLE),,מדדי בית ספר,התנהגות שמחבלת בתהליך הלימודי של התלמידים,,2015
-TEACHBEHA,Teacher behaviour hindering learning (WLE),SchoolIndex,Teacher behaviour hindering learning (WLE),,מדדי בית ספר,התנהגות שמחבלת בתהליך הלימודי של מורים,,2015
-STRATIO,Student-Teacher ratio,SchoolIndex,Student-Teacher ratio,,מדדי בית ספר,"כמות תלמידים למורה
-",,2015
-SCHLTYPE,School Ownership,SchoolIndex,School Ownership,,מדדי בית ספר,"הבעלות של בית הספר
-",,2015
+SCHSIZE,School Size (Sum),SchoolIndex,School Size (Sum),,מדדי בית ספר,בית הספר,גודל בית הספר,2015
+CLSIZE,Class Size,SchoolIndex,Class Size,,מדדי בית ספר,בית הספר,גודל כיתה,2015
+RATCMP1,Number of available computers per student at modal grade,SchoolIndex,Number of available computers per student at modal grade,,מדדי בית ספר,מחשבים,"כמות מחשבים לתלמידים
+",2015
+RATCMP2,Proportion of available computers that are connected to the Internet,SchoolIndex,Proportion of available computers that are connected to the Internet,,מדדי בית ספר,מחשבים,כמות מחשבים המחוברים לאינטרנט עבור התלמידים,2015
+LEAD,Educational leadership (WLE),SchoolIndex,Educational leadership (WLE),,מדדי בית ספר,בית הספר,מנהיגות חינוכית,2015
+LEADCOM,Curricular development (WLE),SchoolIndex,Curricular development (WLE),,מדדי בית ספר,מורים,פיתוח מערכי שעור,2015
+LEADINST,Instructional leadership (WLE),SchoolIndex,Instructional leadership (WLE),,מדדי בית ספר,מורים,מנהיגות בתהליך הלימודים,2015
+LEADPD,Professional development (WLE),SchoolIndex,Professional development (WLE),,מדדי בית ספר,מורים,"פיתוח מקצועי
+",2015
+LEADTCH,Teachers participation (WLE),SchoolIndex,Teachers participation (WLE),,מדדי בית ספר,מורים,מעורבות מורים,2015
+RESPCUR,Responsibility for curriculum,SchoolIndex,Responsibility for curriculum,,מדדי בית ספר,מורים,בניית מערכי שיעור באופן עצמאי,2015
+RESPRES,Responsibility for ressources,SchoolIndex,Responsibility for ressources,,מדדי בית ספר,מורים,בחירת מקורות לימוד באופן עצמאי,2015
+SCHAUT,School autonomy (Mean),SchoolIndex,School autonomy (Mean),,מדדי בית ספר,בית הספר,"עצמאות בית הספר
+",2015
+TEACHPART,Teacher participation (Sum),SchoolIndex,Teacher participation (Sum),,מדדי בית ספר,מורים,מעורבות מורים (סכום),2015
+EDUSHORT,Shortage of educational material (WLE),SchoolIndex,Shortage of educational material (WLE),,מדדי בית ספר,מורים,חוסרים בחומרי לימוד,2015
+STAFFSHORT,Shortage of educational staff (WLE),SchoolIndex,Shortage of educational staff (WLE),,מדדי בית ספר,מורים,חוסר בכוח אדם,2015
+PROAT5AB,Index proportion of all teachers ISCED LEVEL 5A Bachelor,SchoolIndex,Index proportion of all teachers ISCED LEVEL 5A Bachelor,,מדדי בית ספר,מורים,מורים בעלי תואר ראשון,2015
+PROAT5AM,Index proportion of all teachers ISCED LEVEL 5A Master,SchoolIndex,Index proportion of all teachers ISCED LEVEL 5A Master,,מדדי בית ספר,מורים,מורים בעלי תואר שני,2015
+PROAT6,Index proportion of all teachers ISCED LEVEL 6,SchoolIndex,Index proportion of all teachers ISCED LEVEL 6,,מדדי בית ספר,מורים,מורים בעלי תואר שלישי,2015
+PROATCE,Index proportion of all teachers fully certified,SchoolIndex,Index proportion of all teachers fully certified,,מדדי בית ספר,מורים,"מורים מוסמכים
+",2015
+TOTAT,Total number of all teachers at school,SchoolIndex,Total number of all teachers at school,,מדדי בית ספר,מורים,מספר מורים בבית הספר,2015
+PROSTAT,Index propotion of science teachers by all teachers,SchoolIndex,Index propotion of science teachers by all teachers,,מדדי בית ספר,מדעים,"כמות מורים למדעים
+",2015
+PROSTCE,Index proportion of science teachers fully certified,SchoolIndex,Index proportion of science teachers fully certified,,מדדי בית ספר,מדעים,"כמות מורים מוסמכים למדעים
+",2015
+PROSTMAS,Index proportion of science teachers with ISCED level 5A and a major in science,SchoolIndex,Index proportion of science teachers with ISCED level 5A and a major in science,,מדדי בית ספר,מדעים,מורים למדעים בעלי תואר מדעי,2015
+TOTST,Total number of science teachers at school,SchoolIndex,Total number of science teachers at school,,מדדי בית ספר,מדעים,מספר מורים למדעים בבית הספר,2015
+CREACTIV,Creative extra-curricular activities (Sum),SchoolIndex,Creative extra-curricular activities (Sum),,מדדי בית ספר,בית הספר,פעילות יצירתית לאחר הלימודים,2015
+SCIERES,Index science specific ressources (Sum),SchoolIndex,Index science specific ressources (Sum),,מדדי בית ספר,מדעים,משאבים במדעים,2015
+STUBEHA,Student behaviour hindering learning (WLE),SchoolIndex,Student behaviour hindering learning (WLE),,מדדי בית ספר,משמעת,התנהגות שמחבלת בתהליך הלימודי של התלמידים,2015
+TEACHBEHA,Teacher behaviour hindering learning (WLE),SchoolIndex,Teacher behaviour hindering learning (WLE),,מדדי בית ספר,משמעת,התנהגות שמחבלת בתהליך הלימודי של מורים,2015
+STRATIO,Student-Teacher ratio,SchoolIndex,Student-Teacher ratio,,מדדי בית ספר,מורים,"כמות תלמידים למורה
+",2015
+SCHLTYPE,School Ownership,SchoolIndex,School Ownership,,מדדי בית ספר,בית הספר,"הבעלות של בית הספר
+",2015

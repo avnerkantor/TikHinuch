@@ -41,7 +41,6 @@ html {
     overflow-x: hidden !important;
 }
 
-
 #dashboard, #dashboard--wrap {
    z-index:999; 
    background-image: url("img/bg.jpg");
@@ -59,7 +58,7 @@ html {
 
 #scores {
   width:100%;
-  padding-top:0;
+  padding-top:50px;
 }
 
 #expertise, #survey, #analyze {
@@ -79,8 +78,10 @@ nav {
 .navbar-default .navbar-nav > li.active a {
     border-bottom: 1px solid #777777;
 }
+.navbar-right{
+  margin-right:-45px;
+}
 
-/*heaer*/
 
 .header {
     margin-right: -31px;
@@ -123,9 +124,10 @@ nav {
 }
 
 .subjectButtons {
-    width: 100px;
+    width: 33%;
+    max-width:98px;
     float: right;
-    margin-right:20px;
+    /*margin-right:20px;*/
 }
 
 small{
@@ -315,11 +317,11 @@ input[type="checkbox"] {
 .selectize-input {
     border-radius: 0;
     line-height: 1.333333333;
-    font-size: 16pt;
+    font-size: 1.5vw;
     color: #777777;
 }
 
-
+/*
 .selectize-input > * {
   vertical-align: middle;
 }
@@ -330,7 +332,7 @@ input[type="checkbox"] {
   
 }
 
-/* respnonsive */
+/* respnonsive 
 .selectize-input {
   display: table !important;
   table-layout: fixed;
@@ -345,12 +347,11 @@ input[type="checkbox"] {
   white-space: nowrap;
   max-width: 90%;
 }
-
+*/
 
 
 .plotly, .shiny-plot-output {
-    height: 150px;
-    cursor:pointer;
+    height: 180px;
 }
 
 #LevelNumberDiv {

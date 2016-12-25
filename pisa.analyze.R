@@ -1,35 +1,35 @@
-observe({
-  updateSelectInput(session, inputId="AnalyzeYear", label="",
-                    choices = c(2015, 2012), selected = 2015)
-})
-
-hebVariables<-c("מדדים", "מדדי בית ספר")
-observe({
-  updateSelectInput(session, "AnalyzeVariable", "", as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject %in% hebVariables), HebCategory))), selected = "גודל כיתה")
-})
-
-observe({
-  updateSelectInput(session, inputId="ModelId", label="", choices = c(
-    "רגרסיה לינארית"="lm",
-    "רגרסיה מקומית"="loess"
-  ),
-  selected="lm")
-})
+# observe({
+#   updateSelectInput(session, inputId="AnalyzeYear", label="",
+#                     choices = c(2015, 2012), selected = 2015)
+# })
+# 
+# hebVariables<-c("מדדים", "מדדי בית ספר")
+# observe({
+#   updateSelectInput(session, "AnalyzeVariable", "", as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject %in% hebVariables), HebCategory))), selected = "גודל כיתה")
+# })
+# 
+# observe({
+#   updateSelectInput(session, inputId="ModelId", label="", choices = c(
+#     "רגרסיה לינארית"="lm",
+#     "רגרסיה מקומית"="loess"
+#   ),
+#   selected="lm")
+# })
 
  
 #Analyze
 observe({
   
-  if(input$AnalyzeYear=="2015" & input$worldOrIsrael=="Israel"){
+  if(input$SurveyYear=="2015" & input$worldOrIsrael=="Israel"){
     surveyData<-israel2015
   }
-  if(input$AnalyzeYear=="2015" & input$worldOrIsrael=="World"){
+  if(input$SurveyYear=="2015" & input$worldOrIsrael=="World"){
     surveyData<-pisa2015
   }
-  if(input$AnalyzeYear=="2012" & input$worldOrIsrael=="Israel"){
+  if(input$SurveyYear=="2012" & input$worldOrIsrael=="Israel"){
     surveyData<-israel2012
   }
-  if(input$AnalyzeYear=="2012" & input$worldOrIsrael=="World"){
+  if(input$SurveyYear=="2012" & input$worldOrIsrael=="World"){
     surveyData<-pisa2012
   }
   
@@ -43,8 +43,10 @@ observe({
   )
   
   
-  analyzeSelectedID <- as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject %in% hebVariables, HebCategory==input$AnalyzeVariable), ID)))
-
+  #analyzeSelectedID <- as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject %in% hebVariables, HebCategory==input$AnalyzeVariable), ID)))
+  analyzeSelectedID <- as.vector(unlist(select(filter(pisaDictionary, Year == input$SurveyYear, HebSubject == input$SurveySubject, HebCategory==input$SurveyCategory, HebSubCategory==input$SurveySubCategory), ID))) 
+  
+  
   analyzePlotFunction<-function(country) {
 
     Country<-as.vector(unlist(Countries%>%filter(Hebrew==country)%>%select(Country)))
@@ -52,6 +54,12 @@ observe({
     analyzeData1<-surveyData%>%select_("COUNTRY", analyzeSelectedID, "ST04Q01", "ESCS", analyzeSubject)%>%filter(COUNTRY==Country)
     # analyzeData1<-collect(analyzeData1)
 
+    print("Gender:")
+    print(input$Gender)
+    print("escs:")
+    print(input$Escs)
+    
+    
     if(is.null(input$Gender)){
       if(is.null(input$Escs)){
         #General
@@ -82,7 +90,7 @@ observe({
     }
 
     ggplot(data=analyzeData2, aes_string(y=analyzeSubject, x=analyzeSelectedID)) +
-      geom_smooth(method=input$ModelId, aes(colour=groupColour), se=TRUE) +
+      geom_smooth(method="lm", aes(colour=groupColour), se=TRUE) +
       geom_point(aes(colour=groupColour), alpha = 0.1) +
       scale_colour_manual(values = groupColours) +
       labs(title="", y="ציון" ,x= "") +
@@ -102,12 +110,7 @@ observe({
             axis.title.x=element_blank(),
             # axis.text.x=element_blank(),
             axis.ticks.x=element_blank()
-      ) +
-      scale_y_continuous(limits = c(0,800)) 
-
-    # ggplotly(gh, tooltip = c("text"))%>%
-    # config(p = ., displayModeBar = FALSE)%>%
-    # layout(hovermode="y")
+      ) 
   }
 
   analyzeFunction<-function(country) {
@@ -145,8 +148,8 @@ observe({
       }
     }
     
-    analyzeData1[, analyzeSelectedID]<-as.numeric(analyzeData1[, analyzeSelectedID])
-    analyzeData1[, analyzeSubject]<-as.numeric(analyzeData1[, analyzeSubject])
+    analyzeData2[, analyzeSelectedID]<-as.numeric(analyzeData2[, analyzeSelectedID])
+    analyzeData2[, analyzeSubject]<-as.numeric(analyzeData2[, analyzeSubject])
     analyzeData3<-analyzeData2 %>% group_by(groupColour) %>% do(glance(lm(get(analyzeSubject) ~ get(analyzeSelectedID), data=.)))
 
     paste0(input$Gender, ":", input$Escs, " R²=", round(analyzeData3$r.squared, digits=3), ", N=", analyzeData3$df.residual, ".  ")

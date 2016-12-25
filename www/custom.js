@@ -47,11 +47,10 @@ $(function() {
 
 //Set countries width the same width as plots width
 $(document).ready(function(){
-  $("#Country1, #Country2, #Country3, #Country4, #SurveyYear, #SurveySubject, #SurveyCategory, #SurveySubCategory, #AnalyzeYear, #AnalyzeVariable, #ModelId" ).css('width', ($("#Country1Plot").width()+'px'));
+  $(".selectize-control").css('width', ($("#Country1Plot").width()+'px'));
 });
-
 $(window).resize(function(){
-    $("#Country1, #Country2, #Country3, #Country4, #SurveyYear, #SurveySubject, #SurveyCategory, #SurveySubCategory, #AnalyzeYear, #AnalyzeVariable, #ModelId" ).css('width', ($("#Country1Plot").width()+'px'));
+    $(".selectize-input").css('width', ($("#Country1Plot").width()+'px'));
 });
 
 
@@ -71,6 +70,7 @@ $(document).ready(function () {
       window.location.hash = hash;
     });
 });
+
 /*
 $(document).ready(function () {
    $("#surveyDashboard").hide();
@@ -78,8 +78,7 @@ $(document).ready(function () {
 
 $(document).on('activate.bs.scrollspy', function(e) {
    var x = $(".nav li.active > a").attr('href');
-   /*
-        switch (x) {
+   /*switch (x) {
             case "#scores":
                 $("#surveyDashboard").hide();
                 $("#Subject").show();
@@ -96,8 +95,7 @@ $(document).on('activate.bs.scrollspy', function(e) {
                 $("#surveyDashboard").show();
                 $("#Subject").show();
                 break;
-        }
-        */
+        } */
   var $hash, $node;
   $hash = $("a[href^='#']", e.target).attr("href").replace(/^#/, '');
   $node = $('#' + $hash);
@@ -112,15 +110,13 @@ $(document).on('activate.bs.scrollspy', function(e) {
 
 
 // This recieves messages from the server.
-Shiny.addCustomMessageHandler('updateSelections',
-  function(data) {
+Shiny.addCustomMessageHandler('updateSelections', function(data) {
     window.history.pushState('','', data);
-    //alert("url: ", data);                 
 });
                    
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip({
-        placement : 'top'
+        placement : 'bottom'
     });
 });
 

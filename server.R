@@ -6,6 +6,9 @@ load("data/pisaData2.rda")
 pisaDictionary<-read.csv("data/pisaDictionary.csv", header = TRUE, sep=",")
 #load("data/pisaDictionary.rda")
 
+#download.file(url = "https://docs.google.com/spreadsheets/d/1pIBORUHzR27VIfesPASPmELb3QUxlf2rvB2ODNp9NjQ/pub?gid=0&single=true&output=csv", destfile="data/itemsDictionary.csv", 'curl')
+itemsDictionary<-read.csv("data/itemsDictionary.csv", header = TRUE, sep=",")
+
 print("loading pisa 2015")
 load("../pisa2015.rda")
 load("../israel2015.rda")

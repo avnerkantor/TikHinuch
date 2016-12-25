@@ -2,9 +2,9 @@ observe({
   if (input$worldOrIsrael=="World")
   {
     updateSelectInput(session, "Country1", choices = names(oecdList), selected = "ישראל")
-    updateSelectInput(session, "Country2", choices = names(oecdList), selected = "גרמניה")
+    updateSelectInput(session, "Country2", choices = names(oecdList), selected = "סינגפור")
     updateSelectInput(session, "Country3", choices = names(oecdList), selected = "פינלנד")
-    updateSelectInput(session, "Country4", choices = names(oecdList), selected = "דרום-קוריאה")
+    updateSelectInput(session, "Country4", choices = names(oecdList), selected = "יוון")
   } else {
     updateSelectInput(session, "Country1", choices = names(israelList), selected = "חינוך-ממלכתי")
     updateSelectInput(session, "Country2", choices = names(israelList), selected = "ממלכתי-דתי")

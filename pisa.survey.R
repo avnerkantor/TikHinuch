@@ -5,13 +5,14 @@ observe({
 })
 
 observeEvent(input$SurveyYear,{
-  choices<-c("בית הספר", "משפחה ובית", "לימודי מדעים", "זמינות ושימוש באמצעי תקשוב", "מדיניות בית הספר")
+#  choices<-c("בית הספר", "משפחה ובית", "לימודי מדעים", "זמינות ושימוש באמצעי תקשוב", "מדיניות בית הספר")
+  choices<-list("שאלון תלמידים"=c("משפחה ובית","בית הספר", "לימודי מדעים", "זמינות ושימוש באמצעי תקשוב"), 
+                "שאלון מנהלים"=c("מדיניות בית הספר"), "מדדים"=c("מדדי תלמידים","מדדי בית ספר"))
   switch(input$SurveyYear,
-         "2015"={choices<-c("בית הספר", "משפחה ובית", "לימודי מדעים", "זמינות ושימוש באמצעי תקשוב", "מדיניות בית הספר")},
+         "2015"={choices<-choices},
          "2012"={choices<-c(unique(pisaDictionary%>%filter(Year=="2012")%>%select(HebSubject)))}
   )
-  updateSelectInput(session, "SurveySubject", "", choices = choices,
-                    selected="זמינות ושימוש באמצעי תקשוב")
+  updateSelectInput(session, "SurveySubject", "", choices = choices, selected="זמינות ושימוש באמצעי תקשוב")
 })
 
 observeEvent(input$SurveySubject,{
@@ -23,12 +24,31 @@ observeEvent(input$SurveyCategory,{
   )
 })
 
+recoderFunc <- function(data, oldvalue, newvalue) {
+  
+  # convert any factors to characters
+  
+  if (is.factor(data))     data     <- as.character(data)
+  if (is.factor(oldvalue)) oldvalue <- as.character(oldvalue)
+  if (is.factor(newvalue)) newvalue <- as.character(newvalue)
+  
+  # create the return vector
+  
+  newvec <- data
+  
+  # put recoded values into the correct position in the return vector
+  
+  for (i in unique(oldvalue)) newvec[data == i] <- newvalue[oldvalue == i]
+  
+  newvec
+  
+}
+
 observe({
   
   SurveySelectedID <- as.vector(unlist(select(filter(pisaDictionary, Year == input$SurveyYear, HebSubject == input$SurveySubject, HebCategory==input$SurveyCategory, HebSubCategory==input$SurveySubCategory), ID))) 
   # SurveySelectedMeasure <- as.vector(unlist(pisaDictionary%>%filter(ID==SurveySelectedID, Year == input$SurveyYear)%>%select(Measure)))
   SurveySelectedMeasure <- as.vector(unlist(select(filter(pisaDictionary, Year == input$SurveyYear, HebSubject == input$SurveySubject, HebCategory==input$SurveyCategory, HebSubCategory==input$SurveySubCategory), Measure))) 
-  
   
   surveyPlotFunction<-function(country) {
     if(input$SurveyYear=="2015" & input$worldOrIsrael=="Israel"){
@@ -44,12 +64,12 @@ observe({
       surveyData<-pisa2012
     }
     
-
     Country<-as.vector(unlist(Countries%>%filter(Hebrew==country)%>%select(Country)))
+    surveyData1<-surveyData%>%select_("COUNTRY", SurveySelectedID, "ST04Q01", "ESCS")%>%filter(COUNTRY==Country)%>%na.omit() 
+    #dic<-data.frame(English=c("Checked"), Hebrew=c("כן"))
+    surveyData1 <- data.frame(lapply(surveyData1, function(x) recoderFunc(x, itemsDictionary$English, itemsDictionary$Hebrew)))
     
-    surveyData1<-surveyData%>%select_("COUNTRY", SurveySelectedID, "ST04Q01", "ESCS")%>%filter(COUNTRY==Country)
-    
-    output$SurveySelectedIDOutput<-renderText(paste0(SurveySelectedMeasure, ' (',SurveySelectedID, ')'))
+    #output$SurveySelectedIDOutput<-renderText(paste0(SurveySelectedMeasure, ' (',SurveySelectedID, ')'))
     
     if(is.null(input$Gender)){
       if(is.null(input$Escs)){
@@ -112,6 +132,7 @@ observe({
     gh<-ggplot(data=surveyTable, aes(x=answer, y=freq, text=paste0(round(freq, digits = 1), "%"))) +
       geom_bar(aes(colour=groupColour, fill=groupColour), stat="identity") +
       coord_flip() +
+      scale_x_discrete(limits = rev(levels(surveyTable$answer))) +
       scale_colour_manual(values =groupColours) +
       scale_fill_manual(values = groupColours) +
       labs(title="", y="" ,x= "") +
@@ -156,9 +177,11 @@ observe({
 
 #https://rstudio.github.io/DT/options.html
 output$pisaScoresTable <- DT::renderDataTable(
-  #filter='bottom',
-  #colnames = c('שם משתנה', 'תיאור באנגלית', 'נושא', 'תחום', 'תת-תחום'),
-  options=list(
+##These 2 lines changed UI
+  filter='bottom',
+  colnames = c('שם משתנה', 'תיאור באנגלית', 'נושא', 'תחום', 'תת-תחום'),
+ ##
+   options=list(
     pageLength = 5,
     searching=TRUE,
     autoWidth = TRUE,
@@ -167,14 +190,5 @@ output$pisaScoresTable <- DT::renderDataTable(
   ), rownames= FALSE, 
   {
     pisaDictionary%>%filter(Year==input$SurveyYear)%>%select(ID, Measure, HebSubject, HebCategory, HebSubCategory)
-    #  %>%filter(HebSubject=="מדדים")
-    
   })
 
-observeEvent(input$pisaDictionary, {
-  showModal(modalDialog(
-    title = "Important message",
-    "This is an important message!",
-    easyClose = TRUE
-  ))
-})
