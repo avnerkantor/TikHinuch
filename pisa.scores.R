@@ -13,6 +13,20 @@ observe({
   }
 })
 
+v <- reactiveValues(data = NULL)
+
+observeEvent(input$Gender, {
+  v$Gender <- input$Gender
+})
+
+observeEvent(input$Escs, {
+  v$Escs <- input$Escs
+})
+
+
+observeEvent(input$generalBtn, {
+  v$Gender <- NULL
+})
 
 observe({
   
@@ -22,29 +36,29 @@ observe({
   
   plotData1<-pisaData%>%filter(Subject==input$Subject, Performers==0)%>%select(-Subject, -Performers)
   
-  if(is.null(input$Gender)){
-    if(is.null(input$Escs)){
+  if(is.null(v$Gender)){
+    if(is.null(v$Escs)){
       plotData2<-plotData1 %>%
         filter(Gender==0, ESCS==0)
     } else {
       plotData2<- plotData1 %>%
         filter(Gender == 0)%>%
-        filter(ESCS %in% c(input$Escs))
+        filter(ESCS %in% c(v$Escs))
     }
   } else {
-    if(length(input$Gender)==1){
-      if(is.null(input$Escs)) {
+    if(length(v$Gender)==1){
+      if(is.null(v$Escs)) {
         plotData2<- plotData1 %>%
-          filter(Gender  == input$Gender)%>%
+          filter(Gender  == v$Gender)%>%
           filter(ESCS == 0)
       } else {
         plotData2<- plotData1 %>%
-          filter(Gender  == input$Gender)%>%
-          filter(ESCS %in% c(input$Escs))
+          filter(Gender  == v$Gender)%>%
+          filter(ESCS %in% c(v$Escs))
       }
     } else {
       plotData2<- plotData1 %>%
-        filter(Gender %in% c(input$Gender))%>%
+        filter(Gender %in% c(v$Gender))%>%
         filter(ESCS == 0)
     } 
   }

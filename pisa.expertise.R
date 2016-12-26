@@ -3,29 +3,29 @@ observe({
   
   plotHighData<-pisaData%>%filter(Subject==input$Subject, Performers=="High")%>%select(-Subject)
   
-  if(is.null(input$Gender)){
-    if(is.null(input$Escs)){
+  if(is.null(v$Gender)){
+    if(is.null(v$Escs)){
       plotHighData2<- plotHighData %>%
         filter(Gender==0, ESCS==0)
     } else {
       plotHighData2<- plotHighData %>%
         filter(Gender == 0)%>%
-        filter(ESCS %in% c(input$Escs))
+        filter(ESCS %in% c(v$Escs))
     }
   } else {
-    if(length(input$Gender)==1){
-      if(is.null(input$Escs)) {
+    if(length(v$Gender)==1){
+      if(is.null(v$Escs)) {
         plotHighData2<- plotHighData %>%
-          filter(Gender  == input$Gender)%>%
+          filter(Gender  == v$Gender)%>%
           filter(ESCS == 0)
       } else {
         plotHighData2<- plotHighData %>%
-          filter(Gender  == input$Gender)%>%
-          filter(ESCS %in% c(input$Escs))
+          filter(Gender  == v$Gender)%>%
+          filter(ESCS %in% c(v$Escs))
       }
     } else {
       plotHighData2<- plotHighData %>%
-        filter(Gender %in% c(input$Gender))%>%
+        filter(Gender %in% c(v$Gender))%>%
         filter(ESCS == 0)
     } 
   }
@@ -100,29 +100,29 @@ observe({
   
   plotLowData<-pisaData%>%filter(Subject==input$Subject, Performers=="Low")%>%select(-Subject)
   
-  if(is.null(input$Gender)){
-    if(is.null(input$Escs)){
+  if(is.null(v$Gender)){
+    if(is.null(v$Escs)){
       plotLowData2<- plotLowData %>%
         filter(Gender==0, ESCS==0)
     } else {
       plotLowData2<- plotLowData %>%
         filter(Gender == 0)%>%
-        filter(ESCS %in% c(input$Escs))
+        filter(ESCS %in% c(v$Escs))
     }
   } else {
-    if(length(input$Gender)==1){
-      if(is.null(input$Escs)) {
+    if(length(v$Gender)==1){
+      if(is.null(v$Escs)) {
         plotLowData2<- plotLowData %>%
-          filter(Gender  == input$Gender)%>%
+          filter(Gender  == v$Gender)%>%
           filter(ESCS == 0)
       } else {
         plotLowData2<- plotLowData %>%
-          filter(Gender  == input$Gender)%>%
-          filter(ESCS %in% c(input$Escs))
+          filter(Gender  == v$Gender)%>%
+          filter(ESCS %in% c(v$Escs))
       }
     } else {
       plotLowData2<- plotLowData %>%
-        filter(Gender %in% c(input$Gender))%>%
+        filter(Gender %in% c(v$Gender))%>%
         filter(ESCS == 0)
     } 
   }

@@ -1,23 +1,3 @@
-# observe({
-#   updateSelectInput(session, inputId="AnalyzeYear", label="",
-#                     choices = c(2015, 2012), selected = 2015)
-# })
-# 
-# hebVariables<-c("מדדים", "מדדי בית ספר")
-# observe({
-#   updateSelectInput(session, "AnalyzeVariable", "", as.vector(unlist(select(filter(pisaDictionary, Year == input$AnalyzeYear, HebSubject %in% hebVariables), HebCategory))), selected = "גודל כיתה")
-# })
-# 
-# observe({
-#   updateSelectInput(session, inputId="ModelId", label="", choices = c(
-#     "רגרסיה לינארית"="lm",
-#     "רגרסיה מקומית"="loess"
-#   ),
-#   selected="lm")
-# })
-
- 
-#Analyze
 observe({
   
   if(input$SurveyYear=="2015" & input$worldOrIsrael=="Israel"){
@@ -52,41 +32,45 @@ observe({
     Country<-as.vector(unlist(Countries%>%filter(Hebrew==country)%>%select(Country)))
 
     analyzeData1<-surveyData%>%select_("COUNTRY", analyzeSelectedID, "ST04Q01", "ESCS", analyzeSubject)%>%filter(COUNTRY==Country)
+    
     # analyzeData1<-collect(analyzeData1)
 
-    print("Gender:")
-    print(input$Gender)
-    print("escs:")
-    print(input$Escs)
-    
-    
-    if(is.null(input$Gender)){
-      if(is.null(input$Escs)){
+    if(is.null(v$Gender)){
+      if(is.null(v$Escs)){
         #General
         analyzeData2<-analyzeData1%>%
           mutate(groupColour="General")
       } else {
         # General Escs
         analyzeData2<-analyzeData1%>%
+          filter(ESCS %in% c(v$Escs))%>%
+          group_by_("ESCS", analyzeSelectedID)%>%
           rename_(group="ESCS") %>%
           mutate(groupColour=str_c("General", group))
       }
     } else {
-      if(length(input$Gender)==1){
-        if(is.null(input$Escs)) {
+      if(length(v$Gender)==1){
+        if(is.null(v$Escs)) {
           #Only gender
           analyzeData2<-analyzeData1%>%
-            rename_(groupColour="ST04Q01")
+            filter(ST04Q01 %in% c(v$Gender))%>%
+            group_by_("ST04Q01", analyzeSelectedID)%>%
+            rename_(groupColour="ST04Q01") 
         } else {
           analyzeData2<-analyzeData1%>%
-            mutate(group1=input$Gender)%>%
+            filter(ST04Q01  %in% c(v$Gender))%>%
+            filter(ESCS %in% c(v$Escs))%>%
+            group_by_("ESCS", analyzeSelectedID)%>%
+            mutate(group1=v$Gender)%>%
             rename_(group="ESCS")%>%
             mutate(groupColour=str_c(group1, group))
         }
       } else {
         analyzeData2<-analyzeData1%>%
-          rename_(groupColour="ST04Q01")
-      }
+          filter(ST04Q01 %in% c(v$Gender))%>%
+          group_by_("ST04Q01", analyzeSelectedID)%>%
+          rename_(groupColour="ST04Q01") 
+      } 
     }
 
     ggplot(data=analyzeData2, aes_string(y=analyzeSubject, x=analyzeSelectedID)) +
@@ -119,40 +103,49 @@ observe({
     analyzeData1<-surveyData%>%select_("COUNTRY", analyzeSelectedID, "ST04Q01", "ESCS", analyzeSubject)%>%filter(COUNTRY==Country)
     # analyzeData1<-collect(analyzeData1)
     
-    if(is.null(input$Gender)){
-      if(is.null(input$Escs)){
+    if(is.null(v$Gender)){
+      if(is.null(v$Escs)){
         #General
         analyzeData2<-analyzeData1%>%
           mutate(groupColour="General")
       } else {
         # General Escs
         analyzeData2<-analyzeData1%>%
+          filter(ESCS %in% c(v$Escs))%>%
+          group_by_("ESCS", analyzeSelectedID)%>%
           rename_(group="ESCS") %>%
           mutate(groupColour=str_c("General", group))
       }
     } else {
-      if(length(input$Gender)==1){
-        if(is.null(input$Escs)) {
+      if(length(v$Gender)==1){
+        if(is.null(v$Escs)) {
           #Only gender
           analyzeData2<-analyzeData1%>%
-            rename_(groupColour="ST04Q01")
+            filter(ST04Q01 %in% c(v$Gender))%>%
+            group_by_("ST04Q01", analyzeSelectedID)%>%
+            rename_(groupColour="ST04Q01") 
         } else {
           analyzeData2<-analyzeData1%>%
-            mutate(group1=input$Gender)%>%
+            filter(ST04Q01  %in% c(v$Gender))%>%
+            filter(ESCS %in% c(v$Escs))%>%
+            group_by_("ESCS", analyzeSelectedID)%>%
+            mutate(group1=v$Gender)%>%
             rename_(group="ESCS")%>%
             mutate(groupColour=str_c(group1, group))
         }
       } else {
         analyzeData2<-analyzeData1%>%
-          rename_(groupColour="ST04Q01")
-      }
+          filter(ST04Q01 %in% c(v$Gender))%>%
+          group_by_("ST04Q01", analyzeSelectedID)%>%
+          rename_(groupColour="ST04Q01") 
+      } 
     }
     
-    analyzeData2[, analyzeSelectedID]<-as.numeric(analyzeData2[, analyzeSelectedID])
-    analyzeData2[, analyzeSubject]<-as.numeric(analyzeData2[, analyzeSubject])
+    analyzeData2[, analyzeSelectedID]<-as.numeric(unlist(analyzeData2[, analyzeSelectedID]))
+    analyzeData2[, analyzeSubject]<-as.numeric(unlist(analyzeData2[, analyzeSubject]))
     analyzeData3<-analyzeData2 %>% group_by(groupColour) %>% do(glance(lm(get(analyzeSubject) ~ get(analyzeSelectedID), data=.)))
 
-    paste0(input$Gender, ":", input$Escs, " R²=", round(analyzeData3$r.squared, digits=3), ", N=", analyzeData3$df.residual, ".  ")
+    paste0(v$Gender, ":", v$Escs, " R²=", round(analyzeData3$r.squared, digits=3), ", N=", analyzeData3$df.residual, ".  ")
   }
   
   #### Plots ####

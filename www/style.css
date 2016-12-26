@@ -48,7 +48,7 @@ html {
 }
 
 .affix {
-  top: 50px;
+  top: 52px;
   width:100%;
 }
 
@@ -58,7 +58,7 @@ html {
 
 #scores {
   width:100%;
-  padding-top:50px;
+  padding-top:1px;
 }
 
 #expertise, #survey, #analyze {
@@ -351,7 +351,7 @@ input[type="checkbox"] {
 
 
 .plotly, .shiny-plot-output {
-    height: 180px;
+    height: 200px;
 }
 
 #LevelNumberDiv {
