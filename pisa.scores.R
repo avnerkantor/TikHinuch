@@ -1,15 +1,15 @@
 observe({
   if (input$worldOrIsrael=="World")
   {
-    updateSelectInput(session, "Country1", choices = names(oecdList), selected = "ישראל")
-    updateSelectInput(session, "Country2", choices = names(oecdList), selected = "סינגפור")
-    updateSelectInput(session, "Country3", choices = names(oecdList), selected = "פינלנד")
-    updateSelectInput(session, "Country4", choices = names(oecdList), selected = "יוון")
+    updateSelectInput(session, "Country4", choices = names(oecdList), selected = "ישראל")
+    updateSelectInput(session, "Country3", choices = names(oecdList), selected = "סינגפור")
+    updateSelectInput(session, "Country2", choices = names(oecdList), selected = "פינלנד")
+    updateSelectInput(session, "Country1", choices = names(oecdList), selected = "יוון")
   } else {
-    updateSelectInput(session, "Country1", choices = names(israelList), selected = "חינוך-ממלכתי")
-    updateSelectInput(session, "Country2", choices = names(israelList), selected = "ממלכתי-דתי")
-    updateSelectInput(session, "Country3", choices = names(israelList), selected = "חרדים-בנות")
-    updateSelectInput(session, "Country4", choices = names(israelList), selected = "דוברי ערבית")
+    updateSelectInput(session, "Country4", choices = names(israelList), selected = "חינוך-ממלכתי")
+    updateSelectInput(session, "Country3", choices = names(israelList), selected = "ממלכתי-דתי")
+    updateSelectInput(session, "Country2", choices = names(israelList), selected = "חרדים-בנות")
+    updateSelectInput(session, "Country1", choices = names(israelList), selected = "דוברי ערבית")
   }
 })
 
@@ -68,12 +68,10 @@ observe({
     x<-Countries%>%filter(Hebrew==country)%>%select(Country)
     plotData3 <- plotData2%>%filter(Country==x[1,1])
     participatedNumber<-length(unique(plotData3$Year))
-
     gg<-ggplot(plotData3, aes(x=Year, y=Average, colour=GenderESCS, text=round(Average))) +
       scale_colour_manual(values = groupColours) +
       guides(colour=FALSE) +
-      
-      labs(title="", y="רמה" ,x= "") +
+      labs(title="", y="רמת מיומנות" ,x= "שנת מבחן") +
       theme_bw() +
       #geom_label() +
       theme(plot.margin=unit(c(0,15,5,10), "pt"),
@@ -82,9 +80,8 @@ observe({
             panel.grid.major.x=element_blank(),
             panel.grid.major.y = element_line(colour="#e0e0e0", size=0.3),
             legend.position="none",
-            axis.line.x = element_line(color="#c7c7c7", size = 0.3),
-            axis.line.y = element_line(color="#c7c7c7", size = 0.3),
-            axis.title.y=element_text(colour="#777777")
+            axis.line = element_line(color="#c7c7c7", size = 0.3),
+            axis.title=element_text(colour="#777777")
       ) +
       scale_x_continuous(breaks=c(2006, 2009, 2012, 2015)) +
       scale_y_continuous(
@@ -114,24 +111,28 @@ observe({
     } 
     else 
     {
-      gg+annotate("text", label = "לא השתתפה",
-                  x = 2012, y = 500, size = 6, 
-                  colour = "#c7c7c7")%>%config(p = ., displayModeBar = FALSE)
+      ggplot() + annotate("text", label = "אין נתונים",
+                          x = 2012, y = 500, size = 6, 
+                          colour = "#c7c7c7")%>%config(p = ., displayModeBar = FALSE) +
+        theme_void() + theme(legend.position="none")
     }
   }
   
   if(!input$Country1==""){
     output$Country1Plot<-renderPlotly({
-      d <- event_data("plotly_hover")
+      # pdf(NULL)
       scoresPlotFunction(input$Country1)
     })
     output$Country2Plot<-renderPlotly({
+      # pdf(NULL)
       scoresPlotFunction(input$Country2)
     })
     output$Country3Plot<-renderPlotly({
+      # pdf(NULL)
       scoresPlotFunction(input$Country3)
     })
     output$Country4Plot<-renderPlotly({
+      # pdf(NULL)
       scoresPlotFunction(input$Country4)
     })
   }

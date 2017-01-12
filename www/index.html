@@ -71,10 +71,10 @@
           <a class="page-scroll" href="about.html">אודות</a>
       </li>
       <li>
-          <a class="page-scroll" href="#analyze">מִתאם</a>
+          <a class="page-scroll" href="#analyze">ניתוח</a>
       </li>
       <li>
-        <a class="page-scroll" href="#survey">אקלים</a>
+        <a class="page-scroll" href="#survey">שאלונים</a>
     </li>
     <!--<li>-->
     <!--<a class="page-scroll" href="#heterogeneity">פיזור</a>-->
@@ -165,6 +165,24 @@
                             <input type="radio" name="worldOrIsrael" value="Israel"/>
                             <span>ישראל</span>
                         </label>
+                            <button type="button" class="btn btn-countries" data-toggle="modal" data-target="#myModal">שאלות</button>
+   <!-- Modal -->
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">מילון שאלות</h4>
+        </div>
+        <div class="modal-body">
+            <div id="pisaScoresTable" class="datatables html-widget html-widget-output"></div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">סגור</button>
+        </div>
+    </div>
+</div>
+</div>
                     </div>
                 </div>
             </form>
@@ -221,7 +239,7 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
 <div id="surveyDashboard" class="row">
     <div class="col-xs-3">
         <div class="form-group shiny-input-container">
-          <span>תת-תחום</span>
+          <span>שאלה</span>
           <label class="control-label" for="SurveySubCategory"></label>
           <div>
             <select id="SurveySubCategory">
@@ -272,26 +290,14 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
 <div id="countriesDashboard" class="row">
     <div class="col-xs-3">
         <div class="form-group shiny-input-container">
-            <label class="control-label" for="Country4"></label>
+            <label class="control-label" for="Country1"></label>
             <div>
-                <select id="Country4">
+                <select id="Country1">
                     <option value="" selected></option>
                 </select>
-                <script type="application/json" data-for="Country4">{}</script>
+                <script type="application/json" data-for="Country1">{}</script>
             </div>
         </div>
-    </div>
-    <div class="col-xs-3">
-        <div class="form-group shiny-input-container">
-            <label class="control-label" for="Country3"></label>
-            <div>
-                <select id="Country3">
-                    <option value="" selected></option>
-                </select>
-                <script type="application/json" data-for="Country3">{}</script>
-            </div>
-        </div>
-
     </div>
     <div class="col-xs-3">
         <div class="form-group shiny-input-container">
@@ -303,15 +309,27 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
                 <script type="application/json" data-for="Country2">{}</script>
             </div>
         </div>
+
     </div>
     <div class="col-xs-3">
         <div class="form-group shiny-input-container">
-            <label class="control-label" for="Country1"></label>
+            <label class="control-label" for="Country3"></label>
             <div>
-                <select id="Country1">
+                <select id="Country3">
                     <option value="" selected></option>
                 </select>
-                <script type="application/json" data-for="Country1">{}</script>
+                <script type="application/json" data-for="Country3">{}</script>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3">
+        <div class="form-group shiny-input-container">
+            <label class="control-label" for="Country4"></label>
+            <div>
+                <select id="Country4">
+                    <option value="" selected></option>
+                </select>
+                <script type="application/json" data-for="Country4">{}</script>
             </div>
         </div>
     </div>
@@ -324,16 +342,16 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
     <div id="scores" class="container-fluid">
         <div class="row" style="direction: ltr">
             <div class="col-xs-3 ">
-                <div id="Country4Plot" class="plotly html-widget html-widget-output"></div>
-            </div>
-            <div class="col-xs-3 ">
-                <div id="Country3Plot" class="plotly html-widget html-widget-output"></div>
+                <div id="Country1Plot" class="plotly html-widget html-widget-output"></div>
             </div>
             <div class="col-xs-3 ">
                 <div id="Country2Plot" class="plotly html-widget html-widget-output"></div>
             </div>
             <div class="col-xs-3 ">
-                <div id="Country1Plot" class="plotly html-widget html-widget-output"></div>
+                <div id="Country3Plot" class="plotly html-widget html-widget-output"></div>
+            </div>
+            <div class="col-xs-3 ">
+                <div id="Country4Plot" class="plotly html-widget html-widget-output"></div>
             </div>
         </div>
         <div class="row">
@@ -355,21 +373,21 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
       <div class="row text-center" style="height: 30px">
         <div class="col-xs-5" style="border-bottom: 1px solid #c7c7c7; left: 10px;"></div>
         <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 18px">
-            <span>אחוז מצטיינים</span></div>
+            <span>מצטיינים</span></div>
             <div class="col-xs-5 " style="border-bottom: 1px solid #c7c7c7; right: 10px; "></div>
         </div>
         <div class="row" style="direction: ltr">
             <div class="col-xs-3 ">
-                <div id="Country4HighPlot" class="plotly html-widget html-widget-output"></div>
-            </div>
-            <div class="col-xs-3 ">
-                <div id="Country3HighPlot" class="plotly html-widget html-widget-output"></div>
+                <div id="Country1HighPlot" class="plotly html-widget html-widget-output"></div>
             </div>
             <div class="col-xs-3 ">
                 <div id="Country2HighPlot" class="plotly html-widget html-widget-output"></div>
             </div>
+            <div class="col-xs-3 ">
+                <div id="Country3HighPlot" class="plotly html-widget html-widget-output"></div>
+            </div>
             <div class="col-xs-3">
-                <div id="Country1HighPlot" class="plotly html-widget html-widget-output"></div>
+                <div id="Country4HighPlot" class="plotly html-widget html-widget-output"></div>
             </div>
         </div>
         
@@ -378,21 +396,21 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
         <div class="row text-center" style="height: 30px; margin-top: 30px">
             <div class="col-xs-5" style="border-bottom: 1px solid #c7c7c7; left: 10px;"></div>
             <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 18px">
-                <span>אחוז מתקשים</span></div>
+                <span>מתקשים</span></div>
                 <div class="col-xs-5 " style="border-bottom: 1px solid #c7c7c7; right: 10px; "></div>
             </div>
             <div class="row" style="direction: ltr">
                 <div class="col-xs-3">
-                    <div id="Country4LowPlot" class="plotly html-widget html-widget-output"></div>
-                </div>
-                <div class="col-xs-3">
-                    <div id="Country3LowPlot" class="plotly html-widget html-widget-output"></div>
+                    <div id="Country1LowPlot" class="plotly html-widget html-widget-output"></div>
                 </div>
                 <div class="col-xs-3">
                     <div id="Country2LowPlot" class="plotly html-widget html-widget-output"></div>
                 </div>
                 <div class="col-xs-3">
-                    <div id="Country1LowPlot" class="plotly html-widget html-widget-output"></div>
+                    <div id="Country3LowPlot" class="plotly html-widget html-widget-output"></div>
+                </div>
+                <div class="col-xs-3">
+                    <div id="Country4LowPlot" class="plotly html-widget html-widget-output"></div>
                 </div>
             </div>
         </div>
@@ -400,7 +418,7 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
     <!--Survey-->
     <section>
         <div id="survey" class="container-fluid">
-          <p style="font-size: 18px">אקלים</p>
+          <p style="font-size: 18px">שאלונים</p>
           <div>
             <p>יחד עם המבחן מועברים שאלונים לתלמידי ולמנהלי בתי הספר.
                 השאלונים נוגעים בעמדות, תפיסות ותשתיות חינוכיות בבית ובבית הספר. נזכיר כי ישנה הטיה רבה בשאלונים.
@@ -412,94 +430,33 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
 
        <div class="row" style="direction: ltr">
           <div class="col-xs-3">
-            <div id="Country4SurveyPlot" class="plotly html-widget html-widget-output"></div>
-        </div>
-        <div class="col-xs-3">
-            <div id="Country3SurveyPlot" class="plotly html-widget html-widget-output"></div>
+            <div id="Country1SurveyPlot" class="plotly html-widget html-widget-output"></div>
         </div>
         <div class="col-xs-3">
             <div id="Country2SurveyPlot" class="plotly html-widget html-widget-output"></div>
         </div>
         <div class="col-xs-3">
-            <div id="Country1SurveyPlot" class="plotly html-widget html-widget-output"></div>
+            <div id="Country3SurveyPlot" class="plotly html-widget html-widget-output"></div>
+        </div>
+        <div class="col-xs-3">
+            <div id="Country4SurveyPlot" class="plotly html-widget html-widget-output"></div>
         </div>
     </div>
-    <br/>
-    <button type="button" class="btn btn-countries" data-toggle="modal" data-target="#myModal">
-       מילון פריטים
-   </button>
-
-   <!-- Modal -->
-   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">מילון משתנים</h4>
-        </div>
-        <div class="modal-body">
-            <div id="pisaScoresTable" class="datatables html-widget html-widget-output"></div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">סגור</button>
-        </div>
-    </div>
-</div>
-</div>
-               <!-- <br/>
-               <button id="pisaDictionary" type="button" class="btn btn-default action-button shiny-bound-input">מילון משתנים</button>-->
-                    <!--<div id="SurveySelectedIDOutput" class="shiny-text-output"></div>
-                    <div id="pisaScoresTable" class="datatables html-widget html-widget-output"></div>-->
+<!--<div id="SurveySelectedIDOutput" class="shiny-text-output"></div></div>-->
                 </div>
             </section>
             <!--Analyze-->
             <section>
 
               <div id="analyze" class="container-fluid">
-                  <p style="font-size: 18px">מִתאם</p>
+                  <p style="font-size: 18px">ניתוח</p>
                   <div class="text-justify">
                     <p>האם ישנו קשר בין הישגי התלמידים לבין עמדות ומשתני אקלים? בעזרת כלים סטטיסטיים שונים נבדוק האם אפשר לזהות  מתאם או קשר סיבתי המשפיע על ההישגים בכיתה.</p>
                    <p>
     בדוגמא שלפנינו נבדוק האם ישנו מתאם בין המצאות שולחן לימודים בבית התלמיד לבין ציוניו. כל נקודה בגרף מציינת את תשובת התלמיד אל מול הציון שקיבל במקצוע שנבחר. מקדם המתאם המרובה, R², מלמד כי קשר זה הוא זניח. N מסמן את מספר התלמידים. בחלק זה מומלץ לבחון את מדדי התלמידים ומדדי בית הספר אשר מחושבים על בסיס מספר פריטים בשאלון.
 </p>
+<p>הנתונים מחושבים בזמן אמת ועל כן תיתכן המתנה בת מספר שניות.</p>
                         </div>
-                        <!--<div id="analyzeDashboard" class="row">
-                          <div class="col-xs-3"></div>
-                          
-                          <div class="col-xs-3 ">
-                            <div class="form-group shiny-input-container">
-                                <span>מודל סטטיסטי</span>
-                                <select id="ModelId">
-                                </select>
-                                <script type="application/json" data-for="ModelId">{}</script>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-3">
-                            <div class="form-group shiny-input-container">
-                              <span>שם מדד</span>
-                              <label class="control-label" for="AnalyzeVariable"></label>
-                              <div>
-                                <select id="AnalyzeVariable">
-                                    <option value="" selected></option>
-                                </select>
-                                <script type="application/json" data-for="AnalyzeVariable">{}</script>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3">
-                        <div class="form-group shiny-input-container">
-                          <span>שנת מבחן</span>
-                          <label class="control-label" for="AnalyzeYear"></label>
-                          <div>
-                            <select id="AnalyzeYear">
-                                <option value="" selected></option>
-                            </select>
-                            <script type="application/json" data-for="AnalyzeYear">{}</script>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
             <br/>
             <div class="row" style="direction:ltr">
                 <div class="col-xs-3 ">
@@ -519,11 +476,7 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
                 <div id="Country4AnalyzePlotText" class="shiny-text-output"></div>
             </div>
         </div>
-        <div class="row col-xs-12" style="height: 30px; ">
-
-        </div>
     </div>
-
 </section>
 </body>
 </html>
