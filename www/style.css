@@ -34,12 +34,12 @@ html {
   min-height:200px;
 }
 
-#scores {
+#proficiency {
   width:100%;
   padding-top:1px;
 }
 
-#expertise, #survey, #analyze {
+#proficiency, #expertise, #questionnaire, #analyze {
  padding-bottom:100px;
 }
 
@@ -282,11 +282,11 @@ input[type="checkbox"] {
 .selectize-input {
     border-radius: 0;
     line-height: 1.333333333;
-    font-size: 1.5vw;
+    font-size: 16pt;
     color: #777777;
 }
 
-/*
+
 .selectize-input > * {
   vertical-align: middle;
 }
@@ -297,7 +297,7 @@ input[type="checkbox"] {
   
 }
 
-/* respnonsive 
+/* respnonsive */
 .selectize-input {
   display: table !important;
   table-layout: fixed;
@@ -310,9 +310,9 @@ input[type="checkbox"] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 90%;
+  max-width: 88%;
 }
-*/
+
 
 
 .plotly, .shiny-plot-output {

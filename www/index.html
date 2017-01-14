@@ -74,7 +74,7 @@
           <a class="page-scroll" href="#analyze">ניתוח</a>
       </li>
       <li>
-        <a class="page-scroll" href="#survey">שאלונים</a>
+        <a class="page-scroll" href="#questionnaire">שאלונים</a>
     </li>
     <!--<li>-->
     <!--<a class="page-scroll" href="#heterogeneity">פיזור</a>-->
@@ -83,7 +83,7 @@
         <a class="page-scroll" href="#expertise">בקיאות</a>
     </li>
     <li>
-        <a class="page-scroll" href="#scores">הישגים</a>
+        <a class="page-scroll" href="#proficiency">מיומנות</a>
     </li>
 </ul>
 </div>
@@ -93,7 +93,7 @@
 <header>
   <div id="myHeader">
     <div class="header-image"></div>
-    <div class="text-image">מה מספר מבחן פיזה?</div>   
+    <div class="text-image hidden-xs">מה מספר מבחן פיזה?</div>   
     <div class="underHeaderText">
         פיזה הוא מבחן בינלאומי בתחום החינוך הנערך בקרב תלמידים בני חמש-עשרה ברחבי העולם. הוא כולל נְתוּנֵי עָתֵק המתארים מגמות במערכות חינוך שונות. פיזה פתוח הוא פרויקט ראשון בעולם המאפשר גישה נוחה למחקר של נתונים אלו.  
     </div>
@@ -107,7 +107,7 @@
           <br/>
 <div class="row">
 <div id="measurmentsDashboard">
-              <div id="escsDiv" class="col-xs-3">
+              <div id="escsDiv" class="col-xs-6 col-sm-3">
                 <small>
                     <a href="#" data-toggle="tooltip" title="הרקע מחושב על בסיס שאלונים שמעוברים לתלמידים">
                       רקע חברתי-תרבותי-כלכלי
@@ -131,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <div id="genderDiv" class="col-xs-3">
+        <div id="genderDiv" class="col-xs-6 col-sm-3">
             <small>מגדר</small>
             <div id="Gender"
             class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-container-inline">
@@ -150,7 +150,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-3">
+    <div class="col-xs-6 col-sm-3">
         <div id="worldOrIsrael" class="form-group shiny-input-radiogroup shiny-input-container">
             <form class="form-horizontal" method="post" action="">
                 <div data-toggle="buttons">
@@ -190,7 +190,7 @@
     </div>
 </div>
 <div id="Subject"
-class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-container shiny-input-container-inline">
+class="col-xs-6 col-sm-3 text-center form-group shiny-input-radiogroup shiny-input-container shiny-input-container-inline">
 <div class="shiny-options-group">
     <form class="form-horizontal" method="post" action="">
         <div data-toggle="buttons">
@@ -237,7 +237,7 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
 </div>
 </div>
 <div id="surveyDashboard" class="row">
-    <div class="col-xs-3">
+    <div class="col-xs-6 col-sm-3">
         <div class="form-group shiny-input-container">
           <span>שאלה</span>
           <label class="control-label" for="SurveySubCategory"></label>
@@ -250,7 +250,7 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
     </div>
 
 </div>
-<div class="col-xs-3">
+<div class="col-xs-6 col-sm-3">
     <div class="form-group shiny-input-container">
       <span>תחום</span>
       <label class="control-label" for="SurveyCategory"></label>
@@ -262,7 +262,7 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
     </div>
 </div>
 </div>
-<div class="col-xs-3">
+<div class="col-xs-6 col-sm-3">
     <div class="form-group shiny-input-container">
       <span>נושא שאלון</span>
       <label class="control-label" for="SurveySubject"></label>
@@ -274,7 +274,7 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
     </div>
 </div>
 </div>
-<div class="col-xs-3">
+<div class="col-xs-6 col-sm-3">
     <div class="form-group shiny-input-container">
       <span>שנת מבחן</span>
       <label class="control-label" for="SurveyYear"></label>
@@ -288,7 +288,7 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
 </div>
 </div>
 <div id="countriesDashboard" class="row">
-    <div class="col-xs-3">
+    <div class="col-xs-12 col-sm-3">
         <div class="form-group shiny-input-container">
             <label class="control-label" for="Country1"></label>
             <div>
@@ -299,7 +299,7 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
             </div>
         </div>
     </div>
-    <div class="col-xs-3">
+    <div class="hidden-xs col-sm-3">
         <div class="form-group shiny-input-container">
             <label class="control-label" for="Country2"></label>
             <div>
@@ -311,7 +311,7 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
         </div>
 
     </div>
-    <div class="col-xs-3">
+    <div class="hidden-xs col-sm-3">
         <div class="form-group shiny-input-container">
             <label class="control-label" for="Country3"></label>
             <div>
@@ -322,7 +322,7 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
             </div>
         </div>
     </div>
-    <div class="col-xs-3">
+    <div class="hidden-xs col-sm-3">
         <div class="form-group shiny-input-container">
             <label class="control-label" for="Country4"></label>
             <div>
@@ -337,29 +337,29 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
 </div>
 </div>
 </section>
-<!--Scores-->
+<!--proficiency-->
 <section>
-    <div id="scores" class="container-fluid">
+    <div id="proficiency" class="container-fluid">
         <div class="row" style="direction: ltr">
-            <div class="col-xs-3 ">
+            <div class="col-xs-12 col-sm-3">
                 <div id="Country1Plot" class="plotly html-widget html-widget-output"></div>
             </div>
-            <div class="col-xs-3 ">
+            <div class="hidden-xs col-sm-3">
                 <div id="Country2Plot" class="plotly html-widget html-widget-output"></div>
             </div>
-            <div class="col-xs-3 ">
+            <div class="hidden-xs col-sm-3">
                 <div id="Country3Plot" class="plotly html-widget html-widget-output"></div>
             </div>
-            <div class="col-xs-3 ">
+            <div class="hidden-xs col-sm-3">
                 <div id="Country4Plot" class="plotly html-widget html-widget-output"></div>
             </div>
         </div>
         <div class="row">
             <br>
 
-            <div class="col-xs-9">מה מאפיין תלמידים ברמה זו?</div>
-            <div id="ExplenationTable" class="shiny-html-output col-xs-9 text-justify "></div>
-            <div id="LevelNumberDiv" class="form-group shiny-input-container col-xs-3">
+            <div class="hidden-xs col-sm-9">מה מאפיין תלמידים ברמת מיומנות זו?</div>
+            <div id="ExplenationTable" class="shiny-html-output hidden-xs col-sm-9 text-justify "></div>
+            <div id="LevelNumberDiv" class="form-group shiny-input-container hidden-xs col-sm-3">
                 <span>רמת מיומנות</span>
                 <input id="LevelNumber" type="number" class="form-control" value="3" min="1" max="6" step="1"/>
             </div>
@@ -377,16 +377,16 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
             <div class="col-xs-5 " style="border-bottom: 1px solid #c7c7c7; right: 10px; "></div>
         </div>
         <div class="row" style="direction: ltr">
-            <div class="col-xs-3 ">
+            <div class="col-xs-12 col-sm-3">
                 <div id="Country1HighPlot" class="plotly html-widget html-widget-output"></div>
             </div>
-            <div class="col-xs-3 ">
+            <div class="hidden-xs col-sm-3">
                 <div id="Country2HighPlot" class="plotly html-widget html-widget-output"></div>
             </div>
-            <div class="col-xs-3 ">
+            <div class="hidden-xs col-sm-3">
                 <div id="Country3HighPlot" class="plotly html-widget html-widget-output"></div>
             </div>
-            <div class="col-xs-3">
+            <div class="hidden-xs col-sm-3">
                 <div id="Country4HighPlot" class="plotly html-widget html-widget-output"></div>
             </div>
         </div>
@@ -400,45 +400,45 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
                 <div class="col-xs-5 " style="border-bottom: 1px solid #c7c7c7; right: 10px; "></div>
             </div>
             <div class="row" style="direction: ltr">
-                <div class="col-xs-3">
+                <div class="col-xs-12 col-sm-3">
                     <div id="Country1LowPlot" class="plotly html-widget html-widget-output"></div>
                 </div>
-                <div class="col-xs-3">
+                <div class="hidden-xs col-sm-3">
                     <div id="Country2LowPlot" class="plotly html-widget html-widget-output"></div>
                 </div>
-                <div class="col-xs-3">
+                <div class="hidden-xs col-sm-3">
                     <div id="Country3LowPlot" class="plotly html-widget html-widget-output"></div>
                 </div>
-                <div class="col-xs-3">
+                <div class="hidden-xs col-sm-3">
                     <div id="Country4LowPlot" class="plotly html-widget html-widget-output"></div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Survey-->
+    <!--questionnaire-->
     <section>
-        <div id="survey" class="container-fluid">
+        <div id="questionnaire" class="container-fluid">
           <p style="font-size: 18px">שאלונים</p>
-          <div>
+          <div class="hidden-xs">
             <p>יחד עם המבחן מועברים שאלונים לתלמידי ולמנהלי בתי הספר.
                 השאלונים נוגעים בעמדות, תפיסות ותשתיות חינוכיות בבית ובבית הספר. נזכיר כי ישנה הטיה רבה בשאלונים.
             </p>
-            <p>
+            <!--<p>
                בדוגמא שלפנינו נשאלו התלמידים האם בביתם ישנו מחשב שולחני והאם הם משתמשים בו. הגרף מציג את התפלגות התשובות באחוזים.
-           </p>
+           </p>-->
        </div>
 
        <div class="row" style="direction: ltr">
-          <div class="col-xs-3">
+          <div class="col-xs-12 col-sm-3">
             <div id="Country1SurveyPlot" class="plotly html-widget html-widget-output"></div>
         </div>
-        <div class="col-xs-3">
+        <div class="hidden-xs col-sm-3">
             <div id="Country2SurveyPlot" class="plotly html-widget html-widget-output"></div>
         </div>
-        <div class="col-xs-3">
+        <div class="hidden-xs col-sm-3">
             <div id="Country3SurveyPlot" class="plotly html-widget html-widget-output"></div>
         </div>
-        <div class="col-xs-3">
+        <div class="hidden-xs col-sm-3">
             <div id="Country4SurveyPlot" class="plotly html-widget html-widget-output"></div>
         </div>
     </div>
@@ -450,28 +450,28 @@ class="col-xs-3 text-center form-group shiny-input-radiogroup shiny-input-contai
 
               <div id="analyze" class="container-fluid">
                   <p style="font-size: 18px">ניתוח</p>
-                  <div class="text-justify">
+                  <div class="text-justify hidden-xs">
                     <p>האם ישנו קשר בין הישגי התלמידים לבין עמדות ומשתני אקלים? בעזרת כלים סטטיסטיים שונים נבדוק האם אפשר לזהות  מתאם או קשר סיבתי המשפיע על ההישגים בכיתה.</p>
-                   <p>
+                   <!--<p>
     בדוגמא שלפנינו נבדוק האם ישנו מתאם בין המצאות שולחן לימודים בבית התלמיד לבין ציוניו. כל נקודה בגרף מציינת את תשובת התלמיד אל מול הציון שקיבל במקצוע שנבחר. מקדם המתאם המרובה, R², מלמד כי קשר זה הוא זניח. N מסמן את מספר התלמידים. בחלק זה מומלץ לבחון את מדדי התלמידים ומדדי בית הספר אשר מחושבים על בסיס מספר פריטים בשאלון.
-</p>
+</p>-->
 <p>הנתונים מחושבים בזמן אמת ועל כן תיתכן המתנה בת מספר שניות.</p>
                         </div>
             <br/>
             <div class="row" style="direction:ltr">
-                <div class="col-xs-3 ">
+                <div class="col-xs-12 col-sm-3">
                   <div id="Country1AnalyzePlot" class="shiny-plot-output"></div>
                   <div id="Country1AnalyzePlotText" class="shiny-text-output"></div>
               </div>
-              <div class="col-xs-3">
+              <div class="hidden-xs col-sm-3">
                 <div id="Country2AnalyzePlot" class="shiny-plot-output"></div>
                 <div id="Country2AnalyzePlotText" class="shiny-text-output"></div>
             </div>
-            <div class="col-xs-3">
+            <div class="hidden-xs col-sm-3">
                 <div id="Country3AnalyzePlot" class="shiny-plot-output"></div>
                 <div id="Country3AnalyzePlotText" class="shiny-text-output"></div>
             </div>
-            <div class="col-xs-3">
+            <div class="hidden-xs col-sm-3">
                 <div id="Country4AnalyzePlot" class="shiny-plot-output"></div>
                 <div id="Country4AnalyzePlotText" class="shiny-text-output"></div>
             </div>

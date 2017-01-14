@@ -78,13 +78,13 @@ $(document).ready(function () {
 $(document).on('activate.bs.scrollspy', function(e) {
    var x = $(".nav li.active > a").attr('href');
   switch (x) {
-            case "#scores":
+            case "#proficiency":
                 $("#surveyDashboard").hide();
                 break;
             case "#expertise":
                $("#surveyDashboard").show();
                 break;
-            case "#survey":
+            case "#questionnaire":
                 $("#surveyDashboard").show();
                 break;
             case "#analyze":
