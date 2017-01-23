@@ -154,7 +154,7 @@ observe({
               panel.grid.minor = element_blank(),
               axis.text.y = element_text(size=8, angle=0),
               panel.spacing.x=unit(2, "lines"),
-              axis.title=element_text(colour="#777777")
+              axis.title=element_text(colour="#777777", size=10)
               #axis.line.x = element_line(color="#c7c7c7", size = 0.3),
               #axis.line.y = element_line(color="#c7c7c7", size = 0.3)
         ) 

@@ -2582,17 +2582,17 @@ ICTRES,ICT Resources (WLE),Student Index,Famiy and Home,ICT Resources (WLE),,,,2
 WEALTH,Family wealth (WLE),Student Index,Famiy and Home,Family wealth (WLE),מדדי תלמידים,משפחה ובית,עושר,2015
 ESCS,"Index of economic, social and cultural status (WLE)",Student Index,Famiy and Home,"Index of economic, social and cultural status (WLE)",,,,2015
 LANGTEST,Language of Questionnaire\Assessment,Student Index,Test,Language of Questionnaire\Assessment,,,,2015
-SC001Q01TA,Which of the following definitions best describes the community in which your school is located?,School,Location,,,קהילת בית הספר,,2015
-SC002Q01TA,"As at <February 1, 2014>, what was the total school enrolment (number of students)? Number of boys:",School,Number of students,Boys,,גודל,מספר בנים,2015
-SC002Q02TA,"As at <February 1, 2014>, what was the total school enrolment (number of students)? Number of girls:",School,Number of students,Girls,,גודל,מספר בנות,2015
-SC003Q01TA,What is the average size of <test language> classes in <national modal grade for 15-year-olds> in your school?,School,Classes size,,,גודל,גודל כיתה,2015
-SC004Q01TA,Student-comp ratio in <national modal grade for 15-year-olds>. Total num.\stud. <national modal grade for 15-year-old,School,Student-comp ratio,Total num.\stud.,,מחשבים,יחס תלמיד-מחשב,2015
-SC004Q02TA,Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are avail for students for ed,School,Student-comp ratio,How many comps are avail for students for ed,,מחשבים,מספר מחשבים לתלמידים,2015
-SC004Q03TA,Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are connected to Internet\World,School,Student-comp ratio,How many comps are connected to Internet\World,,מחשבים,מספר מחשבים מחוברים לאינטרנט,2015
-SC004Q04NA,"Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are portable (e.g. laptop, tablet)?",School,Student-comp ratio,How many comps are portable,,מחשבים,מספר מחשבים ניידים,2015
-SC004Q05NA,Total No. of interactive whiteboards in the school altogether,School,Interactive whiteboards,,,מחשבים,מספר לוחות דיגיטלים,2015
-SC004Q06NA,Total No. of data projectors in the school altogether,School,Data projectors,,,מחשבים,מספר מקרנים,2015
-SC004Q07NA,Total No. of computers with internet connection available for teachers in the school.,School,Teacher-comp ratio,Total num.\teacher,,מחשבים,מספר מחשבים למורים,2015
+SC001Q01TA,Which of the following definitions best describes the community in which your school is located?,School,Location,,בית הספר,קהילת בית הספר,,2015
+SC002Q01TA,"As at <February 1, 2014>, what was the total school enrolment (number of students)? Number of boys:",School,Number of students,Boys,בית הספר,גודל,מספר בנים,2015
+SC002Q02TA,"As at <February 1, 2014>, what was the total school enrolment (number of students)? Number of girls:",School,Number of students,Girls,בית הספר,גודל,מספר בנות,2015
+SC003Q01TA,What is the average size of <test language> classes in <national modal grade for 15-year-olds> in your school?,School,Classes size,,בית הספר,גודל,גודל כיתה,2015
+SC004Q01TA,Student-comp ratio in <national modal grade for 15-year-olds>. Total num.\stud. <national modal grade for 15-year-old,School,Student-comp ratio,Total num.\stud.,בית הספר,מחשבים,יחס תלמיד-מחשב,2015
+SC004Q02TA,Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are avail for students for ed,School,Student-comp ratio,How many comps are avail for students for ed,בית הספר,מחשבים,מספר מחשבים לתלמידים,2015
+SC004Q03TA,Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are connected to Internet\World,School,Student-comp ratio,How many comps are connected to Internet\World,בית הספר,מחשבים,מספר מחשבים מחוברים לאינטרנט,2015
+SC004Q04NA,"Student-comp ratio in <national modal grade for 15-year-olds>. How many comps are portable (e.g. laptop, tablet)?",School,Student-comp ratio,How many comps are portable,בית הספר,מחשבים,מספר מחשבים ניידים,2015
+SC004Q05NA,Total No. of interactive whiteboards in the school altogether,School,Interactive whiteboards,,בית הספר,מחשבים,מספר לוחות דיגיטלים,2015
+SC004Q06NA,Total No. of data projectors in the school altogether,School,Data projectors,,בית הספר,מחשבים,מספר מקרנים,2015
+SC004Q07NA,Total No. of computers with internet connection available for teachers in the school.,School,Teacher-comp ratio,Total num.\teacher,בית הספר,מחשבים,מספר מחשבים למורים,2015
 SC053Q01TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Band, orchestra\choir",School,Activities,"Band, orchestra\choir",בית הספר,פעילויות,להקה,2015
 SC053Q02TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? School play\musical",School,Activities,School play\musical,בית הספר,פעילויות,הצגה או מחזמר של בית הספר,2015
 SC053Q03TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? School yrbk, newspaper",School,Activities,"School yrbk, newspaper",בית הספר,פעילויות,ספר מחזור או עיתון בית ספר,2015
@@ -2604,7 +2604,7 @@ SC053Q08TA,"<This academic year>,follow. activities\school offers<national modal
 SC053Q09TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Art club\activities.",School,Activities,Art club\activities.,בית הספר,פעילויות,מועדון אמנות,2015
 SC053Q10TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? Sport team\activities",School,Activities,Sport team\activities,בית הספר,פעילויות,קבוצת ספורט,2015
 SC053D11TA,"<This academic year>,follow. activities\school offers<national modal grade for 15-year-olds>? <country specific item>",School,Activities,country specific item,,,,2015
-SC059Q01NA,"Compared to other departments, our school's <school science department> is well equipped.",School science,Well equipped,,,,,2015
+SC059Q01NA,"Compared to other departments, our school's <school science department> is well equipped.",School,School science well equipped ,,,,,2015
 SC059Q02NA,"If we ever have some extra funding, a big share goes into improvement of our <school science> teaching.",,Extra funing,,,,,2015
 SC059Q03NA,<School science> teachers are among our best educated staff members.,,,,,,,2015
 SC059Q04NA,"Compared to similar schools, we have a well equipped laboratory.",,,,,,,2015
@@ -2687,20 +2687,26 @@ SC010Q12TB,Deciding which courses are offered: Teachers,Responsibility,Course of
 SC010Q12TC,Deciding which courses are offered: <School governing board>,Responsibility,Course offered,School governing board,מדיניות בית הספר,קביעת המקצועות,הנהגת הורים,2015
 SC010Q12TD,Deciding which courses are offered: <Regional or local education authority>,Responsibility,Course offered,Regional or local education authority,מדיניות בית הספר,קביעת המקצועות,רשת חינוך מקומית,2015
 SC010Q12TE,Deciding which courses are offered: National education authority,Responsibility,Course offered,National education authority,מדיניות בית הספר,קביעת המקצועות,משרד החינוך,2015
-SC012Q01TA,Student admission to school: Student's record of academic performance (including placement tests),School Policies and Practices,Student admission,Student's record of academic performance,מדיניות בית הספר,קבלת תלמידים,ההישגים הלימודיים שהיו לתלמיד בעבר (כולל מבחני מיון),2015
-SC012Q02TA,Student admission to school: Recommendation of feeder schools,School Policies and Practices,Student admission,Recommendation of feeder schools,מדיניות בית הספר,קבלת תלמידים,המלצות מבתי ספר קודמים,2015
-SC012Q03TA,Student admission to school: Parents' endorsement of the instructional or religious philosophy of the school,School Policies and Practices,Student admission,Parents' endorsement,מדיניות בית הספר,קבלת תלמידים,תמיכת ההורים בגישה החינוכית או הדתית של בית הספר,2015
-SC012Q04TA,Student admission to school: Whether the student requires or is interested in a special programme,School Policies and Practices,Student admission,Students,מדיניות בית הספר,קבלת תלמידים,האם התלמיד זקוק לתכנית מיוחדת או מעוניין במגמה מיוחד,2015
-SC012Q05TA,Student admission to school: Preference given to family members of current or former students,School Policies and Practices,Student admission,Family,מדיניות בית הספר,קבלת תלמידים,העדפה הניתנת לבני משפחה של תלמידים בהווה ושל תלמידים לשעבר,2015
-SC012Q06TA,Student admission to school: Residence in a particular area,School Policies and Practices,Student admission,Residence,מדיניות בית הספר,קבלת תלמידים,מגורים,2015
-SC012Q07TA,Student admission to school: Other,School Policies and Practices,Student admission,Other,מדיניות בית הספר,קבלת תלמידים,גורם אחר,2015
-SC013Q01TA,Is your school a public or a private school?,The Structure and Organisation of the School,Funding,public or private,,ציבורי או פרטי,,2015
-SC014Q01NA,What kind of organisation runs your school?,The Structure and Organisation of the School,Funding,Organisation,,עמותה,,2015
-SC016Q01TA,Percent. total funding for school year comes from? Government,The Structure and Organisation of the School,Funding,Government,,"מימון ממשלתי
-",,2015
-SC016Q02TA,Percent. total funding for school year comes from? Student fees or school charges paid by parents,The Structure and Organisation of the School,Funding,Students,,מימון הורים,,2015
-SC016Q03TA,"Percent. total funding for school year comes from? Benefactors, donations, bequests, sponsorships, parent funraising",The Structure and Organisation of the School,Funding,Benefactors,,מימון תורמים,,2015
-SC016Q04TA,Percent. total funding for school year comes from? Other,The Structure and Organisation of the School,Funding,Other,,מימון אחר,,2015
+SC012Q01TA,Student admission to school: Student's record of academic performance (including placement tests),Responsibility,Student admission,Student's record of academic performance,מדיניות בית הספר,קבלת תלמידים,ההישגים הלימודיים שהיו לתלמיד בעבר (כולל מבחני מיון),2015
+SC012Q02TA,Student admission to school: Recommendation of feeder schools,Responsibility,Student admission,Recommendation of feeder schools,מדיניות בית הספר,קבלת תלמידים,המלצות מבתי ספר קודמים,2015
+SC012Q03TA,Student admission to school: Parents' endorsement of the instructional or religious philosophy of the school,Responsibility,Student admission,Parents' endorsement,מדיניות בית הספר,קבלת תלמידים,תמיכת ההורים בגישה החינוכית או הדתית של בית הספר,2015
+SC012Q04TA,Student admission to school: Whether the student requires or is interested in a special programme,Responsibility,Student admission,Students,מדיניות בית הספר,קבלת תלמידים,האם התלמיד זקוק לתכנית מיוחדת או מעוניין במגמה מיוחד,2015
+SC012Q05TA,Student admission to school: Preference given to family members of current or former students,Responsibility,Student admission,Family,מדיניות בית הספר,קבלת תלמידים,העדפה הניתנת לבני משפחה של תלמידים בהווה ושל תלמידים לשעבר,2015
+SC012Q06TA,Student admission to school: Residence in a particular area,Responsibility,Student admission,Residence,מדיניות בית הספר,קבלת תלמידים,מגורים,2015
+SC012Q07TA,Student admission to school: Other,Responsibility,Student admission,Other,מדיניות בית הספר,קבלת תלמידים,גורם אחר,2015
+SC013Q01TA,Is your school a public or a private school?,School,Funding,public or private,בית הספר,"מימון
+",ציבורי או פרטי,2015
+SC014Q01NA,What kind of organisation runs your school?,School,Funding,Organisation,בית הספר,"מימון
+",עמותה,2015
+SC016Q01TA,Percent. total funding for school year comes from? Government,School,Funding,Government,בית הספר,"מימון
+","מימון ממשלתי
+",2015
+SC016Q02TA,Percent. total funding for school year comes from? Student fees or school charges paid by parents,School,Funding,Students,בית הספר,"מימון
+",מימון הורים,2015
+SC016Q03TA,"Percent. total funding for school year comes from? Benefactors, donations, bequests, sponsorships, parent funraising",School,Funding,Benefactors,בית הספר,"מימון
+",מימון תורמים,2015
+SC016Q04TA,Percent. total funding for school year comes from? Other,School,Funding,Other,בית הספר,"מימון
+",מימון אחר,2015
 SC017Q01NA,School instruction hindered by: A lack of teaching staff.,School instruction hindered,Teaching staff,Lack,,,,2015
 SC017Q02NA,School instruction hindered by: Inadequate or poorly qualified teaching staff.,School instruction hindered,Teaching staff,Inadequate\poor quality,,,,2015
 SC017Q03NA,School instruction hindered by: A lack of assisting staff.,School instruction hindered,Assisting staff,Lack,,,,2015

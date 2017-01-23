@@ -49,7 +49,7 @@ observe({
             #plot.title = element_text(hjust=0),
             #axis.title.y = element_text(angle=90, vjust=1),
             axis.line = element_line(color="#c7c7c7", size = 0.3),
-            axis.title=element_text(colour="#777777")
+            axis.title=element_text(colour="#777777", size=10)
             ) + 
       scale_x_continuous(breaks=c(2006, 2009, 2012, 2015)) +
       scale_y_continuous(limits=c(0, 105), breaks=c(0, 20, 40, 60, 80, 100),
@@ -143,7 +143,7 @@ observe({
             legend.position="none",
             panel.grid.major.y = element_line(colour="#e0e0e0", size=0.3),
             axis.line = element_line(color="#c7c7c7", size = 0.3),
-            axis.title=element_text(colour="#777777")
+            axis.title=element_text(colour="#777777", size=10)
             ) + 
       scale_x_continuous(breaks=c(2006, 2009, 2012, 2015)) +
       scale_y_continuous(limits=c(0, 105), breaks=c(0, 20, 40, 60, 80, 100),

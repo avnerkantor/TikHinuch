@@ -265,7 +265,6 @@ input[type="checkbox"] {
     color: #777777;
     float:right;
     margin-left:3px;
-    width:30%;
 }
 
 .btn-countries:active,
@@ -286,7 +285,6 @@ input[type="checkbox"] {
     color: #777777;
 }
 
-
 .selectize-input > * {
   vertical-align: middle;
 }
@@ -294,7 +292,6 @@ input[type="checkbox"] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  
 }
 
 /* respnonsive */
@@ -310,10 +307,8 @@ input[type="checkbox"] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 88%;
+  max-width: 90%;
 }
-
-
 
 .plotly, .shiny-plot-output {
     height: 200px;

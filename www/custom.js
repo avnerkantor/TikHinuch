@@ -62,7 +62,7 @@ $(document).ready(function () {
     
     var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 325
+            scrollTop: $($anchor.attr('href')).offset().top - 275
         }, 1500, 'easeInOutExpo');
     // Prevent default anchor click behavior
     event.preventDefault();

@@ -73,7 +73,6 @@ observe({
       guides(colour=FALSE) +
       labs(title="", y="רמת מיומנות" ,x= "שנת מבחן") +
       theme_bw() +
-      #geom_label() +
       theme(plot.margin=unit(c(0,15,5,10), "pt"),
             panel.border = element_blank(),
             axis.ticks = element_blank(),
@@ -81,7 +80,7 @@ observe({
             panel.grid.major.y = element_line(colour="#e0e0e0", size=0.3),
             legend.position="none",
             axis.line = element_line(color="#c7c7c7", size = 0.3),
-            axis.title=element_text(colour="#777777")
+            axis.title=element_text(colour="#777777", size = 10)
       ) +
       scale_x_continuous(breaks=c(2006, 2009, 2012, 2015)) +
       scale_y_continuous(

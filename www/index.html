@@ -13,30 +13,30 @@
     <script type="application/html-dependencies">
         json2[2014.02.04];
         jquery[1.12.4];
-        shiny[0.14.1];
+        shiny[1.0.0];
         selectize[0.11.2];
         bootstrap[3.3.7];
-        htmlwidgets[0.7];
+        htmlwidgets[0.8];
         plotlyjs[1.16.3];
-        plotly-binding[4.5.5.9000]
+        plotly-binding[4.5.6]
         
     </script>
-    <script src="shared/json2-min.js"></script>
-    <script src="shared/jquery.js"></script>
+    <script type="text/javascript" src="shared/json2-min.js"></script>
+    <script type="text/javascript" src="shared/jquery.js"></script>
     <link href="shared/shiny.css" rel="stylesheet"/>
-    <script src="shared/shiny.js"></script>
+    <script type="text/javascript" src="shared/shiny.js"></script>
     <link href="shared/selectize/css/selectize.bootstrap3.css" rel="stylesheet"/>
-    <script src="shared/selectize/js/selectize.min.js"></script>
-    <script src="js/htmlwidgets.js"></script>
+    <script type="text/javascript" src="shared/selectize/js/selectize.min.js"></script>
+    <script type="text/javascript" src="js/htmlwidgets.js"></script>
     <link href="css/plotly-htmlwidgets.css" rel="stylesheet"/>
-    <script src="js/plotly-latest.min.js"></script>
-    <script src="js/plotly.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/datatables.js"></script>
+    <script type="text/javascript" src="js/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="js/plotly.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/datatables.js"></script>
     <link href="shared/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="shared/bootstrap/js/bootstrap.min.js"></script>
-    <script src="shared/bootstrap/shim/html5shiv.min.js"></script>
-    <script src="shared/bootstrap/shim/respond.min.js"></script>
+    <script type="text/javascript" src="shared/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="shared/bootstrap/shim/html5shiv.min.js"></script>
+    <script type="text/javascript" src="shared/bootstrap/shim/respond.min.js"></script>
     <link href="style.css" rel="stylesheet">
     <script type="text/javascript" src="custom.js"></script>
     <script type="text/javascript" src="google-analytics.js"></script>
@@ -65,10 +65,13 @@
         <li><a class="page-scroll" href="http://openpisa.org">English</a>
         </li>
         <li>
-            <a class="page-scroll" href="http://blog.opisa.org">בלוג</a>
+            <a class="page-scroll" href="http://www.opisa.org/blog/">בלוג</a>
         </li>
         <li>
-          <a class="page-scroll" href="about.html">אודות</a>
+          <a class="page-scroll" href="http://www.opisa.org/blog/about/">אודות</a>
+      </li>
+      <li>
+          <a class="page-scroll" href="#dictionary" data-toggle="modal">מילון</a>
       </li>
       <li>
           <a class="page-scroll" href="#analyze">ניתוח</a>
@@ -109,7 +112,7 @@
 <div id="measurmentsDashboard">
               <div id="escsDiv" class="col-xs-6 col-sm-3">
                 <small>
-                    <a href="#" data-toggle="tooltip" title="הרקע מחושב על בסיס שאלונים שמעוברים לתלמידים">
+                    <a href="#" data-toggle="tooltip" title="החלוקה מתבצעת על ידי ה-OECD על בסיס שאלות תלמידים ומנהלי בתי ספר">
                       רקע חברתי-תרבותי-כלכלי
                       <span class="glyphicon glyphicon-question-sign"></span>
                   </a></small>
@@ -165,24 +168,6 @@
                             <input type="radio" name="worldOrIsrael" value="Israel"/>
                             <span>ישראל</span>
                         </label>
-                            <button type="button" class="btn btn-countries" data-toggle="modal" data-target="#myModal">שאלות</button>
-   <!-- Modal -->
-   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">מילון שאלות</h4>
-        </div>
-        <div class="modal-body">
-            <div id="pisaScoresTable" class="datatables html-widget html-widget-output"></div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">סגור</button>
-        </div>
-    </div>
-</div>
-</div>
                     </div>
                 </div>
             </form>
@@ -340,6 +325,8 @@ class="col-xs-6 col-sm-3 text-center form-group shiny-input-radiogroup shiny-inp
 <!--proficiency-->
 <section>
     <div id="proficiency" class="container-fluid">
+      <p style="font-size: 18px">מיומנות</p>
+       <p>מה רמת המיומנות והידע עמה מתחילים התלמידים את חייהם הבוגרים?</p>
         <div class="row" style="direction: ltr">
             <div class="col-xs-12 col-sm-3">
                 <div id="Country1Plot" class="plotly html-widget html-widget-output"></div>
@@ -370,6 +357,8 @@ class="col-xs-6 col-sm-3 text-center form-group shiny-input-radiogroup shiny-inp
 <section>
     <div id="expertise" class="container-fluid">
       <p style="font-size: 18px">בקיאות</p>
+      <p>האם מערכת החינוך מצליחה להגדיל את אחוז המצטיינים בה? האם היא מצליחה להקטין את אחוז המתקשים?</p>
+      <br/>
       <div class="row text-center" style="height: 30px">
         <div class="col-xs-5" style="border-bottom: 1px solid #c7c7c7; left: 10px;"></div>
         <div class="col-xs-2" style="color: #777777; margin-top: -10px; font-size: 18px">
@@ -420,12 +409,11 @@ class="col-xs-6 col-sm-3 text-center form-group shiny-input-radiogroup shiny-inp
         <div id="questionnaire" class="container-fluid">
           <p style="font-size: 18px">שאלונים</p>
           <div class="hidden-xs">
-            <p>יחד עם המבחן מועברים שאלונים לתלמידי ולמנהלי בתי הספר.
-                השאלונים נוגעים בעמדות, תפיסות ותשתיות חינוכיות בבית ובבית הספר. נזכיר כי ישנה הטיה רבה בשאלונים.
+            <p>במסגרת מבחן פיזה נאסף מידע אודות הרקע של התלמידים, הסביבה החינוכית ועמדותיהם ותפיסותיהם לגבי נושאי הלימוד הנבחנים. בנוסף לכך נשאלים מנהלי בתי הספר אודות מדיניות בית הספר והאקלים הבית-ספרי, כמות השעות הנלמדת, ועוד. זהו סיפורה של מערכת החינוך.
             </p>
-            <!--<p>
-               בדוגמא שלפנינו נשאלו התלמידים האם בביתם ישנו מחשב שולחני והאם הם משתמשים בו. הגרף מציג את התפלגות התשובות באחוזים.
-           </p>-->
+            <p>
+              נזכיר כי ישנה הטיה בתשובות התלמידים.
+           </p>
        </div>
 
        <div class="row" style="direction: ltr">
@@ -451,7 +439,7 @@ class="col-xs-6 col-sm-3 text-center form-group shiny-input-radiogroup shiny-inp
               <div id="analyze" class="container-fluid">
                   <p style="font-size: 18px">ניתוח</p>
                   <div class="text-justify hidden-xs">
-                    <p>האם ישנו קשר בין הישגי התלמידים לבין עמדות ומשתני אקלים? בעזרת כלים סטטיסטיים שונים נבדוק האם אפשר לזהות  מתאם או קשר סיבתי המשפיע על ההישגים בכיתה.</p>
+                    <p>מה מביא לידי הישגים לימודיים גבוהים? האם  אפשר להסביר את רמת ההישגים הלימודיים באמצעות משתני רקע ומשתנים אחרים?</p>
                    <!--<p>
     בדוגמא שלפנינו נבדוק האם ישנו מתאם בין המצאות שולחן לימודים בבית התלמיד לבין ציוניו. כל נקודה בגרף מציינת את תשובת התלמיד אל מול הציון שקיבל במקצוע שנבחר. מקדם המתאם המרובה, R², מלמד כי קשר זה הוא זניח. N מסמן את מספר התלמידים. בחלק זה מומלץ לבחון את מדדי התלמידים ומדדי בית הספר אשר מחושבים על בסיס מספר פריטים בשאלון.
 </p>-->
@@ -477,6 +465,25 @@ class="col-xs-6 col-sm-3 text-center form-group shiny-input-radiogroup shiny-inp
             </div>
         </div>
     </div>
+</section>
+   <!-- Dictionary Modal -->
+   <section>
+   <div class="modal fade" id="dictionary" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">מילון שאלונים</h4>
+        </div>
+        <div class="modal-body">
+            <div id="pisaScoresTable" class="datatables html-widget html-widget-output"></div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">סגור</button>
+        </div>
+    </div>
+</div>
+</div>
 </section>
 </body>
 </html>
