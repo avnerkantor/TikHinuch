@@ -2,11 +2,11 @@
 
 load("data/pisaData2.rda")
 
-#download.file(url = "https://docs.google.com/spreadsheets/d/1LYmlzL14xQlF-nRen9a6morTmU0FsULSoee8xWEw9fA/pub?gid=1417149183&single=true&output=csv", destfile="data/pisaDictionary.csv", 'curl')
+download.file(url = "https://docs.google.com/spreadsheets/d/1LYmlzL14xQlF-nRen9a6morTmU0FsULSoee8xWEw9fA/pub?gid=1417149183&single=true&output=csv", destfile="data/pisaDictionary.csv", 'curl')
 pisaDictionary<-read.csv("data/pisaDictionary.csv", header = TRUE, sep=",")
 #load("data/pisaDictionary.rda")
 
-#download.file(url = "https://docs.google.com/spreadsheets/d/1pIBORUHzR27VIfesPASPmELb3QUxlf2rvB2ODNp9NjQ/pub?gid=0&single=true&output=csv", destfile="data/itemsDictionary.csv", 'curl')
+download.file(url = "https://docs.google.com/spreadsheets/d/1pIBORUHzR27VIfesPASPmELb3QUxlf2rvB2ODNp9NjQ/pub?gid=0&single=true&output=csv", destfile="data/itemsDictionary.csv", 'curl')
 itemsDictionary<-read.csv("data/itemsDictionary.csv", header = TRUE, sep=",")
 
 print("loading pisa 2015")
@@ -38,8 +38,8 @@ Countries<-read.csv("data/countries.csv", header = TRUE, sep=",")
 countriesList<-Countries$CNT
 names(countriesList)<-Countries$Hebrew
 
-ExpertiseLevels<-read.csv("data/ExpertiseLevels.csv", header = TRUE, sep=",")
-ExpertiseLevelsLimits<-read.csv("data/expertiseLevelsLimits.csv", header = TRUE, sep=",")
+ExpertiseLevels<-read.csv("data/expertiseLevels2.csv", header = TRUE, sep=",")
+ExpertiseLevelsLimits<-read.csv("data/expertiseLevelsLimits2.csv", header = TRUE, sep=",")
 #download.file(url = "https://docs.google.com/spreadsheets/d/1RlZdX9bp4d-CxGd-bpR85Ye0tN5_CAdCCqnjqTC1i0E/pub?gid=439183945&single=true&output=csv", destfile="data/LevelExplenation.csv", 'curl')
 LevelExplenation<-read.csv("data/LevelExplenation.csv", header = TRUE, sep=",")
 

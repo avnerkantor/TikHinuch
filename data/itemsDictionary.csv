@@ -1,12 +1,146 @@
-English,Hebrew
-Checked,נכון
-Not checked,לא-נכון
+English,Hebrew,,
+Checked,נכון,,
+Not checked,לא-נכון,,
 No,"לא
+",,
+"Yes, and I use it",כן ואני משתמש,,
+"Yes, but I don't use it",לא ואני לא משתמש,,
+Agree,מסכים,,
+Disagree,לא מסכים,,
+Strongly agree,מאוד מסכים,,
+Strongly disagree,מאוד לא מסכים,,
+Yes,כן,,
+Every lesson,כל שיעור,,
+Most lessons,רוב השיעורים,,
+Never or hardly ever,אף פעם,,
+Some lessons,חלק מהשיעורים,,
+ISCED level 6,תואר שלישי,,
+ISCED level 5A,תואר אקדמי,,
+ISCED level 5B,לימודי תעודה,,
+ISCED level 4,תעודת בגרות,,
+ISCED level 3,"לימודי תיכון
+",,
+ISCED level 2,חטיבת ביניים,,
+ISCED level 1,יסודי,,
+ISCED level 0,"טרום יסודי
+",,
+General,כללית,,
+Vocational,מקצועית,,
+Did not repeat a <grade>,לא נשאר כיתה,,
+Repeated a <grade>,נשאר כיתה,,
+Grade 12,כיתה יב,,
+Grade 11,כיתה יא,,
+Grade 10,כיתה י,,
+Grade 9,כיתה ט,,
+Grade 8,כיתה ח,,
+Grade 7,כיתה ז,,
+"No, never",אף פעם,,
+"Yes, once",פעם אחת,,
+"Yes, twice or more",לפחות פעמיים,,
+"<ISCED level 1>
+",יסודי,,
+"<ISCED level 2>
+",חטיבת ביניים,,
+"<ISCED level 3A>
+","תעודת בגרות
+",,
+"<ISCED level 3B, 3C>
+",ללא תעודת בגרות,,
+She did not complete <ISCED level 1>,ללא השכלה,,
+He did not complete <ISCED level 1>,ללא השכלה,,
+Language of test,שפת המבחן,,
+Other language,שפות אחרות,,
+Country of test,מדינת המבחן,,
+Other country,"מדינה אחרת
+",,
+Almost every day,כמעט כל יום,,
+Every day,כל יום,,
+Once or twice a month,פעם או פעמיים בחודש,,
+Once or twice a week,פעם או פעמיים בשבוע,,
+1-30 minutes per day,בין דקה לחצי שעה ביום,,
+31-60 minutes per day,בין חצי שעה לשעה ביום,,
+Between 1 hour and 2 hours per day,בין שעה לשעתיים ביום,,
+Between 2 hours and 4 hours per day,בין שעתיים לארבע שעות ביום,,
+Between 4 hours and 6 hours per day,בין ארבע לשש שעות ביום,,
+More than 6 hours per day,יותר משש שעות ביום,,
+No time,בכלל לא,,
+Get worse,יחמירו,,
+Improve,ישתפרו,,
+Stay about the same,ללא שינוי,,
+Five or more times,"חמש פעמים או יותר
+",,
+None,אין,,
+One or two times,פעם או פעמיים,,
+Three or four times,שלוש או ארבע פעמים,,
+In all lessons,בכל השיעורים,,
+In most lessons,ברוב השיעורים,,
+In some lessons,בחלק מהשיעורים,,
+"I am familiar with this and I would be able to explain this well
+",יכול להסביר טוב,,
+I have never heard of this,"לא שמעתי
+",,
+I know something about this and could explain the general issue,יכול להסביר בכלליות,,
+I heard about this but I would not be able to explain what it is really about,לא יכול להסביר,,
+10-12 years old,בני 10-12,,
+13 years old or older,בני 13 ומעלה,,"
 "
-"Yes, and I use it",כן ואני משתמש
-"Yes, but I don't use it",לא ואני לא משתמש
-Agree,מסכים
-Disagree,לא מסכים
-Strongly agree,מאוד מסכים
-Strongly disagree,מאוד לא מסכים
-Yes,כן
+6 years old or younger,"בני 6 ומטה
+",,
+7-9 years old,בני 7-9,,
+I have never used a digital device until today,לא השתמשתי,,
+I have never used a computer,לא השתמשתי,,
+I have never accessed the Internet,לא השתמשתי,,
+Every lesson or almost every lesson,כל שיעור,,
+Many lessons,רוב השיעורים,,
+Never or almost never,אף פעם,,
+Hardly interested,בקושי מתעניין,,
+Highly interested,מאוד מתעניין,,
+I don't know what this is,לא יודע מה זה,,
+Interested,מתעניין,,
+Not interested,לא מתעניין,,
+Strongly Agree,מאוד מסכים,,
+Strongly Disagree,מאוד לא מסכים,,
+I could do this easily,יכול בקלות,,
+I could do this with a bit of effort,יכול עם מאמץ,,
+I couldn't do this,לא יכול,,
+I would struggle to do this on my own,אתקשה,,
+15 students or fewer,15 תלמידים ומטה,,
+16-20 students,16-20 תלמידים,,
+21-25 students,21-25 תלמידים,,
+26-30 students,26-30 תלמידים,,
+31-35 students,31-35 תלמידים,,
+36-40 students,36-40 תלמידים,,
+41-45 students,41-45 תלמידים,,
+46-50 students,46-50 תלמידים,,
+"
+More than 50 students
+",50 תלמידים ומעלה,,
+A large city (with over 1 000 000 people),"עיר גדולה מאוד
+",,
+A city (100 000 to about 1 000 000 people),"עיר גדולה
+",,
+A small town (3 000 to about 15 000 people),עיר קטנה,,
+A town (15 000 to about 100 000 people),עיירה,,
+"A village, hamlet or rural area (fewer than 3 000 people)",יישוב קהילתי,,
+1-2 times during the year,פעם-פעמים בשנה,,
+3-4 times during the year,שלוש-ארבע פעמים בשנה,,
+More than once a week,יותר מפעם בשבוע,,
+Once a month,פעם בחודש,,
+Once a week,פעם בשבוע,,
+A lot,הרבה,,
+Not at all,כלל לא,,
+To some extent,במידה מסוימת,,
+Very little,מעט מאוד,,
+No for other reasons,"לא, בגלל סיבות אחרות",,
+"No, because results were satisfactory","לא, בגלל שהתוצאות היו מספקות",,
+"Yes, based on school initiative","כן, ביוזמת בית הספר",,
+"Yes, this is mandatory, e.g. based on district or ministry policies","כן, זה חובה",,
+For all subjects,"כל המקצועות
+",,
+For some subjects,חלק מהמקצועות,,
+Not for any subjects,"אף מקצוע
+",,
+,,,
+"No, not at all",לא,,
+"Yes, I can choose freely",כן,,
+"Yes, to a certain degree",במידה מסוימת,,

@@ -5,15 +5,12 @@ observe({
 })
 
 observeEvent(input$SurveyYear,{
-  choices<-list("שאלון תלמידים"=c("משפחה ובית","בית הספר", "לימודי מדעים", "זמינות ושימוש באמצעי תקשוב", "שיעורי עזר", "שיעורי עזר במדעים", "שיעורי עזר במתמטיקה", "שיעורי עזר בקריאה"), 
-                "שאלון מנהלים"=c("מדיניות בית הספר"), "מדדים"=c("מדדי תלמידים","מדדי בית ספר"))
-
+  choices<-list("שאלון תלמידים"=c("משפחה ובית", "תחושות","בית הספר", "לימודי מדעים", "אמצעי תקשוב"), "שאלון תלמידים (לא בישראל)" =  c("שיעורי עזר", "שיעורי עזר במדעים", "שיעורי עזר במתמטיקה", "שיעורי עזר בקריאה"), "שאלון מנהלים"=c("מאפייני בית הספר", "ניהול בית הספר", "צוות ההוראה", "מדידה והערכה", "הקבצות", "אקלים בית הספר"), "מדדים"=c("מדדי תלמידים","מדדי בית ספר"))
   switch(input$SurveyYear,
          "2015"={choices<-choices},
          "2012"={choices<-c(unique(pisaDictionary%>%filter(Year=="2012")%>%select(HebSubject)))}
   )
-  updateSelectInput(session, "SurveySubject", "", choices = choices, selected="זמינות ושימוש באמצעי תקשוב")
-})
+  updateSelectInput(session, "SurveySubject", "", choices = choices, selected="אמצעי תקשוב")})
 
 observeEvent(input$SurveySubject,{
   updateSelectInput(session, "SurveyCategory", "", as.vector(unlist(select(filter(pisaDictionary, Year == input$SurveyYear, HebSubject == input$SurveySubject), HebCategory))))

@@ -52,7 +52,7 @@ observe({
             axis.title=element_text(colour="#777777", size=10)
             ) + 
       scale_x_continuous(breaks=c(2006, 2009, 2012, 2015)) +
-      scale_y_continuous(limits=c(0, 105), breaks=c(0, 20, 40, 60, 80, 100),
+      scale_y_continuous(limits=c(0, 51), breaks=c(0, 10, 20, 30, 40, 50),
                          expand = c(0,0))
     
     if(participatedNumber>0) {
@@ -146,7 +146,7 @@ observe({
             axis.title=element_text(colour="#777777", size=10)
             ) + 
       scale_x_continuous(breaks=c(2006, 2009, 2012, 2015)) +
-      scale_y_continuous(limits=c(0, 105), breaks=c(0, 20, 40, 60, 80, 100),
+      scale_y_continuous(limits=c(0, 51), breaks=c(0, 10, 20, 30, 40, 50),
                          expand = c(0,0))
     
     if(participatedNumber>0) {

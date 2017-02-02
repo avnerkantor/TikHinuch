@@ -1,6 +1,6 @@
 library(shiny)
 #require(ggplot2)
-# library(curl)
+library(curl)
 #library(Cairo)
 # library(httr)
 # library(bigrquery)
