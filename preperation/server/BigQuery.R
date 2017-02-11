@@ -2,7 +2,7 @@ alonr@vision.bi
 
 bq help load
 
-bq load --autodetect --skip_leading_rows=1 --max_bad_records=100000000 pisa.student2012 gs://opisa/student2012.csv
+bq load --autodetect --skip_leading_rows=1 --max_bad_records=100000000 pisa.pisa2015 gs://opisa/pisa2015.csv
 
 bq show pisa.student2012
 

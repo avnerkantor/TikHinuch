@@ -97,6 +97,9 @@ observe({
         gp<-gg+geom_line(size=1)
         #https://plot.ly/r/reference
         #https://github.com/plotly/plotly.js/blob/master/src/components/modebar/buttons.js
+        #https://github.com/plotly/plotly.js/blob/master/src/plot_api/plot_config.js
+        # displaylogo = FALSE, linkText="עריכה", 
+        # displayModeBar = FALSE, showLink = TRUE
         ggplotly(gp, tooltip = c("text"))%>%
           config(p = ., displayModeBar = FALSE)%>%
           layout(hovermode="x")
