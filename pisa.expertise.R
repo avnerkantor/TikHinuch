@@ -59,12 +59,14 @@ observe({
       if(participatedNumber>1) {
         gd<-gh+geom_line(size=1)
         ggplotly(gd, tooltip = list("text", color="green"))%>%
-          config(p = ., displayModeBar = FALSE)%>%
+          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+                 showLink = TRUE)%>%
           layout(hovermode="x")
       } else{
         gd<-gh+geom_point(size=2)
         ggplotly(gd, tooltip = c("text"))%>%
-          config(p = ., displayModeBar = FALSE)%>%
+          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+                 showLink = TRUE)%>%
           layout(hovermode="x")
     }
       } else {
@@ -153,12 +155,14 @@ observe({
       if(participatedNumber>1) {
         gd<-gh+geom_line(size=1)
         ggplotly(gd, tooltip = c("text"))%>%
-          config(p = ., displayModeBar = FALSE)%>%
+          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+                 showLink = TRUE)%>%
           layout(hovermode="x")
       } else{
         gd<-gh+geom_point(size=2)
         ggplotly(gd, tooltip = c("text"))%>%
-          config(p = ., displayModeBar = FALSE)%>%
+          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+                 showLink = TRUE)%>%
           layout(hovermode="x")
       }
     } else {

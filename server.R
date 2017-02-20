@@ -26,9 +26,6 @@ oecdCountries<-arrange(oecdCountries, Hebrew)
 oecdList<-oecdCountries$CNT
 names(oecdList)<-oecdCountries$Hebrew
 
-# israelCountries<-read.csv("data/israelCountries.csv", header = TRUE, sep=",")
-# israelList<-israelCountries$CNT
-# names(israelList)<-israelCountries$Hebrew
 israelCountries<-read.csv("data/israelGroups.csv", header = TRUE, sep=",")
 israelList<-israelCountries$Country
 names(israelList)<-israelCountries$Hebrew
@@ -43,7 +40,7 @@ ExpertiseLevelsLimits<-read.csv("data/expertiseLevelsLimits2.csv", header = TRUE
 #download.file(url = "https://docs.google.com/spreadsheets/d/1RlZdX9bp4d-CxGd-bpR85Ye0tN5_CAdCCqnjqTC1i0E/pub?gid=439183945&single=true&output=csv", destfile="data/LevelExplenation.csv", 'curl')
 LevelExplenation<-read.csv("data/LevelExplenation.csv", header = TRUE, sep=",")
 
-groupColours<- c(
+groupColours <- c(
   General="#b276b2", 
   Male="#5da5da", 
   Female="#f17cb0", 
@@ -66,7 +63,6 @@ shinyServer(function(input, output, session) {
   source('pisa.analyze.R', local=TRUE)
   source('urlSearch.R', local=TRUE)
 
-  
 })
 
 

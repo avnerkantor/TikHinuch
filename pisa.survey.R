@@ -156,7 +156,8 @@ observe({
               #axis.line.y = element_line(color="#c7c7c7", size = 0.3)
         ) 
       ggplotly(gh, tooltip = c("text"))%>%
-        config(p = ., displayModeBar = FALSE)%>%
+        config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+               showLink = TRUE)%>%
         layout(hovermode="y")
     }
   }

@@ -119,7 +119,7 @@ small{
 }
 
 .btn-circle.btn-lg {
-    width: 50px;
+    width: 52px;
     height: 50px;
     background-color: #E0E0E0;
     border-color: #777777;
@@ -350,6 +350,11 @@ input[type="checkbox"] {
 a, a:hover {
   color: #333;
 }
+
+.js-plotly-plot .plotly svg a {
+  fill: #777777;
+}
+
 
 table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc
 {

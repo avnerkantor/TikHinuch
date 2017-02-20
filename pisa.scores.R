@@ -2,9 +2,9 @@ observe({
   if (input$worldOrIsrael=="World")
   {
     updateSelectInput(session, "Country4", choices = names(oecdList), selected = "ישראל")
-    updateSelectInput(session, "Country3", choices = names(oecdList), selected = "סינגפור")
+    updateSelectInput(session, "Country3", choices = names(oecdList), selected = "ארצות-הברית")
     updateSelectInput(session, "Country2", choices = names(oecdList), selected = "פינלנד")
-    updateSelectInput(session, "Country1", choices = names(oecdList), selected = "יוון")
+    updateSelectInput(session, "Country1", choices = names(oecdList), selected = "דרום-קוריאה")
   } else {
     updateSelectInput(session, "Country4", choices = names(israelList), selected = "חינוך-ממלכתי")
     updateSelectInput(session, "Country3", choices = names(israelList), selected = "ממלכתי-דתי")
@@ -98,16 +98,16 @@ observe({
         #https://plot.ly/r/reference
         #https://github.com/plotly/plotly.js/blob/master/src/components/modebar/buttons.js
         #https://github.com/plotly/plotly.js/blob/master/src/plot_api/plot_config.js
-        # displaylogo = FALSE, linkText="עריכה", 
-        # displayModeBar = FALSE, showLink = TRUE
         ggplotly(gp, tooltip = c("text"))%>%
-          config(p = ., displayModeBar = FALSE)%>%
+          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+          showLink = TRUE)%>%
           layout(hovermode="x")
 
       } else{
         gp<-gg+geom_point(size=2)
         ggplotly(gp, tooltip = c("text"))%>%
-          config(p = ., displayModeBar = FALSE)%>%
+          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+                 showLink = TRUE)%>%
           layout(hovermode="x")
       }
     } 
