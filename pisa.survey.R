@@ -22,27 +22,18 @@ observeEvent(input$SurveyCategory,{
 })
 
 recoderFunc <- function(data, oldvalue, newvalue) {
-  
   # convert any factors to characters
-  
   if (is.factor(data))     data     <- as.character(data)
   if (is.factor(oldvalue)) oldvalue <- as.character(oldvalue)
   if (is.factor(newvalue)) newvalue <- as.character(newvalue)
-  
   # create the return vector
-  
   newvec <- data
-  
   # put recoded values into the correct position in the return vector
-  
   for (i in unique(oldvalue)) newvec[data == i] <- newvalue[oldvalue == i]
-  
   newvec
-  
 }
 
 observe({
-  
   SurveySelectedID <- as.vector(unlist(select(filter(pisaDictionary, Year == input$SurveyYear, HebSubject == input$SurveySubject, HebCategory==input$SurveyCategory, HebSubCategory==input$SurveySubCategory), ID))) 
   # SurveySelectedMeasure <- as.vector(unlist(pisaDictionary%>%filter(ID==SurveySelectedID, Year == input$SurveyYear)%>%select(Measure)))
   SurveySelectedMeasure <- as.vector(unlist(select(filter(pisaDictionary, Year == input$SurveyYear, HebSubject == input$SurveySubject, HebCategory==input$SurveyCategory, HebSubCategory==input$SurveySubCategory), Measure))) 
@@ -63,7 +54,6 @@ observe({
     
     Country<-as.vector(unlist(Countries%>%filter(Hebrew==country)%>%select(Country)))
     surveyData1<-surveyData%>%select_("COUNTRY", SurveySelectedID, "ST04Q01", "ESCS")%>%filter(COUNTRY==Country)%>%na.omit() 
-    #dic<-data.frame(English=c("Checked"), Hebrew=c("כן"))
     surveyData1 <- data.frame(lapply(surveyData1, function(x) recoderFunc(x, itemsDictionary$English, itemsDictionary$Hebrew)))
     
     #output$SurveySelectedIDOutput<-renderText(paste0(SurveySelectedMeasure, ' (',SurveySelectedID, ')'))
@@ -156,7 +146,7 @@ observe({
               #axis.line.y = element_line(color="#c7c7c7", size = 0.3)
         ) 
       ggplotly(gh, tooltip = c("text"))%>%
-        config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+        config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="ייצוא",
                showLink = TRUE)%>%
         layout(hovermode="y")
     }

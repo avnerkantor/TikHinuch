@@ -52,20 +52,20 @@ observe({
             axis.title=element_text(colour="#777777", size=10)
             ) + 
       scale_x_continuous(breaks=c(2006, 2009, 2012, 2015)) +
-      scale_y_continuous(limits=c(0, 51), breaks=c(0, 10, 20, 30, 40, 50),
+      scale_y_continuous(limits=c(0, 41), breaks=c(0, 10, 20, 30, 40),
                          expand = c(0,0))
     
     if(participatedNumber>0) {
       if(participatedNumber>1) {
         gd<-gh+geom_line(size=1)
         ggplotly(gd, tooltip = list("text", color="green"))%>%
-          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="ייצוא",
                  showLink = TRUE)%>%
           layout(hovermode="x")
       } else{
         gd<-gh+geom_point(size=2)
         ggplotly(gd, tooltip = c("text"))%>%
-          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="ייצוא",
                  showLink = TRUE)%>%
           layout(hovermode="x")
     }
@@ -148,20 +148,20 @@ observe({
             axis.title=element_text(colour="#777777", size=10)
             ) + 
       scale_x_continuous(breaks=c(2006, 2009, 2012, 2015)) +
-      scale_y_continuous(limits=c(0, 51), breaks=c(0, 10, 20, 30, 40, 50),
+      scale_y_continuous(limits=c(0, 81), breaks=c(0, 10, 20, 30, 40, 50, 60, 70, 80),
                          expand = c(0,0))
     
     if(participatedNumber>0) {
       if(participatedNumber>1) {
         gd<-gh+geom_line(size=1)
         ggplotly(gd, tooltip = c("text"))%>%
-          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="ייצוא",
                  showLink = TRUE)%>%
           layout(hovermode="x")
       } else{
         gd<-gh+geom_point(size=2)
         ggplotly(gd, tooltip = c("text"))%>%
-          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="ייצוא",
                  showLink = TRUE)%>%
           layout(hovermode="x")
       }

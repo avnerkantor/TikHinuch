@@ -99,14 +99,14 @@ observe({
         #https://github.com/plotly/plotly.js/blob/master/src/components/modebar/buttons.js
         #https://github.com/plotly/plotly.js/blob/master/src/plot_api/plot_config.js
         ggplotly(gp, tooltip = c("text"))%>%
-          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="ייצוא",
           showLink = TRUE)%>%
           layout(hovermode="x")
 
       } else{
         gp<-gg+geom_point(size=2)
         ggplotly(gp, tooltip = c("text"))%>%
-          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="עריכה",
+          config(p = ., displayModeBar = FALSE, displaylogo = FALSE, linkText="ייצוא",
                  showLink = TRUE)%>%
           layout(hovermode="x")
       }
